@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   sodipodi:docname="LTP.svg"
+   inkscape:export-filename="LTP.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.2878911"
+     inkscape:rotation="-3"
+     inkscape:cx="395.69602"
+     inkscape:cy="379.41923"
+     inkscape:window-width="2327"
+     inkscape:window-height="1186"
+     inkscape:window-x="19"
+     inkscape:window-y="40"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <a
+       id="a1"
+       transform="rotate(3.0805129,81.684492,64.022616)">
+      <path
+         style="fill:#1a1a1a;fill-opacity:0.09;stroke:#1a1a1a;stroke-width:0.445558"
+         d="M 44.152626,45.035678 118.32904,45.33003 103.36035,68.532316 84.19315,82.3779 45.035679,83.006936 Z"
+         id="path1"
+         sodipodi:nodetypes="cccccc" />
+    </a>
+    <path
+       style="fill:#1a1a1a;fill-opacity:0.09;stroke:#1a1a1a;stroke-width:0.445558"
+       d="m 119.28061,47.326289 -1.1163,37.25168 -34.961184,-2.091781 19.883554,-12.795545 16.19393,-22.364354"
+       id="path2" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0f0f0f;fill-opacity:0.99;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       x="65.337044"
+       y="54.503784"
+       id="text2"
+       transform="rotate(3.0805129)"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="fill:#0f0f0f;fill-opacity:0.99;stroke-width:0;stroke-dasharray:none"
+         x="65.337044"
+         y="54.503784">Zone 1</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#0f0f0f;fill-opacity:0.99;stroke-width:0;stroke-dasharray:none"
+         x="65.337044"
+         y="58.472534"
+         id="tspan3">(1 m thick)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0f0f0f;fill-opacity:0.99;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       x="101.2792"
+       y="71.555107"
+       id="text2-3"
+       transform="rotate(3.0805129)"><tspan
+         sodipodi:role="line"
+         id="tspan2-5"
+         style="fill:#0f0f0f;fill-opacity:0.99;stroke-width:0;stroke-dasharray:none"
+         x="101.2792"
+         y="71.555107">Zone 2</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#0f0f0f;fill-opacity:0.99;stroke-width:0;stroke-dasharray:none"
+         x="101.2792"
+         y="75.523857"
+         id="tspan3-2">(0.5 m thick)</tspan></text>
+    <path
+       style="fill:#0f0f0f;fill-opacity:0.99;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       d="m 44.068433,81.010026 74.095877,3.567941"
+       id="path3" />
+    <path
+       style="fill:#0f0f0f;fill-opacity:0.99;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       d="M 118.2472,100.30299 43.921896,95.947116"
+       id="path4" />
+    <path
+       style="fill:#0f0f0f;fill-opacity:0.154717;stroke:#1a1a1a;stroke-width:0.4;stroke-dasharray:none"
+       d="m 44.036608,91.798059 38.580439,1.754846 0.05282,4.655229 35.577333,2.094856 -0.21031,4.21748 -74.114995,-4.21748 z"
+       id="path5"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#0f0f0f;fill-opacity:0.154717;stroke:#1a1a1a;stroke-width:0.4;stroke-dasharray:none"
+       d="m 43.722333,104.89106 38.669759,1.72751 -0.0365,4.68257 35.577318,2.09485 -0.21031,4.21748 -74.114982,-4.21748 z"
+       id="path6"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#0f0f0f;fill-opacity:0.154717;stroke:#1a1a1a;stroke-width:0.4;stroke-dasharray:none"
+       d="m 82.669868,98.208134 -0.07781,4.240956"
+       id="path7"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#0f0f0f;fill-opacity:0;stroke:#1a1a1a;stroke-width:0.4;stroke-dasharray:none"
+       d="m 82.355591,111.30114 -16.413624,-0.80719 -0.189186,4.1622"
+       id="path8"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0f0f0f;fill-opacity:0.99;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       x="58.690483"
+       y="91.956039"
+       id="text9"
+       transform="rotate(3.0805129)"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         style="fill:#0f0f0f;fill-opacity:0.99;stroke-width:0;stroke-dasharray:none"
+         x="58.690483"
+         y="91.956039">Zone 1</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#0f0f0f;fill-opacity:0.99;stroke-width:0;stroke-dasharray:none"
+         x="58.690483"
+         y="95.924789"
+         id="tspan9">(1 m thick)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0f0f0f;fill-opacity:0.99;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       x="54.736382"
+       y="108.13807"
+       id="text11"
+       transform="rotate(3.0805129)"><tspan
+         sodipodi:role="line"
+         style="fill:#0f0f0f;fill-opacity:0.99;stroke-width:0;stroke-dasharray:none"
+         x="54.736382"
+         y="108.13807"
+         id="tspan11">Zone 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0f0f0f;fill-opacity:0.99;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       x="88.505928"
+       y="96.803543"
+       id="text13"
+       transform="rotate(3.0805129)"><tspan
+         sodipodi:role="line"
+         style="fill:#0f0f0f;fill-opacity:0.99;stroke-width:0;stroke-dasharray:none"
+         x="88.505928"
+         y="96.803543"
+         id="tspan13">Zone 2 (0.5 m thick)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0f0f0f;fill-opacity:0.99;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       x="85.732162"
+       y="109.96099"
+       id="text14"
+       transform="rotate(3.0805129)"><tspan
+         sodipodi:role="line"
+         style="fill:#0f0f0f;fill-opacity:0.99;stroke-width:0;stroke-dasharray:none"
+         x="85.732162"
+         y="109.96099"
+         id="tspan14">Zone 2 (0.5 m thick)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0f0f0f;fill-opacity:1;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       x="124.95362"
+       y="96.966293"
+       id="text15"
+       transform="rotate(3.0053688)"><tspan
+         sodipodi:role="line"
+         id="tspan15"
+         style="fill:#0f0f0f;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="124.95362"
+         y="96.966293">OK, no overlap</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0f0f0f;fill-opacity:1;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       x="125.3989"
+       y="107.97758"
+       id="text16"
+       transform="rotate(3.0053688)"><tspan
+         sodipodi:role="line"
+         id="tspan16"
+         style="fill:#0f0f0f;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="125.3989"
+         y="107.97758">NO, zones overlap,</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#0f0f0f;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="125.3989"
+         y="111.94633"
+         id="tspan19">Zone 1 thickness varies</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#0f0f0f;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="125.3989"
+         y="115.91508"
+         id="tspan26">within a zone</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0f0f0f;fill-opacity:1;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       x="75.920799"
+       y="38.125229"
+       id="text17"
+       transform="rotate(3.4891939)"><tspan
+         sodipodi:role="line"
+         id="tspan17"
+         style="stroke-width:0"
+         x="75.920799"
+         y="38.125229">plan view</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0f0f0f;fill-opacity:1;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       x="78.843132"
+       y="86.053238"
+       id="text18"
+       transform="rotate(3.4891939)"><tspan
+         sodipodi:role="line"
+         id="tspan18"
+         style="stroke-width:0"
+         x="78.843132"
+         y="86.053238">section view</tspan></text>
+    <path
+       style="fill:#0f0f0f;fill-opacity:0.154717;stroke:#1a1a1a;stroke-width:0.4;stroke-dasharray:none"
+       d="m 43.722333,118.74799 38.669759,1.72751 -0.0365,4.68257 35.577318,2.09485 -0.21031,4.21748 -74.114982,-4.21748 z"
+       id="path19"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#0f0f0f;fill-opacity:0;stroke:#1a1a1a;stroke-width:0.4;stroke-dasharray:none"
+       d="m 82.355591,125.15807 -38.690615,-2.15762 -0.05736,4.25247"
+       id="path20"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0f0f0f;fill-opacity:0.99;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       x="54.082081"
+       y="119.38514"
+       id="text20"
+       transform="rotate(3.0805129)"><tspan
+         sodipodi:role="line"
+         style="fill:#0f0f0f;fill-opacity:0.99;stroke-width:0;stroke-dasharray:none"
+         x="54.082081"
+         y="119.38514"
+         id="tspan20">Zone 1 (0.5 m thick)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0f0f0f;fill-opacity:0.99;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       x="69.957352"
+       y="123.81812"
+       id="text21"
+       transform="rotate(3.0805129)"><tspan
+         sodipodi:role="line"
+         style="fill:#0f0f0f;fill-opacity:0.99;stroke-width:0;stroke-dasharray:none"
+         x="69.957352"
+         y="123.81812"
+         id="tspan21">Zone 2 (0.5 m thick)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0f0f0f;fill-opacity:1;stroke:#1a1a1a;stroke-width:0;stroke-dasharray:none"
+       x="126.14458"
+       y="122.38731"
+       id="text23"
+       transform="rotate(3.0053688)"><tspan
+         sodipodi:role="line"
+         style="fill:#0f0f0f;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="126.14458"
+         y="122.38731"
+         id="tspan23">NO, working platform</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#0f0f0f;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="126.14458"
+         y="126.35606"
+         id="tspan24">elevation varies between</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#0f0f0f;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="126.14458"
+         y="130.3248"
+         id="tspan25">zones.</tspan></text>
+  </g>
+</svg>

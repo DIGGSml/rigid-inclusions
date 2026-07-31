@@ -1,0 +1,674 @@
+<Project gml:id="PRJ001">
+    <gml:description>Geotechnical site investigation for the Jazera Royal Palace Substation, Riyadh, Saudi Arabia. Investigation includes borehole drilling, in-situ testing, laboratory testing, and rigid inclusion (CMC) foundation design support.</gml:description>
+    <gml:identifier codeSpace="http://www.globalgeosolutions.com/projects">GBL-GT-24136</gml:identifier>
+    <gml:name codeSpace="http://www.globalgeosolutions.com/projects">Jazera Royal Palace Substation — Geotechnical Investigation</gml:name>
+    <gml:name codeSpace="http://www.client.sa/projects">JP-SUB-GEO-2024</gml:name>
+    <internalIdentifier codeSpace="http://www.globalgeosolutions.com/projects">GBL-GT-24136</internalIdentifier>
+    <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/ProjectStatus">completed</status>
+    <implementationStatus codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/ImplementationStatus">constructed</implementationStatus>
+
+    <!-- ============================================================ -->
+    <!-- Associated Files                                              -->
+    <!-- ============================================================ -->
+
+    <associatedFile>
+        <AssociatedFile gml:id="AF001">
+            <gml:description>Geotechnical Investigation Report — Jazera Royal Palace Substation</gml:description>
+            <gml:identifier codeSpace="http://www.globalgeosolutions.com/reports">GBL-GT-24136-RPT-001</gml:identifier>
+            <gml:name codeSpace="http://www.globalgeosolutions.com/reports">GBL-GT-24136 Geotechnical Report Rev 0</gml:name>
+            <gml:name codeSpace="http://www.client.sa/documents">JP-SUB-GTR-2024-001</gml:name>
+            <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/DocumentStatus">final</status>
+            <remark>
+                <Remark owns="false">
+                    <content>Issued for Construction, Rev 0, approved by client on 2024-11-15</content>
+                    <remarkDateTime frame="#ISO-8601" indeterminatePosition="unknown">2024-11-15</remarkDateTime>
+                </Remark>
+            </remark>
+            <contact>
+                <BusinessAssociate gml:id="BA001">
+                    <gml:description>Global Geosolutions Ltd — Geotechnical Consultant responsible for site investigation and reporting</gml:description>
+                    <gml:identifier codeSpace="http://www.globalgeosolutions.com">GGL-001</gml:identifier>
+                    <gml:name codeSpace="http://www.globalgeosolutions.com">Global Geosolutions Ltd</gml:name>
+                    <gml:name codeSpace="http://www.globalgeosolutions.com">GGL</gml:name>
+                    <internalIdentifier codeSpace="http://www.globalgeosolutions.com">GGL-001</internalIdentifier>
+                    <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/BAStatus">active</status>
+                    <title codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/BATitle">Geotechnical Consultant</title>
+                    <address>
+                        <Address gml:id="ADDR001">
+                            <gml:description>Global Geosolutions Ltd — Head Office</gml:description>
+                            <gml:identifier codeSpace="http://www.globalgeosolutions.com">GGL-HQ</gml:identifier>
+                            <number>Suite 400</number>
+                            <streetAddress>1200 Engineering Boulevard</streetAddress>
+                            <streetAddress>Business Bay</streetAddress>
+                            <city>Dubai</city>
+                            <state>Dubai</state>
+                            <province>Dubai</province>
+                            <country>United Arab Emirates</country>
+                            <postalCode>00000</postalCode>
+                        </Address>
+                    </address>
+                    <emailAddress type="business">info@globalgeosolutions.com</emailAddress>
+                    <phoneNumber type="voice">+971 4 123 4567</phoneNumber>
+                </BusinessAssociate>
+            </contact>
+            <contact xlink:href="#BA002"/>
+            <fileURL>http://www.globalgeosolutions.com/projects/GBL-GT-24136/reports/GBL-GT-24136-RPT-001-Rev0.pdf</fileURL>
+            <fileType codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/FileType">report</fileType>
+            <creatingApplication>
+                <SoftwareApplication gml:id="SA001">
+                    <gml:description>Microsoft Word — Used to author the geotechnical investigation report</gml:description>
+                    <gml:identifier codeSpace="http://www.microsoft.com">MSWORD-2021</gml:identifier>
+                    <gml:name codeSpace="http://www.microsoft.com">Microsoft Word</gml:name>
+                    <gml:name codeSpace="http://www.microsoft.com">Word</gml:name>
+                    <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/AppStatus">released</status>
+                    <version>2021</version>
+                </SoftwareApplication>
+            </creatingApplication>
+            <documentType codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/DocumentType">geotechnicalReport</documentType>
+            <fileDate frame="#ISO-8601" indeterminatePosition="unknown">2024-11-15</fileDate>
+            <fileStructure codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/FileStructure">binary</fileStructure>
+            <mimeType>application/pdf</mimeType>
+        </AssociatedFile>
+    </associatedFile>
+
+    <associatedFile>
+        <AssociatedFile gml:id="AF002">
+            <gml:description>DIGGS XML data file containing borehole logs, in-situ test results, and laboratory test results for project GBL-GT-24136</gml:description>
+            <gml:identifier codeSpace="http://www.globalgeosolutions.com/data">GBL-GT-24136-DATA-001</gml:identifier>
+            <gml:name codeSpace="http://www.globalgeosolutions.com/data">GBL-GT-24136 DIGGS Data File</gml:name>
+            <gml:name codeSpace="http://diggsml.org">GBL-GT-24136.xml</gml:name>
+            <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/DocumentStatus">final</status>
+            <remark>
+                <Remark owns="false">
+                    <content>DIGGS 2.6 compliant XML data file encoding all geotechnical investigation data for the Jazera Royal Palace Substation project</content>
+                    <remarkDateTime frame="#ISO-8601" indeterminatePosition="unknown">2024-11-15</remarkDateTime>
+                </Remark>
+            </remark>
+            <contact xlink:href="#BA001"/>
+            <fileURL>http://www.globalgeosolutions.com/projects/GBL-GT-24136/data/GBL-GT-24136.xml</fileURL>
+            <fileType codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/FileType">data</fileType>
+            <creatingApplication>
+                <SoftwareApplication gml:id="SA002">
+                    <gml:description>gINT Professional Plus — Used to manage and export geotechnical data in DIGGS format</gml:description>
+                    <gml:identifier codeSpace="http://www.bentley.com">GINT-PRO-10</gml:identifier>
+                    <gml:name codeSpace="http://www.bentley.com">gINT Professional Plus</gml:name>
+                    <gml:name codeSpace="http://www.bentley.com">gINT</gml:name>
+                    <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/AppStatus">released</status>
+                    <version>10.00.00.109</version>
+                </SoftwareApplication>
+            </creatingApplication>
+            <documentType codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/DocumentType">dataFile</documentType>
+            <fileDate frame="#ISO-8601" indeterminatePosition="unknown">2024-11-15</fileDate>
+            <fileStructure codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/FileStructure">XML</fileStructure>
+            <mimeType>application/xml</mimeType>
+        </AssociatedFile>
+    </associatedFile>
+
+    <!-- ============================================================ -->
+    <!-- Roles                                                         -->
+    <!-- ============================================================ -->
+
+    <role>
+        <Role owns="false">
+            <rolePerformed codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/ProjectRoleType">owner</rolePerformed>
+            <timePerformed>
+                <TimeInterval gml:id="TI001">
+                    <gml:description>Period during which the client served as project owner</gml:description>
+                    <gml:identifier codeSpace="http://www.globalgeosolutions.com/projects">TI-PRJ001-OWNER</gml:identifier>
+                    <gml:name codeSpace="http://www.globalgeosolutions.com/projects">Owner Role Period</gml:name>
+                    <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/TimeIntervalStatus">completed</status>
+                    <start frame="#ISO-8601" indeterminatePosition="unknown">2024-03-01</start>
+                    <end frame="#ISO-8601" indeterminatePosition="unknown">2024-11-30</end>
+                    <duration uom="d" howDetermined="calculated" qualifier="exact">275</duration>
+                </TimeInterval>
+            </timePerformed>
+            <businessAssociate>
+                <BusinessAssociate gml:id="BA002">
+                    <gml:description>Jazera Royal Palace Development Authority — Project Owner and Client</gml:description>
+                    <gml:identifier codeSpace="http://www.jazera.sa">JRPDA-001</gml:identifier>
+                    <gml:name codeSpace="http://www.jazera.sa">Jazera Royal Palace Development Authority</gml:name>
+                    <gml:name codeSpace="http://www.jazera.sa">JRPDA</gml:name>
+                    <internalIdentifier codeSpace="http://www.globalgeosolutions.com/clients">CLIENT-SA-001</internalIdentifier>
+                    <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/BAStatus">active</status>
+                    <title codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/BATitle">Client / Owner</title>
+                    <address>
+                        <Address gml:id="ADDR002">
+                            <gml:description>Jazera Royal Palace Development Authority — Main Office</gml:description>
+                            <gml:identifier codeSpace="http://www.jazera.sa">JRPDA-HQ</gml:identifier>
+                            <number>Building 12</number>
+                            <streetAddress>King Fahd Road</streetAddress>
+                            <streetAddress>Al Olaya District</streetAddress>
+                            <city>Riyadh</city>
+                            <state>Riyadh Province</state>
+                            <country>Saudi Arabia</country>
+                            <postalCode>11564</postalCode>
+                        </Address>
+                    </address>
+                    <emailAddress type="business">projects@jazera.sa</emailAddress>
+                    <phoneNumber type="voice">+966 11 234 5678</phoneNumber>
+                </BusinessAssociate>
+            </businessAssociate>
+            <businessAssociate xlink:href="#BA002"/>
+        </Role>
+    </role>
+
+    <role>
+        <Role owns="false">
+            <rolePerformed codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/ProjectRoleType">geotechnicalEngineer</rolePerformed>
+            <timePerformed>
+                <TimeInterval gml:id="TI002">
+                    <gml:description>Period during which Global Geosolutions performed geotechnical engineering services</gml:description>
+                    <gml:identifier codeSpace="http://www.globalgeosolutions.com/projects">TI-PRJ001-GEOTECH</gml:identifier>
+                    <gml:name codeSpace="http://www.globalgeosolutions.com/projects">Geotechnical Engineer Role Period</gml:name>
+                    <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/TimeIntervalStatus">completed</status>
+                    <start frame="#ISO-8601" indeterminatePosition="unknown">2024-03-15</start>
+                    <end frame="#ISO-8601" indeterminatePosition="unknown">2024-11-30</end>
+                    <duration uom="d" howDetermined="calculated" qualifier="exact">260</duration>
+                </TimeInterval>
+            </timePerformed>
+            <businessAssociate xlink:href="#BA001"/>
+            <businessAssociate xlink:href="#BA001"/>
+        </Role>
+    </role>
+
+    <!-- ============================================================ -->
+    <!-- Remarks                                                       -->
+    <!-- ============================================================ -->
+
+    <remark>
+        <Remark owns="false">
+            <content>Investigation comprised 5 boreholes (BH-1 through BH-5) and 2 out-of-boundary boreholes (BH-1-OUT, BH-2-OUT), totalling approximately 150 m of drilling. In-situ SPT testing performed throughout. Laboratory testing included Atterberg limits, particle size distribution, CBR, and compaction tests. Foundation system comprises 1,075 controlled modulus columns (CMC/rigid inclusions) across 13 load transfer platform zones.</content>
+            <author xlink:href="#BA001"/>
+            <author xlink:href="#BA002"/>
+            <remarkDateTime frame="#ISO-8601" indeterminatePosition="unknown">2024-11-15</remarkDateTime>
+        </Remark>
+    </remark>
+
+    <remark>
+        <Remark owns="false">
+            <content>Site geology comprises surficial aeolian sand overlying medium-dense to dense silty sand and sandy silt, with occasional gravel layers. Groundwater not encountered within the investigated depth. Foundation recommendations based on CMC rigid inclusion system with load transfer platform (LTP) of compacted granular fill.</content>
+            <author xlink:href="#BA001"/>
+            <remarkDateTime frame="#ISO-8601" indeterminatePosition="unknown">2024-11-15</remarkDateTime>
+        </Remark>
+    </remark>
+
+    <!-- ============================================================ -->
+    <!-- Reference Point                                               -->
+    <!-- ============================================================ -->
+
+    <referencePoint owns="false">
+        <PointLocation srsDimension="3"
+            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+            uomLabels="m m m" axisLabels="easting northing height" gml:id="PL001">
+            <gml:description>
+                Height is an estimate derived from DEM context and water table depth
+            </gml:description>
+            <gml:pos>502967.692 2443920.064 1</gml:pos>
+            <!-- Assume compound CRS to be KSA-GRF17 / UTM zone 37N / EGM96 height  -->
+            <uncertainty>
+                <LocationUncertainty gml:id="LU001">
+                    <gml:description>Positional uncertainty for project reference point, determined from differential GNSS survey</gml:description>
+                    <gml:identifier codeSpace="http://www.globalgeosolutions.com/projects">LU-PRJ001-REFPT</gml:identifier>
+                    <gml:name codeSpace="http://www.globalgeosolutions.com/projects">Reference Point Location Uncertainty</gml:name>
+                    <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/UncertaintyStatus">estimated</status>
+                    <locationMethod>gnssDifferential</locationMethod>
+                    <horizontalUncertainty>
+                        <Uncertainty gml:id="UNC001">
+                            <gml:description>Horizontal positional uncertainty — differential GNSS, post-processed</gml:description>
+                            <gml:identifier codeSpace="http://www.globalgeosolutions.com/projects">UNC-PRJ001-HORIZ</gml:identifier>
+                            <gml:name codeSpace="http://www.globalgeosolutions.com/projects">Horizontal Uncertainty</gml:name>
+                            <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/UncertaintyStatus">estimated</status>
+                            <plusUncertaintyValue howDetermined="measured" qualifier="exact">0.05</plusUncertaintyValue>
+                            <minusUncertaintyValue howDetermined="measured" qualifier="exact">0.05</minusUncertaintyValue>
+                            <confidenceLevel uom="%" howDetermined="calculated" qualifier="exact">95</confidenceLevel>
+                            <uncertaintyRepresentation>plus-minus</uncertaintyRepresentation>
+                        </Uncertainty>
+                    </horizontalUncertainty>
+                    <verticalUncertainty>
+                        <Uncertainty gml:id="UNC002">
+                            <gml:description>Vertical positional uncertainty — EGM96 geoid model applied to GNSS ellipsoidal height</gml:description>
+                            <gml:identifier codeSpace="http://www.globalgeosolutions.com/projects">UNC-PRJ001-VERT</gml:identifier>
+                            <gml:name codeSpace="http://www.globalgeosolutions.com/projects">Vertical Uncertainty</gml:name>
+                            <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/UncertaintyStatus">estimated</status>
+                            <plusUncertaintyValue howDetermined="measured" qualifier="exact">0.15</plusUncertaintyValue>
+                            <minusUncertaintyValue howDetermined="measured" qualifier="exact">0.15</minusUncertaintyValue>
+                            <confidenceLevel uom="%" howDetermined="calculated" qualifier="exact">95</confidenceLevel>
+                            <uncertaintyRepresentation>plus-minus</uncertaintyRepresentation>
+                        </Uncertainty>
+                    </verticalUncertainty>
+                </LocationUncertainty>
+            </uncertainty>
+        </PointLocation>
+    </referencePoint>
+
+    <!-- ============================================================ -->
+    <!-- Linear Extent (project boundary transect — N-S baseline)     -->
+    <!-- ============================================================ -->
+
+    <linearExtent owns="false">
+        <LinearExtent gml:id="LE001"
+            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+            srsDimension="3"
+            axisLabels="easting northing height"
+            uomLabels="m m m">
+            <gml:description>North-south baseline transect along the western boundary of the Jazera Royal Palace Substation site</gml:description>
+            <gml:posList>502920.0 2443870.0 1.0 502920.0 2443970.0 1.0</gml:posList>
+            <startValue uom="m" howDetermined="measured" qualifier="exact">0</startValue>
+            <uncertainty>
+                <LocationUncertainty gml:id="LU002">
+                    <gml:description>Positional uncertainty for site boundary transect, from total station survey</gml:description>
+                    <gml:identifier codeSpace="http://www.globalgeosolutions.com/projects">LU-PRJ001-LE</gml:identifier>
+                    <gml:name codeSpace="http://www.globalgeosolutions.com/projects">Linear Extent Location Uncertainty</gml:name>
+                    <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/UncertaintyStatus">estimated</status>
+                    <locationMethod>totalStation</locationMethod>
+                    <horizontalUncertainty>
+                        <Uncertainty gml:id="UNC003">
+                            <gml:description>Horizontal uncertainty for linear extent — total station survey</gml:description>
+                            <gml:identifier codeSpace="http://www.globalgeosolutions.com/projects">UNC-PRJ001-LE-HORIZ</gml:identifier>
+                            <gml:name codeSpace="http://www.globalgeosolutions.com/projects">Linear Extent Horizontal Uncertainty</gml:name>
+                            <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/UncertaintyStatus">estimated</status>
+                            <plusUncertaintyValue howDetermined="measured" qualifier="exact">0.02</plusUncertaintyValue>
+                            <minusUncertaintyValue howDetermined="measured" qualifier="exact">0.02</minusUncertaintyValue>
+                            <confidenceLevel uom="%" howDetermined="calculated" qualifier="exact">95</confidenceLevel>
+                            <uncertaintyRepresentation>plus-minus</uncertaintyRepresentation>
+                        </Uncertainty>
+                    </horizontalUncertainty>
+                    <verticalUncertainty>
+                        <Uncertainty gml:id="UNC004">
+                            <gml:description>Vertical uncertainty for linear extent — total station survey</gml:description>
+                            <gml:identifier codeSpace="http://www.globalgeosolutions.com/projects">UNC-PRJ001-LE-VERT</gml:identifier>
+                            <gml:name codeSpace="http://www.globalgeosolutions.com/projects">Linear Extent Vertical Uncertainty</gml:name>
+                            <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/UncertaintyStatus">estimated</status>
+                            <plusUncertaintyValue howDetermined="measured" qualifier="exact">0.03</plusUncertaintyValue>
+                            <minusUncertaintyValue howDetermined="measured" qualifier="exact">0.03</minusUncertaintyValue>
+                            <confidenceLevel uom="%" howDetermined="calculated" qualifier="exact">95</confidenceLevel>
+                            <uncertaintyRepresentation>plus-minus</uncertaintyRepresentation>
+                        </Uncertainty>
+                    </verticalUncertainty>
+                </LocationUncertainty>
+            </uncertainty>
+        </LinearExtent>
+    </linearExtent>
+
+    <!-- ============================================================ -->
+    <!-- Areal Extent 1 — Overall project site boundary               -->
+    <!-- Approximately 100m x 100m rectangle centred on ref point     -->
+    <!-- ============================================================ -->
+
+    <arealExtent owns="false">
+        <Shell aggregationType="sequence"
+            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+            srsDimension="3"
+            axisLabels="easting northing height"
+            uomLabels="m m m"
+            gml:id="SH001">
+            <surfaceMembers>
+                <!-- PlanarSurface 1: overall site boundary with equipment exclusion zone cut-out -->
+                <PlanarSurface
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    srsDimension="3"
+                    axisLabels="easting northing height"
+                    uomLabels="m m m"
+                    gml:id="PS001">
+                    <gml:exterior>
+                        <!-- Exterior ring: ~100m x 100m site boundary, CCW winding (ISO 19107) -->
+                        <gml:LinearRing>
+                            <gml:posList>
+                                502917.7 2443870.1 1.0
+                                503017.7 2443870.1 1.0
+                                503017.7 2443970.1 1.0
+                                502917.7 2443970.1 1.0
+                                502917.7 2443870.1 1.0
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                    <gml:interior>
+                        <!-- Interior ring: transformer pad exclusion zone ~20m x 20m, CW winding -->
+                        <gml:LinearRing>
+                            <gml:posList>
+                                502957.7 2443910.1 1.0
+                                502957.7 2443930.1 1.0
+                                502977.7 2443930.1 1.0
+                                502977.7 2443910.1 1.0
+                                502957.7 2443910.1 1.0
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:interior>
+                    <gml:interior>
+                        <!-- Interior ring: switchgear building exclusion zone ~15m x 15m, CW winding -->
+                        <gml:LinearRing>
+                            <gml:posList>
+                                502987.7 2443935.1 1.0
+                                502987.7 2443950.1 1.0
+                                503002.7 2443950.1 1.0
+                                503002.7 2443935.1 1.0
+                                502987.7 2443935.1 1.0
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:interior>
+                </PlanarSurface>
+
+                <!-- PlanarSurface 2: ancillary compound / laydown area adjacent to main site -->
+                <PlanarSurface
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    srsDimension="3"
+                    axisLabels="easting northing height"
+                    uomLabels="m m m"
+                    gml:id="PS002">
+                    <gml:exterior>
+                        <!-- Exterior ring: ~40m x 30m ancillary compound, CCW winding -->
+                        <gml:LinearRing>
+                            <gml:posList>
+                                502917.7 2443840.1 1.0
+                                502957.7 2443840.1 1.0
+                                502957.7 2443870.1 1.0
+                                502917.7 2443870.1 1.0
+                                502917.7 2443840.1 1.0
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                    <gml:interior>
+                        <!-- Interior ring: site office / welfare cabin footprint, CW winding -->
+                        <gml:Ring aggregationType="record">
+                            <gml:curveMember>
+                                <gml:OrientableCurve orientation="+"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                    srsDimension="3"
+                                    axisLabels="easting northing height"
+                                    uomLabels="m m m"
+                                    gml:id="OC001">
+                                    <gml:baseCurve>
+                                        <gml:LineString
+                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                            srsDimension="3"
+                                            axisLabels="easting northing height"
+                                            uomLabels="m m m"
+                                            gml:id="LS001">
+                                            <gml:pointProperty>
+                                                <gml:Point
+                                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                                    srsDimension="3"
+                                                    axisLabels="easting northing height"
+                                                    uomLabels="m m m"
+                                                    gml:id="PT001">
+                                                    <gml:pos>502925.0 2443845.0 1.0</gml:pos>
+                                                </gml:Point>
+                                            </gml:pointProperty>
+                                            <gml:pos>502935.0 2443845.0 1.0</gml:pos>
+                                            <gml:pointProperty>
+                                                <gml:Point
+                                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                                    srsDimension="3"
+                                                    axisLabels="easting northing height"
+                                                    uomLabels="m m m"
+                                                    gml:id="PT002">
+                                                    <gml:pos>502935.0 2443855.0 1.0</gml:pos>
+                                                </gml:Point>
+                                            </gml:pointProperty>
+                                            <gml:pos>502925.0 2443845.0 1.0</gml:pos>
+                                        </gml:LineString>
+                                    </gml:baseCurve>
+                                </gml:OrientableCurve>
+                            </gml:curveMember>
+                            <gml:curveMember>
+<!--                                <gml:LineString
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                    srsDimension="3"
+                                    axisLabels="easting northing height"
+                                    uomLabels="m m m"
+                                    gml:id="LS002">
+                                    <gml:posList>502925.0 2443845.0 1.0 502935.0 2443845.0 1.0 502935.0 2443855.0 1.0 502925.0 2443855.0 1.0 502925.0 2443845.0 1.0</gml:posList>
+                                </gml:LineString>-->
+                                <gml:CompositeCurve aggregationType="sequence"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                    srsDimension="3"
+                                    axisLabels="easting northing height"
+                                    uomLabels="m m m"
+                                    gml:id="CC001">
+                                    <gml:curveMember xlink:href="#OC001"/>
+                                    <gml:curveMember xlink:href="#OC001"/>
+                                </gml:CompositeCurve>
+                            </gml:curveMember>
+                        </gml:Ring>
+                    </gml:interior>
+                    <gml:interior>
+                        <gml:LinearRing>
+                            <!-- Fuel store exclusion zone, CW winding -->
+                            <gml:posList>
+                                502943.0 2443843.0 1.0
+                                502943.0 2443850.0 1.0
+                                502950.0 2443850.0 1.0
+                                502950.0 2443843.0 1.0
+                                502943.0 2443843.0 1.0
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:interior>
+                </PlanarSurface>
+            </surfaceMembers>
+        </Shell>
+    </arealExtent>
+
+    <!-- ============================================================ -->
+    <!-- Areal Extent 2 — LTP foundation footprint                    -->
+    <!-- MultiPlanarSurface: two non-contiguous LTP zones             -->
+    <!-- ============================================================ -->
+
+    <arealExtent owns="false">
+        <MultiPlanarSurface gml:id="MPS001">
+            <gml:patches>
+                <!-- LTP Zone A: northern half of substation foundation footprint -->
+                <PlanarSurfacePatch interpolation="planar">
+                    <gml:exterior>
+                        <gml:Ring aggregationType="array">
+                            <gml:curveMember>
+                                <gml:LineString
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                    srsDimension="3"
+                                    axisLabels="easting northing height"
+                                    uomLabels="m m m"
+                                    gml:id="LS003">
+                                    <gml:posList>
+                                        502930.0 2443935.0 1.0
+                                        503005.0 2443935.0 1.0
+                                        503005.0 2443965.0 1.0
+                                        502930.0 2443965.0 1.0
+                                        502930.0 2443935.0 1.0
+                                    </gml:posList>
+                                </gml:LineString>
+                            </gml:curveMember>
+                            <gml:curveMember>
+                                <gml:CompositeCurve aggregationType="sequence"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                    srsDimension="3"
+                                    axisLabels="easting northing height"
+                                    uomLabels="m m m"
+                                    gml:id="CC002">
+                                    <gml:curveMember xlink:href="#LS003"/>
+                                    <gml:curveMember xlink:href="#LS003"/>
+                                </gml:CompositeCurve>
+                            </gml:curveMember>
+                        </gml:Ring>
+                    </gml:exterior>
+                    <gml:interior>
+                        <!-- Exclusion zone within LTP Zone A: existing underground utility corridor -->
+                        <gml:Ring aggregationType="sequence">
+                            <gml:curveMember>
+                                <gml:OrientableCurve orientation="+"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                    srsDimension="3"
+                                    axisLabels="easting northing height"
+                                    uomLabels="m m m"
+                                    gml:id="OC002">
+                                    <gml:baseCurve>
+                                        <gml:LineString
+                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                            srsDimension="3"
+                                            axisLabels="easting northing height"
+                                            uomLabels="m m m"
+                                            gml:id="LS004">
+                                            <gml:pos>502955.0 2443938.0 1.0</gml:pos>
+                                            <gml:pointProperty>
+                                                <gml:Point
+                                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                                    srsDimension="3"
+                                                    axisLabels="easting northing height"
+                                                    uomLabels="m m m"
+                                                    gml:id="PT003">
+                                                    <gml:pos>502955.0 2443948.0 1.0</gml:pos>
+                                                </gml:Point>
+                                            </gml:pointProperty>
+                                            <gml:pos>502968.0 2443948.0 1.0</gml:pos>
+                                            <gml:pointProperty>
+                                                <gml:Point
+                                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                                    srsDimension="3"
+                                                    axisLabels="easting northing height"
+                                                    uomLabels="m m m"
+                                                    gml:id="PT004">
+                                                    <gml:pos>502968.0 2443938.0 1.0</gml:pos>
+                                                </gml:Point>
+                                            </gml:pointProperty>
+                                        </gml:LineString>
+                                    </gml:baseCurve>
+                                </gml:OrientableCurve>
+                            </gml:curveMember>
+                            <gml:curveMember>
+<!--                                <gml:LineString
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                    srsDimension="3"
+                                    axisLabels="easting northing height"
+                                    uomLabels="m m m"
+                                    gml:id="LS005">
+                                    <gml:posList>502955.0 2443938.0 1.0 502955.0 2443948.0 1.0 502968.0 2443948.0 1.0 502968.0 2443938.0 1.0 502955.0 2443938.0 1.0</gml:posList>
+                                </gml:LineString>-->
+                                <gml:CompositeCurve aggregationType="sequence"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                    srsDimension="3"
+                                    axisLabels="easting northing height"
+                                    uomLabels="m m m"
+                                    gml:id="CC003">
+                                    <gml:curveMember xlink:href="#OC002"/>
+                                    <gml:curveMember xlink:href="#OC002"/>
+                                </gml:CompositeCurve>
+                            </gml:curveMember>
+                        </gml:Ring>
+                    </gml:interior>
+                    <gml:interior>
+                        <gml:Ring aggregationType="bag">
+                            <gml:curveMember>
+                                <gml:OrientableCurve orientation="+"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                    srsDimension="3"
+                                    axisLabels="easting northing height"
+                                    uomLabels="m m m"
+                                    gml:id="OC003">
+                                    <gml:baseCurve>
+                                        <gml:OrientableCurve orientation="+"
+                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                            srsDimension="3"
+                                            axisLabels="easting northing height"
+                                            uomLabels="m m m"
+                                            gml:id="OC004"/>
+                                    </gml:baseCurve>
+                                </gml:OrientableCurve>
+                            </gml:curveMember>
+                            <gml:curveMember>
+                                <gml:CompositeCurve aggregationType="sequence"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                                    srsDimension="3"
+                                    axisLabels="easting northing height"
+                                    uomLabels="m m m"
+                                    gml:id="CC004">
+                                    <gml:curveMember xlink:href="#OC003"/>
+                                    <gml:curveMember xlink:href="#OC003"/>
+                                </gml:CompositeCurve>
+                            </gml:curveMember>
+                        </gml:Ring>
+                    </gml:interior>
+                    <uncertainty>
+                        <Uncertainty gml:id="UNC005">
+                            <gml:description>Positional uncertainty for LTP Zone A boundary from total station survey</gml:description>
+                            <gml:identifier codeSpace="http://www.globalgeosolutions.com/projects">UNC-PRJ001-LTPA</gml:identifier>
+                            <gml:name codeSpace="http://www.globalgeosolutions.com/projects">LTP Zone A Boundary Uncertainty</gml:name>
+                            <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/UncertaintyStatus">estimated</status>
+                            <plusUncertaintyValue howDetermined="measured" qualifier="exact">0.05</plusUncertaintyValue>
+                            <minusUncertaintyValue howDetermined="measured" qualifier="exact">0.05</minusUncertaintyValue>
+                            <confidenceLevel uom="%" howDetermined="calculated" qualifier="exact">95</confidenceLevel>
+                            <uncertaintyRepresentation>plus-minus</uncertaintyRepresentation>
+                        </Uncertainty>
+                    </uncertainty>
+                </PlanarSurfacePatch>
+
+                <!-- LTP Zone B: southern half of substation foundation footprint -->
+                <PlanarSurfacePatch interpolation="planar">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>
+                                502930.0 2443880.0 1.0
+                                503005.0 2443880.0 1.0
+                                503005.0 2443935.0 1.0
+                                502930.0 2443935.0 1.0
+                                502930.0 2443880.0 1.0
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                    <gml:interior>
+                        <gml:LinearRing>
+                            <!-- Cable trench exclusion zone within LTP Zone B, CW winding -->
+                            <gml:posList>
+                                502960.0 2443890.0 1.0
+                                502960.0 2443900.0 1.0
+                                502975.0 2443900.0 1.0
+                                502975.0 2443890.0 1.0
+                                502960.0 2443890.0 1.0
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:interior>
+                    <gml:interior>
+                        <gml:LinearRing>
+                            <!-- Drainage sump exclusion zone within LTP Zone B, CW winding -->
+                            <gml:posList>
+                                502985.0 2443908.0 1.0
+                                502985.0 2443918.0 1.0
+                                502995.0 2443918.0 1.0
+                                502995.0 2443908.0 1.0
+                                502985.0 2443908.0 1.0
+                            </gml:posList>
+                        </gml:LinearRing>
+                    </gml:interior>
+                </PlanarSurfacePatch>
+            </gml:patches>
+        </MultiPlanarSurface>
+    </arealExtent>
+
+    <!-- ============================================================ -->
+    <!-- Project Date / Time Span                                      -->
+    <!-- ============================================================ -->
+
+    <projectDateTimeSpan>
+        <TimeInterval gml:id="TI003">
+            <gml:description>Overall project duration from mobilisation to report issue for the Jazera Royal Palace Substation geotechnical investigation</gml:description>
+            <gml:identifier codeSpace="http://www.globalgeosolutions.com/projects">TI-PRJ001-TOTAL</gml:identifier>
+            <gml:name codeSpace="http://www.globalgeosolutions.com/projects">GBL-GT-24136 Project Duration</gml:name>
+            <status codeSpace="http://diggsml.org/def/codes/DIGGS/0.1/TimeIntervalStatus">completed</status>
+            <remark>
+                <Remark owns="false">
+                    <content>Field investigation conducted from 2024-04-06 to 2024-05-18. Laboratory testing completed by 2024-09-30. Report issued 2024-11-15.</content>
+                    <author xlink:href="#BA001"/>
+                    <remarkDateTime frame="#ISO-8601" indeterminatePosition="unknown">2024-11-15</remarkDateTime>
+                </Remark>
+            </remark>
+            <remark>
+                <Remark owns="false">
+                    <content>Project executed under contract JP-SUB-GEO-2024 awarded by the Jazera Royal Palace Development Authority.</content>
+                    <author xlink:href="#BA002"/>
+                    <remarkDateTime frame="#ISO-8601" indeterminatePosition="unknown">2024-03-01</remarkDateTime>
+                </Remark>
+            </remark>
+            <start frame="#ISO-8601" indeterminatePosition="unknown">2024-03-01</start>
+            <end frame="#ISO-8601" indeterminatePosition="unknown">2024-11-30</end>
+            <duration uom="d" howDetermined="calculated" qualifier="exact">275</duration>
+        </TimeInterval>
+    </projectDateTimeSpan>
+
+</Project>

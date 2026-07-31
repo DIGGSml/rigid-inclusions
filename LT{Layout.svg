@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="1587.36"
+   height="1122.5601"
+   viewBox="0 0 1587.36 1122.5601"
+   sodipodi:docname="LT{Layout.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch59"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#d55455;stop-opacity:1;"
+         offset="0"
+         id="stop59" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="false"
+     inkscape:zoom="0.78863296"
+     inkscape:cx="826.74708"
+     inkscape:cy="429.22375"
+     inkscape:window-width="2560"
+     inkscape:window-height="1186"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g12464">
+    <inkscape:page
+       x="0"
+       y="0"
+       inkscape:label="1"
+       id="page1"
+       width="1587.36"
+       height="1122.5601"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     id="g12464"
+     inkscape:label="LTP"
+     style="display:inline">
+    <path
+       id="path12443"
+       style="display:inline;fill:#cd87de;fill-opacity:1;stroke:#000000;stroke-width:0.795;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:label="Boundary wall"
+       d="M 8.4002257,-867.36047 -6.5343752e-4,-1.0059375e-4 -740.64032,-7.1998078 -732.23944,-874.56018 Z m -10.9204105,100.68017 -27.1362312,-0.28271 0.51709,-53.34082 24.5786139,0.22412 0.3603515,-39.72071 -39.4790044,-0.36035 -0.268067,29.4961 -651.572768,-6.33545 -7.68018,792.959491 666.480487,6.480469 1.105957,-114.14502 15.934571,0.14502 0.358887,-39.71924 -15.909669,-0.14502 0.729493,-75.25196 25.8603519,0.27686 3.2402345,-336.12013 -25.8457034,-0.27685 0.259277,-26.83008 27.146485,0.22705 z"
+       transform="matrix(0,-1.3333333,-1.3333333,0,96.079944,38.73741)" />
+    <path
+       id="path12465"
+       style="display:inline;fill:#eda4de;fill-opacity:1;stroke:#000000;stroke-width:0.7515;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:label="Remaining area"
+       d="m -0.09932532,10.216231 -0.51708985,53.340821 -30.34423883,-0.316406 -1.319824,137.399414 30.3339847,0.25342 -0.2592774,26.83008 -30.3149423,-0.32373 -3.238769,336.12013 30.2988284,0.32373 -0.7294922,75.25195 -23.5693362,-0.21533 -0.360352,39.71924 23.5458991,0.21533 L -7.6798919,792.9599 -674.16038,786.47943 -666.4802,-6.4800588 -14.907431,-0.14460938 -14.999716,10.08 Z m -79.10009968,37.78418 -31.560055,-0.240234 -0.24024,31.560059 31.439943,0.240235 z m -0.720703,70.918949 -31.439942,-0.35889 -0.36035,31.56006 31.43994,0.35889 z m -0.600586,64.32129 -31.439946,-0.24024 -0.35888,31.56006 31.439939,0.24024 z m -0.719238,77.51953 -31.560058,-0.36035 -0.24024,31.68018 31.439946,0.24023 z m -6.839356,58.56006 -72.120122,-0.7207 -0.84082,76.80029 -138.83936,-1.31982 2.39942,-246.00001 35.75976,0.36036 0.96094,-96.000007 -204.71778,-1.962891 0.35743,-35.717286 -39.48047,-0.360351 -0.36036,35.879883 31.31836,0.38086 -0.11718,13.299316 h -9 l -26.04053,-12.839355 -76.07959,-0.720704 -0.009,0.840821 -38.63233,-0.360352 -1.1997,129.959476 104.28076,1.07959 0.95947,-97.558596 h 2.40088 l 26.87988,12.959473 13.56006,0.120117 -1.32129,140.879886 -108.71924,-1.07959 -0.0103,0.95947 -38.6294,-0.36035 -1.20117,129.96094 104.28077,0.95948 0.95947,-97.31983 42.96094,0.36035 -1.43994,153.47901 -108.72071,-1.07959 -0.0103,0.95947 -38.6294,-0.35889 -1.19971,129.83936 104.2793,1.07959 0.96094,-97.40771 46.67871,0.44824 -1.1997,126.24023 137.63965,1.31983 0.36035,-42.12012 249.360357,2.51953 z m -44.521002,-240.240238 -0.41894,-31.560059 -30.78076,-0.360352 -0.24024,31.680177 z m -0.36035,39.240238 -31.56006,-0.24024 -0.23877,31.56006 31.43995,0.36035 z m -0.59912,64.43994 -31.56006,-0.36035 -0.24023,31.68018 31.43994,0.24023 z m -0.84082,77.51953 -31.43994,-0.36035 -0.35889,31.56006 31.56006,0.36035 z m -79.31982,-213.599123 -31.56006,-0.240234 -0.24024,31.560059 31.44141,0.358887 z m -260.87989,544.199723 -70.8003,-0.60059 -0.23877,21.24024 70.91895,0.7207 z m -67.71387,49.52637 a 12.086133,12.086133 0 0 0 -12.08643,-12.08643 12.086133,12.086133 0 0 0 -12.08496,12.08643 12.086133,12.086133 0 0 0 12.08496,12.08496 12.086133,12.086133 0 0 0 12.08643,-12.08496 z"
+       transform="matrix(0,-1.3333333,-1.3333333,0,1203.44,77.45741)" />
+    <g
+       id="g12487"
+       inkscape:label="Building isolated footing"
+       style="display:inline">
+      <path
+         style="display:inline;fill:#d55455;fill-opacity:1;stroke:#000000"
+         d="m 813.99997,228.17738 42.24,-0.32 -0.48,-42.08 -42.08,0.48 z"
+         id="path12479"
+         inkscape:label="Building isolated footing"
+         sodipodi:insensitive="true" />
+      <path
+         style="fill:#d55455;fill-opacity:1;stroke:#000000"
+         d="m 917.35996,227.21742 42.08,-0.48 -0.32,-41.92 -42.08,0.48 z"
+         id="path12480"
+         inkscape:label="Building isolated footing"
+         sodipodi:insensitive="true" />
+      <path
+         style="fill:#d55455;fill-opacity:1;stroke:#000000"
+         d="m 1003.28,226.41738 42.08,-0.48 -0.48,-41.92 -42.08,0.48 z"
+         id="path12481"
+         inkscape:label="Building isolated footing"
+         sodipodi:insensitive="true" />
+      <path
+         style="fill:#d55455;fill-opacity:1;stroke:#000000"
+         d="m 1097.68,225.45742 42.08,-0.32 -0.32,-42.08 -42.08,0.48 z"
+         id="path12482"
+         inkscape:label="Building isolated footing"
+         sodipodi:insensitive="true" />
+      <path
+         style="fill:#d55455;fill-opacity:1;stroke:#000000"
+         d="m 1098.32,296.17738 42.24,-0.32 -0.48,-41.04 -42.08,-0.56 z"
+         id="path12483"
+         inkscape:label="Building isolated footing"
+         sodipodi:insensitive="true" />
+      <path
+         style="fill:#d55455;fill-opacity:1;stroke:#000000"
+         d="m 1003.92,297.13743 42.08,-0.32 -0.32,-42.08 -42.24,0.48 z"
+         id="path12484"
+         inkscape:label="Building isolated footing"
+         sodipodi:insensitive="true" />
+      <path
+         style="fill:#d55455;fill-opacity:1;stroke:#000000"
+         d="m 917.99997,297.9374 42.24,-0.32 -0.48,-42.08 -42.08,0.48 z"
+         id="path12485"
+         inkscape:label="Building isolated footing"
+         sodipodi:insensitive="true" />
+      <path
+         style="fill:#d55455;fill-opacity:1;stroke:#000000"
+         d="m 814.79995,299.05743 42.08,-0.48 -0.48,-41.92 -42.08,0.32 z"
+         id="path12486"
+         inkscape:label="Building isolated footing"
+         sodipodi:insensitive="true" />
+      <path
+         style="fill:#d55455;fill-opacity:1;stroke:#000000"
+         d="m 1099.44,404.81744 42.08,-0.32 -0.32,-42.08 -42.24,0.48 z"
+         id="path12487"
+         inkscape:label="Building isolated footing"
+         sodipodi:insensitive="true" />
+    </g>
+    <g
+       id="g12478"
+       inkscape:label="Outdoor Equipment"
+       style="display:inline">
+      <path
+         style="display:inline;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         d="m 298.64002,117.61741 52.96,-0.48 -0.48,-52.64 -52.96,0.479999 z"
+         id="path12475"
+         inkscape:label="Outdoor equipment" />
+      <path
+         style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         d="m 1190,97.457409 52.96,-0.48 -0.48,-52.639999 -52.96,0.48 z"
+         id="path12476"
+         inkscape:label="Outdoor equipment" />
+      <path
+         style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         d="m 1136.4,750.73739 47.84,-0.48 -0.48,-52.64 -48,0.48 z"
+         id="path12477"
+         inkscape:label="Outdoor equipment" />
+      <path
+         style="display:inline;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         d="m 388.07995,804.97741 28.32,-0.32 -0.8,-94.4 -28.48,0.16 z"
+         id="path12478"
+         inkscape:label="Outdoor equipment" />
+    </g>
+    <path
+       style="display:inline;fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       d="m 452.07999,125.13741 448.15999,-4.32 -0.8,-74.88 -448.15999,4.32 z"
+       id="path12467"
+       inkscape:label="Shunt reactor" />
+    <path
+       style="display:inline;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       d="m 935.91998,120.49741 183.20002,-1.76 -0.8,-76.64 -183.04002,1.76 z"
+       id="path2"
+       inkscape:label="Auxiliary transformer" />
+    <path
+       id="path12427"
+       style="display:inline;fill:#8b00ff;stroke:#000000"
+       inkscape:label="Septic tank"
+       d="m 365.68,816.65735 a 16.114843,16.114843 0 0 1 -16.11484,16.11484 16.114843,16.114843 0 0 1 -16.11485,-16.11484 16.114843,16.114843 0 0 1 16.11485,-16.11484 16.114843,16.114843 0 0 1 16.11484,16.11484 z" />
+    <g
+       id="g12473"
+       inkscape:label="Power Transformer"
+       style="display:inline">
+      <path
+         style="display:inline;fill:#8b00ff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         d="m 463.91993,915.21741 173.12,-1.6 -0.48,-51.52 -43.36,0.48 -0.8,-87.68 -129.92,1.28 z"
+         id="path12471"
+         sodipodi:nodetypes="ccccccc"
+         inkscape:label="Power Transformer" />
+      <path
+         style="display:inline;fill:#8b00ff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         d="m 713.03993,912.81741 173.27999,-1.6 -0.48,-51.52 -43.36,0.48 -0.96,-87.68 -129.75999,1.28 z"
+         id="path12472"
+         inkscape:label="Power Transformer"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="display:inline;fill:#8b00ff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         d="m 960.87992,771.37741 1.44,139.04 173.27998,-1.6 -0.48,-51.52 -43.52,0.48 -0.64,-87.68 z"
+         id="path12473"
+         inkscape:label="Power Transformer" />
+    </g>
+    <path
+       id="path615"
+       d="m 0,0 -0.36,32.52 z m 327.72,-372.72 -0.96,96 -35.76,-0.36 -2.4,246 138.84,1.32 0.84,-76.8 72.12,0.72 -2.16,227.4 -249.36,-2.52 -0.36,42.12 L 110.88,159.84 112.08,33.6 -0.36,32.52 0,-0.96000002 108.72,0.12 l 1.44,-153.48 -108.72,-1.08 0.36,-33.48 108.72,1.08 1.32,-140.88 -13.56,-0.12 -26.88,-12.96 -68.16,-0.48 0.36,-33.48 76.08,0.72 26.04,12.84 h 9 l 0.12,-13.56 z M 3.24,-341.28 3.6,-373.92 Z m -1.44,154.32 -0.36,32.52 z"
+       style="display:inline;fill:#00fd00;fill-opacity:1;stroke:#000000;stroke-width:0.75975;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0,-1.3333333,-1.3333333,0,636.55993,862.09741)"
+       inkscape:label="Building raft and TR Tunnels"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;inline-size:0;display:inline;fill:#000000;fill-opacity:1;stroke:#000000"
+       x="128.3362"
+       y="1072.4955"
+       id="text2"
+       transform="translate(-50.395465,-22.754583)"><tspan
+         id="tspan2"
+         x="128.3362"
+         y="1072.4955"
+         style="fill:#000000;fill-opacity:1;stroke:none">BL1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;inline-size:0;display:inline;fill:#000000;fill-opacity:1;stroke:#000000"
+       x="128.3362"
+       y="1072.4955"
+       id="text2-0"
+       transform="translate(1123.316,-30.405613)"><tspan
+         id="tspan2-3"
+         x="128.3362"
+         y="1072.4955"
+         style="fill:#000000;fill-opacity:1;stroke:none">BL2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;inline-size:0;display:inline;fill:#000000;fill-opacity:1;stroke:#000000"
+       x="128.3362"
+       y="1072.4955"
+       id="text2-7"
+       transform="translate(-81.584372,-1032.1361)"><tspan
+         id="tspan2-4"
+         x="128.3362"
+         y="1072.4955"
+         style="fill:#000000;fill-opacity:1;stroke:none">BL4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;inline-size:0;display:inline;fill:#000000;fill-opacity:1;stroke:#000000"
+       x="128.3362"
+       y="1072.4955"
+       id="text2-3"
+       transform="translate(1138.0909,-1040.1934)"><tspan
+         id="tspan2-6"
+         x="128.3362"
+         y="1072.4955"
+         style="fill:#000000;fill-opacity:1;stroke:none">BL3</tspan></text>
+  </g>
+</svg>

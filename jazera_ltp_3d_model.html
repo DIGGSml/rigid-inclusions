@@ -1,0 +1,416 @@
+<div style="padding: 0.5rem 0;">
+  <h2 class="sr-only">Interactive 3D model of the Jazera substation showing the LTP, CMC columns, and each foundation with its calculated thickness above the LTP base.</h2>
+
+  <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin:0 0 12px; flex-wrap:wrap;">
+    <div>
+      <div style="font-size:16px; font-weight:500; color:var(--color-text-primary);">Jazera 110/13.8 kV S/S — LTP 3D model</div>
+      <div style="font-size:12px; color:var(--color-text-secondary);">70 × 60 m site · drag to orbit · scroll to zoom · right-click to pan</div>
+    </div>
+    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+      <button id="btn-iso">Isometric</button>
+      <button id="btn-top">Top view</button>
+      <button id="btn-side">Side cut</button>
+      <button id="btn-explode">Explode</button>
+    </div>
+  </div>
+
+  <div style="display:flex; gap:16px; align-items:center; margin:0 0 10px; font-size:12px; color:var(--color-text-secondary); flex-wrap:wrap;">
+    <label style="display:flex; align-items:center; gap:6px;"><input type="checkbox" id="tog-cmc" checked> CMC columns</label>
+    <label style="display:flex; align-items:center; gap:6px;"><input type="checkbox" id="tog-ltp" checked> LTP layer</label>
+    <label style="display:flex; align-items:center; gap:6px;"><input type="checkbox" id="tog-struct" checked> Structures</label>
+    <label style="display:flex; align-items:center; gap:6px;"><input type="checkbox" id="tog-labels" checked> Labels</label>
+    <label style="display:flex; align-items:center; gap:6px;">
+      Vertical scale ×<input type="range" id="vex" min="1" max="15" step="1" value="6" style="width:100px;">
+      <span id="vex-out">6</span>
+    </label>
+  </div>
+
+  <div id="scene-host" style="width:100%; height:560px; background:var(--color-background-secondary); border-radius:var(--border-radius-lg); border:0.5px solid var(--color-border-tertiary); position:relative; overflow:hidden;">
+    <div id="hover-tip" style="position:absolute; pointer-events:none; display:none; background:var(--color-background-primary); border:0.5px solid var(--color-border-secondary); border-radius:var(--border-radius-md); padding:6px 10px; font-size:12px; line-height:1.5; max-width:240px; z-index:10;"></div>
+    <div style="position:absolute; left:10px; bottom:10px; font-size:11px; color:var(--color-text-tertiary); background:var(--color-background-primary); padding:4px 8px; border-radius:var(--border-radius-md); border:0.5px solid var(--color-border-tertiary);">
+      ↑ N (BL-1→BL-4) &nbsp;·&nbsp; → E (BL-1→BL-2)
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr)); gap:8px; margin-top:12px;">
+    <div style="display:flex; align-items:center; gap:8px; font-size:12px;"><span style="width:12px; height:12px; background:#888780; border-radius:2px; display:inline-block;"></span> CMC (Ø 360 mm)</div>
+    <div style="display:flex; align-items:center; gap:8px; font-size:12px;"><span style="width:12px; height:12px; background:#FAC775; border-radius:2px; display:inline-block;"></span> LTP (granular fill)</div>
+    <div style="display:flex; align-items:center; gap:8px; font-size:12px;"><span style="width:12px; height:12px; background:#97C459; border-radius:2px; display:inline-block;"></span> Building / TR Tunnels (0.60 m)</div>
+    <div style="display:flex; align-items:center; gap:8px; font-size:12px;"><span style="width:12px; height:12px; background:#ED93B1; border-radius:2px; display:inline-block;"></span> Power Transformer (1.00 m)</div>
+    <div style="display:flex; align-items:center; gap:8px; font-size:12px;"><span style="width:12px; height:12px; background:#F0997B; border-radius:2px; display:inline-block;"></span> Shunt Reactor (1.75 m)</div>
+    <div style="display:flex; align-items:center; gap:8px; font-size:12px;"><span style="width:12px; height:12px; background:#5DCAA5; border-radius:2px; display:inline-block;"></span> Aux. Transformer (1.75 m)</div>
+    <div style="display:flex; align-items:center; gap:8px; font-size:12px;"><span style="width:12px; height:12px; background:#AFA9EC; border-radius:2px; display:inline-block;"></span> Outdoor Eq. (1.50 m)</div>
+    <div style="display:flex; align-items:center; gap:8px; font-size:12px;"><span style="width:12px; height:12px; background:#85B7EB; border-radius:2px; display:inline-block;"></span> Septic Tank (0.60 m)</div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+  (function(){
+    const host = document.getElementById('scene-host');
+    const tip  = document.getElementById('hover-tip');
+    const W0 = host.clientWidth, H0 = host.clientHeight;
+
+    // ---- Scene setup ----
+    const scene = new THREE.Scene();
+    scene.background = null;
+    const camera = new THREE.PerspectiveCamera(40, W0/H0, 0.5, 5000);
+    const renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(W0, H0);
+    host.appendChild(renderer.domElement);
+
+    // Lighting (flat-ish but with hint of direction)
+    scene.add(new THREE.AmbientLight(0xffffff, 0.85));
+    const dir = new THREE.DirectionalLight(0xffffff, 0.45);
+    dir.position.set(50, 80, 30);
+    scene.add(dir);
+
+    // ---- Layout: scene units = meters. Centre site at origin. ----
+    // Local frame: u (0..70) along x, v (0..60) along z (negative so +v is "up the screen" in top view)
+    // We'll offset so centre of site is at (0,0,0) horizontally.
+    const SITE_W = 70, SITE_D = 60;
+    const CMC_LEN = 8.0;       // average CMC length below LTP base (representative ~7-9 m)
+    const CMC_DIAM = 0.36;
+    const CMC_GRID = 2.0;      // CMC spacing (representative — gives ~1099 columns approximation)
+    const LTP_BASE_THK = 0.30; // baseline LTP thickness everywhere (= boundary wall thickness)
+
+    // ---- Materials (flat palette) ----
+    const M = (hex) => new THREE.MeshLambertMaterial({color: hex});
+    const colors = {
+      ground:  0xF1EFE8,
+      cmc:     0x888780,
+      cmcEdge: 0x5F5E5A,
+      ltp:     0xFAC775,
+      ltpEdge: 0xBA7517,
+      green:   0x97C459,
+      red:     0xE24B4A,
+      pink:    0xED93B1,
+      coral:   0xF0997B,
+      teal:    0x5DCAA5,
+      purple:  0xAFA9EC,
+      blue:    0x85B7EB,
+      amber:   0xFAC775,
+      label:   0x2C2C2A
+    };
+
+    // ---- Structures data ----
+    const STRUCTS = [
+      {name:"Building Raft Foundation",       u:39.3, v:29.3, w:43.2, d:40.4, t:0.60, c:"green"},
+      {name:"Building Isolated Footing",      u:54.1, v:46.5, w:19.5, d:13.3, t:0.60, c:"red"},
+      {name:"Power Transformer #1 (W)",       u:26.2, v:10.4, w:10.3, d:8.3,  t:1.00, c:"pink"},
+      {name:"Power Transformer #2 (C)",       u:41.3, v:10.4, w:10.3, d:8.5,  t:1.00, c:"pink"},
+      {name:"Power Transformer #3 (E)",       u:56.4, v:10.5, w:10.3, d:8.4,  t:1.00, c:"pink"},
+      {name:"Shunt Reactor Foundation",       u:35.0, v:56.9, w:26.9, d:4.2,  t:1.75, c:"coral"},
+      {name:"Auxiliary Transformer",          u:56.4, v:56.8, w:11.2, d:4.7,  t:1.75, c:"teal"},
+      {name:"Outdoor Fdn - NW pillar",        u:13.7, v:56.6, w:3.0,  d:3.0,  t:1.50, c:"purple"},
+      {name:"Outdoor Fdn - NE pillar",        u:67.8, v:57.3, w:2.6,  d:2.9,  t:1.50, c:"purple"},
+      {name:"Outdoor Fdn - mid-W pillar",     u:18.1, v:16.3, w:1.5,  d:5.6,  t:1.50, c:"purple"},
+      {name:"Outdoor Fdn - mid-E pillar",     u:64.1, v:17.7, w:2.6,  d:2.9,  t:1.50, c:"purple"},
+      {name:"Septic Tank Foundation",         u:15.0, v:16.0, w:2.0,  d:2.0,  t:0.60, c:"blue"}
+    ];
+
+    // Convert local (u, v) to scene (x, z) — centre site at origin
+    const toX = (u) => u - SITE_W/2;
+    const toZ = (v) => -(v - SITE_D/2);  // flip so +v ("north") goes to -Z (into screen in default cam)
+
+    // ---- Groups for toggling ----
+    const grpCMC    = new THREE.Group();
+    const grpLTP    = new THREE.Group();
+    const grpStruct = new THREE.Group();
+    const grpLabels = new THREE.Group();
+    scene.add(grpCMC, grpLTP, grpStruct, grpLabels);
+
+    // ---- Vertical scaling (so thicknesses are readable vs the 70 m horizontal extent) ----
+    let vScale = 6;
+    function applyVScale(){
+      [grpCMC, grpLTP, grpStruct, grpLabels].forEach(g => g.scale.y = vScale);
+    }
+
+    // ---- Native ground (below CMCs) ----
+    const groundGeom = new THREE.BoxGeometry(SITE_W+20, 2, SITE_D+20);
+    const ground = new THREE.Mesh(groundGeom, M(colors.ground));
+    ground.position.set(0, -CMC_LEN - 1, 0);
+    scene.add(ground);
+
+    // ---- CMC columns (rendered as a sparse representative grid, not all 1099) ----
+    // We'll generate columns on a 3 m grid for visual clarity (~ 22×18 = ~400 visible).
+    const cmcMat = M(colors.cmc);
+    const cmcGeom = new THREE.CylinderGeometry(CMC_DIAM/2, CMC_DIAM/2, CMC_LEN, 10, 1, false);
+    const VIS_GRID = 3.0;
+    let cmcCount = 0;
+    for (let u = VIS_GRID/2; u < SITE_W; u += VIS_GRID) {
+      for (let v = VIS_GRID/2; v < SITE_D; v += VIS_GRID) {
+        const c = new THREE.Mesh(cmcGeom, cmcMat);
+        c.position.set(toX(u), -CMC_LEN/2, toZ(v));
+        grpCMC.add(c);
+        cmcCount++;
+      }
+    }
+
+    // ---- LTP layer ----
+    // Compute LTP top elevation at each structure location.
+    // Base of LTP = 0 (top of CMC heads). Boundary-wall thickness = 0.30 m everywhere as a thin baseline slab.
+    // Then add taller "blocks" of LTP under each structure footprint up to that structure's thickness.
+    // Simplest visual: one base slab (full site, 0.30 m thick) + per-structure LTP pads.
+    const ltpMat = M(colors.ltp);
+    const ltpEdgeMat = new THREE.LineBasicMaterial({color: colors.ltpEdge});
+
+    // Base slab: 70 × 60 × LTP_BASE_THK
+    const baseGeom = new THREE.BoxGeometry(SITE_W, LTP_BASE_THK, SITE_D);
+    const base = new THREE.Mesh(baseGeom, ltpMat);
+    base.position.set(0, LTP_BASE_THK/2, 0);
+    base.userData = {name:"LTP base slab (whole site)", thick: LTP_BASE_THK};
+    grpLTP.add(base);
+    const baseWire = new THREE.LineSegments(new THREE.EdgesGeometry(baseGeom), ltpEdgeMat);
+    baseWire.position.copy(base.position);
+    grpLTP.add(baseWire);
+
+    // Per-structure additional LTP pad: from LTP_BASE_THK up to t
+    STRUCTS.forEach(s => {
+      const extra = s.t - LTP_BASE_THK;
+      if (extra <= 0.01) return; // no extra pad needed
+      const padGeom = new THREE.BoxGeometry(s.w, extra, s.d);
+      const pad = new THREE.Mesh(padGeom, ltpMat);
+      pad.position.set(toX(s.u), LTP_BASE_THK + extra/2, toZ(s.v));
+      pad.userData = {name:"LTP under "+s.name, thick: s.t.toFixed(2)+" m"};
+      grpLTP.add(pad);
+      const padWire = new THREE.LineSegments(new THREE.EdgesGeometry(padGeom), ltpEdgeMat);
+      padWire.position.copy(pad.position);
+      grpLTP.add(padWire);
+    });
+
+    // ---- Structures (sit on TOP of LTP at their respective thickness) ----
+    const FOUND_HT = 0.4; // foundation slab thickness, for visualization
+    const edgeMat = new THREE.LineBasicMaterial({color: 0x2C2C2A, transparent:true, opacity:0.5});
+
+    STRUCTS.forEach(s => {
+      const geom = new THREE.BoxGeometry(s.w, FOUND_HT, s.d);
+      const mesh = new THREE.Mesh(geom, M(colors[s.c]));
+      mesh.position.set(toX(s.u), s.t + FOUND_HT/2, toZ(s.v));
+      mesh.userData = {name:s.name, ltp:s.t, footprint: s.w.toFixed(1)+" × "+s.d.toFixed(1)+" m"};
+      grpStruct.add(mesh);
+      // outline
+      const wire = new THREE.LineSegments(new THREE.EdgesGeometry(geom), edgeMat);
+      wire.position.copy(mesh.position);
+      grpStruct.add(wire);
+    });
+
+    // ---- Boundary wall (perimeter strip on LTP) ----
+    const wallH = 0.5, wallW = 0.5;
+    const wallMat = M(colors.amber);
+    // 4 sides
+    const sides = [
+      {w:SITE_W, d:wallW, x:0, z:toZ(0) - wallW/2},   // south
+      {w:SITE_W, d:wallW, x:0, z:toZ(SITE_D) + wallW/2}, // north
+      {w:wallW, d:SITE_D, x:toX(0)-wallW/2, z:0},     // west
+      {w:wallW, d:SITE_D, x:toX(SITE_W)+wallW/2, z:0} // east
+    ];
+    sides.forEach(s => {
+      const g = new THREE.BoxGeometry(s.w, wallH, s.d);
+      const m = new THREE.Mesh(g, wallMat);
+      m.position.set(s.x, LTP_BASE_THK + wallH/2, s.z);
+      m.userData = {name:"Boundary Wall", ltp: LTP_BASE_THK};
+      grpStruct.add(m);
+    });
+
+    // ---- BL corner markers ----
+    const cornerGeom = new THREE.SphereGeometry(0.6, 12, 12);
+    const cornerMat = M(0xE24B4A);
+    const corners = [
+      {name:"BL-1", u:0,  v:0},
+      {name:"BL-2", u:70, v:0},
+      {name:"BL-3", u:70, v:60},
+      {name:"BL-4", u:0,  v:60}
+    ];
+    corners.forEach(c => {
+      const m = new THREE.Mesh(cornerGeom, cornerMat);
+      m.position.set(toX(c.u), -CMC_LEN - 0.3, toZ(c.v));
+      m.userData = {name:c.name+" (boundary corner)"};
+      scene.add(m);
+    });
+
+    // ---- Labels (sprite-based) ----
+    function makeLabel(text, color){
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      const fontSize = 36;
+      ctx.font = "500 " + fontSize + "px sans-serif";
+      const metrics = ctx.measureText(text);
+      const padX = 14, padY = 8;
+      canvas.width = Math.ceil(metrics.width) + padX*2;
+      canvas.height = fontSize + padY*2;
+      ctx.fillStyle = "rgba(255,255,255,0.92)";
+      ctx.fillRect(0,0,canvas.width, canvas.height);
+      ctx.strokeStyle = "rgba(0,0,0,0.15)";
+      ctx.lineWidth = 1;
+      ctx.strokeRect(0,0,canvas.width, canvas.height);
+      ctx.font = "500 " + fontSize + "px sans-serif";
+      ctx.fillStyle = color || "#2C2C2A";
+      ctx.textBaseline = "top";
+      ctx.fillText(text, padX, padY);
+      const tex = new THREE.CanvasTexture(canvas);
+      tex.minFilter = THREE.LinearFilter;
+      const mat = new THREE.SpriteMaterial({map: tex, transparent: true, depthTest: false});
+      const sprite = new THREE.Sprite(mat);
+      const scale = 0.04;
+      sprite.scale.set(canvas.width*scale, canvas.height*scale, 1);
+      return sprite;
+    }
+    STRUCTS.forEach(s => {
+      const lbl = makeLabel(s.name + "  (LTP " + s.t.toFixed(2) + " m)");
+      lbl.position.set(toX(s.u), s.t + FOUND_HT + 1.5, toZ(s.v));
+      grpLabels.add(lbl);
+    });
+    corners.forEach(c => {
+      const lbl = makeLabel(c.name, "#A32D2D");
+      lbl.position.set(toX(c.u), -CMC_LEN + 0.3, toZ(c.v));
+      grpLabels.add(lbl);
+    });
+
+    // ---- Cardinal axis arrow ----
+    const arrowN = new THREE.ArrowHelper(new THREE.Vector3(0,0,-1), new THREE.Vector3(toX(SITE_W)+5, LTP_BASE_THK, toZ(0)), 8, 0xE24B4A, 2, 1.5);
+    scene.add(arrowN);
+    const lblN = makeLabel("N (BL-4)", "#A32D2D");
+    lblN.position.set(toX(SITE_W)+5, LTP_BASE_THK + 1, toZ(0) - 10);
+    scene.add(lblN);
+
+    // ---- Camera + Orbit Controls (manual, since OrbitControls isn't bundled in r128 build) ----
+    function setView(view){
+      if (view === 'iso') {
+        camera.position.set(80, 60, 80);
+      } else if (view === 'top') {
+        camera.position.set(0, 130, 0.01);
+      } else if (view === 'side') {
+        camera.position.set(0, 8, 100);
+      }
+      camera.lookAt(0, 0, 0);
+    }
+    setView('iso');
+
+    // Manual orbit controls (no extra script needed)
+    let isDown = false, isPan = false;
+    let lastX = 0, lastY = 0;
+    let theta = Math.atan2(80, 80), phi = Math.atan2(60, Math.sqrt(80*80+80*80));
+    let radius = Math.sqrt(80*80 + 60*60 + 80*80);
+    let target = new THREE.Vector3(0,0,0);
+    function updateCam(){
+      camera.position.x = target.x + radius * Math.cos(phi) * Math.sin(theta);
+      camera.position.y = target.y + radius * Math.sin(phi);
+      camera.position.z = target.z + radius * Math.cos(phi) * Math.cos(theta);
+      camera.lookAt(target);
+    }
+    updateCam();
+
+    host.addEventListener('mousedown', (e)=>{
+      isDown = true; isPan = (e.button === 2);
+      lastX = e.clientX; lastY = e.clientY;
+    });
+    window.addEventListener('mouseup', ()=>{ isDown=false; isPan=false; });
+    host.addEventListener('contextmenu', (e)=>e.preventDefault());
+    window.addEventListener('mousemove', (e)=>{
+      if (!isDown) return;
+      const dx = e.clientX - lastX, dy = e.clientY - lastY;
+      lastX = e.clientX; lastY = e.clientY;
+      if (isPan){
+        const panSpeed = radius * 0.0015;
+        const right = new THREE.Vector3(-Math.cos(theta), 0, Math.sin(theta));
+        const up = new THREE.Vector3(0,1,0);
+        target.addScaledVector(right, -dx*panSpeed);
+        target.addScaledVector(up, dy*panSpeed);
+      } else {
+        theta -= dx*0.008;
+        phi += dy*0.008;
+        phi = Math.max(0.05, Math.min(Math.PI/2 - 0.05, phi));
+      }
+      updateCam();
+    });
+    host.addEventListener('wheel', (e)=>{
+      e.preventDefault();
+      const zoom = Math.exp(e.deltaY*0.001);
+      radius = Math.max(20, Math.min(300, radius * zoom));
+      updateCam();
+    }, {passive:false});
+
+    // ---- View buttons ----
+    function gotoView(v){
+      if (v==='iso'){ theta = Math.PI/4; phi = 0.55; radius = 140; }
+      if (v==='top'){ theta = 0; phi = Math.PI/2 - 0.06; radius = 110; }
+      if (v==='side'){ theta = 0; phi = 0.15; radius = 130; }
+      target.set(0,0,0);
+      updateCam();
+    }
+    document.getElementById('btn-iso').onclick  = ()=>gotoView('iso');
+    document.getElementById('btn-top').onclick  = ()=>gotoView('top');
+    document.getElementById('btn-side').onclick = ()=>gotoView('side');
+    gotoView('iso');
+
+    // ---- Explode (raise structures so you can see the LTP underneath) ----
+    let exploded = false;
+    document.getElementById('btn-explode').onclick = function(){
+      exploded = !exploded;
+      const lift = exploded ? 10 : 0;
+      grpStruct.position.y = lift;
+      grpLabels.position.y = lift;
+      this.textContent = exploded ? "Collapse" : "Explode";
+    };
+
+    // ---- Toggles ----
+    document.getElementById('tog-cmc').addEventListener('change', e=>grpCMC.visible = e.target.checked);
+    document.getElementById('tog-ltp').addEventListener('change', e=>grpLTP.visible = e.target.checked);
+    document.getElementById('tog-struct').addEventListener('change', e=>grpStruct.visible = e.target.checked);
+    document.getElementById('tog-labels').addEventListener('change', e=>grpLabels.visible = e.target.checked);
+
+    // ---- Vertical scale slider ----
+    const vexInput = document.getElementById('vex');
+    const vexOut = document.getElementById('vex-out');
+    vexInput.addEventListener('input', e=>{
+      vScale = parseInt(e.target.value);
+      vexOut.textContent = vScale;
+      applyVScale();
+    });
+    applyVScale();
+
+    // ---- Hover tooltip via raycaster ----
+    const ray = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
+    host.addEventListener('mousemove', (e)=>{
+      const rect = host.getBoundingClientRect();
+      mouse.x = ((e.clientX - rect.left)/rect.width)*2 - 1;
+      mouse.y = -((e.clientY - rect.top)/rect.height)*2 + 1;
+      ray.setFromCamera(mouse, camera);
+      const hits = ray.intersectObjects([...grpStruct.children, ...grpLTP.children], false);
+      const m = hits.find(h => h.object.userData && h.object.userData.name);
+      if (m){
+        const d = m.object.userData;
+        let txt = "<b>"+d.name+"</b>";
+        if (d.ltp !== undefined) txt += "<br>LTP thickness: "+(typeof d.ltp==='number'?d.ltp.toFixed(2):d.ltp)+" m";
+        if (d.footprint) txt += "<br>Footprint: "+d.footprint;
+        if (d.thick) txt += "<br>Thickness: "+d.thick;
+        tip.innerHTML = txt;
+        tip.style.left = (e.clientX - rect.left + 12) + "px";
+        tip.style.top  = (e.clientY - rect.top + 12) + "px";
+        tip.style.display = "block";
+      } else {
+        tip.style.display = "none";
+      }
+    });
+    host.addEventListener('mouseleave', ()=>{ tip.style.display = "none"; });
+
+    // ---- Resize ----
+    function resize(){
+      const w = host.clientWidth, h = host.clientHeight;
+      camera.aspect = w/h;
+      camera.updateProjectionMatrix();
+      renderer.setSize(w, h);
+    }
+    window.addEventListener('resize', resize);
+
+    // ---- Render loop ----
+    function animate(){
+      renderer.render(scene, camera);
+      requestAnimationFrame(animate);
+    }
+    animate();
+  })();
+  </script>
+</div>
