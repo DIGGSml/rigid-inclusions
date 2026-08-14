@@ -4,3 +4,13 @@
 ~$*
 *.log
 .vscode
+
+# ── Working material — never publish to the remote ────────────────────────
+# Agent steering files
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+
+# All in-progress design, planning and build work, including generated
+# XSD snippets and verification harnesses under docs/build/ and docs/verify/
+docs/
