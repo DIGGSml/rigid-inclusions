@@ -28,7 +28,7 @@ contains anything. `LoadTransferPlatform` is a plain sampling feature with no ch
 | — | `RITreatedArea` (new — the planar feature that actually carries the support area) |
 | `RISystemDesign` | `RITreatedAreaDesign` |
 | `RISystemBasis` | `RIProgramBasis` |
-| `RIConstructionMethod` | same, with real time data, etc. in `RIConstructionActivity` |
+| `RIConstructionMethod` | same, with real time data, etc. in `RIColumnConstruction` |
 | `RIDesignSpec` / `ColumnSpec` / `RIPerformanceSpec` | `DesignConformanceCriterion`, `PerformanceCriterion` (built as a criterion family, not per-object spec types) |
 
 3. The "98 existing / 15 need extension / 122 new feature" counts are stale. §2.6, §4.4 and Table 4-5 read as forward-looking, but they describe the schema as it stood *before this extension existed. Best to state that of the 295 essential parameters defined, 207 required either new objects, extensions of existing schama objects, or a dictionary definition, 75 are accmmodated by the v. 3.0.0 schema without changes, and 13 parameters are implicitly covered in the schema design, but not assigned to an explicit schema element or dictionary definition. (these are the NA-by design parameters). With regard to the schema elements, best I can estimate right now, accommodating the new parameters required the addition of 64 global elements, and 87 complex types. Of the 64 new elements, 43 are generic/core elements that will also support program design and specification development for other domains, such as exploration or other construction activities, so this project will make other construction programs easier to build in the future.

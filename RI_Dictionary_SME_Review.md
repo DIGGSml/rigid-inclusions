@@ -30,8 +30,8 @@ One dictionary per coded property. "Parent object" is the DIGGS object the prope
 | `safetyFormat` | `RISystemBasis` | https://diggsml.org/def/codes/DIGGS/0.1/safetyFormat.xml |
 | `supportedStructureType` | `RISystemBasis` | https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml |
 | `appliesTo` | `DesignFactor` | https://diggsml.org/def/codes/DIGGS/0.1/appliesTo.xml |
-| `terminationOutcome` | `RIConstructionActivity` | https://diggsml.org/def/codes/DIGGS/0.1/terminationOutcome.xml |
-| `installationMethod` | `RIConstructionActivity` | https://diggsml.org/def/codes/DIGGS/0.1/installationMethod.xml |
+| `terminationOutcome` | `RIColumnConstruction` | https://diggsml.org/def/codes/DIGGS/0.1/terminationOutcome.xml |
+| `installationMethod` | `RIColumnConstruction` | https://diggsml.org/def/codes/DIGGS/0.1/installationMethod.xml |
 | `actionType` | `DesignAction` | https://diggsml.org/def/codes/DIGGS/0.1/actionType.xml |
 | `actionNature` | `DesignAction` | https://diggsml.org/def/codes/DIGGS/0.1/actionNature.xml |
 | `representativeValue` | `DesignAction` | https://diggsml.org/def/codes/DIGGS/0.1/representativeValue.xml |
@@ -85,8 +85,8 @@ extended for RI support. Each links to the full parameter list.
 |---|---|---|
 | Arching-model-specific design coefficients (`arching_coefficient_marston`, `cap_stress_ratio`, `arching_efficiency_crown/cap/minimum`, `passive_earth_pressure_coefficient`, `critical_stress_ratio`, `lateral_earth_pressure_coefficient_ldc`, `punching_bearing_factor`, `active_earth_pressure_coefficient`) plus general RI column/LTP design ratios (`equivalent_diameter`, `column_axial_utilization`, `arching_height_ratio`, `diameter_spacing_ratio`, `spacing_aspect_ratio`, `stiffness_ratio`) | `ArchingCoefficients`, `RIColumnDesign`, `RILTPDesign` | https://diggsml.org/def/codes/DIGGS/0.1/ri_design_properties.xml |
 | Partial and global safety/reduction factors (`partial_factor_permanent_unfavourable/favourable`, `partial_factor_variable_unfavourable`, `partial_factor_material_friction_angle/cohesion`, `partial_factor_resistance`, `global_factor_of_safety`, `reduction_factor_creep/installation_damage/weathering/chemical_degradation/joints_seams`, `material_partial_factor_geosynthetic`) | `DesignFactor` | https://diggsml.org/def/codes/DIGGS/0.1/design_factor_properties.xml |
-| MWD/drilling process properties newly bound to the RI installation coverage record (`crowd_downward_thrust`, `crowd_pressure`, `net_crowd_pressure`) | `RIInstallationRecord` (via `RIConstructionActivity`) | https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml |
-| Grouting/injection process properties newly bound to the RI installation coverage record (`grout_volume`, `stroke_count`, `drilling_speed`, `rotation_speed`, `torque`, `thrust`, `crowd_pressure`), plus one newly added property (`volume_overconsumption`) | `RIInstallationRecord` (via `RIConstructionActivity`) | https://diggsml.org/def/codes/DIGGS/0.1/gr_inj_properties.xml |
+| MWD/drilling process properties newly bound to the RI installation coverage record (`crowd_downward_thrust`, `crowd_pressure`, `net_crowd_pressure`) | `RIInstallationRecord` (via `RIColumnConstruction`) | https://diggsml.org/def/codes/DIGGS/0.1/mwd_properties.xml |
+| Grouting/injection process properties newly bound to the RI installation coverage record (`grout_volume`, `stroke_count`, `drilling_speed`, `rotation_speed`, `torque`, `thrust`, `crowd_pressure`), plus one newly added property (`volume_overconsumption`) | `RIInstallationRecord` (via `RIColumnConstruction`) | https://diggsml.org/def/codes/DIGGS/0.1/gr_inj_properties.xml |
 | Monitoring sensor and construction equipment classes (`piezometer`, `inclinometer`, `extensometer`, `settlement_cell`, `earth_pressure_cell`, `strain_gauge`, `load_cell`, `tiltmeter`, `crackmeter`, `thermistor`, `accelerometer`, `settlement_plate`, `survey_monument`, `data_logger`, `total_station` — `Sensor`; `excavator`, `dozer`, `vibratory_roller`, `plate_compactor`, `crane`, `concrete_batch_plant`, `load_test_reaction_frame`, `hydraulic_jack` — `Equipment`) | `Sensor`, `Equipment` | https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml |
 
 The MWD and grouting-injection rows are pre-existing dictionaries (property lists used elsewhere
