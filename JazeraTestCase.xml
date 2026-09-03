@@ -35668,6 +35668,7 @@
         <LithologySystem gml:id="lithsys-BH-1">
             <projectRef xlink:href="#GBL-GT-24136" />
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-1" />
+            <observationProcedure xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
             <lithologyClassificationType>USCS</lithologyClassificationType>
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-1_1-1">
@@ -35805,6 +35806,7 @@
         <LithologySystem gml:id="lithsys-BH-2">
             <projectRef xlink:href="#GBL-GT-24136" />
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-2" />
+            <observationProcedure xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
             <lithologyClassificationType>USCS</lithologyClassificationType>
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-2_2-1">
@@ -35942,6 +35944,7 @@
         <LithologySystem gml:id="lithsys-BH-3">
             <projectRef xlink:href="#GBL-GT-24136" />
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-3" />
+            <observationProcedure xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
             <lithologyClassificationType>USCS</lithologyClassificationType>
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-3_3-1">
@@ -36049,6 +36052,7 @@
         <LithologySystem gml:id="lithsys-BH-4">
             <projectRef xlink:href="#GBL-GT-24136" />
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-4" />
+            <observationProcedure xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
             <lithologyClassificationType>USCS</lithologyClassificationType>
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-4_4-1">
@@ -36156,6 +36160,7 @@
         <LithologySystem gml:id="lithsys-BH-5">
             <projectRef xlink:href="#GBL-GT-24136" />
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-5" />
+            <observationProcedure xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
             <lithologyClassificationType>USCS</lithologyClassificationType>
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-5_5-1">
@@ -36273,6 +36278,7 @@
         <LithologySystem gml:id="lithsys-BH-1-OUT">
             <projectRef xlink:href="#GBL-GT-24136" />
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-1-OUT" />
+            <observationProcedure xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
             <lithologyClassificationType>USCS</lithologyClassificationType>
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-1-OUT_1-1">
@@ -36410,6 +36416,7 @@
         <LithologySystem gml:id="lithsys-BH-2-OUT">
             <projectRef xlink:href="#GBL-GT-24136" />
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-2-OUT" />
+            <observationProcedure xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
             <lithologyClassificationType>USCS</lithologyClassificationType>
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-2-OUT_2-1">
@@ -36873,14 +36880,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1_1-1">
-                    <testProcedureMethod>
-                        <Specification gml:id="SPT-ASTM_D-1586-2011">
-                            <gml:name>Standard Test Method for Standard Penetration Test and Split-Barrel Sampling of Soils</gml:name>
-                            <accredtingBody>ASTM</accredtingBody>
-                            <standardReferenceNumber>D-1586-11</standardReferenceNumber>
-                            <standardVersion>2011</standardVersion>
-                        </Specification>
-                    </testProcedureMethod>
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -36938,7 +36938,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1_1-2">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -36996,7 +36996,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1_1-3">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37054,7 +37054,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1_1-4">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37112,7 +37112,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1_1-5">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37170,7 +37170,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1_1-6">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37228,7 +37228,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1_1-7">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37286,7 +37286,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1_1-8">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37344,7 +37344,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1_1-9">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37402,7 +37402,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1_1-10">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37460,7 +37460,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1_1-11">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37518,7 +37518,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1_1-12">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37576,7 +37576,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1_1-13">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37634,7 +37634,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2_2-1">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37692,7 +37692,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2_2-2">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37750,7 +37750,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2_2-3">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37808,7 +37808,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2_2-4">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37866,7 +37866,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2_2-5">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37924,7 +37924,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2_2-6">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -37982,7 +37982,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2_2-7">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38040,7 +38040,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2_2-8">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38098,7 +38098,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2_2-9">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38156,7 +38156,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2_2-10">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38214,7 +38214,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2_2-11">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38272,7 +38272,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2_2-12">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38330,7 +38330,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2_2-13">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38388,7 +38388,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-3_3-1">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38446,7 +38446,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-3_3-2">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38504,7 +38504,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-3_3-3">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38562,7 +38562,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-3_3-4">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38620,7 +38620,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-3_3-5">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38678,7 +38678,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-3_3-6">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38736,7 +38736,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-3_3-7">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38794,7 +38794,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-3_3-8">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38852,7 +38852,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-3_3-9">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38910,7 +38910,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-3_3-10">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -38968,7 +38968,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-4_4-1">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39026,7 +39026,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-4_4-2">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39084,7 +39084,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-4_4-3">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39142,7 +39142,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-4_4-4">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39200,7 +39200,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-4_4-5">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39258,7 +39258,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-4_4-6">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39316,7 +39316,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-4_4-7">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39374,7 +39374,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-4_4-8">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39432,7 +39432,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-4_4-9">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39490,7 +39490,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-4_4-10">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39548,7 +39548,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-5_5-1">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39606,7 +39606,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-5_5-2">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39664,7 +39664,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-5_5-3">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39722,7 +39722,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-5_5-4">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39780,7 +39780,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-5_5-5">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39838,7 +39838,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-5_5-6">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39896,7 +39896,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-5_5-7">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -39954,7 +39954,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-5_5-8">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40012,7 +40012,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-5_5-9">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40070,7 +40070,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-5_5-10">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40128,7 +40128,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-5_5-11">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40186,7 +40186,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1-OUT_1-1">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40244,7 +40244,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1-OUT_1-2">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40302,7 +40302,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1-OUT_1-3">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40360,7 +40360,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1-OUT_1-4">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40418,7 +40418,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1-OUT_1-5">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40476,7 +40476,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1-OUT_1-6">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40534,7 +40534,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1-OUT_1-7">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40592,7 +40592,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1-OUT_1-8">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40650,7 +40650,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1-OUT_1-9">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40708,7 +40708,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1-OUT_1-10">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40766,7 +40766,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1-OUT_1-11">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40824,7 +40824,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1-OUT_1-12">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40882,7 +40882,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-1-OUT_1-13">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40940,7 +40940,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2-OUT_2-1">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -40998,7 +40998,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2-OUT_2-2">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -41056,7 +41056,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2-OUT_2-3">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -41114,7 +41114,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2-OUT_2-4">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -41172,7 +41172,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2-OUT_2-5">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -41230,7 +41230,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2-OUT_2-6">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -41288,7 +41288,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2-OUT_2-7">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -41346,7 +41346,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2-OUT_2-7b">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -41404,7 +41404,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2-OUT_2-9">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -41462,7 +41462,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2-OUT_2-10">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -41520,7 +41520,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2-OUT_2-11">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -41578,7 +41578,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2-OUT_2-12">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -41636,7 +41636,7 @@
             </outcome>
             <procedure>
                 <DrivenPenetrationTest gml:id="proc-spt-BH-2-OUT_2-13">
-                    <testProcedureMethod xlink:href="#SPT-ASTM_D-1586-2011" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1586" />
                     <penetrationTestType>Standard Penetration Test</penetrationTestType>
                     <driveSet>
                         <DriveSet>
@@ -41714,13 +41714,8 @@
             </outcome>
             <procedure>
                 <AtterbergLimitsTest gml:id="AtterbergProc">
-                    <testProcedureMethod>
-                        <Specification gml:id="Spec_ASTMD-4318">
-                            <gml:name>Standard Test Methods for Liquid Limit, Plastic Limit, and Plasticity Index of Soils</gml:name>
-                            <accredtingBody>ASTM</accredtingBody>
-                            <standardReferenceNumber>D-4318</standardReferenceNumber>
-                        </Specification>
-                    </testProcedureMethod>
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d4318" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
                 </AtterbergLimitsTest>
             </procedure>
         </Test>
@@ -42321,13 +42316,8 @@
             </outcome>
             <procedure>
                 <ParticleSizeTest gml:id="proc-Part-BH-1_0.00">
-                    <testProcedureMethod>
-                        <Specification gml:id="SpecASTMD-422">
-                            <gml:name>Standard Test Method for Particle-Size Analysis of Soils</gml:name>
-                            <accredtingBody>ASTM</accredtingBody>
-                            <standardReferenceNumber>D-422</standardReferenceNumber>
-                        </Specification>
-                    </testProcedureMethod>
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
                     <sieveAnalysis>
                         <SieveAnalysis gml:id="proc-Part-BH-1_0.00-1">
                             <gradingData>
@@ -42483,7 +42473,8 @@
             </outcome>
             <procedure>
                 <ParticleSizeTest gml:id="proc-Part-BH-1_12.00">
-                    <testProcedureMethod xlink:href="#SpecASTMD-422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
                     <sieveAnalysis>
                         <SieveAnalysis gml:id="proc-Part-BH-1_12.00-1">
                             <gradingData>
@@ -42639,7 +42630,8 @@
             </outcome>
             <procedure>
                 <ParticleSizeTest gml:id="proc-Part-BH-2_4.50">
-                    <testProcedureMethod xlink:href="#SpecASTMD-422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
                     <sieveAnalysis>
                         <SieveAnalysis gml:id="proc-Part-BH-2_4.50-1">
                             <gradingData>
@@ -42795,7 +42787,8 @@
             </outcome>
             <procedure>
                 <ParticleSizeTest gml:id="proc-Part-BH-2_13.50">
-                    <testProcedureMethod xlink:href="#SpecASTMD-422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
                     <sieveAnalysis>
                         <SieveAnalysis gml:id="proc-Part-BH-2_13.50-1">
                             <gradingData>
@@ -42951,7 +42944,8 @@
             </outcome>
             <procedure>
                 <ParticleSizeTest gml:id="proc-Part-BH-3_6.00">
-                    <testProcedureMethod xlink:href="#SpecASTMD-422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
                     <sieveAnalysis>
                         <SieveAnalysis gml:id="proc-Part-BH-3_6.00-1">
                             <gradingData>
@@ -43107,7 +43101,8 @@
             </outcome>
             <procedure>
                 <ParticleSizeTest gml:id="proc-Part-BH-4_4.50">
-                    <testProcedureMethod xlink:href="#SpecASTMD-422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
                     <sieveAnalysis>
                         <SieveAnalysis gml:id="proc-Part-BH-4_4.50-1">
                             <gradingData>
@@ -43263,7 +43258,8 @@
             </outcome>
             <procedure>
                 <ParticleSizeTest gml:id="proc-Part-BH-5_7.50">
-                    <testProcedureMethod xlink:href="#SpecASTMD-422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
                     <sieveAnalysis>
                         <SieveAnalysis gml:id="proc-Part-BH-5_7.50-1">
                             <gradingData>
@@ -43419,7 +43415,8 @@
             </outcome>
             <procedure>
                 <ParticleSizeTest gml:id="proc-Part-BH-1-OUT_0.00">
-                    <testProcedureMethod xlink:href="#SpecASTMD-422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
                     <sieveAnalysis>
                         <SieveAnalysis gml:id="proc-Part-BH-1-OUT_0.00-1">
                             <gradingData>
@@ -43575,7 +43572,8 @@
             </outcome>
             <procedure>
                 <ParticleSizeTest gml:id="proc-Part-BH-1-OUT_13.50">
-                    <testProcedureMethod xlink:href="#SpecASTMD-422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
                     <sieveAnalysis>
                         <SieveAnalysis gml:id="proc-Part-BH-1-OUT_13.50-1">
                             <gradingData>
@@ -43731,7 +43729,8 @@
             </outcome>
             <procedure>
                 <ParticleSizeTest gml:id="proc-Part-BH-2-OUT_2.50">
-                    <testProcedureMethod xlink:href="#SpecASTMD-422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
                     <sieveAnalysis>
                         <SieveAnalysis gml:id="proc-Part-BH-2-OUT_2.50-1">
                             <gradingData>
@@ -43887,7 +43886,8 @@
             </outcome>
             <procedure>
                 <ParticleSizeTest gml:id="proc-Part-BH-2-OUT_15.00">
-                    <testProcedureMethod xlink:href="#SpecASTMD-422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d422" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487" />
                     <sieveAnalysis>
                         <SieveAnalysis gml:id="proc-Part-BH-2-OUT_15.00-1">
                             <gradingData>
@@ -44016,19 +44016,7 @@
             </outcome>
             <procedure>
                 <LabCompactionTest gml:id="proc-Comp-CBR01">
-                    <testProcedureMethod>
-                        <Specification gml:id="Spec-ASTMD1557_MethodC">
-                            <gml:name>Laboratory Compaction Test, Modified Effort</gml:name>
-                            <accredtingBody>ASTM</accredtingBody>
-                            <standardReferenceNumber>1557</standardReferenceNumber>
-                            <standardTitle>Standard Test Methods for Laboratory Compaction Characteristics of Soil Using Modified Effort (56,000 ft-lbf/ft3 (2,700 kN-m/m3))</standardTitle>
-                            <otherSpecificationProperty>
-                                <Parameter>
-                                    <parameterName>Method C</parameterName>
-                                </Parameter>
-                            </otherSpecificationProperty>
-                        </Specification>
-                    </testProcedureMethod>
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1557" />
                     <testingEnvironment>
                         <Environment>
                             <ambientTemperature uom="degC">21</ambientTemperature>
@@ -44133,7 +44121,7 @@
             </outcome>
             <procedure>
                 <LabCompactionTest gml:id="proc-Comp-CBR02">
-                    <testProcedureMethod xlink:href="#Spec-ASTMD1557_MethodC" />
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1557" />
                     <testingEnvironment>
                         <Environment>
                             <ambientTemperature uom="degC">21</ambientTemperature>
