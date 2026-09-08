@@ -40084,16 +40084,20 @@
         </GroutBatch>
     </sample>
     <observation>
-        <LithologySystem gml:id="lithsys-BH-1">
+        <LithologySystem gml:id="lithsys-interp-BH-1">
+            <gml:description>Interpretive soil column of lithology classifications based on direct observations of discontinuous SPT samples. Consecutive samples sharing a classification are consolidated into one layer, each layer extending to the top of the next, so the column is continuous over the full depth of the borehole.</gml:description>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-1"/>
-            <observationProcedure
-                xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
-            <lithologyClassificationType>USCS</lithologyClassificationType>
+            <observationProcedure xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
+            <lithologyClassificationType>ASTM D2488</lithologyClassificationType>
             <lithologyObservation>
-                <LithologyObservation gml:id="lithobs-BH-1_1-1">
-                    <sampleRef xlink:href="#s-BH-1_1-1"/>
-                    <location xlink:href="#sal-BH-1_1-1"/>
+                <LithologyObservation gml:id="lithobs-interp-BH-1_1">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-1_1" srsName="#lsr-BH-1" srsDimension="1">
+                            <gml:posList>0 0.75</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <lithologyClassificationType>anthropogenic</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Brownish, Back Fill Material, Loose</lithDescription>
@@ -40102,9 +40106,79 @@
                 </LithologyObservation>
             </lithologyObservation>
             <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-1_2">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-1_2" srsName="#lsr-BH-1" srsDimension="1">
+                            <gml:posList>0.75 4.5</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-1_3">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-1_3" srsName="#lsr-BH-1" srsDimension="1">
+                            <gml:posList>4.5 12</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Dark Gray, Silty Sand, Loose to Medium Dense</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-1_4">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-1_4" srsName="#lsr-BH-1" srsDimension="1">
+                            <gml:posList>12 15.45</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Brownish, Lean Clay with Sand, Stiff to Very Stiff</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+        </LithologySystem>
+    </observation>
+    <observation>
+        <LithologySystem gml:id="lithsys-BH-1">
+            <gml:description>Soil classifications based on direct observation of SPT samples recovered from this borehole. Each observation describes one sampled interval; the column is discontinuous, with gaps between samples.</gml:description>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-1"/>
+            <observationProcedure
+                xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
+            <lithologyClassificationType>ASTM D2488</lithologyClassificationType>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-BH-1_1-1">
+                    <sampleRef xlink:href="#s-BH-1_1-1"/>
+                    <measurementRef xlink:href="#Att-BH-1_0.00"/>
+                    <measurementRef xlink:href="#Part-BH-1_0.00"/>
+                    <location xlink:href="#sal-BH-1_1-1"/>
+                    <lithologyClassificationType>ASTM D2487</lithologyClassificationType>
+                    <primaryLithology>
+                        <Lithology>
+                            <classificationCode codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/astmD2487.xml#SMg">Silty sand with gravel</classificationCode>
+                            <lithDescription>Brownish, Back Fill Material, Loose</lithDescription>
+                            <classificationSymbol codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2487.xml#SM">SM</classificationSymbol>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-1_1-2">
                     <sampleRef xlink:href="#s-BH-1_1-2"/>
                     <location xlink:href="#sal-BH-1_1-2"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40116,6 +40190,7 @@
                 <LithologyObservation gml:id="lithobs-BH-1_1-3">
                     <sampleRef xlink:href="#s-BH-1_1-3"/>
                     <location xlink:href="#sal-BH-1_1-3"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40127,6 +40202,7 @@
                 <LithologyObservation gml:id="lithobs-BH-1_1-4">
                     <sampleRef xlink:href="#s-BH-1_1-4"/>
                     <location xlink:href="#sal-BH-1_1-4"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40138,6 +40214,7 @@
                 <LithologyObservation gml:id="lithobs-BH-1_1-5">
                     <sampleRef xlink:href="#s-BH-1_1-5"/>
                     <location xlink:href="#sal-BH-1_1-5"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40203,10 +40280,15 @@
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-1_1-11">
                     <sampleRef xlink:href="#s-BH-1_1-11"/>
+                    <measurementRef xlink:href="#Att-BH-1_12.00"/>
+                    <measurementRef xlink:href="#Part-BH-1_12.00"/>
                     <location xlink:href="#sal-BH-1_1-11"/>
+                    <lithologyClassificationType>ASTM D2487</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
+                            <classificationCode codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/astmD2487.xml#CL">Lean clay</classificationCode>
                             <lithDescription>Brownish, Lean Clay with Sand, Stiff to Very Stiff</lithDescription>
+                            <classificationSymbol codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2487.xml#CL">CL</classificationSymbol>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -40236,16 +40318,85 @@
         </LithologySystem>
     </observation>
     <observation>
+        <LithologySystem gml:id="lithsys-interp-BH-2">
+            <gml:description>Interpretive soil column of lithology classifications based on direct observations of discontinuous SPT samples. Consecutive samples sharing a classification are consolidated into one layer, each layer extending to the top of the next, so the column is continuous over the full depth of the borehole.</gml:description>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-2"/>
+            <observationProcedure xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
+            <lithologyClassificationType>ASTM D2488</lithologyClassificationType>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-2_1">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-2_1" srsName="#lsr-BH-2" srsDimension="1">
+                            <gml:posList>0 0.75</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <lithologyClassificationType>anthropogenic</lithologyClassificationType>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Brownish, Back Fill Material, Medium Dense</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-2_2">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-2_2" srsName="#lsr-BH-2" srsDimension="1">
+                            <gml:posList>0.75 4.5</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-2_3">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-2_3" srsName="#lsr-BH-2" srsDimension="1">
+                            <gml:posList>4.5 12</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Dark Gray, Silty Sand, Loose to Medium Dense</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-2_4">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-2_4" srsName="#lsr-BH-2" srsDimension="1">
+                            <gml:posList>12 15.45</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Brownish, Lean Clay with Sand, Very Stiff</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+        </LithologySystem>
+    </observation>
+    <observation>
         <LithologySystem gml:id="lithsys-BH-2">
+            <gml:description>Soil classifications based on direct observation of SPT samples recovered from this borehole. Each observation describes one sampled interval; the column is discontinuous, with gaps between samples.</gml:description>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-2"/>
             <observationProcedure
                 xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
-            <lithologyClassificationType>USCS</lithologyClassificationType>
+            <lithologyClassificationType>ASTM D2488</lithologyClassificationType>
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-2_2-1">
                     <sampleRef xlink:href="#s-BH-2_2-1"/>
                     <location xlink:href="#sal-BH-2_2-1"/>
+                    <lithologyClassificationType>anthropogenic</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Brownish, Back Fill Material, Medium Dense</lithDescription>
@@ -40257,6 +40408,7 @@
                 <LithologyObservation gml:id="lithobs-BH-2_2-2">
                     <sampleRef xlink:href="#s-BH-2_2-2"/>
                     <location xlink:href="#sal-BH-2_2-2"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40268,6 +40420,7 @@
                 <LithologyObservation gml:id="lithobs-BH-2_2-3">
                     <sampleRef xlink:href="#s-BH-2_2-3"/>
                     <location xlink:href="#sal-BH-2_2-3"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40279,6 +40432,7 @@
                 <LithologyObservation gml:id="lithobs-BH-2_2-4">
                     <sampleRef xlink:href="#s-BH-2_2-4"/>
                     <location xlink:href="#sal-BH-2_2-4"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40290,6 +40444,7 @@
                 <LithologyObservation gml:id="lithobs-BH-2_2-5">
                     <sampleRef xlink:href="#s-BH-2_2-5"/>
                     <location xlink:href="#sal-BH-2_2-5"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40300,10 +40455,15 @@
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-2_2-6">
                     <sampleRef xlink:href="#s-BH-2_2-6"/>
+                    <measurementRef xlink:href="#Att-BH-2_4.50"/>
+                    <measurementRef xlink:href="#Part-BH-2_4.50"/>
                     <location xlink:href="#sal-BH-2_2-6"/>
+                    <lithologyClassificationType>ASTM D2487</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
+                            <classificationCode codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/astmD2487.xml#SMg">Silty sand with gravel</classificationCode>
                             <lithDescription>Dark Gray, Silty Sand, Loose to Medium Dense</lithDescription>
+                            <classificationSymbol codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2487.xml#SM">SM</classificationSymbol>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -40366,10 +40526,15 @@
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-2_2-12">
                     <sampleRef xlink:href="#s-BH-2_2-12"/>
+                    <measurementRef xlink:href="#Att-BH-2_13.50"/>
+                    <measurementRef xlink:href="#Part-BH-2_13.50"/>
                     <location xlink:href="#sal-BH-2_2-12"/>
+                    <lithologyClassificationType>ASTM D2487</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
+                            <classificationCode codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/astmD2487.xml#CL">Lean clay</classificationCode>
                             <lithDescription>Brownish, Lean Clay with Sand, Very Stiff</lithDescription>
+                            <classificationSymbol codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2487.xml#CL">CL</classificationSymbol>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -40388,16 +40553,71 @@
         </LithologySystem>
     </observation>
     <observation>
+        <LithologySystem gml:id="lithsys-interp-BH-3">
+            <gml:description>Interpretive soil column of lithology classifications based on direct observations of discontinuous SPT samples. Consecutive samples sharing a classification are consolidated into one layer, each layer extending to the top of the next, so the column is continuous over the full depth of the borehole.</gml:description>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-3"/>
+            <observationProcedure xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
+            <lithologyClassificationType>ASTM D2488</lithologyClassificationType>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-3_1">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-3_1" srsName="#lsr-BH-3" srsDimension="1">
+                            <gml:posList>0 0.75</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <lithologyClassificationType>anthropogenic</lithologyClassificationType>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Brownish, Back Fill Material, Loose</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-3_2">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-3_2" srsName="#lsr-BH-3" srsDimension="1">
+                            <gml:posList>0.75 4.5</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-3_3">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-3_3" srsName="#lsr-BH-3" srsDimension="1">
+                            <gml:posList>4.5 10.45</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Dark Gray, Silty Sand, Very Loose to Medium Dense</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+        </LithologySystem>
+    </observation>
+    <observation>
         <LithologySystem gml:id="lithsys-BH-3">
+            <gml:description>Soil classifications based on direct observation of SPT samples recovered from this borehole. Each observation describes one sampled interval; the column is discontinuous, with gaps between samples.</gml:description>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-3"/>
             <observationProcedure
                 xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
-            <lithologyClassificationType>USCS</lithologyClassificationType>
+            <lithologyClassificationType>ASTM D2488</lithologyClassificationType>
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-3_3-1">
                     <sampleRef xlink:href="#s-BH-3_3-1"/>
                     <location xlink:href="#sal-BH-3_3-1"/>
+                    <lithologyClassificationType>anthropogenic</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Brownish, Back Fill Material, Loose</lithDescription>
@@ -40409,6 +40629,7 @@
                 <LithologyObservation gml:id="lithobs-BH-3_3-2">
                     <sampleRef xlink:href="#s-BH-3_3-2"/>
                     <location xlink:href="#sal-BH-3_3-2"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40420,6 +40641,7 @@
                 <LithologyObservation gml:id="lithobs-BH-3_3-3">
                     <sampleRef xlink:href="#s-BH-3_3-3"/>
                     <location xlink:href="#sal-BH-3_3-3"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40431,6 +40653,7 @@
                 <LithologyObservation gml:id="lithobs-BH-3_3-4">
                     <sampleRef xlink:href="#s-BH-3_3-4"/>
                     <location xlink:href="#sal-BH-3_3-4"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40442,6 +40665,7 @@
                 <LithologyObservation gml:id="lithobs-BH-3_3-5">
                     <sampleRef xlink:href="#s-BH-3_3-5"/>
                     <location xlink:href="#sal-BH-3_3-5"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40463,10 +40687,15 @@
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-3_3-7">
                     <sampleRef xlink:href="#s-BH-3_3-7"/>
+                    <measurementRef xlink:href="#Att-BH-3_6.00"/>
+                    <measurementRef xlink:href="#Part-BH-3_6.00"/>
                     <location xlink:href="#sal-BH-3_3-7"/>
+                    <lithologyClassificationType>ASTM D2487</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
+                            <classificationCode codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/astmD2487.xml#SP-SM">Poorly graded sand with silt</classificationCode>
                             <lithDescription>Dark Gray, Silty Sand, Very Loose to Medium Dense</lithDescription>
+                            <classificationSymbol codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2487.xml#SP-SM">SP-SM</classificationSymbol>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -40507,16 +40736,71 @@
         </LithologySystem>
     </observation>
     <observation>
+        <LithologySystem gml:id="lithsys-interp-BH-4">
+            <gml:description>Interpretive soil column of lithology classifications based on direct observations of discontinuous SPT samples. Consecutive samples sharing a classification are consolidated into one layer, each layer extending to the top of the next, so the column is continuous over the full depth of the borehole.</gml:description>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-4"/>
+            <observationProcedure xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
+            <lithologyClassificationType>ASTM D2488</lithologyClassificationType>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-4_1">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-4_1" srsName="#lsr-BH-4" srsDimension="1">
+                            <gml:posList>0 0.75</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <lithologyClassificationType>anthropogenic</lithologyClassificationType>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Brownish, Back Fill Material, Loose</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-4_2">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-4_2" srsName="#lsr-BH-4" srsDimension="1">
+                            <gml:posList>0.75 4.5</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-4_3">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-4_3" srsName="#lsr-BH-4" srsDimension="1">
+                            <gml:posList>4.5 10.45</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Dark Gray, Silty Sand, Loose to Medium Dense</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+        </LithologySystem>
+    </observation>
+    <observation>
         <LithologySystem gml:id="lithsys-BH-4">
+            <gml:description>Soil classifications based on direct observation of SPT samples recovered from this borehole. Each observation describes one sampled interval; the column is discontinuous, with gaps between samples.</gml:description>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-4"/>
             <observationProcedure
                 xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
-            <lithologyClassificationType>USCS</lithologyClassificationType>
+            <lithologyClassificationType>ASTM D2488</lithologyClassificationType>
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-4_4-1">
                     <sampleRef xlink:href="#s-BH-4_4-1"/>
                     <location xlink:href="#sal-BH-4_4-1"/>
+                    <lithologyClassificationType>anthropogenic</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Brownish, Back Fill Material, Loose</lithDescription>
@@ -40528,6 +40812,7 @@
                 <LithologyObservation gml:id="lithobs-BH-4_4-2">
                     <sampleRef xlink:href="#s-BH-4_4-2"/>
                     <location xlink:href="#sal-BH-4_4-2"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40539,6 +40824,7 @@
                 <LithologyObservation gml:id="lithobs-BH-4_4-3">
                     <sampleRef xlink:href="#s-BH-4_4-3"/>
                     <location xlink:href="#sal-BH-4_4-3"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40550,6 +40836,7 @@
                 <LithologyObservation gml:id="lithobs-BH-4_4-4">
                     <sampleRef xlink:href="#s-BH-4_4-4"/>
                     <location xlink:href="#sal-BH-4_4-4"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40561,6 +40848,7 @@
                 <LithologyObservation gml:id="lithobs-BH-4_4-5">
                     <sampleRef xlink:href="#s-BH-4_4-5"/>
                     <location xlink:href="#sal-BH-4_4-5"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40571,10 +40859,15 @@
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-4_4-6">
                     <sampleRef xlink:href="#s-BH-4_4-6"/>
+                    <measurementRef xlink:href="#Att-BH-4_4.50"/>
+                    <measurementRef xlink:href="#Part-BH-4_4.50"/>
                     <location xlink:href="#sal-BH-4_4-6"/>
+                    <lithologyClassificationType>ASTM D2487</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
+                            <classificationCode codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/astmD2487.xml#SM">Silty sand</classificationCode>
                             <lithDescription>Dark Gray, Silty Sand, Loose to Medium Dense</lithDescription>
+                            <classificationSymbol codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2487.xml#SM">SM</classificationSymbol>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -40626,16 +40919,85 @@
         </LithologySystem>
     </observation>
     <observation>
+        <LithologySystem gml:id="lithsys-interp-BH-5">
+            <gml:description>Interpretive soil column of lithology classifications based on direct observations of discontinuous SPT samples. Consecutive samples sharing a classification are consolidated into one layer, each layer extending to the top of the next, so the column is continuous over the full depth of the borehole.</gml:description>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-5"/>
+            <observationProcedure xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
+            <lithologyClassificationType>ASTM D2488</lithologyClassificationType>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-5_1">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-5_1" srsName="#lsr-BH-5" srsDimension="1">
+                            <gml:posList>0 0.75</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <lithologyClassificationType>anthropogenic</lithologyClassificationType>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Brownish, Back Fill Material, Loose</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-5_2">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-5_2" srsName="#lsr-BH-5" srsDimension="1">
+                            <gml:posList>0.75 4.5</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-5_3">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-5_3" srsName="#lsr-BH-5" srsDimension="1">
+                            <gml:posList>4.5 12</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Dark Gray, Silty Sand, Loose to Medium Dense</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-5_4">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-5_4" srsName="#lsr-BH-5" srsDimension="1">
+                            <gml:posList>12 12.45</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Brownish, Lean Clay with Sand, Stiff to Very Stiff</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+        </LithologySystem>
+    </observation>
+    <observation>
         <LithologySystem gml:id="lithsys-BH-5">
+            <gml:description>Soil classifications based on direct observation of SPT samples recovered from this borehole. Each observation describes one sampled interval; the column is discontinuous, with gaps between samples.</gml:description>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-5"/>
             <observationProcedure
                 xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
-            <lithologyClassificationType>USCS</lithologyClassificationType>
+            <lithologyClassificationType>ASTM D2488</lithologyClassificationType>
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-5_5-1">
                     <sampleRef xlink:href="#s-BH-5_5-1"/>
                     <location xlink:href="#sal-BH-5_5-1"/>
+                    <lithologyClassificationType>anthropogenic</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Brownish, Back Fill Material, Loose</lithDescription>
@@ -40647,6 +41009,7 @@
                 <LithologyObservation gml:id="lithobs-BH-5_5-2">
                     <sampleRef xlink:href="#s-BH-5_5-2"/>
                     <location xlink:href="#sal-BH-5_5-2"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40658,6 +41021,7 @@
                 <LithologyObservation gml:id="lithobs-BH-5_5-3">
                     <sampleRef xlink:href="#s-BH-5_5-3"/>
                     <location xlink:href="#sal-BH-5_5-3"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40669,6 +41033,7 @@
                 <LithologyObservation gml:id="lithobs-BH-5_5-4">
                     <sampleRef xlink:href="#s-BH-5_5-4"/>
                     <location xlink:href="#sal-BH-5_5-4"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40680,6 +41045,7 @@
                 <LithologyObservation gml:id="lithobs-BH-5_5-5">
                     <sampleRef xlink:href="#s-BH-5_5-5"/>
                     <location xlink:href="#sal-BH-5_5-5"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40712,10 +41078,15 @@
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-5_5-8">
                     <sampleRef xlink:href="#s-BH-5_5-8"/>
+                    <measurementRef xlink:href="#Att-BH-5_7.50"/>
+                    <measurementRef xlink:href="#Part-BH-5_7.50"/>
                     <location xlink:href="#sal-BH-5_5-8"/>
+                    <lithologyClassificationType>ASTM D2487</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
+                            <classificationCode codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/astmD2487.xml#SM">Silty sand</classificationCode>
                             <lithDescription>Dark Gray, Silty Sand, Loose to Medium Dense</lithDescription>
+                            <classificationSymbol codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2487.xml#SM">SM</classificationSymbol>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -40756,16 +41127,20 @@
         </LithologySystem>
     </observation>
     <observation>
-        <LithologySystem gml:id="lithsys-BH-1-OUT">
+        <LithologySystem gml:id="lithsys-interp-BH-1-OUT">
+            <gml:description>Interpretive soil column of lithology classifications based on direct observations of discontinuous SPT samples. Consecutive samples sharing a classification are consolidated into one layer, each layer extending to the top of the next, so the column is continuous over the full depth of the borehole.</gml:description>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-1-OUT"/>
-            <observationProcedure
-                xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
-            <lithologyClassificationType>USCS</lithologyClassificationType>
+            <observationProcedure xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
+            <lithologyClassificationType>ASTM D2488</lithologyClassificationType>
             <lithologyObservation>
-                <LithologyObservation gml:id="lithobs-BH-1-OUT_1-1">
-                    <sampleRef xlink:href="#s-BH-1-OUT_1-1"/>
-                    <location xlink:href="#sal-BH-1-OUT_1-1"/>
+                <LithologyObservation gml:id="lithobs-interp-BH-1-OUT_1">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-1-OUT_1" srsName="#lsr-BH-1-OUT" srsDimension="1">
+                            <gml:posList>0 0.75</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <lithologyClassificationType>anthropogenic</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Brownish, Back Fill Material, Medium Dense</lithDescription>
@@ -40774,9 +41149,79 @@
                 </LithologyObservation>
             </lithologyObservation>
             <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-1-OUT_2">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-1-OUT_2" srsName="#lsr-BH-1-OUT" srsDimension="1">
+                            <gml:posList>0.75 4.5</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-1-OUT_3">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-1-OUT_3" srsName="#lsr-BH-1-OUT" srsDimension="1">
+                            <gml:posList>4.5 12</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Dark Gray, Silty Sand, Very Loose to Medium Dense</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-1-OUT_4">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-1-OUT_4" srsName="#lsr-BH-1-OUT" srsDimension="1">
+                            <gml:posList>12 15.45</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Brownish, Lean Clay with Sand, Very Stiff</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+        </LithologySystem>
+    </observation>
+    <observation>
+        <LithologySystem gml:id="lithsys-BH-1-OUT">
+            <gml:description>Soil classifications based on direct observation of SPT samples recovered from this borehole. Each observation describes one sampled interval; the column is discontinuous, with gaps between samples.</gml:description>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-1-OUT"/>
+            <observationProcedure
+                xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
+            <lithologyClassificationType>ASTM D2488</lithologyClassificationType>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-BH-1-OUT_1-1">
+                    <sampleRef xlink:href="#s-BH-1-OUT_1-1"/>
+                    <measurementRef xlink:href="#Att-BH-1-OUT_0.00"/>
+                    <measurementRef xlink:href="#Part-BH-1-OUT_0.00"/>
+                    <location xlink:href="#sal-BH-1-OUT_1-1"/>
+                    <lithologyClassificationType>ASTM D2487</lithologyClassificationType>
+                    <primaryLithology>
+                        <Lithology>
+                            <classificationCode codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/astmD2487.xml#SMg">Silty sand with gravel</classificationCode>
+                            <lithDescription>Brownish, Back Fill Material, Medium Dense</lithDescription>
+                            <classificationSymbol codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2487.xml#SM">SM</classificationSymbol>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-1-OUT_1-2">
                     <sampleRef xlink:href="#s-BH-1-OUT_1-2"/>
                     <location xlink:href="#sal-BH-1-OUT_1-2"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40788,6 +41233,7 @@
                 <LithologyObservation gml:id="lithobs-BH-1-OUT_1-3">
                     <sampleRef xlink:href="#s-BH-1-OUT_1-3"/>
                     <location xlink:href="#sal-BH-1-OUT_1-3"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40799,6 +41245,7 @@
                 <LithologyObservation gml:id="lithobs-BH-1-OUT_1-4">
                     <sampleRef xlink:href="#s-BH-1-OUT_1-4"/>
                     <location xlink:href="#sal-BH-1-OUT_1-4"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40810,6 +41257,7 @@
                 <LithologyObservation gml:id="lithobs-BH-1-OUT_1-5">
                     <sampleRef xlink:href="#s-BH-1-OUT_1-5"/>
                     <location xlink:href="#sal-BH-1-OUT_1-5"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40886,10 +41334,15 @@
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-1-OUT_1-12">
                     <sampleRef xlink:href="#s-BH-1-OUT_1-12"/>
+                    <measurementRef xlink:href="#Att-BH-1-OUT_13.50"/>
+                    <measurementRef xlink:href="#Part-BH-1-OUT_13.50"/>
                     <location xlink:href="#sal-BH-1-OUT_1-12"/>
+                    <lithologyClassificationType>ASTM D2487</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
+                            <classificationCode codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/astmD2487.xml#CLs">Lean clay with sand</classificationCode>
                             <lithDescription>Brownish, Lean Clay with Sand, Very Stiff</lithDescription>
+                            <classificationSymbol codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2487.xml#CL">CL</classificationSymbol>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -40908,16 +41361,85 @@
         </LithologySystem>
     </observation>
     <observation>
+        <LithologySystem gml:id="lithsys-interp-BH-2-OUT">
+            <gml:description>Interpretive soil column of lithology classifications based on direct observations of discontinuous SPT samples. Consecutive samples sharing a classification are consolidated into one layer, each layer extending to the top of the next, so the column is continuous over the full depth of the borehole.</gml:description>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-2-OUT"/>
+            <observationProcedure xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
+            <lithologyClassificationType>ASTM D2488</lithologyClassificationType>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-2-OUT_1">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-2-OUT_1" srsName="#lsr-BH-2-OUT" srsDimension="1">
+                            <gml:posList>0 0.75</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <lithologyClassificationType>anthropogenic</lithologyClassificationType>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Brownish, Back Fill Material, Medium Dense</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-2-OUT_2">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-2-OUT_2" srsName="#lsr-BH-2-OUT" srsDimension="1">
+                            <gml:posList>0.75 4.5</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-2-OUT_3">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-2-OUT_3" srsName="#lsr-BH-2-OUT" srsDimension="1">
+                            <gml:posList>4.5 12</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Dark Gray, Silty Sand, Loose to Medium Dense</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+            <lithologyObservation>
+                <LithologyObservation gml:id="lithobs-interp-BH-2-OUT_4">
+                    <location>
+                        <LinearExtent gml:id="lithloc-interp-BH-2-OUT_4" srsName="#lsr-BH-2-OUT" srsDimension="1">
+                            <gml:posList>12 15.45</gml:posList>
+                        </LinearExtent>
+                    </location>
+                    <primaryLithology>
+                        <Lithology>
+                            <lithDescription>Brownish, Lean Clay with Sand, Very Stiff</lithDescription>
+                        </Lithology>
+                    </primaryLithology>
+                </LithologyObservation>
+            </lithologyObservation>
+        </LithologySystem>
+    </observation>
+    <observation>
         <LithologySystem gml:id="lithsys-BH-2-OUT">
+            <gml:description>Soil classifications based on direct observation of SPT samples recovered from this borehole. Each observation describes one sampled interval; the column is discontinuous, with gaps between samples.</gml:description>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-2-OUT"/>
             <observationProcedure
                 xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d2487"/>
-            <lithologyClassificationType>USCS</lithologyClassificationType>
+            <lithologyClassificationType>ASTM D2488</lithologyClassificationType>
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-2-OUT_2-1">
                     <sampleRef xlink:href="#s-BH-2-OUT_2-1"/>
                     <location xlink:href="#sal-BH-2-OUT_2-1"/>
+                    <lithologyClassificationType>anthropogenic</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Brownish, Back Fill Material, Medium Dense</lithDescription>
@@ -40929,6 +41451,7 @@
                 <LithologyObservation gml:id="lithobs-BH-2-OUT_2-2">
                     <sampleRef xlink:href="#s-BH-2-OUT_2-2"/>
                     <location xlink:href="#sal-BH-2-OUT_2-2"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40940,6 +41463,7 @@
                 <LithologyObservation gml:id="lithobs-BH-2-OUT_2-3">
                     <sampleRef xlink:href="#s-BH-2-OUT_2-3"/>
                     <location xlink:href="#sal-BH-2-OUT_2-3"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -40950,10 +41474,15 @@
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-2-OUT_2-4">
                     <sampleRef xlink:href="#s-BH-2-OUT_2-4"/>
+                    <measurementRef xlink:href="#Att-BH-2-OUT_2.50"/>
+                    <measurementRef xlink:href="#Part-BH-2-OUT_2.50"/>
                     <location xlink:href="#sal-BH-2-OUT_2-4"/>
+                    <lithologyClassificationType>ASTM D2487</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
+                            <classificationCode codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/astmD2487.xml#SP-SM">Poorly graded sand with silt</classificationCode>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
+                            <classificationSymbol codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2487.xml#SP-SM">SP-SM</classificationSymbol>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
@@ -40962,6 +41491,7 @@
                 <LithologyObservation gml:id="lithobs-BH-2-OUT_2-5">
                     <sampleRef xlink:href="#s-BH-2-OUT_2-5"/>
                     <location xlink:href="#sal-BH-2-OUT_2-5"/>
+                    <lithologyClassificationType>sedimentary rock</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
                             <lithDescription>Dark Gray, Sabkha, Very Loose</lithDescription>
@@ -41049,339 +41579,20 @@
             <lithologyObservation>
                 <LithologyObservation gml:id="lithobs-BH-2-OUT_2-13">
                     <sampleRef xlink:href="#s-BH-2-OUT_2-13"/>
+                    <measurementRef xlink:href="#Att-BH-2-OUT_15.00"/>
+                    <measurementRef xlink:href="#Part-BH-2-OUT_15.00"/>
                     <location xlink:href="#sal-BH-2-OUT_2-13"/>
+                    <lithologyClassificationType>ASTM D2487</lithologyClassificationType>
                     <primaryLithology>
                         <Lithology>
+                            <classificationCode codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/astmD2487.xml#CL">Lean clay</classificationCode>
                             <lithDescription>Brownish, Lean Clay with Sand, Very Stiff</lithDescription>
+                            <classificationSymbol codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/grp-astmD2487.xml#CL">CL</classificationSymbol>
                         </Lithology>
                     </primaryLithology>
                 </LithologyObservation>
             </lithologyObservation>
         </LithologySystem>
-    </observation>
-    <observation>
-        <StratigraphySystem gml:id="Strat-BH-1">
-            <projectRef xlink:href="#GBL-GT-24136"/>
-            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-1"/>
-            <stratigraphyType>lithostratigraphic</stratigraphyType>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-1_Fill-Material">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-1_Fill-Material" srsName="#lsr-BH-1"
-                            srsDimension="1">
-                            <gml:posList>0 0.75</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Fill Material</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-1_Sabkha">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-1_Sabkha" srsName="#lsr-BH-1"
-                            srsDimension="1">
-                            <gml:posList>0.75 4.5</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Sabkha</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-1_Silty-Sand">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-1_Silty-Sand" srsName="#lsr-BH-1"
-                            srsDimension="1">
-                            <gml:posList>4.5 12</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Silty Sand</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-1_Lean-Clay-with-Sand">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-1_Lean-Clay-with-Sand"
-                            srsName="#lsr-BH-1" srsDimension="1">
-                            <gml:posList>12 15</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Lean Clay with Sand</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-        </StratigraphySystem>
-    </observation>
-    <observation>
-        <StratigraphySystem gml:id="Strat-BH-2">
-            <projectRef xlink:href="#GBL-GT-24136"/>
-            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-2"/>
-            <stratigraphyType>lithostratigraphic</stratigraphyType>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-2_Fill-Material">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-2_Fill-Material" srsName="#lsr-BH-2"
-                            srsDimension="1">
-                            <gml:posList>0 0.75</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Fill Material</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-2_Sabkha">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-2_Sabkha" srsName="#lsr-BH-2"
-                            srsDimension="1">
-                            <gml:posList>0.75 4.5</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Sabkha</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-2_Silty-Sand">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-2_Silty-Sand" srsName="#lsr-BH-2"
-                            srsDimension="1">
-                            <gml:posList>4.5 12</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Silty Sand</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-2_Lean-Clay-with-Sand">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-2_Lean-Clay-with-Sand"
-                            srsName="#lsr-BH-2" srsDimension="1">
-                            <gml:posList>12 15</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Lean Clay with Sand</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-        </StratigraphySystem>
-    </observation>
-    <observation>
-        <StratigraphySystem gml:id="Strat-BH-3">
-            <projectRef xlink:href="#GBL-GT-24136"/>
-            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-3"/>
-            <stratigraphyType>lithostratigraphic</stratigraphyType>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-3_Fill-Material">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-3_Fill-Material" srsName="#lsr-BH-3"
-                            srsDimension="1">
-                            <gml:posList>0 0.75</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Fill Material</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-3_Sabkha">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-3_Sabkha" srsName="#lsr-BH-3"
-                            srsDimension="1">
-                            <gml:posList>0.75 4.5</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Sabkha</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-3_Silty-Sand">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-3_Silty-Sand" srsName="#lsr-BH-3"
-                            srsDimension="1">
-                            <gml:posList>4.5 10</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Silty Sand</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-        </StratigraphySystem>
-    </observation>
-    <observation>
-        <StratigraphySystem gml:id="Strat-BH-4">
-            <projectRef xlink:href="#GBL-GT-24136"/>
-            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-4"/>
-            <stratigraphyType>lithostratigraphic</stratigraphyType>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-4_Fill-Material">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-4_Fill-Material" srsName="#lsr-BH-4"
-                            srsDimension="1">
-                            <gml:posList>0 0.75</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Fill Material</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-4_Sabkha">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-4_Sabkha" srsName="#lsr-BH-4"
-                            srsDimension="1">
-                            <gml:posList>0.75 4.5</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Sabkha</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-4_Silty-Sand">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-4_Silty-Sand" srsName="#lsr-BH-4"
-                            srsDimension="1">
-                            <gml:posList>4.5 10</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Silty Sand</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-        </StratigraphySystem>
-    </observation>
-    <observation>
-        <StratigraphySystem gml:id="Strat-BH-5">
-            <projectRef xlink:href="#GBL-GT-24136"/>
-            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-5"/>
-            <stratigraphyType>lithostratigraphic</stratigraphyType>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-5_Fill-Material">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-5_Fill-Material" srsName="#lsr-BH-5"
-                            srsDimension="1">
-                            <gml:posList>0 0.75</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Fill Material</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-5_Sabkha">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-5_Sabkha" srsName="#lsr-BH-5"
-                            srsDimension="1">
-                            <gml:posList>0.75 4.5</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Sabkha</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-5_Silty-Sand">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-5_Silty-Sand" srsName="#lsr-BH-5"
-                            srsDimension="1">
-                            <gml:posList>4.5 12</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Silty Sand</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-        </StratigraphySystem>
-    </observation>
-    <observation>
-        <StratigraphySystem gml:id="Strat-BH-1-OUT">
-            <projectRef xlink:href="#GBL-GT-24136"/>
-            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-1-OUT"/>
-            <stratigraphyType>lithostratigraphic</stratigraphyType>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-1-OUT_Fill-Material">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-1-OUT_Fill-Material"
-                            srsName="#lsr-BH-1-OUT" srsDimension="1">
-                            <gml:posList>0 0.75</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Fill Material</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-1-OUT_Sabkha">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-1-OUT_Sabkha" srsName="#lsr-BH-1-OUT"
-                            srsDimension="1">
-                            <gml:posList>0.75 4.5</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Sabkha</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-1-OUT_Silty-Sand">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-1-OUT_Silty-Sand"
-                            srsName="#lsr-BH-1-OUT" srsDimension="1">
-                            <gml:posList>4.5 12</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Silty Sand</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-1-OUT_Lean-Clay-with-Sand">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-1-OUT_Lean-Clay-with-Sand"
-                            srsName="#lsr-BH-1-OUT" srsDimension="1">
-                            <gml:posList>12 15</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Lean Clay with Sand</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-        </StratigraphySystem>
-    </observation>
-    <observation>
-        <StratigraphySystem gml:id="Strat-BH-2-OUT">
-            <projectRef xlink:href="#GBL-GT-24136"/>
-            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-2-OUT"/>
-            <stratigraphyType>lithostratigraphic</stratigraphyType>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-2-OUT_Fill-Material">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-2-OUT_Fill-Material"
-                            srsName="#lsr-BH-2-OUT" srsDimension="1">
-                            <gml:posList>0 0.75</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Fill Material</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-2-OUT_Sabkha">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-2-OUT_Sabkha" srsName="#lsr-BH-2-OUT"
-                            srsDimension="1">
-                            <gml:posList>0.75 4.5</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Sabkha</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-2-OUT_Silty-Sand">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-2-OUT_Silty-Sand"
-                            srsName="#lsr-BH-2-OUT" srsDimension="1">
-                            <gml:posList>4.5 12</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Silty Sand</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-            <stratigraphyObservation>
-                <StratigraphyObservation gml:id="StratObs-BH-2-OUT_Lean-Clay-with-Sand">
-                    <location>
-                        <LinearExtent gml:id="StratObsLoc-BH-2-OUT_Lean-Clay-with-Sand"
-                            srsName="#lsr-BH-2-OUT" srsDimension="1">
-                            <gml:posList>12 15</gml:posList>
-                        </LinearExtent>
-                    </location>
-                    <stratigraphicUnitName>Lean Clay with Sand</stratigraphicUnitName>
-                </StratigraphyObservation>
-            </stratigraphyObservation>
-        </StratigraphySystem>
     </observation>
     <measurement>
         <Test gml:id="test-BH-1_1-1">
