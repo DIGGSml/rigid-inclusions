@@ -39577,6 +39577,38 @@
             <samplingMethod xlink:href="#proc-spt-BH-2-OUT_2-13"/>
         </SamplingActivity>
     </samplingActivity>
+    <samplingActivity>
+        <SamplingActivity gml:id="sa-CBR-01">
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <sourceSampleRef xlink:href="#s-BH-1_1-1"/>
+            <activityType>subsample</activityType>
+            <sampleProduced>
+                <SampleProduced gml:id="sp-CBR-01">
+                    <location>
+                        <PointLocation gml:id="pl-CBR-01" srsName="#lsr-BH-1" srsDimension="1">
+                            <gml:pos>0.3</gml:pos>
+                        </PointLocation>
+                    </location>
+                </SampleProduced>
+            </sampleProduced>
+        </SamplingActivity>
+    </samplingActivity>
+    <samplingActivity>
+        <SamplingActivity gml:id="sa-CBR-02">
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <sourceSampleRef xlink:href="#s-BH-2_2-1"/>
+            <activityType>subsample</activityType>
+            <sampleProduced>
+                <SampleProduced gml:id="sp-CBR-02">
+                    <location>
+                        <PointLocation gml:id="pl-CBR-02" srsName="#lsr-BH-2" srsDimension="1">
+                            <gml:pos>0.3</gml:pos>
+                        </PointLocation>
+                    </location>
+                </SampleProduced>
+            </sampleProduced>
+        </SamplingActivity>
+    </samplingActivity>
     <sample>
         <Sample gml:id="s-BH-1_1-1">
             <gml:name>1-1</gml:name>
@@ -40454,6 +40486,26 @@
             <waterCementRatioOfMix>0.36</waterCementRatioOfMix>
             <designGroutMixRef xlink:href="#DGM-MIX-A"/>
         </GroutBatch>
+    </sample>
+    <sample>
+        <Sample gml:id="s-CBR-01">
+            <gml:name>CBR-01</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingActivityRef xlink:href="#sa-CBR-01"/>
+            <sampleProducedRef xlink:href="#sp-CBR-01"/>
+            <classification>Soil</classification>
+            <type/>
+        </Sample>
+    </sample>
+    <sample>
+        <Sample gml:id="s-CBR-02">
+            <gml:name>CBR-02</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingActivityRef xlink:href="#sa-CBR-02"/>
+            <sampleProducedRef xlink:href="#sp-CBR-02"/>
+            <classification>Soil</classification>
+            <type/>
+        </Sample>
     </sample>
     <observation>
         <LithologySystem gml:id="lithsys-interp-BH-1">
