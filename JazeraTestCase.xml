@@ -38180,6 +38180,7 @@
                     <location xlink:href="#sal-BH-1_1-1"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1_1-1"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38198,6 +38199,7 @@
                     <location xlink:href="#sal-BH-1_1-2"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1_1-2"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38216,6 +38218,7 @@
                     <location xlink:href="#sal-BH-1_1-3"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1_1-3"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38234,6 +38237,7 @@
                     <location xlink:href="#sal-BH-1_1-4"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1_1-4"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38252,6 +38256,7 @@
                     <location xlink:href="#sal-BH-1_1-5"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1_1-5"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38270,6 +38275,7 @@
                     <location xlink:href="#sal-BH-1_1-6"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1_1-6"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38288,6 +38294,7 @@
                     <location xlink:href="#sal-BH-1_1-7"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1_1-7"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38306,6 +38313,7 @@
                     <location xlink:href="#sal-BH-1_1-8"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1_1-8"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38324,6 +38332,7 @@
                     <location xlink:href="#sal-BH-1_1-9"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1_1-9"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38342,6 +38351,7 @@
                     <location xlink:href="#sal-BH-1_1-10"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1_1-10"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38360,6 +38370,7 @@
                     <location xlink:href="#sal-BH-1_1-11"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1_1-11"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38378,6 +38389,7 @@
                     <location xlink:href="#sal-BH-1_1-12"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1_1-12"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38396,6 +38408,7 @@
                     <location xlink:href="#sal-BH-1_1-13"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1_1-13"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38414,6 +38427,7 @@
                     <location xlink:href="#sal-BH-2_2-1"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2_2-1"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38432,6 +38446,7 @@
                     <location xlink:href="#sal-BH-2_2-2"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2_2-2"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38450,6 +38465,7 @@
                     <location xlink:href="#sal-BH-2_2-3"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2_2-3"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38468,6 +38484,7 @@
                     <location xlink:href="#sal-BH-2_2-4"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2_2-4"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38486,6 +38503,7 @@
                     <location xlink:href="#sal-BH-2_2-5"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2_2-5"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38504,6 +38522,7 @@
                     <location xlink:href="#sal-BH-2_2-6"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2_2-6"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38522,6 +38541,7 @@
                     <location xlink:href="#sal-BH-2_2-7"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2_2-7"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38540,6 +38560,7 @@
                     <location xlink:href="#sal-BH-2_2-8"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2_2-8"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38558,6 +38579,7 @@
                     <location xlink:href="#sal-BH-2_2-9"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2_2-9"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38576,6 +38598,7 @@
                     <location xlink:href="#sal-BH-2_2-10"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2_2-10"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38594,6 +38617,7 @@
                     <location xlink:href="#sal-BH-2_2-11"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2_2-11"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38612,6 +38636,7 @@
                     <location xlink:href="#sal-BH-2_2-12"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2_2-12"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38630,6 +38655,7 @@
                     <location xlink:href="#sal-BH-2_2-13"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2_2-13"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38648,6 +38674,7 @@
                     <location xlink:href="#sal-BH-3_3-1"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-3_3-1"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38666,6 +38693,7 @@
                     <location xlink:href="#sal-BH-3_3-2"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-3_3-2"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38684,6 +38712,7 @@
                     <location xlink:href="#sal-BH-3_3-3"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-3_3-3"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38702,6 +38731,7 @@
                     <location xlink:href="#sal-BH-3_3-4"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-3_3-4"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38720,6 +38750,7 @@
                     <location xlink:href="#sal-BH-3_3-5"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-3_3-5"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38738,6 +38769,7 @@
                     <location xlink:href="#sal-BH-3_3-6"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-3_3-6"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38756,6 +38788,7 @@
                     <location xlink:href="#sal-BH-3_3-7"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-3_3-7"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38774,6 +38807,7 @@
                     <location xlink:href="#sal-BH-3_3-8"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-3_3-8"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38792,6 +38826,7 @@
                     <location xlink:href="#sal-BH-3_3-9"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-3_3-9"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38810,6 +38845,7 @@
                     <location xlink:href="#sal-BH-3_3-10"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-3_3-10"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38828,6 +38864,7 @@
                     <location xlink:href="#sal-BH-4_4-1"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-4_4-1"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38846,6 +38883,7 @@
                     <location xlink:href="#sal-BH-4_4-2"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-4_4-2"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38864,6 +38902,7 @@
                     <location xlink:href="#sal-BH-4_4-3"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-4_4-3"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38882,6 +38921,7 @@
                     <location xlink:href="#sal-BH-4_4-4"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-4_4-4"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38900,6 +38940,7 @@
                     <location xlink:href="#sal-BH-4_4-5"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-4_4-5"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38918,6 +38959,7 @@
                     <location xlink:href="#sal-BH-4_4-6"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-4_4-6"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38936,6 +38978,7 @@
                     <location xlink:href="#sal-BH-4_4-7"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-4_4-7"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38954,6 +38997,7 @@
                     <location xlink:href="#sal-BH-4_4-8"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-4_4-8"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38972,6 +39016,7 @@
                     <location xlink:href="#sal-BH-4_4-9"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-4_4-9"/>
         </SamplingActivity>
     </samplingActivity>
@@ -38990,6 +39035,7 @@
                     <location xlink:href="#sal-BH-4_4-10"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-4_4-10"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39008,6 +39054,7 @@
                     <location xlink:href="#sal-BH-5_5-1"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-5_5-1"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39026,6 +39073,7 @@
                     <location xlink:href="#sal-BH-5_5-2"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-5_5-2"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39044,6 +39092,7 @@
                     <location xlink:href="#sal-BH-5_5-3"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-5_5-3"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39062,6 +39111,7 @@
                     <location xlink:href="#sal-BH-5_5-4"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-5_5-4"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39080,6 +39130,7 @@
                     <location xlink:href="#sal-BH-5_5-5"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-5_5-5"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39098,6 +39149,7 @@
                     <location xlink:href="#sal-BH-5_5-6"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-5_5-6"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39116,6 +39168,7 @@
                     <location xlink:href="#sal-BH-5_5-7"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-5_5-7"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39134,6 +39187,7 @@
                     <location xlink:href="#sal-BH-5_5-8"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-5_5-8"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39152,6 +39206,7 @@
                     <location xlink:href="#sal-BH-5_5-9"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-5_5-9"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39170,6 +39225,7 @@
                     <location xlink:href="#sal-BH-5_5-10"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-5_5-10"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39188,6 +39244,7 @@
                     <location xlink:href="#sal-BH-5_5-11"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-5_5-11"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39206,6 +39263,7 @@
                     <location xlink:href="#sal-BH-1-OUT_1-1"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1-OUT_1-1"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39224,6 +39282,7 @@
                     <location xlink:href="#sal-BH-1-OUT_1-2"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1-OUT_1-2"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39242,6 +39301,7 @@
                     <location xlink:href="#sal-BH-1-OUT_1-3"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1-OUT_1-3"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39260,6 +39320,7 @@
                     <location xlink:href="#sal-BH-1-OUT_1-4"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1-OUT_1-4"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39278,6 +39339,7 @@
                     <location xlink:href="#sal-BH-1-OUT_1-5"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1-OUT_1-5"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39296,6 +39358,7 @@
                     <location xlink:href="#sal-BH-1-OUT_1-6"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1-OUT_1-6"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39314,6 +39377,7 @@
                     <location xlink:href="#sal-BH-1-OUT_1-7"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1-OUT_1-7"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39332,6 +39396,7 @@
                     <location xlink:href="#sal-BH-1-OUT_1-8"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1-OUT_1-8"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39350,6 +39415,7 @@
                     <location xlink:href="#sal-BH-1-OUT_1-9"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1-OUT_1-9"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39368,6 +39434,7 @@
                     <location xlink:href="#sal-BH-1-OUT_1-10"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1-OUT_1-10"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39386,6 +39453,7 @@
                     <location xlink:href="#sal-BH-1-OUT_1-11"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1-OUT_1-11"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39404,6 +39472,7 @@
                     <location xlink:href="#sal-BH-1-OUT_1-12"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1-OUT_1-12"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39422,6 +39491,7 @@
                     <location xlink:href="#sal-BH-1-OUT_1-13"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-1-OUT_1-13"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39440,6 +39510,7 @@
                     <location xlink:href="#sal-BH-2-OUT_2-1"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2-OUT_2-1"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39458,6 +39529,7 @@
                     <location xlink:href="#sal-BH-2-OUT_2-2"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2-OUT_2-2"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39476,6 +39548,7 @@
                     <location xlink:href="#sal-BH-2-OUT_2-3"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2-OUT_2-3"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39494,6 +39567,7 @@
                     <location xlink:href="#sal-BH-2-OUT_2-4"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2-OUT_2-4"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39512,6 +39586,7 @@
                     <location xlink:href="#sal-BH-2-OUT_2-5"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2-OUT_2-5"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39530,6 +39605,7 @@
                     <location xlink:href="#sal-BH-2-OUT_2-6"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2-OUT_2-6"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39548,6 +39624,7 @@
                     <location xlink:href="#sal-BH-2-OUT_2-7"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2-OUT_2-7"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39566,6 +39643,7 @@
                     <location xlink:href="#sal-BH-2-OUT_2-7b"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2-OUT_2-7b"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39584,6 +39662,7 @@
                     <location xlink:href="#sal-BH-2-OUT_2-9"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2-OUT_2-9"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39602,6 +39681,7 @@
                     <location xlink:href="#sal-BH-2-OUT_2-10"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2-OUT_2-10"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39620,6 +39700,7 @@
                     <location xlink:href="#sal-BH-2-OUT_2-11"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2-OUT_2-11"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39638,6 +39719,7 @@
                     <location xlink:href="#sal-BH-2-OUT_2-12"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2-OUT_2-12"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39656,6 +39738,7 @@
                     <location xlink:href="#sal-BH-2-OUT_2-13"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_b">Category B sampling</samplingCategory>
             <samplingMethod xlink:href="#proc-spt-BH-2-OUT_2-13"/>
         </SamplingActivity>
     </samplingActivity>
@@ -39674,6 +39757,8 @@
                     <location xlink:href="#sal-CBR-01"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_c">Category C sampling</samplingCategory>
+            <samplingMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_22475_1"/>
         </SamplingActivity>
     </samplingActivity>
     <samplingActivity>
@@ -39691,6 +39776,8 @@
                     <location xlink:href="#sal-CBR-02"/>
                 </SampleProduced>
             </sampleProduced>
+            <samplingCategory codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingCategory.xml#category_c">Category C sampling</samplingCategory>
+            <samplingMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_22475_1"/>
         </SamplingActivity>
     </samplingActivity>
     <sample>
@@ -39700,7 +39787,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1_1-1"/>
             <sampleProducedRef xlink:href="#sp-BH-1_1-1"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39710,7 +39798,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1_1-2"/>
             <sampleProducedRef xlink:href="#sp-BH-1_1-2"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39720,7 +39809,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1_1-3"/>
             <sampleProducedRef xlink:href="#sp-BH-1_1-3"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39730,7 +39820,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1_1-4"/>
             <sampleProducedRef xlink:href="#sp-BH-1_1-4"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39740,7 +39831,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1_1-5"/>
             <sampleProducedRef xlink:href="#sp-BH-1_1-5"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39750,7 +39842,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1_1-6"/>
             <sampleProducedRef xlink:href="#sp-BH-1_1-6"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39760,7 +39853,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1_1-7"/>
             <sampleProducedRef xlink:href="#sp-BH-1_1-7"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39770,7 +39864,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1_1-8"/>
             <sampleProducedRef xlink:href="#sp-BH-1_1-8"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39780,7 +39875,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1_1-9"/>
             <sampleProducedRef xlink:href="#sp-BH-1_1-9"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39790,7 +39886,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1_1-10"/>
             <sampleProducedRef xlink:href="#sp-BH-1_1-10"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39800,7 +39897,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1_1-11"/>
             <sampleProducedRef xlink:href="#sp-BH-1_1-11"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39810,7 +39908,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1_1-12"/>
             <sampleProducedRef xlink:href="#sp-BH-1_1-12"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39820,7 +39919,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1_1-13"/>
             <sampleProducedRef xlink:href="#sp-BH-1_1-13"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39830,7 +39930,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2_2-1"/>
             <sampleProducedRef xlink:href="#sp-BH-2_2-1"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39840,7 +39941,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2_2-2"/>
             <sampleProducedRef xlink:href="#sp-BH-2_2-2"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39850,7 +39952,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2_2-3"/>
             <sampleProducedRef xlink:href="#sp-BH-2_2-3"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39860,7 +39963,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2_2-4"/>
             <sampleProducedRef xlink:href="#sp-BH-2_2-4"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39870,7 +39974,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2_2-5"/>
             <sampleProducedRef xlink:href="#sp-BH-2_2-5"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39880,7 +39985,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2_2-6"/>
             <sampleProducedRef xlink:href="#sp-BH-2_2-6"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39890,7 +39996,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2_2-7"/>
             <sampleProducedRef xlink:href="#sp-BH-2_2-7"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39900,7 +40007,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2_2-8"/>
             <sampleProducedRef xlink:href="#sp-BH-2_2-8"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39910,7 +40018,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2_2-9"/>
             <sampleProducedRef xlink:href="#sp-BH-2_2-9"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39920,7 +40029,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2_2-10"/>
             <sampleProducedRef xlink:href="#sp-BH-2_2-10"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39930,7 +40040,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2_2-11"/>
             <sampleProducedRef xlink:href="#sp-BH-2_2-11"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39940,7 +40051,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2_2-12"/>
             <sampleProducedRef xlink:href="#sp-BH-2_2-12"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39950,7 +40062,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2_2-13"/>
             <sampleProducedRef xlink:href="#sp-BH-2_2-13"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39960,7 +40073,8 @@
             <samplingActivityRef xlink:href="#sa-BH-3_3-1"/>
             <sampleProducedRef xlink:href="#sp-BH-3_3-1"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39970,7 +40084,8 @@
             <samplingActivityRef xlink:href="#sa-BH-3_3-2"/>
             <sampleProducedRef xlink:href="#sp-BH-3_3-2"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39980,7 +40095,8 @@
             <samplingActivityRef xlink:href="#sa-BH-3_3-3"/>
             <sampleProducedRef xlink:href="#sp-BH-3_3-3"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -39990,7 +40106,8 @@
             <samplingActivityRef xlink:href="#sa-BH-3_3-4"/>
             <sampleProducedRef xlink:href="#sp-BH-3_3-4"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40000,7 +40117,8 @@
             <samplingActivityRef xlink:href="#sa-BH-3_3-5"/>
             <sampleProducedRef xlink:href="#sp-BH-3_3-5"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40010,7 +40128,8 @@
             <samplingActivityRef xlink:href="#sa-BH-3_3-6"/>
             <sampleProducedRef xlink:href="#sp-BH-3_3-6"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40020,7 +40139,8 @@
             <samplingActivityRef xlink:href="#sa-BH-3_3-7"/>
             <sampleProducedRef xlink:href="#sp-BH-3_3-7"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40030,7 +40150,8 @@
             <samplingActivityRef xlink:href="#sa-BH-3_3-8"/>
             <sampleProducedRef xlink:href="#sp-BH-3_3-8"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40040,7 +40161,8 @@
             <samplingActivityRef xlink:href="#sa-BH-3_3-9"/>
             <sampleProducedRef xlink:href="#sp-BH-3_3-9"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40050,7 +40172,8 @@
             <samplingActivityRef xlink:href="#sa-BH-3_3-10"/>
             <sampleProducedRef xlink:href="#sp-BH-3_3-10"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40060,7 +40183,8 @@
             <samplingActivityRef xlink:href="#sa-BH-4_4-1"/>
             <sampleProducedRef xlink:href="#sp-BH-4_4-1"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40070,7 +40194,8 @@
             <samplingActivityRef xlink:href="#sa-BH-4_4-2"/>
             <sampleProducedRef xlink:href="#sp-BH-4_4-2"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40080,7 +40205,8 @@
             <samplingActivityRef xlink:href="#sa-BH-4_4-3"/>
             <sampleProducedRef xlink:href="#sp-BH-4_4-3"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40090,7 +40216,8 @@
             <samplingActivityRef xlink:href="#sa-BH-4_4-4"/>
             <sampleProducedRef xlink:href="#sp-BH-4_4-4"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40100,7 +40227,8 @@
             <samplingActivityRef xlink:href="#sa-BH-4_4-5"/>
             <sampleProducedRef xlink:href="#sp-BH-4_4-5"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40110,7 +40238,8 @@
             <samplingActivityRef xlink:href="#sa-BH-4_4-6"/>
             <sampleProducedRef xlink:href="#sp-BH-4_4-6"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40120,7 +40249,8 @@
             <samplingActivityRef xlink:href="#sa-BH-4_4-7"/>
             <sampleProducedRef xlink:href="#sp-BH-4_4-7"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40130,7 +40260,8 @@
             <samplingActivityRef xlink:href="#sa-BH-4_4-8"/>
             <sampleProducedRef xlink:href="#sp-BH-4_4-8"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40140,7 +40271,8 @@
             <samplingActivityRef xlink:href="#sa-BH-4_4-9"/>
             <sampleProducedRef xlink:href="#sp-BH-4_4-9"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40150,7 +40282,8 @@
             <samplingActivityRef xlink:href="#sa-BH-4_4-10"/>
             <sampleProducedRef xlink:href="#sp-BH-4_4-10"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40160,7 +40293,8 @@
             <samplingActivityRef xlink:href="#sa-BH-5_5-1"/>
             <sampleProducedRef xlink:href="#sp-BH-5_5-1"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40170,7 +40304,8 @@
             <samplingActivityRef xlink:href="#sa-BH-5_5-2"/>
             <sampleProducedRef xlink:href="#sp-BH-5_5-2"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40180,7 +40315,8 @@
             <samplingActivityRef xlink:href="#sa-BH-5_5-3"/>
             <sampleProducedRef xlink:href="#sp-BH-5_5-3"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40190,7 +40326,8 @@
             <samplingActivityRef xlink:href="#sa-BH-5_5-4"/>
             <sampleProducedRef xlink:href="#sp-BH-5_5-4"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40200,7 +40337,8 @@
             <samplingActivityRef xlink:href="#sa-BH-5_5-5"/>
             <sampleProducedRef xlink:href="#sp-BH-5_5-5"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40210,7 +40348,8 @@
             <samplingActivityRef xlink:href="#sa-BH-5_5-6"/>
             <sampleProducedRef xlink:href="#sp-BH-5_5-6"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40220,7 +40359,8 @@
             <samplingActivityRef xlink:href="#sa-BH-5_5-7"/>
             <sampleProducedRef xlink:href="#sp-BH-5_5-7"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40230,7 +40370,8 @@
             <samplingActivityRef xlink:href="#sa-BH-5_5-8"/>
             <sampleProducedRef xlink:href="#sp-BH-5_5-8"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40240,7 +40381,8 @@
             <samplingActivityRef xlink:href="#sa-BH-5_5-9"/>
             <sampleProducedRef xlink:href="#sp-BH-5_5-9"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40250,7 +40392,8 @@
             <samplingActivityRef xlink:href="#sa-BH-5_5-10"/>
             <sampleProducedRef xlink:href="#sp-BH-5_5-10"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40260,7 +40403,8 @@
             <samplingActivityRef xlink:href="#sa-BH-5_5-11"/>
             <sampleProducedRef xlink:href="#sp-BH-5_5-11"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40270,7 +40414,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1-OUT_1-1"/>
             <sampleProducedRef xlink:href="#sp-BH-1-OUT_1-1"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40280,7 +40425,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1-OUT_1-2"/>
             <sampleProducedRef xlink:href="#sp-BH-1-OUT_1-2"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40290,7 +40436,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1-OUT_1-3"/>
             <sampleProducedRef xlink:href="#sp-BH-1-OUT_1-3"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40300,7 +40447,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1-OUT_1-4"/>
             <sampleProducedRef xlink:href="#sp-BH-1-OUT_1-4"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40310,7 +40458,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1-OUT_1-5"/>
             <sampleProducedRef xlink:href="#sp-BH-1-OUT_1-5"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40320,7 +40469,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1-OUT_1-6"/>
             <sampleProducedRef xlink:href="#sp-BH-1-OUT_1-6"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40330,7 +40480,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1-OUT_1-7"/>
             <sampleProducedRef xlink:href="#sp-BH-1-OUT_1-7"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40340,7 +40491,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1-OUT_1-8"/>
             <sampleProducedRef xlink:href="#sp-BH-1-OUT_1-8"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40350,7 +40502,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1-OUT_1-9"/>
             <sampleProducedRef xlink:href="#sp-BH-1-OUT_1-9"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40360,7 +40513,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1-OUT_1-10"/>
             <sampleProducedRef xlink:href="#sp-BH-1-OUT_1-10"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40370,7 +40524,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1-OUT_1-11"/>
             <sampleProducedRef xlink:href="#sp-BH-1-OUT_1-11"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40380,7 +40535,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1-OUT_1-12"/>
             <sampleProducedRef xlink:href="#sp-BH-1-OUT_1-12"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40390,7 +40546,8 @@
             <samplingActivityRef xlink:href="#sa-BH-1-OUT_1-13"/>
             <sampleProducedRef xlink:href="#sp-BH-1-OUT_1-13"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40400,7 +40557,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2-OUT_2-1"/>
             <sampleProducedRef xlink:href="#sp-BH-2-OUT_2-1"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40410,7 +40568,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2-OUT_2-2"/>
             <sampleProducedRef xlink:href="#sp-BH-2-OUT_2-2"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40420,7 +40579,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2-OUT_2-3"/>
             <sampleProducedRef xlink:href="#sp-BH-2-OUT_2-3"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40430,7 +40590,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2-OUT_2-4"/>
             <sampleProducedRef xlink:href="#sp-BH-2-OUT_2-4"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40440,7 +40601,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2-OUT_2-5"/>
             <sampleProducedRef xlink:href="#sp-BH-2-OUT_2-5"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40450,7 +40612,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2-OUT_2-6"/>
             <sampleProducedRef xlink:href="#sp-BH-2-OUT_2-6"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40460,7 +40623,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2-OUT_2-7"/>
             <sampleProducedRef xlink:href="#sp-BH-2-OUT_2-7"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40470,7 +40634,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2-OUT_2-7b"/>
             <sampleProducedRef xlink:href="#sp-BH-2-OUT_2-7b"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40480,7 +40645,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2-OUT_2-9"/>
             <sampleProducedRef xlink:href="#sp-BH-2-OUT_2-9"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40490,7 +40656,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2-OUT_2-10"/>
             <sampleProducedRef xlink:href="#sp-BH-2-OUT_2-10"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40500,7 +40667,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2-OUT_2-11"/>
             <sampleProducedRef xlink:href="#sp-BH-2-OUT_2-11"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40510,7 +40678,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2-OUT_2-12"/>
             <sampleProducedRef xlink:href="#sp-BH-2-OUT_2-12"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40520,7 +40689,8 @@
             <samplingActivityRef xlink:href="#sa-BH-2-OUT_2-13"/>
             <sampleProducedRef xlink:href="#sp-BH-2-OUT_2-13"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#split_barrel">Split-barrel (split-spoon) drive sample</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_4">Quality class 4</qualityClass>
         </Sample>
     </sample>
     <sample>
@@ -40578,7 +40748,8 @@
             <samplingActivityRef xlink:href="#sa-CBR-01"/>
             <sampleProducedRef xlink:href="#sp-CBR-01"/>
             <classification>Soil</classification>
-            <type>Bulk, disturbed</type>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#large_bulk">Large bulk sample, earthworks testing</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_3">Quality class 3</qualityClass>
             <sampleMatrix codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleMatrix.xml#fill">Fill</sampleMatrix>
         </Sample>
     </sample>
@@ -40589,7 +40760,8 @@
             <samplingActivityRef xlink:href="#sa-CBR-02"/>
             <sampleProducedRef xlink:href="#sp-CBR-02"/>
             <classification>Soil</classification>
-            <type/>
+            <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#large_bulk">Large bulk sample, earthworks testing</type>
+            <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_3">Quality class 3</qualityClass>
             <sampleMatrix codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleMatrix.xml#fill">Fill</sampleMatrix>
         </Sample>
     </sample>
