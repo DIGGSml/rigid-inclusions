@@ -50870,6 +50870,758 @@
             </procedure>
         </Test>
     </measurement>
+    <measurement>
+        <Test gml:id="test-CBR-01">
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_CBR-01"/>
+            <sampleRef xlink:href="#s-CBR-01"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-CBR-01-cbr">
+                    <start>2024-06-20</start>
+                    <end>2024-06-24</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location>
+                        <PointLocation gml:id="pl-CBR-01-cbr" srsDimension="1"
+                            srsName="#lsr-CBR-01">
+                            <gml:pos>0.3</gml:pos>
+                        </PointLocation>
+                    </location>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>CBR @ 95% MDD</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cbr_at_95_pct_mdd">CBR at 95% Maximum Dry Density</propertyClass>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>33.0</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <LabCBRTest gml:id="proc-CBR-01">
+                    <testProcedureMethod
+                        xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1883"/>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-wc-1">
+                            <gml:name>CBR-01 trial 1 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">189.8</dryMass>
+                                    <waterContent uom="%">14.2</waterContent>
+                                    <wetMass uom="g">216.8</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-main-1">
+                            <gml:name>CBR-01 trial 1 - CBR specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">1.396</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.223</dryDensity>
+                                    <height uom="mm">116.8</height>
+                                    <volume uom="cm3">3264.0</volume>
+                                    <wetMass uom="g">4558</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-01-main-1">
+                                    <blowsPerLift>10</blowsPerLift>
+                                    <mouldVolume uom="cm3">3264.0</mouldVolume>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-wc-2">
+                            <gml:name>CBR-01 trial 2 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">177.3</dryMass>
+                                    <waterContent uom="%">14.2</waterContent>
+                                    <wetMass uom="g">202.5</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-main-2">
+                            <gml:name>CBR-01 trial 2 - CBR specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">1.719</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.505</dryDensity>
+                                    <height uom="mm">116.1</height>
+                                    <volume uom="cm3">3248.0</volume>
+                                    <wetMass uom="g">5582</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-01-main-2">
+                                    <blowsPerLift>25</blowsPerLift>
+                                    <mouldVolume uom="cm3">3248.0</mouldVolume>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-wc-3">
+                            <gml:name>CBR-01 trial 3 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">175.5</dryMass>
+                                    <waterContent uom="%">14.3</waterContent>
+                                    <wetMass uom="g">200.6</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-main-3">
+                            <gml:name>CBR-01 trial 3 - CBR specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">2.090</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.828</dryDensity>
+                                    <height uom="mm">115.95</height>
+                                    <volume uom="cm3">3271.0</volume>
+                                    <wetMass uom="g">6836</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-01-main-3">
+                                    <blowsPerLift>56</blowsPerLift>
+                                    <mouldVolume uom="cm3">3271.0</mouldVolume>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <targetMaxDryDensity uom="g/cm3">1.814</targetMaxDryDensity>
+                    <targetPctMaxDryDensity>95</targetPctMaxDryDensity>
+                    <targetOptWaterContent uom="%">14.3</targetOptWaterContent>
+                    <loadCellCalibrationConstant>4.201</loadCellCalibrationConstant>
+                    <trial>
+                        <LabCBRTestTrial gml:id="trial-CBR-01-1">
+                            <trialNo>1</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-01-main-1"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-01-wc-1"/>
+                            <cbr_0.1 uom="%">22.2</cbr_0.1>
+                            <cbr_0.2 uom="%">19.1</cbr_0.2>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-1-1">
+                                    <calculatedStress uom="kgf/cm2">0.0</calculatedStress>
+                                    <measuredLoad uom="kgf">0.0</measuredLoad>
+                                    <measuredPenetration uom="mm">0.0</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-1-2">
+                                    <calculatedStress uom="kgf/cm2">6.5</calculatedStress>
+                                    <measuredLoad uom="kgf">126.0</measuredLoad>
+                                    <measuredPenetration uom="mm">0.64</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-1-3">
+                                    <calculatedStress uom="kgf/cm2">10.4</calculatedStress>
+                                    <measuredLoad uom="kgf">201.7</measuredLoad>
+                                    <measuredPenetration uom="mm">1.27</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-1-4">
+                                    <calculatedStress uom="kgf/cm2">13.0</calculatedStress>
+                                    <measuredLoad uom="kgf">251.2</measuredLoad>
+                                    <measuredPenetration uom="mm">1.9</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-1-5">
+                                    <calculatedStress uom="kgf/cm2">15.6</calculatedStress>
+                                    <measuredLoad uom="kgf">302.5</measuredLoad>
+                                    <measuredPenetration uom="mm">2.54</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-1-6">
+                                    <calculatedStress uom="kgf/cm2">18.2</calculatedStress>
+                                    <measuredLoad uom="kgf">352.9</measuredLoad>
+                                    <measuredPenetration uom="mm">3.81</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-1-7">
+                                    <calculatedStress uom="kgf/cm2">20.2</calculatedStress>
+                                    <measuredLoad uom="kgf">390.7</measuredLoad>
+                                    <measuredPenetration uom="mm">5.08</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-1-8">
+                                    <calculatedStress uom="kgf/cm2">20.8</calculatedStress>
+                                    <measuredLoad uom="kgf">403.3</measuredLoad>
+                                    <measuredPenetration uom="mm">7.62</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <pistonArea uom="cm2">19.35</pistonArea>
+                            <soaking>true</soaking>
+                            <soakingDetails>Standard 96-hour soak, ASTM D1883 (inferred from the 4-day
+                                gap between Date Tested and Date Completed on the source lab
+                                sheet - not itself a separately labeled field).</soakingDetails>
+                            <swellFromSoaking uom="%">11.13</swellFromSoaking>
+                        </LabCBRTestTrial>
+                    </trial>
+                    <trial>
+                        <LabCBRTestTrial gml:id="trial-CBR-01-2">
+                            <trialNo>2</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-01-main-2"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-01-wc-2"/>
+                            <cbr_0.1 uom="%">28.4</cbr_0.1>
+                            <cbr_0.2 uom="%">22.2</cbr_0.2>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-2-1">
+                                    <calculatedStress uom="kgf/cm2">0.0</calculatedStress>
+                                    <measuredLoad uom="kgf">0.0</measuredLoad>
+                                    <measuredPenetration uom="mm">0.0</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-2-2">
+                                    <calculatedStress uom="kgf/cm2">8.7</calculatedStress>
+                                    <measuredLoad uom="kgf">168.0</measuredLoad>
+                                    <measuredPenetration uom="mm">0.64</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-2-3">
+                                    <calculatedStress uom="kgf/cm2">12.8</calculatedStress>
+                                    <measuredLoad uom="kgf">247.9</measuredLoad>
+                                    <measuredPenetration uom="mm">1.27</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-2-4">
+                                    <calculatedStress uom="kgf/cm2">16.3</calculatedStress>
+                                    <measuredLoad uom="kgf">315.1</measuredLoad>
+                                    <measuredPenetration uom="mm">1.9</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-2-5">
+                                    <calculatedStress uom="kgf/cm2">20.0</calculatedStress>
+                                    <measuredLoad uom="kgf">386.5</measuredLoad>
+                                    <measuredPenetration uom="mm">2.54</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-2-6">
+                                    <calculatedStress uom="kgf/cm2">22.1</calculatedStress>
+                                    <measuredLoad uom="kgf">428.5</measuredLoad>
+                                    <measuredPenetration uom="mm">3.81</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-2-7">
+                                    <calculatedStress uom="kgf/cm2">23.4</calculatedStress>
+                                    <measuredLoad uom="kgf">453.7</measuredLoad>
+                                    <measuredPenetration uom="mm">5.08</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-2-8">
+                                    <calculatedStress uom="kgf/cm2">23.7</calculatedStress>
+                                    <measuredLoad uom="kgf">457.9</measuredLoad>
+                                    <measuredPenetration uom="mm">7.62</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <pistonArea uom="cm2">19.35</pistonArea>
+                            <soaking>true</soaking>
+                            <soakingDetails>Standard 96-hour soak, ASTM D1883 (inferred from the 4-day
+                                gap between Date Tested and Date Completed on the source lab
+                                sheet - not itself a separately labeled field).</soakingDetails>
+                            <swellFromSoaking uom="%">7.75</swellFromSoaking>
+                        </LabCBRTestTrial>
+                    </trial>
+                    <trial>
+                        <LabCBRTestTrial gml:id="trial-CBR-01-3">
+                            <trialNo>3</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-01-main-3"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-01-wc-3"/>
+                            <cbr_0.1 uom="%">35.2</cbr_0.1>
+                            <cbr_0.2 uom="%">26.5</cbr_0.2>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-3-1">
+                                    <calculatedStress uom="kgf/cm2">0.0</calculatedStress>
+                                    <measuredLoad uom="kgf">0.0</measuredLoad>
+                                    <measuredPenetration uom="mm">0.0</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-3-2">
+                                    <calculatedStress uom="kgf/cm2">12.2</calculatedStress>
+                                    <measuredLoad uom="kgf">235.3</measuredLoad>
+                                    <measuredPenetration uom="mm">0.64</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-3-3">
+                                    <calculatedStress uom="kgf/cm2">17.2</calculatedStress>
+                                    <measuredLoad uom="kgf">331.9</measuredLoad>
+                                    <measuredPenetration uom="mm">1.27</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-3-4">
+                                    <calculatedStress uom="kgf/cm2">21.1</calculatedStress>
+                                    <measuredLoad uom="kgf">407.5</measuredLoad>
+                                    <measuredPenetration uom="mm">1.9</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-3-5">
+                                    <calculatedStress uom="kgf/cm2">24.8</calculatedStress>
+                                    <measuredLoad uom="kgf">478.9</measuredLoad>
+                                    <measuredPenetration uom="mm">2.54</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-3-6">
+                                    <calculatedStress uom="kgf/cm2">27.1</calculatedStress>
+                                    <measuredLoad uom="kgf">525.2</measuredLoad>
+                                    <measuredPenetration uom="mm">3.81</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-3-7">
+                                    <calculatedStress uom="kgf/cm2">28.0</calculatedStress>
+                                    <measuredLoad uom="kgf">542.0</measuredLoad>
+                                    <measuredPenetration uom="mm">5.08</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-01-3-8">
+                                    <calculatedStress uom="kgf/cm2">28.4</calculatedStress>
+                                    <measuredLoad uom="kgf">550.4</measuredLoad>
+                                    <measuredPenetration uom="mm">7.62</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <pistonArea uom="cm2">19.35</pistonArea>
+                            <soaking>true</soaking>
+                            <soakingDetails>Standard 96-hour soak, ASTM D1883 (inferred from the 4-day
+                                gap between Date Tested and Date Completed on the source lab
+                                sheet - not itself a separately labeled field).</soakingDetails>
+                            <swellFromSoaking uom="%">4.23</swellFromSoaking>
+                        </LabCBRTestTrial>
+                    </trial>
+                </LabCBRTest>
+            </procedure>
+        </Test>
+    </measurement>
+    <measurement>
+        <Test gml:id="test-CBR-02">
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_CBR-02"/>
+            <sampleRef xlink:href="#s-CBR-02"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-CBR-02-cbr">
+                    <start>2024-06-20</start>
+                    <end>2024-06-24</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location>
+                        <PointLocation gml:id="pl-CBR-02-cbr" srsDimension="1"
+                            srsName="#lsr-CBR-02">
+                            <gml:pos>0.3</gml:pos>
+                        </PointLocation>
+                    </location>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>CBR @ 95% MDD</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cbr_at_95_pct_mdd">CBR at 95% Maximum Dry Density</propertyClass>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>31.5</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <LabCBRTest gml:id="proc-CBR-02">
+                    <testProcedureMethod
+                        xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1883"/>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-wc-1">
+                            <gml:name>CBR-02 trial 1 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">137.7</dryMass>
+                                    <waterContent uom="%">15.5</waterContent>
+                                    <wetMass uom="g">159.0</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-main-1">
+                            <gml:name>CBR-02 trial 1 - CBR specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">1.763</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.527</dryDensity>
+                                    <height uom="mm">116.41</height>
+                                    <volume uom="cm3">3215.0</volume>
+                                    <wetMass uom="g">5669</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-02-main-1">
+                                    <blowsPerLift>10</blowsPerLift>
+                                    <mouldVolume uom="cm3">3215.0</mouldVolume>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-wc-2">
+                            <gml:name>CBR-02 trial 2 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">127.6</dryMass>
+                                    <waterContent uom="%">15.4</waterContent>
+                                    <wetMass uom="g">147.2</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-main-2">
+                            <gml:name>CBR-02 trial 2 - CBR specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">1.923</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.667</dryDensity>
+                                    <height uom="mm">116.15</height>
+                                    <volume uom="cm3">3249.0</volume>
+                                    <wetMass uom="g">6247</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-02-main-2">
+                                    <blowsPerLift>25</blowsPerLift>
+                                    <mouldVolume uom="cm3">3249.0</mouldVolume>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-wc-3">
+                            <gml:name>CBR-02 trial 3 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">143.3</dryMass>
+                                    <waterContent uom="%">15.3</waterContent>
+                                    <wetMass uom="g">165.2</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-main-3">
+                            <gml:name>CBR-02 trial 3 - CBR specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">2.129</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.847</dryDensity>
+                                    <height uom="mm">116.33</height>
+                                    <volume uom="cm3">3227.0</volume>
+                                    <wetMass uom="g">6870</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-02-main-3">
+                                    <blowsPerLift>56</blowsPerLift>
+                                    <mouldVolume uom="cm3">3227.0</mouldVolume>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <targetMaxDryDensity uom="g/cm3">1.833</targetMaxDryDensity>
+                    <targetPctMaxDryDensity>95</targetPctMaxDryDensity>
+                    <targetOptWaterContent uom="%">15.3</targetOptWaterContent>
+                    <loadCellCalibrationConstant>4.201</loadCellCalibrationConstant>
+                    <trial>
+                        <LabCBRTestTrial gml:id="trial-CBR-02-1">
+                            <trialNo>1</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-02-main-1"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-02-wc-1"/>
+                            <cbr_0.1 uom="%">23.2</cbr_0.1>
+                            <cbr_0.2 uom="%">18.7</cbr_0.2>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-1-1">
+                                    <calculatedStress uom="kgf/cm2">0.0</calculatedStress>
+                                    <measuredLoad uom="kgf">0.0</measuredLoad>
+                                    <measuredPenetration uom="mm">0.0</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-1-2">
+                                    <calculatedStress uom="kgf/cm2">5.6</calculatedStress>
+                                    <measuredLoad uom="kgf">109.2</measuredLoad>
+                                    <measuredPenetration uom="mm">0.64</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-1-3">
+                                    <calculatedStress uom="kgf/cm2">9.8</calculatedStress>
+                                    <measuredLoad uom="kgf">189.1</measuredLoad>
+                                    <measuredPenetration uom="mm">1.27</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-1-4">
+                                    <calculatedStress uom="kgf/cm2">13.2</calculatedStress>
+                                    <measuredLoad uom="kgf">256.3</measuredLoad>
+                                    <measuredPenetration uom="mm">1.9</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-1-5">
+                                    <calculatedStress uom="kgf/cm2">16.3</calculatedStress>
+                                    <measuredLoad uom="kgf">315.1</measuredLoad>
+                                    <measuredPenetration uom="mm">2.54</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-1-6">
+                                    <calculatedStress uom="kgf/cm2">18.5</calculatedStress>
+                                    <measuredLoad uom="kgf">357.1</measuredLoad>
+                                    <measuredPenetration uom="mm">3.81</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-1-7">
+                                    <calculatedStress uom="kgf/cm2">19.8</calculatedStress>
+                                    <measuredLoad uom="kgf">382.3</measuredLoad>
+                                    <measuredPenetration uom="mm">5.08</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-1-8">
+                                    <calculatedStress uom="kgf/cm2">20.6</calculatedStress>
+                                    <measuredLoad uom="kgf">399.1</measuredLoad>
+                                    <measuredPenetration uom="mm">7.62</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <pistonArea uom="cm2">19.35</pistonArea>
+                            <soaking>true</soaking>
+                            <soakingDetails>Standard 96-hour soak, ASTM D1883 (inferred from the 4-day
+                                gap between Date Tested and Date Completed on the source lab
+                                sheet - not itself a separately labeled field).</soakingDetails>
+                            <swellFromSoaking uom="%">13.74</swellFromSoaking>
+                        </LabCBRTestTrial>
+                    </trial>
+                    <trial>
+                        <LabCBRTestTrial gml:id="trial-CBR-02-2">
+                            <trialNo>2</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-02-main-2"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-02-wc-2"/>
+                            <cbr_0.1 uom="%">28.7</cbr_0.1>
+                            <cbr_0.2 uom="%">24.7</cbr_0.2>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-2-1">
+                                    <calculatedStress uom="kgf/cm2">0.0</calculatedStress>
+                                    <measuredLoad uom="kgf">0.0</measuredLoad>
+                                    <measuredPenetration uom="mm">0.0</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-2-2">
+                                    <calculatedStress uom="kgf/cm2">9.3</calculatedStress>
+                                    <measuredLoad uom="kgf">180.7</measuredLoad>
+                                    <measuredPenetration uom="mm">0.64</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-2-3">
+                                    <calculatedStress uom="kgf/cm2">13.7</calculatedStress>
+                                    <measuredLoad uom="kgf">264.7</measuredLoad>
+                                    <measuredPenetration uom="mm">1.27</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-2-4">
+                                    <calculatedStress uom="kgf/cm2">17.2</calculatedStress>
+                                    <measuredLoad uom="kgf">331.9</measuredLoad>
+                                    <measuredPenetration uom="mm">1.9</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-2-5">
+                                    <calculatedStress uom="kgf/cm2">20.2</calculatedStress>
+                                    <measuredLoad uom="kgf">390.7</measuredLoad>
+                                    <measuredPenetration uom="mm">2.54</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-2-6">
+                                    <calculatedStress uom="kgf/cm2">23.4</calculatedStress>
+                                    <measuredLoad uom="kgf">453.7</measuredLoad>
+                                    <measuredPenetration uom="mm">3.81</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-2-7">
+                                    <calculatedStress uom="kgf/cm2">26.1</calculatedStress>
+                                    <measuredLoad uom="kgf">504.1</measuredLoad>
+                                    <measuredPenetration uom="mm">5.08</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-2-8">
+                                    <calculatedStress uom="kgf/cm2">27.1</calculatedStress>
+                                    <measuredLoad uom="kgf">525.2</measuredLoad>
+                                    <measuredPenetration uom="mm">7.62</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <pistonArea uom="cm2">19.35</pistonArea>
+                            <soaking>true</soaking>
+                            <soakingDetails>Standard 96-hour soak, ASTM D1883 (inferred from the 4-day
+                                gap between Date Tested and Date Completed on the source lab
+                                sheet - not itself a separately labeled field).</soakingDetails>
+                            <swellFromSoaking uom="%">9.47</swellFromSoaking>
+                        </LabCBRTestTrial>
+                    </trial>
+                    <trial>
+                        <LabCBRTestTrial gml:id="trial-CBR-02-3">
+                            <trialNo>3</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-02-main-3"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-02-wc-3"/>
+                            <cbr_0.1 uom="%">35.5</cbr_0.1>
+                            <cbr_0.2 uom="%">29.8</cbr_0.2>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-3-1">
+                                    <calculatedStress uom="kgf/cm2">0.0</calculatedStress>
+                                    <measuredLoad uom="kgf">0.0</measuredLoad>
+                                    <measuredPenetration uom="mm">0.0</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-3-2">
+                                    <calculatedStress uom="kgf/cm2">11.3</calculatedStress>
+                                    <measuredLoad uom="kgf">218.5</measuredLoad>
+                                    <measuredPenetration uom="mm">0.64</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-3-3">
+                                    <calculatedStress uom="kgf/cm2">16.3</calculatedStress>
+                                    <measuredLoad uom="kgf">315.1</measuredLoad>
+                                    <measuredPenetration uom="mm">1.27</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-3-4">
+                                    <calculatedStress uom="kgf/cm2">20.6</calculatedStress>
+                                    <measuredLoad uom="kgf">399.1</measuredLoad>
+                                    <measuredPenetration uom="mm">1.9</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-3-5">
+                                    <calculatedStress uom="kgf/cm2">25.0</calculatedStress>
+                                    <measuredLoad uom="kgf">483.1</measuredLoad>
+                                    <measuredPenetration uom="mm">2.54</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-3-6">
+                                    <calculatedStress uom="kgf/cm2">28.4</calculatedStress>
+                                    <measuredLoad uom="kgf">550.4</measuredLoad>
+                                    <measuredPenetration uom="mm">3.81</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-3-7">
+                                    <calculatedStress uom="kgf/cm2">31.5</calculatedStress>
+                                    <measuredLoad uom="kgf">609.2</measuredLoad>
+                                    <measuredPenetration uom="mm">5.08</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <penetrationIncrement>
+                                <CBRIncrement gml:id="cbrinc-CBR-02-3-8">
+                                    <calculatedStress uom="kgf/cm2">32.4</calculatedStress>
+                                    <measuredLoad uom="kgf">626.0</measuredLoad>
+                                    <measuredPenetration uom="mm">7.62</measuredPenetration>
+                                </CBRIncrement>
+                            </penetrationIncrement>
+                            <pistonArea uom="cm2">19.35</pistonArea>
+                            <soaking>true</soaking>
+                            <soakingDetails>Standard 96-hour soak, ASTM D1883 (inferred from the 4-day
+                                gap between Date Tested and Date Completed on the source lab
+                                sheet - not itself a separately labeled field).</soakingDetails>
+                            <swellFromSoaking uom="%">5.16</swellFromSoaking>
+                        </LabCBRTestTrial>
+                    </trial>
+                </LabCBRTest>
+            </procedure>
+        </Test>
+    </measurement>
     <group>
         <RigidInclusionSystem gml:id="RIFS-JAZ-001">
             <gml:name>Jazera Royal Palace RI Foundation System</gml:name>
