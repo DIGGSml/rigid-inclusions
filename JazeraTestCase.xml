@@ -51622,6 +51622,628 @@
             </procedure>
         </Test>
     </measurement>
+    <measurement>
+        <Test gml:id="test-CBR-01-compaction">
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_CBR-01"/>
+            <sampleRef xlink:href="#s-CBR-01"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-CBR-01-compaction">
+                    <start>2024-06-12</start>
+                    <end>2024-06-13</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location>
+                        <PointLocation gml:id="pl-CBR-01-compaction" srsDimension="1"
+                            srsName="#lsr-CBR-01">
+                            <gml:pos>0.3</gml:pos>
+                        </PointLocation>
+                    </location>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>Maximum Dry Density</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dry_density_max">Maximum Dry Density</propertyClass>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Optimum Water Content</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_content_optimum">Optimum Water Content</propertyClass>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>1.814,14.3</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <LabCompactionTest gml:id="proc-CBR-01-compaction">
+                    <testProcedureMethod
+                        xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1557"/>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-compaction-wc-1">
+                            <gml:name>CBR-01 compaction trial 1 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">129.5</dryMass>
+                                    <waterContent uom="%">5.5</waterContent>
+                                    <wetMass uom="g">136.6</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-compaction-main-1">
+                            <gml:name>CBR-01 compaction trial 1 - compacted specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">1.720</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.630</dryDensity>
+                                    <volume uom="cm3">2087</volume>
+                                    <wetMass uom="g">3589</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-01-compaction-main-1">
+                                    <compactorType>Drop hammer</compactorType>
+                                    <numberOfLifts>5</numberOfLifts>
+                                    <blowsPerLift>56</blowsPerLift>
+                                    <mouldVolume uom="cm3">2087</mouldVolume>
+                                    <rammerMass uom="lbm">10</rammerMass>
+                                    <rammerDrop uom="in">18</rammerDrop>
+                                    <rammerIsManual>true</rammerIsManual>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-compaction-wc-2">
+                            <gml:name>CBR-01 compaction trial 2 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">126.8</dryMass>
+                                    <waterContent uom="%">9.5</waterContent>
+                                    <wetMass uom="g">138.9</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-compaction-main-2">
+                            <gml:name>CBR-01 compaction trial 2 - compacted specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">1.899</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.734</dryDensity>
+                                    <volume uom="cm3">2087</volume>
+                                    <wetMass uom="g">3964</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-01-compaction-main-2">
+                                    <compactorType>Drop hammer</compactorType>
+                                    <numberOfLifts>5</numberOfLifts>
+                                    <blowsPerLift>56</blowsPerLift>
+                                    <mouldVolume uom="cm3">2087</mouldVolume>
+                                    <rammerMass uom="lbm">10</rammerMass>
+                                    <rammerDrop uom="in">18</rammerDrop>
+                                    <rammerIsManual>true</rammerIsManual>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-compaction-wc-3">
+                            <gml:name>CBR-01 compaction trial 3 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">118.1</dryMass>
+                                    <waterContent uom="%">14.3</waterContent>
+                                    <wetMass uom="g">135.0</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-compaction-main-3">
+                            <gml:name>CBR-01 compaction trial 3 - compacted specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">2.073</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.814</dryDensity>
+                                    <volume uom="cm3">2087</volume>
+                                    <wetMass uom="g">4327</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-01-compaction-main-3">
+                                    <compactorType>Drop hammer</compactorType>
+                                    <numberOfLifts>5</numberOfLifts>
+                                    <blowsPerLift>56</blowsPerLift>
+                                    <mouldVolume uom="cm3">2087</mouldVolume>
+                                    <rammerMass uom="lbm">10</rammerMass>
+                                    <rammerDrop uom="in">18</rammerDrop>
+                                    <rammerIsManual>true</rammerIsManual>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-compaction-wc-4">
+                            <gml:name>CBR-01 compaction trial 4 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">108.7</dryMass>
+                                    <waterContent uom="%">19.3</waterContent>
+                                    <wetMass uom="g">129.7</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-compaction-main-4">
+                            <gml:name>CBR-01 compaction trial 4 - compacted specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">2.003</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.679</dryDensity>
+                                    <volume uom="cm3">2087</volume>
+                                    <wetMass uom="g">4180</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-01-compaction-main-4">
+                                    <compactorType>Drop hammer</compactorType>
+                                    <numberOfLifts>5</numberOfLifts>
+                                    <blowsPerLift>56</blowsPerLift>
+                                    <mouldVolume uom="cm3">2087</mouldVolume>
+                                    <rammerMass uom="lbm">10</rammerMass>
+                                    <rammerDrop uom="in">18</rammerDrop>
+                                    <rammerIsManual>true</rammerIsManual>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-compaction-wc-5">
+                            <gml:name>CBR-01 compaction trial 5 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">145.6</dryMass>
+                                    <waterContent uom="%">21.8</waterContent>
+                                    <wetMass uom="g">177.3</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-01-compaction-main-5">
+                            <gml:name>CBR-01 compaction trial 5 - compacted specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-01"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">1.903</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.563</dryDensity>
+                                    <volume uom="cm3">2087</volume>
+                                    <wetMass uom="g">3971</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-01-compaction-main-5">
+                                    <compactorType>Drop hammer</compactorType>
+                                    <numberOfLifts>5</numberOfLifts>
+                                    <blowsPerLift>56</blowsPerLift>
+                                    <mouldVolume uom="cm3">2087</mouldVolume>
+                                    <rammerMass uom="lbm">10</rammerMass>
+                                    <rammerDrop uom="in">18</rammerDrop>
+                                    <rammerIsManual>true</rammerIsManual>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <compactionTestType>Modified Proctor</compactionTestType>
+                    <trial>
+                        <LabCompactionTestTrial gml:id="trial-CBR-01-compaction-1">
+                            <trialNo>1</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-01-compaction-main-1"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-01-compaction-wc-1"/>
+                            <waterContent uom="%">5.5</waterContent>
+                            <wetDensity uom="g/cm3">1.720</wetDensity>
+                            <dryDensity uom="g/cm3">1.630</dryDensity>
+                        </LabCompactionTestTrial>
+                    </trial>
+                    <trial>
+                        <LabCompactionTestTrial gml:id="trial-CBR-01-compaction-2">
+                            <trialNo>2</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-01-compaction-main-2"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-01-compaction-wc-2"/>
+                            <waterContent uom="%">9.5</waterContent>
+                            <wetDensity uom="g/cm3">1.899</wetDensity>
+                            <dryDensity uom="g/cm3">1.734</dryDensity>
+                        </LabCompactionTestTrial>
+                    </trial>
+                    <trial>
+                        <LabCompactionTestTrial gml:id="trial-CBR-01-compaction-3">
+                            <trialNo>3</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-01-compaction-main-3"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-01-compaction-wc-3"/>
+                            <waterContent uom="%">14.3</waterContent>
+                            <wetDensity uom="g/cm3">2.073</wetDensity>
+                            <dryDensity uom="g/cm3">1.814</dryDensity>
+                        </LabCompactionTestTrial>
+                    </trial>
+                    <trial>
+                        <LabCompactionTestTrial gml:id="trial-CBR-01-compaction-4">
+                            <trialNo>4</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-01-compaction-main-4"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-01-compaction-wc-4"/>
+                            <waterContent uom="%">19.3</waterContent>
+                            <wetDensity uom="g/cm3">2.003</wetDensity>
+                            <dryDensity uom="g/cm3">1.679</dryDensity>
+                        </LabCompactionTestTrial>
+                    </trial>
+                    <trial>
+                        <LabCompactionTestTrial gml:id="trial-CBR-01-compaction-5">
+                            <trialNo>5</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-01-compaction-main-5"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-01-compaction-wc-5"/>
+                            <waterContent uom="%">21.8</waterContent>
+                            <wetDensity uom="g/cm3">1.903</wetDensity>
+                            <dryDensity uom="g/cm3">1.563</dryDensity>
+                        </LabCompactionTestTrial>
+                    </trial>
+                </LabCompactionTest>
+            </procedure>
+        </Test>
+    </measurement>
+    <measurement>
+        <Test gml:id="test-CBR-02-compaction">
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_CBR-02"/>
+            <sampleRef xlink:href="#s-CBR-02"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-CBR-02-compaction">
+                    <start>2024-06-12</start>
+                    <end>2024-06-13</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location>
+                        <PointLocation gml:id="pl-CBR-02-compaction" srsDimension="1"
+                            srsName="#lsr-CBR-02">
+                            <gml:pos>0.3</gml:pos>
+                        </PointLocation>
+                    </location>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>Maximum Dry Density</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dry_density_max">Maximum Dry Density</propertyClass>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Optimum Water Content</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_content_optimum">Optimum Water Content</propertyClass>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>1.833,15.4</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <LabCompactionTest gml:id="proc-CBR-02-compaction">
+                    <testProcedureMethod
+                        xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1557"/>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-compaction-wc-1">
+                            <gml:name>CBR-02 compaction trial 1 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">173.9</dryMass>
+                                    <waterContent uom="%">3.5</waterContent>
+                                    <wetMass uom="g">179.9</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-compaction-main-1">
+                            <gml:name>CBR-02 compaction trial 1 - compacted specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">1.621</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.567</dryDensity>
+                                    <volume uom="cm3">2085</volume>
+                                    <wetMass uom="g">3380</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-02-compaction-main-1">
+                                    <compactorType>Drop hammer</compactorType>
+                                    <numberOfLifts>5</numberOfLifts>
+                                    <blowsPerLift>56</blowsPerLift>
+                                    <mouldVolume uom="cm3">2085</mouldVolume>
+                                    <rammerMass uom="lbm">10</rammerMass>
+                                    <rammerDrop uom="in">18</rammerDrop>
+                                    <rammerIsManual>true</rammerIsManual>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-compaction-wc-2">
+                            <gml:name>CBR-02 compaction trial 2 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">171.0</dryMass>
+                                    <waterContent uom="%">8.2</waterContent>
+                                    <wetMass uom="g">185.1</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-compaction-main-2">
+                            <gml:name>CBR-02 compaction trial 2 - compacted specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">1.849</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.709</dryDensity>
+                                    <volume uom="cm3">2085</volume>
+                                    <wetMass uom="g">3856</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-02-compaction-main-2">
+                                    <compactorType>Drop hammer</compactorType>
+                                    <numberOfLifts>5</numberOfLifts>
+                                    <blowsPerLift>56</blowsPerLift>
+                                    <mouldVolume uom="cm3">2085</mouldVolume>
+                                    <rammerMass uom="lbm">10</rammerMass>
+                                    <rammerDrop uom="in">18</rammerDrop>
+                                    <rammerIsManual>true</rammerIsManual>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-compaction-wc-3">
+                            <gml:name>CBR-02 compaction trial 3 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">200.2</dryMass>
+                                    <waterContent uom="%">11.8</waterContent>
+                                    <wetMass uom="g">223.9</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-compaction-main-3">
+                            <gml:name>CBR-02 compaction trial 3 - compacted specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">2.025</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.811</dryDensity>
+                                    <volume uom="cm3">2085</volume>
+                                    <wetMass uom="g">4222</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-02-compaction-main-3">
+                                    <compactorType>Drop hammer</compactorType>
+                                    <numberOfLifts>5</numberOfLifts>
+                                    <blowsPerLift>56</blowsPerLift>
+                                    <mouldVolume uom="cm3">2085</mouldVolume>
+                                    <rammerMass uom="lbm">10</rammerMass>
+                                    <rammerDrop uom="in">18</rammerDrop>
+                                    <rammerIsManual>true</rammerIsManual>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-compaction-wc-4">
+                            <gml:name>CBR-02 compaction trial 4 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">169.8</dryMass>
+                                    <waterContent uom="%">15.4</waterContent>
+                                    <wetMass uom="g">195.9</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-compaction-main-4">
+                            <gml:name>CBR-02 compaction trial 4 - compacted specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">2.115</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.833</dryDensity>
+                                    <volume uom="cm3">2085</volume>
+                                    <wetMass uom="g">4410</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-02-compaction-main-4">
+                                    <compactorType>Drop hammer</compactorType>
+                                    <numberOfLifts>5</numberOfLifts>
+                                    <blowsPerLift>56</blowsPerLift>
+                                    <mouldVolume uom="cm3">2085</mouldVolume>
+                                    <rammerMass uom="lbm">10</rammerMass>
+                                    <rammerDrop uom="in">18</rammerDrop>
+                                    <rammerIsManual>true</rammerIsManual>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-compaction-wc-5">
+                            <gml:name>CBR-02 compaction trial 5 - water content specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryMass uom="g">197.1</dryMass>
+                                    <waterContent uom="%">21.1</waterContent>
+                                    <wetMass uom="g">238.6</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>disturbed</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-CBR-02-compaction-main-5">
+                            <gml:name>CBR-02 compaction trial 5 - compacted specimen</gml:name>
+                            <sampleRef xlink:href="#s-CBR-02"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <bulkDensity uom="g/cm3">2.017</bulkDensity>
+                                    <dryDensity uom="g/cm3">1.666</dryDensity>
+                                    <volume uom="cm3">2085</volume>
+                                    <wetMass uom="g">4206</wetMass>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                            <reconstitutedSpecimenPreparationInfo>
+                                <ReconstitutedSpecimenPreparationInfo gml:id="rspi-CBR-02-compaction-main-5">
+                                    <compactorType>Drop hammer</compactorType>
+                                    <numberOfLifts>5</numberOfLifts>
+                                    <blowsPerLift>56</blowsPerLift>
+                                    <mouldVolume uom="cm3">2085</mouldVolume>
+                                    <rammerMass uom="lbm">10</rammerMass>
+                                    <rammerDrop uom="in">18</rammerDrop>
+                                    <rammerIsManual>true</rammerIsManual>
+                                </ReconstitutedSpecimenPreparationInfo>
+                            </reconstitutedSpecimenPreparationInfo>
+                            <specificGravityOfSolids>2.75</specificGravityOfSolids>
+                            <specimenType>reconstituted</specimenType>
+                        </SoilSpecimen>
+                    </specimen>
+                    <compactionTestType>Modified Proctor</compactionTestType>
+                    <trial>
+                        <LabCompactionTestTrial gml:id="trial-CBR-02-compaction-1">
+                            <trialNo>1</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-02-compaction-main-1"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-02-compaction-wc-1"/>
+                            <waterContent uom="%">3.5</waterContent>
+                            <wetDensity uom="g/cm3">1.621</wetDensity>
+                            <dryDensity uom="g/cm3">1.567</dryDensity>
+                        </LabCompactionTestTrial>
+                    </trial>
+                    <trial>
+                        <LabCompactionTestTrial gml:id="trial-CBR-02-compaction-2">
+                            <trialNo>2</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-02-compaction-main-2"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-02-compaction-wc-2"/>
+                            <waterContent uom="%">8.2</waterContent>
+                            <wetDensity uom="g/cm3">1.849</wetDensity>
+                            <dryDensity uom="g/cm3">1.709</dryDensity>
+                        </LabCompactionTestTrial>
+                    </trial>
+                    <trial>
+                        <LabCompactionTestTrial gml:id="trial-CBR-02-compaction-3">
+                            <trialNo>3</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-02-compaction-main-3"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-02-compaction-wc-3"/>
+                            <waterContent uom="%">11.8</waterContent>
+                            <wetDensity uom="g/cm3">2.025</wetDensity>
+                            <dryDensity uom="g/cm3">1.811</dryDensity>
+                        </LabCompactionTestTrial>
+                    </trial>
+                    <trial>
+                        <LabCompactionTestTrial gml:id="trial-CBR-02-compaction-4">
+                            <trialNo>4</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-02-compaction-main-4"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-02-compaction-wc-4"/>
+                            <waterContent uom="%">15.4</waterContent>
+                            <wetDensity uom="g/cm3">2.115</wetDensity>
+                            <dryDensity uom="g/cm3">1.833</dryDensity>
+                        </LabCompactionTestTrial>
+                    </trial>
+                    <trial>
+                        <LabCompactionTestTrial gml:id="trial-CBR-02-compaction-5">
+                            <trialNo>5</trialNo>
+                            <specimenRef xlink:href="#spec-CBR-02-compaction-main-5"/>
+                            <waterContentSpecimenRef xlink:href="#spec-CBR-02-compaction-wc-5"/>
+                            <waterContent uom="%">21.1</waterContent>
+                            <wetDensity uom="g/cm3">2.017</wetDensity>
+                            <dryDensity uom="g/cm3">1.666</dryDensity>
+                        </LabCompactionTestTrial>
+                    </trial>
+                </LabCompactionTest>
+            </procedure>
+        </Test>
+    </measurement>
     <group>
         <RigidInclusionSystem gml:id="RIFS-JAZ-001">
             <gml:name>Jazera Royal Palace RI Foundation System</gml:name>
