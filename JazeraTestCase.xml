@@ -1033,6 +1033,132 @@
         </TrialPit>
     </samplingFeature>
     <samplingFeature>
+        <Station gml:id="GBL-GT-24136_ERT-01">
+            <gml:name>ERT-01</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <referencePoint>
+                <PointLocation srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    uomLabels="m m m" axisLabels="easting northing height" gml:id="rp-ERT-01">
+                    <gml:description>No independent elevation survey exists for this station; reference point elevation is inferred to be 6.03 m, the same value assigned to the project boreholes' collar elevations.</gml:description>
+                    <gml:pos>502979.8701 2443933.1866 6.03</gml:pos>
+                </PointLocation>
+            </referencePoint>
+            <whenOccupied>
+                <TimeInterval gml:id="ti-ERT-01">
+                    <start>2024-06-06</start>
+                    <end>2024-06-06</end>
+                </TimeInterval>
+            </whenOccupied>
+            <type>Soil resistivity test station</type>
+        </Station>
+    </samplingFeature>
+    <samplingFeature>
+        <Station gml:id="GBL-GT-24136_ERT-02">
+            <gml:name>ERT-02</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <referencePoint>
+                <PointLocation srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    uomLabels="m m m" axisLabels="easting northing height" gml:id="rp-ERT-02">
+                    <gml:description>No independent elevation survey exists for this station; reference point elevation is inferred to be 6.03 m, the same value assigned to the project boreholes' collar elevations.</gml:description>
+                    <gml:pos>502953.4984 2443922.2288 6.03</gml:pos>
+                </PointLocation>
+            </referencePoint>
+            <whenOccupied>
+                <TimeInterval gml:id="ti-ERT-02">
+                    <start>2024-06-06</start>
+                    <end>2024-06-06</end>
+                </TimeInterval>
+            </whenOccupied>
+            <type>Soil resistivity test station</type>
+        </Station>
+    </samplingFeature>
+    <samplingFeature>
+        <Station gml:id="GBL-GT-24136_ERT-03">
+            <gml:name>ERT-03</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <referencePoint>
+                <PointLocation srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    uomLabels="m m m" axisLabels="easting northing height" gml:id="rp-ERT-03">
+                    <gml:description>No independent elevation survey exists for this station; reference point elevation is inferred to be 6.03 m, the same value assigned to the project boreholes' collar elevations.</gml:description>
+                    <gml:pos>502963.0234 2443944.6093 6.03</gml:pos>
+                </PointLocation>
+            </referencePoint>
+            <whenOccupied>
+                <TimeInterval gml:id="ti-ERT-03">
+                    <start>2024-06-06</start>
+                    <end>2024-06-06</end>
+                </TimeInterval>
+            </whenOccupied>
+            <type>Soil resistivity test station</type>
+        </Station>
+    </samplingFeature>
+    <samplingFeature>
+        <Station gml:id="GBL-GT-24136_ERT-04">
+            <gml:name>ERT-04</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <referencePoint>
+                <PointLocation srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    uomLabels="m m m" axisLabels="easting northing height" gml:id="rp-ERT-04">
+                    <gml:description>No independent elevation survey exists for this station; reference point elevation is inferred to be 6.03 m, the same value assigned to the project boreholes' collar elevations.</gml:description>
+                    <gml:pos>503001.2742 2443939.4128 6.03</gml:pos>
+                </PointLocation>
+            </referencePoint>
+            <whenOccupied>
+                <TimeInterval gml:id="ti-ERT-04">
+                    <start>2024-06-06</start>
+                    <end>2024-06-06</end>
+                </TimeInterval>
+            </whenOccupied>
+            <type>Soil resistivity test station</type>
+        </Station>
+    </samplingFeature>
+    <samplingFeature>
+        <Station gml:id="GBL-GT-24136_ERT-05">
+            <gml:name>ERT-05</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <referencePoint>
+                <PointLocation srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    uomLabels="m m m" axisLabels="easting northing height" gml:id="rp-ERT-05">
+                    <gml:description>No independent elevation survey exists for this station; reference point elevation is inferred to be 6.03 m, the same value assigned to the project boreholes' collar elevations.</gml:description>
+                    <gml:pos>502995.6074 2443913.6857 6.03</gml:pos>
+                </PointLocation>
+            </referencePoint>
+            <whenOccupied>
+                <TimeInterval gml:id="ti-ERT-05">
+                    <start>2024-06-06</start>
+                    <end>2024-06-06</end>
+                </TimeInterval>
+            </whenOccupied>
+            <type>Soil resistivity test station</type>
+        </Station>
+    </samplingFeature>
+    <samplingFeature>
+        <Station gml:id="GBL-GT-24136_ERT-06">
+            <gml:name>ERT-06</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <referencePoint>
+                <PointLocation srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    uomLabels="m m m" axisLabels="easting northing height" gml:id="rp-ERT-06">
+                    <gml:description>No independent elevation survey exists for this station; reference point elevation is inferred to be 6.03 m, the same value assigned to the project boreholes' collar elevations.</gml:description>
+                    <gml:pos>502970.2246 2443899.0896 6.03</gml:pos>
+                </PointLocation>
+            </referencePoint>
+            <whenOccupied>
+                <TimeInterval gml:id="ti-ERT-06">
+                    <start>2024-06-06</start>
+                    <end>2024-06-06</end>
+                </TimeInterval>
+            </whenOccupied>
+            <type>Soil resistivity test station</type>
+        </Station>
+    </samplingFeature>
+    <samplingFeature>
         <RITreatedArea gml:id="RTA-JAZ-001">
             <gml:name>Jazera Royal Palace Treated Area</gml:name>
             <projectRef xlink:href="#GBL-GT-24136"/>
@@ -52257,6 +52383,2441 @@
                         </LabCompactionTestTrial>
                     </trial>
                 </LabCompactionTest>
+            </procedure>
+        </Test>
+    </measurement>
+    <measurement>
+        <Test gml:id="test-ERT-01">
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_ERT-01"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-ERT-01-resistivity">
+                    <start>2024-06-06</start>
+                    <end>2024-06-06</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location xlink:href="#rp-ERT-01"/>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>Minimum Apparent Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#apparent_resistivity_min">Minimum Apparent Resistivity</propertyClass>
+                                            <uom>ohm.m</uom>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Maximum Apparent Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#apparent_resistivity_max">Maximum Apparent Resistivity</propertyClass>
+                                            <uom>ohm.m</uom>
+                                        </Property>
+                                        <Property index="3">
+                                            <propertyName>Corrosivity Classification (Palmer, 1974)</propertyName>
+                                            <typeData>string</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#corrosivity_classification_palmer">Corrosivity Classification (Palmer, 1974)</propertyClass>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>0.00,0.15,Very Severe</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <InsituResistivityTest gml:id="proc-ERT-01">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_g57"/>
+                    <arrayType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/arrayType.xml#wenner">Wenner</arrayType>
+                    <surveyGeometry codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/surveyGeometry.xml#azimuthal_sounding">Azimuthal Sounding</surveyGeometry>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-0.5-NS">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.041</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.129</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-0.5-EW">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.036</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.113</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-0.5-NESW">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.031</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.097</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-0.5-NWSE">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.042</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.132</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-1.0-NS">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.021</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.132</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-1.0-EW">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.020</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.126</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-1.0-NESW">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.018</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.113</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-1.0-NWSE">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.015</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.094</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-2.0-NS">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.009</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.113</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-2.0-EW">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.010</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.126</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-2.0-NESW">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.012</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.151</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-2.0-NWSE">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.008</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.101</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-3.0-NS">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.002</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.038</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-3.0-EW">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.005</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.094</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-3.0-NESW">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.003</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.057</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-3.0-NWSE">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.004</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.075</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-4.0-NS">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-4.0-EW">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-4.0-NESW">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-4.0-NWSE">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-5.0-NS">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-5.0-EW">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-5.0-NESW">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-5.0-NWSE">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-6.0-NS">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-6.0-EW">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-6.0-NESW">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-6.0-NWSE">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-7.0-NS">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-7.0-EW">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-7.0-NESW">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-7.0-NWSE">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-8.0-NS">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-8.0-EW">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-8.0-NESW">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-8.0-NWSE">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-9.0-NS">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-9.0-EW">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-9.0-NESW">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-9.0-NWSE">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-10.0-NS">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-10.0-EW">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-10.0-NESW">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-01-10.0-NWSE">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                </InsituResistivityTest>
+            </procedure>
+        </Test>
+    </measurement>
+
+    <measurement>
+        <Test gml:id="test-ERT-02">
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_ERT-02"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-ERT-02-resistivity">
+                    <start>2024-06-06</start>
+                    <end>2024-06-06</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location xlink:href="#rp-ERT-02"/>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>Minimum Apparent Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#apparent_resistivity_min">Minimum Apparent Resistivity</propertyClass>
+                                            <uom>ohm.m</uom>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Maximum Apparent Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#apparent_resistivity_max">Maximum Apparent Resistivity</propertyClass>
+                                            <uom>ohm.m</uom>
+                                        </Property>
+                                        <Property index="3">
+                                            <propertyName>Corrosivity Classification (Palmer, 1974)</propertyName>
+                                            <typeData>string</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#corrosivity_classification_palmer">Corrosivity Classification (Palmer, 1974)</propertyClass>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>0.00,0.15,Very Severe</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <InsituResistivityTest gml:id="proc-ERT-02">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_g57"/>
+                    <arrayType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/arrayType.xml#wenner">Wenner</arrayType>
+                    <surveyGeometry codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/surveyGeometry.xml#azimuthal_sounding">Azimuthal Sounding</surveyGeometry>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-0.5-NS">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.028</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.088</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-0.5-EW">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.031</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.097</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-0.5-NESW">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.030</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.094</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-0.5-NWSE">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.025</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.079</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-1.0-NS">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.018</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.113</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-1.0-EW">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.020</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.126</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-1.0-NESW">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.015</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.094</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-1.0-NWSE">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.014</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.088</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-2.0-NS">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.007</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.088</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-2.0-EW">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.012</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.151</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-2.0-NESW">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.008</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.101</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-2.0-NWSE">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.008</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.101</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-3.0-NS">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.003</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.057</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-3.0-EW">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.004</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.075</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-3.0-NESW">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.003</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.057</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-3.0-NWSE">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.002</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.038</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-4.0-NS">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-4.0-EW">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-4.0-NESW">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-4.0-NWSE">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-5.0-NS">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-5.0-EW">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-5.0-NESW">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-5.0-NWSE">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-6.0-NS">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-6.0-EW">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-6.0-NESW">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-6.0-NWSE">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-7.0-NS">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-7.0-EW">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-7.0-NESW">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-7.0-NWSE">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-8.0-NS">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-8.0-EW">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-8.0-NESW">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-8.0-NWSE">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-9.0-NS">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-9.0-EW">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-9.0-NESW">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-9.0-NWSE">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-10.0-NS">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-10.0-EW">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-10.0-NESW">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-02-10.0-NWSE">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                </InsituResistivityTest>
+            </procedure>
+        </Test>
+    </measurement>
+
+    <measurement>
+        <Test gml:id="test-ERT-03">
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_ERT-03"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-ERT-03-resistivity">
+                    <start>2024-06-06</start>
+                    <end>2024-06-06</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location xlink:href="#rp-ERT-03"/>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>Minimum Apparent Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#apparent_resistivity_min">Minimum Apparent Resistivity</propertyClass>
+                                            <uom>ohm.m</uom>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Maximum Apparent Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#apparent_resistivity_max">Maximum Apparent Resistivity</propertyClass>
+                                            <uom>ohm.m</uom>
+                                        </Property>
+                                        <Property index="3">
+                                            <propertyName>Corrosivity Classification (Palmer, 1974)</propertyName>
+                                            <typeData>string</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#corrosivity_classification_palmer">Corrosivity Classification (Palmer, 1974)</propertyClass>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>0.00,0.23,Very Severe</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <InsituResistivityTest gml:id="proc-ERT-03">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_g57"/>
+                    <arrayType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/arrayType.xml#wenner">Wenner</arrayType>
+                    <surveyGeometry codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/surveyGeometry.xml#azimuthal_sounding">Azimuthal Sounding</surveyGeometry>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-0.5-NS">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.050</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.157</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-0.5-EW">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.043</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.135</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-0.5-NESW">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.046</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.145</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-0.5-NWSE">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.040</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.126</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-1.0-NS">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.037</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.232</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-1.0-EW">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.031</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.195</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-1.0-NESW">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.027</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.170</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-1.0-NWSE">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.034</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.214</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-2.0-NS">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.009</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.113</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-2.0-EW">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.011</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.138</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-2.0-NESW">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.008</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.101</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-2.0-NWSE">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.008</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.101</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-3.0-NS">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.002</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.038</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-3.0-EW">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.004</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.075</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-3.0-NESW">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.005</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.094</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-3.0-NWSE">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.003</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.057</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-4.0-NS">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-4.0-EW">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-4.0-NESW">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-4.0-NWSE">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-5.0-NS">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-5.0-EW">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-5.0-NESW">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-5.0-NWSE">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-6.0-NS">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-6.0-EW">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-6.0-NESW">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-6.0-NWSE">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-7.0-NS">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-7.0-EW">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-7.0-NESW">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-7.0-NWSE">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-8.0-NS">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-8.0-EW">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-8.0-NESW">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-8.0-NWSE">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-9.0-NS">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-9.0-EW">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-9.0-NESW">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-9.0-NWSE">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-10.0-NS">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-10.0-EW">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-10.0-NESW">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-03-10.0-NWSE">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                </InsituResistivityTest>
+            </procedure>
+        </Test>
+    </measurement>
+
+    <measurement>
+        <Test gml:id="test-ERT-04">
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_ERT-04"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-ERT-04-resistivity">
+                    <start>2024-06-06</start>
+                    <end>2024-06-06</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location xlink:href="#rp-ERT-04"/>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>Minimum Apparent Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#apparent_resistivity_min">Minimum Apparent Resistivity</propertyClass>
+                                            <uom>ohm.m</uom>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Maximum Apparent Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#apparent_resistivity_max">Maximum Apparent Resistivity</propertyClass>
+                                            <uom>ohm.m</uom>
+                                        </Property>
+                                        <Property index="3">
+                                            <propertyName>Corrosivity Classification (Palmer, 1974)</propertyName>
+                                            <typeData>string</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#corrosivity_classification_palmer">Corrosivity Classification (Palmer, 1974)</propertyClass>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>0.00,0.11,Very Severe</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <InsituResistivityTest gml:id="proc-ERT-04">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_g57"/>
+                    <arrayType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/arrayType.xml#wenner">Wenner</arrayType>
+                    <surveyGeometry codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/surveyGeometry.xml#azimuthal_sounding">Azimuthal Sounding</surveyGeometry>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-0.5-NS">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.020</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.063</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-0.5-EW">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.027</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.085</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-0.5-NESW">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.024</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.075</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-0.5-NWSE">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.023</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.072</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-1.0-NS">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.012</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.075</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-1.0-EW">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.018</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.113</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-1.0-NESW">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.015</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.094</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-1.0-NWSE">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.017</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.107</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-2.0-NS">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.009</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.113</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-2.0-EW">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.007</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.088</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-2.0-NESW">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.009</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.113</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-2.0-NWSE">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.008</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.101</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-3.0-NS">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.004</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.075</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-3.0-EW">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.003</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.057</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-3.0-NESW">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.003</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.057</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-3.0-NWSE">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.005</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.094</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-4.0-NS">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-4.0-EW">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-4.0-NESW">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-4.0-NWSE">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-5.0-NS">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-5.0-EW">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-5.0-NESW">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-5.0-NWSE">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-6.0-NS">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-6.0-EW">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-6.0-NESW">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-6.0-NWSE">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-7.0-NS">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-7.0-EW">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-7.0-NESW">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-7.0-NWSE">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-8.0-NS">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-8.0-EW">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-8.0-NESW">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-8.0-NWSE">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-9.0-NS">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-9.0-EW">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-9.0-NESW">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-9.0-NWSE">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-10.0-NS">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-10.0-EW">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-10.0-NESW">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-04-10.0-NWSE">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                </InsituResistivityTest>
+            </procedure>
+        </Test>
+    </measurement>
+
+    <measurement>
+        <Test gml:id="test-ERT-05">
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_ERT-05"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-ERT-05-resistivity">
+                    <start>2024-06-06</start>
+                    <end>2024-06-06</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location xlink:href="#rp-ERT-05"/>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>Minimum Apparent Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#apparent_resistivity_min">Minimum Apparent Resistivity</propertyClass>
+                                            <uom>ohm.m</uom>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Maximum Apparent Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#apparent_resistivity_max">Maximum Apparent Resistivity</propertyClass>
+                                            <uom>ohm.m</uom>
+                                        </Property>
+                                        <Property index="3">
+                                            <propertyName>Corrosivity Classification (Palmer, 1974)</propertyName>
+                                            <typeData>string</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#corrosivity_classification_palmer">Corrosivity Classification (Palmer, 1974)</propertyClass>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>0.00,0.18,Very Severe</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <InsituResistivityTest gml:id="proc-ERT-05">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_g57"/>
+                    <arrayType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/arrayType.xml#wenner">Wenner</arrayType>
+                    <surveyGeometry codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/surveyGeometry.xml#azimuthal_sounding">Azimuthal Sounding</surveyGeometry>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-0.5-NS">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.037</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.116</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-0.5-EW">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.030</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.094</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-0.5-NESW">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.035</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.110</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-0.5-NWSE">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.028</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.088</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-1.0-NS">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.021</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.132</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-1.0-EW">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.018</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.113</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-1.0-NESW">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.023</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.145</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-1.0-NWSE">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.017</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.107</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-2.0-NS">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.014</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.176</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-2.0-EW">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.010</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.126</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-2.0-NESW">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.012</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.151</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-2.0-NWSE">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.011</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.138</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-3.0-NS">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.009</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.170</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-3.0-EW">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.007</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.132</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-3.0-NESW">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.007</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.132</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-3.0-NWSE">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.008</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.151</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-4.0-NS">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-4.0-EW">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-4.0-NESW">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-4.0-NWSE">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-5.0-NS">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-5.0-EW">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-5.0-NESW">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-5.0-NWSE">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-6.0-NS">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-6.0-EW">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-6.0-NESW">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-6.0-NWSE">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-7.0-NS">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-7.0-EW">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-7.0-NESW">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-7.0-NWSE">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-8.0-NS">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-8.0-EW">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-8.0-NESW">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-8.0-NWSE">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-9.0-NS">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-9.0-EW">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-9.0-NESW">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-9.0-NWSE">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-10.0-NS">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-10.0-EW">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-10.0-NESW">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-05-10.0-NWSE">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                </InsituResistivityTest>
+            </procedure>
+        </Test>
+    </measurement>
+
+    <measurement>
+        <Test gml:id="test-ERT-06">
+            <investigationTarget>Natural Ground</investigationTarget>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_ERT-06"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-ERT-06-resistivity">
+                    <start>2024-06-06</start>
+                    <end>2024-06-06</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location xlink:href="#rp-ERT-06"/>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>Minimum Apparent Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#apparent_resistivity_min">Minimum Apparent Resistivity</propertyClass>
+                                            <uom>ohm.m</uom>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Maximum Apparent Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#apparent_resistivity_max">Maximum Apparent Resistivity</propertyClass>
+                                            <uom>ohm.m</uom>
+                                        </Property>
+                                        <Property index="3">
+                                            <propertyName>Corrosivity Classification (Palmer, 1974)</propertyName>
+                                            <typeData>string</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#corrosivity_classification_palmer">Corrosivity Classification (Palmer, 1974)</propertyClass>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>0.00,0.13,Very Severe</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <InsituResistivityTest gml:id="proc-ERT-06">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_g57"/>
+                    <arrayType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/arrayType.xml#wenner">Wenner</arrayType>
+                    <surveyGeometry codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/surveyGeometry.xml#azimuthal_sounding">Azimuthal Sounding</surveyGeometry>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-0.5-NS">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.026</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.082</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-0.5-EW">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.020</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.063</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-0.5-NESW">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.027</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.085</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-0.5-NWSE">
+                            <electrodeSpacing uom="m">0.5</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.021</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.066</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-1.0-NS">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.015</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.094</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-1.0-EW">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.017</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.107</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-1.0-NESW">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.014</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.088</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-1.0-NWSE">
+                            <electrodeSpacing uom="m">1.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.012</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.075</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-2.0-NS">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.010</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.126</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-2.0-EW">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.009</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.113</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-2.0-NESW">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.008</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.101</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-2.0-NWSE">
+                            <electrodeSpacing uom="m">2.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.009</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.113</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-3.0-NS">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.005</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.094</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-3.0-EW">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.003</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.057</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-3.0-NESW">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.005</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.094</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-3.0-NWSE">
+                            <electrodeSpacing uom="m">3.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.004</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.075</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-4.0-NS">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-4.0-EW">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-4.0-NESW">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-4.0-NWSE">
+                            <electrodeSpacing uom="m">4.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-5.0-NS">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-5.0-EW">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-5.0-NESW">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-5.0-NWSE">
+                            <electrodeSpacing uom="m">5.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-6.0-NS">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-6.0-EW">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-6.0-NESW">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-6.0-NWSE">
+                            <electrodeSpacing uom="m">6.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-7.0-NS">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-7.0-EW">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-7.0-NESW">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-7.0-NWSE">
+                            <electrodeSpacing uom="m">7.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-8.0-NS">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-8.0-EW">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-8.0-NESW">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-8.0-NWSE">
+                            <electrodeSpacing uom="m">8.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-9.0-NS">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-9.0-EW">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-9.0-NESW">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-9.0-NWSE">
+                            <electrodeSpacing uom="m">9.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-10.0-NS">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">0</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-10.0-EW">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">90</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-10.0-NESW">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">45</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                    <reading>
+                        <ResistivityReading gml:id="read-ERT-06-10.0-NWSE">
+                            <electrodeSpacing uom="m">10.0</electrodeSpacing>
+                            <orientation uom="dega">135</orientation>
+                            <measuredResistance uom="ohm">0.000</measuredResistance>
+                            <apparentResistivity uom="ohm.m">0.000</apparentResistivity>
+                        </ResistivityReading>
+                    </reading>
+                </InsituResistivityTest>
             </procedure>
         </Test>
     </measurement>
