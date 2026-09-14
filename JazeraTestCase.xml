@@ -980,7 +980,6 @@
                     <gml:pos>502942.9783 2443932.7254 6.03</gml:pos>
                 </PointLocation>
             </referencePoint>
-            <samplingFeatureGroupRef xlink:href="#RIFS-JAZ-001"/>
             <centerLine>
                 <LinearExtent srsDimension="3"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -1013,7 +1012,6 @@
                     <gml:pos>502965.4609 2443893.3903 6.03</gml:pos>
                 </PointLocation>
             </referencePoint>
-            <samplingFeatureGroupRef xlink:href="#RIFS-JAZ-001"/>
             <centerLine>
                 <LinearExtent srsDimension="3"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -50898,6 +50896,7 @@
                                             <propertyName>CBR @ 95% MDD</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cbr_at_95_pct_mdd">CBR at 95% Maximum Dry Density</propertyClass>
+                                            <uom>%</uom>
                                         </Property>
                                     </properties>
                                 </PropertyParameters>
@@ -51029,6 +51028,7 @@
                     <targetPctMaxDryDensity>95</targetPctMaxDryDensity>
                     <targetOptWaterContent uom="%">14.3</targetOptWaterContent>
                     <loadCellCalibrationConstant>4.201</loadCellCalibrationConstant>
+                    <waterTemperature uom="degC">20</waterTemperature>
                     <trial>
                         <LabCBRTestTrial gml:id="trial-CBR-01-1">
                             <trialNo>1</trialNo>
@@ -51274,6 +51274,7 @@
                                             <propertyName>CBR @ 95% MDD</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cbr_at_95_pct_mdd">CBR at 95% Maximum Dry Density</propertyClass>
+                                            <uom>%</uom>
                                         </Property>
                                     </properties>
                                 </PropertyParameters>
@@ -51405,6 +51406,7 @@
                     <targetPctMaxDryDensity>95</targetPctMaxDryDensity>
                     <targetOptWaterContent uom="%">15.3</targetOptWaterContent>
                     <loadCellCalibrationConstant>4.201</loadCellCalibrationConstant>
+                    <waterTemperature uom="degC">20</waterTemperature>
                     <trial>
                         <LabCBRTestTrial gml:id="trial-CBR-02-1">
                             <trialNo>1</trialNo>
@@ -51650,11 +51652,13 @@
                                             <propertyName>Maximum Dry Density</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dry_density_max">Maximum Dry Density</propertyClass>
+                                            <uom>g/cm3</uom>
                                         </Property>
                                         <Property index="2">
                                             <propertyName>Optimum Water Content</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_content_optimum">Optimum Water Content</propertyClass>
+                                            <uom>%</uom>
                                         </Property>
                                     </properties>
                                 </PropertyParameters>
@@ -51668,6 +51672,11 @@
                 <LabCompactionTest gml:id="proc-CBR-01-compaction">
                     <testProcedureMethod
                         xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1557"/>
+                    <testingEnvironment>
+                        <Environment gml:id="env-CBR-01-compaction">
+                            <ambientTemperature uom="degC">21</ambientTemperature>
+                        </Environment>
+                    </testingEnvironment>
                     <specimen>
                         <SoilSpecimen gml:id="spec-CBR-01-compaction-wc-1">
                             <gml:name>CBR-01 compaction trial 1 - water content specimen</gml:name>
@@ -51878,7 +51887,7 @@
                             <specimenType>reconstituted</specimenType>
                         </SoilSpecimen>
                     </specimen>
-                    <compactionTestType>Modified Proctor</compactionTestType>
+                    <compactionTestType>Modified Proctor Method C</compactionTestType>
                     <trial>
                         <LabCompactionTestTrial gml:id="trial-CBR-01-compaction-1">
                             <trialNo>1</trialNo>
@@ -51961,11 +51970,13 @@
                                             <propertyName>Maximum Dry Density</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#dry_density_max">Maximum Dry Density</propertyClass>
+                                            <uom>g/cm3</uom>
                                         </Property>
                                         <Property index="2">
                                             <propertyName>Optimum Water Content</propertyName>
                                             <typeData>double</typeData>
                                             <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#water_content_optimum">Optimum Water Content</propertyClass>
+                                            <uom>%</uom>
                                         </Property>
                                     </properties>
                                 </PropertyParameters>
@@ -51979,6 +51990,11 @@
                 <LabCompactionTest gml:id="proc-CBR-02-compaction">
                     <testProcedureMethod
                         xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1557"/>
+                    <testingEnvironment>
+                        <Environment gml:id="env-CBR-02-compaction">
+                            <ambientTemperature uom="degC">21</ambientTemperature>
+                        </Environment>
+                    </testingEnvironment>
                     <specimen>
                         <SoilSpecimen gml:id="spec-CBR-02-compaction-wc-1">
                             <gml:name>CBR-02 compaction trial 1 - water content specimen</gml:name>
@@ -52189,7 +52205,7 @@
                             <specimenType>reconstituted</specimenType>
                         </SoilSpecimen>
                     </specimen>
-                    <compactionTestType>Modified Proctor</compactionTestType>
+                    <compactionTestType>Modified Proctor Method C</compactionTestType>
                     <trial>
                         <LabCompactionTestTrial gml:id="trial-CBR-02-compaction-1">
                             <trialNo>1</trialNo>
