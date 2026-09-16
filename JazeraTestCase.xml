@@ -38289,6 +38289,130 @@
             <theoreticalGroutVolume>3.2499</theoreticalGroutVolume>
         </RIColumn>
     </samplingFeature>
+    <samplingFeature>
+        <TrialPit gml:id="GBL-GT-24136_TR-1">
+            <gml:name>TR-1</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <referencePoint>
+                <PointLocation srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    uomLabels="m m m" axisLabels="easting northing height" gml:id="rp-TR-1">
+                    <gml:description>No independent elevation survey exists for this trial pit; reference point elevation is inferred to be 6.03 m, the same value assigned to the project boreholes' and CBR trial pits' collar elevations.</gml:description>
+                    <gml:pos>502955.1028 2443918.9003 6.03</gml:pos>
+                </PointLocation>
+            </referencePoint>
+            <centerLine>
+                <LinearExtent srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    uomLabels="m m m" axisLabels="easting northing height" gml:id="cl-TR-1">
+                    <gml:posList>502955.1028 2443918.9003 6.03 502955.1028 2443918.9003 3.03</gml:posList>
+                    <datumReference>ground surface</datumReference>
+                </LinearExtent>
+            </centerLine>
+            <linearReferencing>
+                <LinearSpatialReferenceSystem gml:id="lsr-TR-1">
+                    <gml:identifier codeSpace="OGC">lsr-TR-1</gml:identifier>
+                    <gml:name>Depth reference system for TR-1</gml:name>
+                    <glr:linearElement xlink:href="#cl-TR-1"/>
+                    <lrm xlink:href="https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#md_m"/>
+                </LinearSpatialReferenceSystem>
+            </linearReferencing>
+            <totalMeasuredDepth uom="m">3.0</totalMeasuredDepth>
+        </TrialPit>
+    </samplingFeature>
+    <samplingFeature>
+        <TrialPit gml:id="GBL-GT-24136_TR-2">
+            <gml:name>TR-2</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <referencePoint>
+                <PointLocation srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    uomLabels="m m m" axisLabels="easting northing height" gml:id="rp-TR-2">
+                    <gml:description>No independent elevation survey exists for this trial pit; reference point elevation is inferred to be 6.03 m, the same value assigned to the project boreholes' and CBR trial pits' collar elevations.</gml:description>
+                    <gml:pos>502958.5427 2443943.5913 6.03</gml:pos>
+                </PointLocation>
+            </referencePoint>
+            <centerLine>
+                <LinearExtent srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    uomLabels="m m m" axisLabels="easting northing height" gml:id="cl-TR-2">
+                    <gml:posList>502958.5427 2443943.5913 6.03 502958.5427 2443943.5913 4.03</gml:posList>
+                    <datumReference>ground surface</datumReference>
+                </LinearExtent>
+            </centerLine>
+            <linearReferencing>
+                <LinearSpatialReferenceSystem gml:id="lsr-TR-2">
+                    <gml:identifier codeSpace="OGC">lsr-TR-2</gml:identifier>
+                    <gml:name>Depth reference system for TR-2</gml:name>
+                    <glr:linearElement xlink:href="#cl-TR-2"/>
+                    <lrm xlink:href="https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#md_m"/>
+                </LinearSpatialReferenceSystem>
+            </linearReferencing>
+            <totalMeasuredDepth uom="m">2.0</totalMeasuredDepth>
+        </TrialPit>
+    </samplingFeature>
+    <samplingFeature>
+        <TrialPit gml:id="GBL-GT-24136_TR-3">
+            <gml:name>TR-3</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <referencePoint>
+                <PointLocation srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    uomLabels="m m m" axisLabels="easting northing height" gml:id="rp-TR-3">
+                    <gml:description>No independent elevation survey exists for this trial pit; reference point elevation is inferred to be 6.03 m, the same value assigned to the project boreholes' and CBR trial pits' collar elevations.</gml:description>
+                    <gml:pos>502998.0263 2443909.8393 6.03</gml:pos>
+                </PointLocation>
+            </referencePoint>
+            <centerLine>
+                <LinearExtent srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    uomLabels="m m m" axisLabels="easting northing height" gml:id="cl-TR-3">
+                    <gml:posList>502998.0263 2443909.8393 6.03 502998.0263 2443909.8393 5.03</gml:posList>
+                    <datumReference>ground surface</datumReference>
+                </LinearExtent>
+            </centerLine>
+            <linearReferencing>
+                <LinearSpatialReferenceSystem gml:id="lsr-TR-3">
+                    <gml:identifier codeSpace="OGC">lsr-TR-3</gml:identifier>
+                    <gml:name>Depth reference system for TR-3</gml:name>
+                    <glr:linearElement xlink:href="#cl-TR-3"/>
+                    <lrm xlink:href="https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#md_m"/>
+                </LinearSpatialReferenceSystem>
+            </linearReferencing>
+            <totalMeasuredDepth uom="m">1.0</totalMeasuredDepth>
+        </TrialPit>
+    </samplingFeature>
+    <samplingFeature>
+        <TrialPit gml:id="GBL-GT-24136_TR-4">
+            <gml:name>TR-4</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <referencePoint>
+                <PointLocation srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    uomLabels="m m m" axisLabels="easting northing height" gml:id="rp-TR-4">
+                    <gml:description>No independent elevation survey exists for this trial pit; reference point elevation is inferred to be 6.03 m, the same value assigned to the project boreholes' and CBR trial pits' collar elevations.</gml:description>
+                    <gml:pos>502984.0351 2443901.8217 6.03</gml:pos>
+                </PointLocation>
+            </referencePoint>
+            <centerLine>
+                <LinearExtent srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
+                    uomLabels="m m m" axisLabels="easting northing height" gml:id="cl-TR-4">
+                    <gml:posList>502984.0351 2443901.8217 6.03 502984.0351 2443901.8217 5.03</gml:posList>
+                    <datumReference>ground surface</datumReference>
+                </LinearExtent>
+            </centerLine>
+            <linearReferencing>
+                <LinearSpatialReferenceSystem gml:id="lsr-TR-4">
+                    <gml:identifier codeSpace="OGC">lsr-TR-4</gml:identifier>
+                    <gml:name>Depth reference system for TR-4</gml:name>
+                    <glr:linearElement xlink:href="#cl-TR-4"/>
+                    <lrm xlink:href="https://diggsml.org/def/crs/DIGGS/0.1/lrm.xml#md_m"/>
+                </LinearSpatialReferenceSystem>
+            </linearReferencing>
+            <totalMeasuredDepth uom="m">1.0</totalMeasuredDepth>
+        </TrialPit>
+    </samplingFeature>
     <samplingActivity>
         <SamplingActivity gml:id="sa-BH-1_1-1">
             <projectRef xlink:href="#GBL-GT-24136"/>
@@ -39904,6 +40028,82 @@
             <samplingMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_22475_1"/>
         </SamplingActivity>
     </samplingActivity>
+    <samplingActivity>
+        <SamplingActivity gml:id="sa-TR-1">
+            <gml:description>Sample type and preparation are not reported by the source. ASTM D5334/IEEE Std 442 require either an intact or a remolded specimen for this determination; the sample is therefore understood to be either a block sample cut from the trial pit or a bulk sample subsequently remolded to the density reported for this determination.</gml:description>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_TR-1"/>
+            <samplingLocation>
+                <PointLocation gml:id="sal-TR-1" srsName="#lsr-TR-1" srsDimension="1">
+                    <gml:pos>3.0</gml:pos>
+                </PointLocation>
+            </samplingLocation>
+            <activityType>collect</activityType>
+            <sampleProduced>
+                <SampleProduced gml:id="sp-TR-1">
+                    <location xlink:href="#sal-TR-1"/>
+                </SampleProduced>
+            </sampleProduced>
+            <samplingMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_22475_1"/>
+        </SamplingActivity>
+    </samplingActivity>
+    <samplingActivity>
+        <SamplingActivity gml:id="sa-TR-2">
+            <gml:description>Sample type and preparation are not reported by the source. ASTM D5334/IEEE Std 442 require either an intact or a remolded specimen for this determination; the sample is therefore understood to be either a block sample cut from the trial pit or a bulk sample subsequently remolded to the density reported for this determination.</gml:description>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_TR-2"/>
+            <samplingLocation>
+                <PointLocation gml:id="sal-TR-2" srsName="#lsr-TR-2" srsDimension="1">
+                    <gml:pos>2.0</gml:pos>
+                </PointLocation>
+            </samplingLocation>
+            <activityType>collect</activityType>
+            <sampleProduced>
+                <SampleProduced gml:id="sp-TR-2">
+                    <location xlink:href="#sal-TR-2"/>
+                </SampleProduced>
+            </sampleProduced>
+            <samplingMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_22475_1"/>
+        </SamplingActivity>
+    </samplingActivity>
+    <samplingActivity>
+        <SamplingActivity gml:id="sa-TR-3">
+            <gml:description>Sample type and preparation are not reported by the source. ASTM D5334/IEEE Std 442 require either an intact or a remolded specimen for this determination; the sample is therefore understood to be either a block sample cut from the trial pit or a bulk sample subsequently remolded to the density reported for this determination.</gml:description>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_TR-3"/>
+            <samplingLocation>
+                <PointLocation gml:id="sal-TR-3" srsName="#lsr-TR-3" srsDimension="1">
+                    <gml:pos>1.0</gml:pos>
+                </PointLocation>
+            </samplingLocation>
+            <activityType>collect</activityType>
+            <sampleProduced>
+                <SampleProduced gml:id="sp-TR-3">
+                    <location xlink:href="#sal-TR-3"/>
+                </SampleProduced>
+            </sampleProduced>
+            <samplingMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_22475_1"/>
+        </SamplingActivity>
+    </samplingActivity>
+    <samplingActivity>
+        <SamplingActivity gml:id="sa-TR-4">
+            <gml:description>Sample type and preparation are not reported by the source. ASTM D5334/IEEE Std 442 require either an intact or a remolded specimen for this determination; the sample is therefore understood to be either a block sample cut from the trial pit or a bulk sample subsequently remolded to the density reported for this determination.</gml:description>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_TR-4"/>
+            <samplingLocation>
+                <PointLocation gml:id="sal-TR-4" srsName="#lsr-TR-4" srsDimension="1">
+                    <gml:pos>1.0</gml:pos>
+                </PointLocation>
+            </samplingLocation>
+            <activityType>collect</activityType>
+            <sampleProduced>
+                <SampleProduced gml:id="sp-TR-4">
+                    <location xlink:href="#sal-TR-4"/>
+                </SampleProduced>
+            </sampleProduced>
+            <samplingMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_22475_1"/>
+        </SamplingActivity>
+    </samplingActivity>
     <sample>
         <Sample gml:id="s-BH-1_1-1">
             <gml:name>1-1</gml:name>
@@ -40887,6 +41087,46 @@
             <type codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleType.xml#large_bulk">Large bulk sample, earthworks testing</type>
             <qualityClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/qualityClass.xml#class_3">Quality class 3</qualityClass>
             <sampleMatrix codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleMatrix.xml#fill">Fill</sampleMatrix>
+        </Sample>
+    </sample>
+    <sample>
+        <Sample gml:id="s-TR-1">
+            <gml:name>TR-1</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingActivityRef xlink:href="#sa-TR-1"/>
+            <sampleProducedRef xlink:href="#sp-TR-1"/>
+            <classification>Soil</classification>
+            <sampleMatrix codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleMatrix.xml#soil">Soil</sampleMatrix>
+        </Sample>
+    </sample>
+    <sample>
+        <Sample gml:id="s-TR-2">
+            <gml:name>TR-2</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingActivityRef xlink:href="#sa-TR-2"/>
+            <sampleProducedRef xlink:href="#sp-TR-2"/>
+            <classification>Soil</classification>
+            <sampleMatrix codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleMatrix.xml#soil">Soil</sampleMatrix>
+        </Sample>
+    </sample>
+    <sample>
+        <Sample gml:id="s-TR-3">
+            <gml:name>TR-3</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingActivityRef xlink:href="#sa-TR-3"/>
+            <sampleProducedRef xlink:href="#sp-TR-3"/>
+            <classification>Soil</classification>
+            <sampleMatrix codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleMatrix.xml#soil">Soil</sampleMatrix>
+        </Sample>
+    </sample>
+    <sample>
+        <Sample gml:id="s-TR-4">
+            <gml:name>TR-4</gml:name>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingActivityRef xlink:href="#sa-TR-4"/>
+            <sampleProducedRef xlink:href="#sp-TR-4"/>
+            <classification>Soil</classification>
+            <sampleMatrix codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/sampleMatrix.xml#soil">Soil</sampleMatrix>
         </Sample>
     </sample>
     <observation>
@@ -54818,6 +55058,540 @@
                         </ResistivityReading>
                     </reading>
                 </InsituResistivityTest>
+            </procedure>
+        </Test>
+    </measurement>
+    <measurement>
+        <Test gml:id="test-TR-1">
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_TR-1"/>
+            <sampleRef xlink:href="#s-TR-1"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-TR-1">
+                    <start>2024-06-06</start>
+                    <end>2024-06-23</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location>
+                        <PointLocation gml:id="pl-TR-1" srsDimension="1"
+                            srsName="#lsr-TR-1">
+                            <gml:pos>3.0</gml:pos>
+                        </PointLocation>
+                    </location>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>Thermal Conductivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#thermal_conductivity">Thermal Conductivity</propertyClass>
+                                            <uom>W/(m.deltaK)</uom>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Thermal Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#thermal_resistivity">Thermal Resistivity</propertyClass>
+                                            <uom>deltaK.m/W</uom>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>0.3010 3.32226</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <LabThermalConductivityTest gml:id="proc-TR-1">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d5334"/>
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#ieee_442_2017"/>
+                    <testProcedureEquipment>
+                        <Equipment gml:id="eq-tls100">
+                            <class>thermal needle probe</class>
+                            <make>Thermtest Instruments</make>
+                            <modelNumber>TLS-100</modelNumber>
+                        </Equipment>
+                    </testProcedureEquipment>
+                    <testingEnvironment>
+                        <Environment gml:id="env-TR-1">
+                            <ambientTemperature uom="degC">21</ambientTemperature>
+                        </Environment>
+                    </testingEnvironment>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-TR-1">
+                            <gml:description>Sample type and preparation are not reported by the source. ASTM D5334/IEEE Std 442 require either an intact or a remolded specimen for this determination; the sample is therefore understood to be either a block sample cut from the trial pit or a bulk sample subsequently remolded to the density reported for this determination.</gml:description>
+                            <sampleRef xlink:href="#s-TR-1"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryDensity uom="g/cm3">1.698</dryDensity>
+                                    <temperature>
+                                        <TemperatureMeasurement gml:id="temp-TR-1">
+                                            <temperature uom="degC">24.7</temperature>
+                                        </TemperatureMeasurement>
+                                    </temperature>
+                                    <waterContent uom="%">2.00</waterContent>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                        </SoilSpecimen>
+                    </specimen>
+                    <probeLength uom="mm">100</probeLength>
+                    <heatingDuration uom="s">90</heatingDuration>
+                    <temperatureRiseOverLogCycle uom="deltaC">6.9</temperatureRiseOverLogCycle>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-1-10">
+                            <elapsedTime uom="s">10</elapsedTime>
+                            <temperature uom="degC">28.4</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-1-20">
+                            <elapsedTime uom="s">20</elapsedTime>
+                            <temperature uom="degC">29.4</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-1-30">
+                            <elapsedTime uom="s">30</elapsedTime>
+                            <temperature uom="degC">30.2</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-1-40">
+                            <elapsedTime uom="s">40</elapsedTime>
+                            <temperature uom="degC">30.7</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-1-50">
+                            <elapsedTime uom="s">50</elapsedTime>
+                            <temperature uom="degC">31.0</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-1-60">
+                            <elapsedTime uom="s">60</elapsedTime>
+                            <temperature uom="degC">31.3</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-1-70">
+                            <elapsedTime uom="s">70</elapsedTime>
+                            <temperature uom="degC">31.5</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-1-80">
+                            <elapsedTime uom="s">80</elapsedTime>
+                            <temperature uom="degC">31.6</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-1-90">
+                            <elapsedTime uom="s">90</elapsedTime>
+                            <temperature uom="degC">31.8</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                </LabThermalConductivityTest>
+            </procedure>
+        </Test>
+    </measurement>
+    <measurement>
+        <Test gml:id="test-TR-2">
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_TR-2"/>
+            <sampleRef xlink:href="#s-TR-2"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-TR-2">
+                    <start>2024-06-06</start>
+                    <end>2024-06-23</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location>
+                        <PointLocation gml:id="pl-TR-2" srsDimension="1"
+                            srsName="#lsr-TR-2">
+                            <gml:pos>2.0</gml:pos>
+                        </PointLocation>
+                    </location>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>Thermal Conductivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#thermal_conductivity">Thermal Conductivity</propertyClass>
+                                            <uom>W/(m.deltaK)</uom>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Thermal Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#thermal_resistivity">Thermal Resistivity</propertyClass>
+                                            <uom>deltaK.m/W</uom>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>0.3040 3.28947</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <LabThermalConductivityTest gml:id="proc-TR-2">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d5334"/>
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#ieee_442_2017"/>
+                    <testProcedureEquipment xlink:href="#eq-tls100"/>
+                    <testingEnvironment>
+                        <Environment gml:id="env-TR-2">
+                            <ambientTemperature uom="degC">21</ambientTemperature>
+                        </Environment>
+                    </testingEnvironment>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-TR-2">
+                            <gml:description>Sample type and preparation are not reported by the source. ASTM D5334/IEEE Std 442 require either an intact or a remolded specimen for this determination; the sample is therefore understood to be either a block sample cut from the trial pit or a bulk sample subsequently remolded to the density reported for this determination.</gml:description>
+                            <sampleRef xlink:href="#s-TR-2"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryDensity uom="g/cm3">1.702</dryDensity>
+                                    <temperature>
+                                        <TemperatureMeasurement gml:id="temp-TR-2">
+                                            <temperature uom="degC">25.1</temperature>
+                                        </TemperatureMeasurement>
+                                    </temperature>
+                                    <waterContent uom="%">2.00</waterContent>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                        </SoilSpecimen>
+                    </specimen>
+                    <probeLength uom="mm">100</probeLength>
+                    <heatingDuration uom="s">90</heatingDuration>
+                    <temperatureRiseOverLogCycle uom="deltaC">6.9</temperatureRiseOverLogCycle>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-2-10">
+                            <elapsedTime uom="s">10</elapsedTime>
+                            <temperature uom="degC">28.6</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-2-20">
+                            <elapsedTime uom="s">20</elapsedTime>
+                            <temperature uom="degC">29.7</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-2-30">
+                            <elapsedTime uom="s">30</elapsedTime>
+                            <temperature uom="degC">30.4</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-2-40">
+                            <elapsedTime uom="s">40</elapsedTime>
+                            <temperature uom="degC">30.9</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-2-50">
+                            <elapsedTime uom="s">50</elapsedTime>
+                            <temperature uom="degC">31.2</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-2-60">
+                            <elapsedTime uom="s">60</elapsedTime>
+                            <temperature uom="degC">31.4</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-2-70">
+                            <elapsedTime uom="s">70</elapsedTime>
+                            <temperature uom="degC">31.7</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-2-80">
+                            <elapsedTime uom="s">80</elapsedTime>
+                            <temperature uom="degC">31.8</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-2-90">
+                            <elapsedTime uom="s">90</elapsedTime>
+                            <temperature uom="degC">31.9</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                </LabThermalConductivityTest>
+            </procedure>
+        </Test>
+    </measurement>
+    <measurement>
+        <Test gml:id="test-TR-3">
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_TR-3"/>
+            <sampleRef xlink:href="#s-TR-3"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-TR-3">
+                    <start>2024-06-06</start>
+                    <end>2024-06-23</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location>
+                        <PointLocation gml:id="pl-TR-3" srsDimension="1"
+                            srsName="#lsr-TR-3">
+                            <gml:pos>1.0</gml:pos>
+                        </PointLocation>
+                    </location>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>Thermal Conductivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#thermal_conductivity">Thermal Conductivity</propertyClass>
+                                            <uom>W/(m.deltaK)</uom>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Thermal Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#thermal_resistivity">Thermal Resistivity</propertyClass>
+                                            <uom>deltaK.m/W</uom>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>0.3450 2.89855</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <LabThermalConductivityTest gml:id="proc-TR-3">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d5334"/>
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#ieee_442_2017"/>
+                    <testProcedureEquipment xlink:href="#eq-tls100"/>
+                    <testingEnvironment>
+                        <Environment gml:id="env-TR-3">
+                            <ambientTemperature uom="degC">21</ambientTemperature>
+                        </Environment>
+                    </testingEnvironment>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-TR-3">
+                            <gml:description>Sample type and preparation are not reported by the source. ASTM D5334/IEEE Std 442 require either an intact or a remolded specimen for this determination; the sample is therefore understood to be either a block sample cut from the trial pit or a bulk sample subsequently remolded to the density reported for this determination.</gml:description>
+                            <sampleRef xlink:href="#s-TR-3"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryDensity uom="g/cm3">1.706</dryDensity>
+                                    <temperature>
+                                        <TemperatureMeasurement gml:id="temp-TR-3">
+                                            <temperature uom="degC">24.6</temperature>
+                                        </TemperatureMeasurement>
+                                    </temperature>
+                                    <waterContent uom="%">2.00</waterContent>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                        </SoilSpecimen>
+                    </specimen>
+                    <probeLength uom="mm">100</probeLength>
+                    <heatingDuration uom="s">90</heatingDuration>
+                    <temperatureRiseOverLogCycle uom="deltaC">6.3</temperatureRiseOverLogCycle>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-3-10">
+                            <elapsedTime uom="s">10</elapsedTime>
+                            <temperature uom="degC">28.0</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-3-20">
+                            <elapsedTime uom="s">20</elapsedTime>
+                            <temperature uom="degC">29.0</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-3-30">
+                            <elapsedTime uom="s">30</elapsedTime>
+                            <temperature uom="degC">29.7</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-3-40">
+                            <elapsedTime uom="s">40</elapsedTime>
+                            <temperature uom="degC">30.1</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-3-50">
+                            <elapsedTime uom="s">50</elapsedTime>
+                            <temperature uom="degC">30.4</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-3-60">
+                            <elapsedTime uom="s">60</elapsedTime>
+                            <temperature uom="degC">30.6</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-3-70">
+                            <elapsedTime uom="s">70</elapsedTime>
+                            <temperature uom="degC">30.8</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-3-80">
+                            <elapsedTime uom="s">80</elapsedTime>
+                            <temperature uom="degC">30.9</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-3-90">
+                            <elapsedTime uom="s">90</elapsedTime>
+                            <temperature uom="degC">31.1</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                </LabThermalConductivityTest>
+            </procedure>
+        </Test>
+    </measurement>
+    <measurement>
+        <Test gml:id="test-TR-4">
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_TR-4"/>
+            <sampleRef xlink:href="#s-TR-4"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-TR-4">
+                    <start>2024-06-06</start>
+                    <end>2024-06-23</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location>
+                        <PointLocation gml:id="pl-TR-4" srsDimension="1"
+                            srsName="#lsr-TR-4">
+                            <gml:pos>1.0</gml:pos>
+                        </PointLocation>
+                    </location>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>Thermal Conductivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#thermal_conductivity">Thermal Conductivity</propertyClass>
+                                            <uom>W/(m.deltaK)</uom>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Thermal Resistivity</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#thermal_resistivity">Thermal Resistivity</propertyClass>
+                                            <uom>deltaK.m/W</uom>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>0.3920 2.55102</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <LabThermalConductivityTest gml:id="proc-TR-4">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d5334"/>
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#ieee_442_2017"/>
+                    <testProcedureEquipment xlink:href="#eq-tls100"/>
+                    <testingEnvironment>
+                        <Environment gml:id="env-TR-4">
+                            <ambientTemperature uom="degC">21</ambientTemperature>
+                        </Environment>
+                    </testingEnvironment>
+                    <specimen>
+                        <SoilSpecimen gml:id="spec-TR-4">
+                            <gml:description>Sample type and preparation are not reported by the source. ASTM D5334/IEEE Std 442 require either an intact or a remolded specimen for this determination; the sample is therefore understood to be either a block sample cut from the trial pit or a bulk sample subsequently remolded to the density reported for this determination.</gml:description>
+                            <sampleRef xlink:href="#s-TR-4"/>
+                            <conditionPreTest>
+                                <SpecimenConditions>
+                                    <dryDensity uom="g/cm3">1.698</dryDensity>
+                                    <temperature>
+                                        <TemperatureMeasurement gml:id="temp-TR-4">
+                                            <temperature uom="degC">25.3</temperature>
+                                        </TemperatureMeasurement>
+                                    </temperature>
+                                    <waterContent uom="%">2.00</waterContent>
+                                </SpecimenConditions>
+                            </conditionPreTest>
+                        </SoilSpecimen>
+                    </specimen>
+                    <probeLength uom="mm">100</probeLength>
+                    <heatingDuration uom="s">90</heatingDuration>
+                    <temperatureRiseOverLogCycle uom="deltaC">6.3</temperatureRiseOverLogCycle>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-4-10">
+                            <elapsedTime uom="s">10</elapsedTime>
+                            <temperature uom="degC">28.8</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-4-20">
+                            <elapsedTime uom="s">20</elapsedTime>
+                            <temperature uom="degC">29.7</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-4-30">
+                            <elapsedTime uom="s">30</elapsedTime>
+                            <temperature uom="degC">30.4</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-4-40">
+                            <elapsedTime uom="s">40</elapsedTime>
+                            <temperature uom="degC">30.8</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-4-50">
+                            <elapsedTime uom="s">50</elapsedTime>
+                            <temperature uom="degC">31.0</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-4-60">
+                            <elapsedTime uom="s">60</elapsedTime>
+                            <temperature uom="degC">31.2</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-4-70">
+                            <elapsedTime uom="s">70</elapsedTime>
+                            <temperature uom="degC">31.4</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-4-80">
+                            <elapsedTime uom="s">80</elapsedTime>
+                            <temperature uom="degC">31.5</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                    <reading>
+                        <ThermalProbeReading gml:id="tpr-TR-4-90">
+                            <elapsedTime uom="s">90</elapsedTime>
+                            <temperature uom="degC">31.6</temperature>
+                        </ThermalProbeReading>
+                    </reading>
+                </LabThermalConductivityTest>
             </procedure>
         </Test>
     </measurement>
