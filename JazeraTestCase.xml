@@ -55591,6 +55591,219 @@
             </procedure>
         </Test>
     </measurement>
+    <measurement>
+        <Test gml:id="test-chem-BH-1">
+            <remark>
+                <Remark>
+                    <content>Analytical results reported on page 57 of the GBL geotechnical final report (GBL-GT-24136, &quot;ANALYTICAL RESULTS&quot;, tested 20-Jun-24, completed 23-Jun-24, ambient temperature 22 degC). The report cites BS 1377 Part 3 but does not state whether the sulfate, chloride and magnesium determinations are water-soluble or acid-soluble, so the generic propertyClass entries are used here rather than the basis-specific ones (sulfate_water_soluble, sulfate_acid_soluble, etc.), which exist for sources that do say.</content>
+                </Remark>
+            </remark>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-1"/>
+            <sampleRef xlink:href="#s-BH-1_1-2"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-chem-BH-1">
+                    <start>2024-06-20</start>
+                    <end>2024-06-23</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location>
+                        <PointLocation gml:id="pl-chem-BH-1" srsDimension="1" srsName="#lsr-BH-1">
+                            <gml:pos>0.75</gml:pos>
+                        </PointLocation>
+                    </location>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>PH</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pH">pH</propertyClass>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Sulphate Content (SO4)</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#sulfate_content">Sulfate Content</propertyClass>
+                                            <uom>ppm</uom>
+                                        </Property>
+                                        <Property index="3">
+                                            <propertyName>Chloride Content</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#chloride_content">Chloride Content</propertyClass>
+                                            <uom>%</uom>
+                                        </Property>
+                                        <Property index="4">
+                                            <propertyName>Magnesium Content</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#magnesium_content">Magnesium Content</propertyClass>
+                                            <uom>ppm</uom>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>7.90,5810,0.705,954</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <LabChemicalTest gml:id="proc-chem-BH-1">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_1377_3"/>
+                    <testingEnvironment>
+                        <Environment gml:id="env-chem-BH-1">
+                            <ambientTemperature uom="degC">22</ambientTemperature>
+                        </Environment>
+                    </testingEnvironment>
+                </LabChemicalTest>
+            </procedure>
+        </Test>
+    </measurement>
+    <measurement>
+        <Test gml:id="test-chem-BH-3">
+            <remark>
+                <Remark>
+                    <content>Analytical results reported on page 57 of the GBL geotechnical final report (GBL-GT-24136, &quot;ANALYTICAL RESULTS&quot;, tested 20-Jun-24, completed 23-Jun-24, ambient temperature 22 degC). The report cites BS 1377 Part 3 but does not state whether the sulfate, chloride and magnesium determinations are water-soluble or acid-soluble, so the generic propertyClass entries are used here rather than the basis-specific ones (sulfate_water_soluble, sulfate_acid_soluble, etc.), which exist for sources that do say.</content>
+                </Remark>
+            </remark>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-3"/>
+            <sampleRef xlink:href="#s-BH-3_3-6"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-chem-BH-3">
+                    <start>2024-06-20</start>
+                    <end>2024-06-23</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location>
+                        <PointLocation gml:id="pl-chem-BH-3" srsDimension="1" srsName="#lsr-BH-3">
+                            <gml:pos>4.50</gml:pos>
+                        </PointLocation>
+                    </location>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>PH</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pH">pH</propertyClass>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Sulphate Content (SO4)</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#sulfate_content">Sulfate Content</propertyClass>
+                                            <uom>ppm</uom>
+                                        </Property>
+                                        <Property index="3">
+                                            <propertyName>Chloride Content</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#chloride_content">Chloride Content</propertyClass>
+                                            <uom>%</uom>
+                                        </Property>
+                                        <Property index="4">
+                                            <propertyName>Magnesium Content</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#magnesium_content">Magnesium Content</propertyClass>
+                                            <uom>ppm</uom>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>8.10,6970,0.635,795</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <LabChemicalTest gml:id="proc-chem-BH-3">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_1377_3"/>
+                    <testingEnvironment>
+                        <Environment gml:id="env-chem-BH-3">
+                            <ambientTemperature uom="degC">22</ambientTemperature>
+                        </Environment>
+                    </testingEnvironment>
+                </LabChemicalTest>
+            </procedure>
+        </Test>
+    </measurement>
+    <measurement>
+        <Test gml:id="test-chem-BH-2-OUT">
+            <remark>
+                <Remark>
+                    <content>Analytical results reported on page 57 of the GBL geotechnical final report (GBL-GT-24136, &quot;ANALYTICAL RESULTS&quot;, tested 20-Jun-24, completed 23-Jun-24, ambient temperature 22 degC). The report cites BS 1377 Part 3 but does not state whether the sulfate, chloride and magnesium determinations are water-soluble or acid-soluble, so the generic propertyClass entries are used here rather than the basis-specific ones (sulfate_water_soluble, sulfate_acid_soluble, etc.), which exist for sources that do say.</content>
+                </Remark>
+            </remark>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-2-OUT"/>
+            <sampleRef xlink:href="#s-BH-2-OUT_2-7"/>
+            <resultTime>
+                <TimeInterval gml:id="ti-chem-BH-2-OUT">
+                    <start>2024-06-20</start>
+                    <end>2024-06-23</end>
+                </TimeInterval>
+            </resultTime>
+            <outcome>
+                <TestResult>
+                    <location>
+                        <PointLocation gml:id="pl-chem-BH-2-OUT" srsDimension="1" srsName="#lsr-BH-2-OUT">
+                            <gml:pos>6.00</gml:pos>
+                        </PointLocation>
+                    </location>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters>
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>PH</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#pH">pH</propertyClass>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Sulphate Content (SO4)</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#sulfate_content">Sulfate Content</propertyClass>
+                                            <uom>ppm</uom>
+                                        </Property>
+                                        <Property index="3">
+                                            <propertyName>Chloride Content</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#chloride_content">Chloride Content</propertyClass>
+                                            <uom>%</uom>
+                                        </Property>
+                                        <Property index="4">
+                                            <propertyName>Magnesium Content</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#magnesium_content">Magnesium Content</propertyClass>
+                                            <uom>ppm</uom>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues>8.20,8515,0.510,571</dataValues>
+                        </ResultSet>
+                    </results>
+                </TestResult>
+            </outcome>
+            <procedure>
+                <LabChemicalTest gml:id="proc-chem-BH-2-OUT">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_1377_3"/>
+                    <testingEnvironment>
+                        <Environment gml:id="env-chem-BH-2-OUT">
+                            <ambientTemperature uom="degC">22</ambientTemperature>
+                        </Environment>
+                    </testingEnvironment>
+                </LabChemicalTest>
+            </procedure>
+        </Test>
+    </measurement>
     <group>
         <RigidInclusionSystem gml:id="RIFS-JAZ-001">
             <gml:name>Jazera Royal Palace RI Foundation System</gml:name>
