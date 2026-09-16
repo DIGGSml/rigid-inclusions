@@ -55100,7 +55100,7 @@
                                     </properties>
                                 </PropertyParameters>
                             </parameters>
-                            <dataValues>0.3010 3.32226</dataValues>
+                            <dataValues>0.3010,3.32226</dataValues>
                         </ResultSet>
                     </results>
                 </TestResult>
@@ -55238,7 +55238,7 @@
                                     </properties>
                                 </PropertyParameters>
                             </parameters>
-                            <dataValues>0.3040 3.28947</dataValues>
+                            <dataValues>0.3040,3.28947</dataValues>
                         </ResultSet>
                     </results>
                 </TestResult>
@@ -55370,7 +55370,7 @@
                                     </properties>
                                 </PropertyParameters>
                             </parameters>
-                            <dataValues>0.3450 2.89855</dataValues>
+                            <dataValues>0.3450,2.89855</dataValues>
                         </ResultSet>
                     </results>
                 </TestResult>
@@ -55502,7 +55502,7 @@
                                     </properties>
                                 </PropertyParameters>
                             </parameters>
-                            <dataValues>0.3920 2.55102</dataValues>
+                            <dataValues>0.3920,2.55102</dataValues>
                         </ResultSet>
                     </results>
                 </TestResult>
