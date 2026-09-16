@@ -55108,7 +55108,6 @@
             <procedure>
                 <LabThermalConductivityTest gml:id="proc-TR-1">
                     <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d5334"/>
-                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#ieee_442_2017"/>
                     <testProcedureEquipment>
                         <Equipment gml:id="eq-tls100">
                             <class>thermal needle probe</class>
@@ -55246,7 +55245,6 @@
             <procedure>
                 <LabThermalConductivityTest gml:id="proc-TR-2">
                     <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d5334"/>
-                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#ieee_442_2017"/>
                     <testProcedureEquipment xlink:href="#eq-tls100"/>
                     <testingEnvironment>
                         <Environment gml:id="env-TR-2">
@@ -55378,7 +55376,6 @@
             <procedure>
                 <LabThermalConductivityTest gml:id="proc-TR-3">
                     <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d5334"/>
-                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#ieee_442_2017"/>
                     <testProcedureEquipment xlink:href="#eq-tls100"/>
                     <testingEnvironment>
                         <Environment gml:id="env-TR-3">
@@ -55510,7 +55507,6 @@
             <procedure>
                 <LabThermalConductivityTest gml:id="proc-TR-4">
                     <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d5334"/>
-                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#ieee_442_2017"/>
                     <testProcedureEquipment xlink:href="#eq-tls100"/>
                     <testingEnvironment>
                         <Environment gml:id="env-TR-4">
