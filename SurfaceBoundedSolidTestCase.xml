@@ -18,8 +18,10 @@
   SBS-1  flat PlanarSurface top and bottom, plain rectangular footprint
   SBS-2  dipping PlanarSurface top, footprint with one square hole
   SBS-3  concave (L-shaped) footprint, flat planar top and bottom
-  SBS-4  CompositeSurface top (4 stepped planar members), irregular 8-vertex footprint
-  SBS-5  MultiPlanarSurface top and bottom, footprint with TWO holes
+  SBS-4  CompositeSurface top (4 stepped flat members + 4 vertical risers, boundaries
+         coincident in 3D), irregular 8-vertex footprint
+  SBS-5  MultiPlanarSurface top and bottom (tilted patches on a shared vertex lattice,
+         continuous), footprint with TWO holes
   SBS-6  coarse TriangulatedSurface top (32 triangles, ~4 m relief), hexagonal footprint
   SBS-7  fine TriangulatedSurface top (1152 triangles, ~16 m relief) AND bottom TIN,
          irregular 12-vertex footprint with a hole: THE tier-2 vs tier-3 case
@@ -44,10 +46,42 @@
           top on one side)
   SBS-15  bottom surface crosses top MULTIPLE times (3x) across an elongated footprint
 
+  More DEGENERATE CASES, added 2026-09-19 (Dan) — every bounding surface is TILTED and
+  UNDER-COVERS the footprint (top covers only the west 62.5 %, bottom only the east
+  62.5 %; the two overlap over the middle 25 %). The planes never cross anywhere over
+  the footprint, so under-coverage is the only violation. No vertical members anywhere.
+  Placed at grid slots 16-19; slot 15 is the MultiSolid demo below.
+
+  SBS-16  PlanarSurface top and bottom, BOTH dip toward +x, at different angles
+          (top 0.12, bottom 0.04) — they converge eastward
+  SBS-17  PlanarSurface top and bottom tilting TOWARD each other (top dips +x at 0.12,
+          bottom rises +x at 0.10)
+  SBS-18  as SBS-16 but MultiPlanarSurface top and bottom (6 patches each, slope
+          changes at every seam, surface continuous)
+  SBS-19  as SBS-17 but CompositeSurface top and bottom (6 PlanarSurface members each,
+          slope changes at every seam, boundaries coincide in 3D)
+
+  CROSSING VARIANTS of SBS-16..19, added 2026-09-19 (Dan): identical slopes, coverage and
+  construction, but the bottom is raised so the two surfaces CROSS along the line x = cx,
+  inside the region both surfaces cover — west of it top is above bottom, east of it the
+  bottom is above the top (inverted). Placed at grid slots 20-23.
+
+  SBS-20  crossing variant of SBS-16 (PlanarSurface, same direction, different angles)
+  SBS-21  crossing variant of SBS-17 (PlanarSurface, toward each other)
+  SBS-22  crossing variant of SBS-18 (MultiPlanarSurface, same direction)
+  SBS-23  crossing variant of SBS-19 (CompositeSurface, toward each other)
+
   Plus one non-VolumetricSamplingFeature addition: a GeoUnitObservation whose
   diggs:location holds a diggs:MultiSolid of two disjoint SurfaceBoundedSolid members —
   MultiSolid cannot appear in featureExtent (verified rejected), so it is demonstrated
   via location instead, the reachable path per AbstractObservationType.
+
+  Two more MultiSolid examples, added 2026-09-19 (Dan), same mechanism (GeoUnitObservation/
+  location, each in its own GeoUnitSystem, anchored to SBS-1), at grid slots 24 and 25:
+
+  ms-disjoint  THREE mutually unconnected SurfaceBoundedSolids of different shapes
+  ms-overlap   TWO SurfaceBoundedSolids whose volumes intersect (6,000 m3) — legal for a
+               MultiSolid, not for a CompositeSolid
 -->
 <Diggs xmlns="http://diggsml.org/schemas/3" xmlns:diggs="http://diggsml.org/schemas/3"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -231,17 +265,20 @@
     </VolumetricSamplingFeature>
   </samplingFeature>
 
-  <!-- ═══ SBS-4 — CompositeSurface top — four stepped planar members ═══
+  <!-- ═══ SBS-4 — CompositeSurface top — four stepped planar members with vertical risers ═══
        Footprint: irregular 8-vertex polygon, radii 28-45 m (no two edges alike).
-       Top: CompositeSurface of 4 PlanarSurface members, each a 50 x 50 m quad at a
-       different elevation (24.0 / 26.5 / 29.0 / 31.5 m) — a stepped top whose members
-       meet along shared edges but are NOT coplanar with each other. Each member must
-       be triangulated in its own plane.
+       Top: CompositeSurface of 8 PlanarSurface members — four flat 50 x 50 m quads at
+       different elevations (24.0 / 26.5 / 29.0 / 31.5 m) plus four VERTICAL RISER members
+       closing the steps between them, so every shared boundary coincides in 3D
+       (vertex-for-vertex, opposite traversal). The top is therefore a single closed
+       surface but is MULTI-VALUED in plan view along the seams (a riser is vertical), and
+       four footprint vertices lie exactly on a seam. Each member must be triangulated in
+       its own plane; a vertical member has zero plan-view area.
        Bottom: flat PlanarSurface at elev 6 m.
   -->
   <samplingFeature>
     <VolumetricSamplingFeature gml:id="SBS-4">
-      <gml:name>CompositeSurface top — four stepped planar members</gml:name>
+      <gml:name>CompositeSurface top — four stepped planar members with vertical risers</gml:name>
       <projectRef xlink:href="#proj-sbs"/>
       <referencePoint>
         <PointLocation gml:id="pl-SBS-4" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3" uomLabels="m m m">
@@ -297,6 +334,42 @@
                   </gml:exterior>
                 </PlanarSurface>
               </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-4-r12" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>500900 3300000 24 500900 3299950 24 500900 3299950 26.5 500900 3300000 26.5 500900 3300000 24</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-4-r23" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>500900 3300000 26.5 500950 3300000 26.5 500950 3300000 29 500900 3300000 29 500900 3300000 26.5</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-4-r34" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>500900 3300000 29 500900 3300050 29 500900 3300050 31.5 500900 3300000 31.5 500900 3300000 29</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-4-r41" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>500850 3300000 24 500900 3300000 24 500900 3300000 26.5 500900 3300000 29 500900 3300000 31.5 500850 3300000 31.5 500850 3300000 24</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
             </CompositeSurface>
           </topSurface>
           <bottomSurface>
@@ -316,11 +389,13 @@
   <!-- ═══ SBS-5 — MultiPlanarSurface top and bottom, two holes ═══
        Footprint: 100 x 70 m rectangle with TWO interior rings — an octagonal hole and
        a square hole — so three separate walls are generated (one outer, two collars).
-       Top: MultiPlanarSurface, 9 PlanarSurfacePatch patches on a 3 x 3 grid, each flat
-       at its own elevation (a terraced surface, ~26-34 m).
-       Bottom: MultiPlanarSurface, same 3 x 3 layout, ~2-8 m.
-       Both bounding surfaces are multi-patch AND discontinuous at patch boundaries —
-       a height query at a footprint vertex must pick the patch containing it.
+       Top: MultiPlanarSurface, 9 PlanarSurfacePatch patches on a 3 x 3 grid, each a
+       TILTED planar quad, ~28.7-33.9 m. Patches share a 4 x 4 vertex lattice, so every
+       patch edge is shared exactly (same endpoints, same Z) — a continuous, non-horizontal
+       surface with slope breaks at the seams and no vertical steps.
+       Bottom: MultiPlanarSurface, same 3 x 3 layout and construction, ~4.0-8.0 m.
+       Both bounding surfaces are multi-patch and continuous: a height query at any
+       footprint vertex, including one on a patch seam, has a single answer.
   -->
   <samplingFeature>
     <VolumetricSamplingFeature gml:id="SBS-5">
@@ -358,63 +433,63 @@
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501140 3299955 30 501180 3299955 30 501180 3299985 30 501140 3299985 30 501140 3299955 30</gml:posList>
+                      <gml:posList>501140 3299955 31.8 501180 3299955 33.523 501180 3299985 32.977 501140 3299985 31.254 501140 3299955 31.8</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501140 3299985 30 501180 3299985 30 501180 3300015 30 501140 3300015 30 501140 3299985 30</gml:posList>
+                      <gml:posList>501140 3299985 31.254 501180 3299985 32.977 501180 3300015 31.67 501140 3300015 29.947 501140 3299985 31.254</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501140 3300015 30 501180 3300015 30 501180 3300045 30 501140 3300045 30 501140 3300015 30</gml:posList>
+                      <gml:posList>501140 3300015 29.947 501180 3300015 31.67 501180 3300045 30.396 501140 3300045 28.673 501140 3300015 29.947</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501180 3299955 33.565 501220 3299955 33.565 501220 3299985 33.565 501180 3299985 33.565 501180 3299955 33.565</gml:posList>
+                      <gml:posList>501180 3299955 33.523 501220 3299955 33.942 501220 3299985 33.396 501180 3299985 32.977 501180 3299955 33.523</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501180 3299985 32.216 501220 3299985 32.216 501220 3300015 32.216 501180 3300015 32.216 501180 3299985 32.216</gml:posList>
+                      <gml:posList>501180 3299985 32.977 501220 3299985 33.396 501220 3300015 32.089 501180 3300015 31.67 501180 3299985 32.977</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501180 3300015 29.19 501220 3300015 29.19 501220 3300045 29.19 501180 3300045 29.19 501180 3300015 29.19</gml:posList>
+                      <gml:posList>501180 3300015 31.67 501220 3300015 32.089 501220 3300045 30.815 501180 3300045 30.396 501180 3300015 31.67</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501220 3299955 33.234 501260 3299955 33.234 501260 3299985 33.234 501220 3299985 33.234 501220 3299955 33.234</gml:posList>
+                      <gml:posList>501220 3299955 33.942 501260 3299955 32.74 501260 3299985 32.194 501220 3299985 33.396 501220 3299955 33.942</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501220 3299985 32.01 501260 3299985 32.01 501260 3300015 32.01 501220 3300015 32.01 501220 3299985 32.01</gml:posList>
+                      <gml:posList>501220 3299985 33.396 501260 3299985 32.194 501260 3300015 30.887 501220 3300015 32.089 501220 3299985 33.396</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501220 3300015 29.265 501260 3300015 29.265 501260 3300045 29.265 501220 3300045 29.265 501220 3300015 29.265</gml:posList>
+                      <gml:posList>501220 3300015 32.089 501260 3300015 30.887 501260 3300045 29.613 501220 3300045 30.815 501220 3300015 32.089</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
@@ -427,63 +502,63 @@
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501140 3299955 5 501180 3299955 5 501180 3299985 5 501140 3299985 5 501140 3299955 5</gml:posList>
+                      <gml:posList>501140 3299955 6.35 501180 3299955 7.642 501180 3299985 7.233 501140 3299985 5.941 501140 3299955 6.35</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501140 3299985 5 501180 3299985 5 501180 3300015 5 501140 3300015 5 501140 3299985 5</gml:posList>
+                      <gml:posList>501140 3299985 5.941 501180 3299985 7.233 501180 3300015 6.253 501140 3300015 4.961 501140 3299985 5.941</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501140 3300015 5 501180 3300015 5 501180 3300045 5 501140 3300045 5 501140 3300015 5</gml:posList>
+                      <gml:posList>501140 3300015 4.961 501180 3300015 6.253 501180 3300045 5.297 501140 3300045 4.005 501140 3300015 4.961</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501180 3299955 7.674 501220 3299955 7.674 501220 3299985 7.674 501180 3299985 7.674 501180 3299955 7.674</gml:posList>
+                      <gml:posList>501180 3299955 7.642 501220 3299955 7.957 501220 3299985 7.548 501180 3299985 7.233 501180 3299955 7.642</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501180 3299985 6.662 501220 3299985 6.662 501220 3300015 6.662 501180 3300015 6.662 501180 3299985 6.662</gml:posList>
+                      <gml:posList>501180 3299985 7.233 501220 3299985 7.548 501220 3300015 6.568 501180 3300015 6.253 501180 3299985 7.233</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501180 3300015 4.393 501220 3300015 4.393 501220 3300045 4.393 501180 3300045 4.393 501180 3300015 4.393</gml:posList>
+                      <gml:posList>501180 3300015 6.253 501220 3300015 6.568 501220 3300045 5.612 501180 3300045 5.297 501180 3300015 6.253</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501220 3299955 7.425 501260 3299955 7.425 501260 3299985 7.425 501220 3299985 7.425 501220 3299955 7.425</gml:posList>
+                      <gml:posList>501220 3299955 7.957 501260 3299955 7.055 501260 3299985 6.646 501220 3299985 7.548 501220 3299955 7.957</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501220 3299985 6.508 501260 3299985 6.508 501260 3300015 6.508 501220 3300015 6.508 501220 3299985 6.508</gml:posList>
+                      <gml:posList>501220 3299985 7.548 501260 3299985 6.646 501260 3300015 5.666 501220 3300015 6.568 501220 3299985 7.548</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
                 <PlanarSurfacePatch>
                   <gml:exterior>
                     <gml:LinearRing>
-                      <gml:posList>501220 3300015 4.449 501260 3300015 4.449 501260 3300045 4.449 501220 3300045 4.449 501220 3300015 4.449</gml:posList>
+                      <gml:posList>501220 3300015 6.568 501260 3300015 5.666 501260 3300045 4.71 501220 3300045 5.612 501220 3300015 6.568</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurfacePatch>
@@ -16582,6 +16657,811 @@
     </VolumetricSamplingFeature>
   </samplingFeature>
 
+  <!-- ═══ SBS-16 — DEGENERATE: tilted PlanarSurface top and bottom, same direction, both under-cover ═══
+       *** VIOLATES the coverage requirement on both bounding surfaces (top covers only the
+       west 62.5 % of the footprint, bottom only the east 62.5 %), AND both are tilted.
+       Schema-VALID; unenforced authoring requirement. Built to observe inspector behaviour
+       (Dan, 2026-09-19): what does the wall/cap construction do at footprint vertices that
+       have no surface above or below them, when the missing surface is TILTED rather than flat
+       (SBS-12/13 were flat)? An extrapolated plane keeps its tilt; a nearest-triangle fallback
+       would not. ***
+       
+       Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40].
+       Top: PlanarSurface, x in [cx-50,cx+10], z = 28 - 0.12*(x-cx)  (34.0 -> 26.8 m; dips
+       toward +x at 6.8 deg).
+       Bottom: PlanarSurface, x in [cx-10,cx+50], z = 10 - 0.04*(x-cx)  (10.4 -> 8.0 m; dips
+       toward +x at 2.3 deg).
+       Same direction, different angles: the planes converge eastward but would not meet
+       until x = cx+225, so they do not cross anywhere over the footprint (gap 21.2 m at
+       x = cx-40, 14.8 m at x = cx+40).
+  -->
+  <samplingFeature>
+    <VolumetricSamplingFeature gml:id="SBS-16">
+      <gml:name>DEGENERATE: tilted PlanarSurface top and bottom, same direction, both under-cover</gml:name>
+      <projectRef xlink:href="#proj-sbs"/>
+      <referencePoint>
+        <PointLocation gml:id="pl-SBS-16" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3" uomLabels="m m m">
+          <gml:pos>504800 3300000 20</gml:pos>
+        </PointLocation>
+      </referencePoint>
+      <featureExtent>
+        <SurfaceBoundedSolid gml:id="sbs-SBS-16">
+          <footprint>
+            <PlanarSurface gml:id="fp-SBS-16" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>504760 3299970 0 504840 3299970 0 504840 3300030 0 504760 3300030 0 504760 3299970 0</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </footprint>
+          <topSurface>
+            <PlanarSurface gml:id="top-SBS-16" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>504750 3299960 34 504810 3299960 26.8 504810 3300040 26.8 504750 3300040 34 504750 3299960 34</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </topSurface>
+          <bottomSurface>
+            <PlanarSurface gml:id="bot-SBS-16" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>504790 3299960 10.4 504850 3299960 8 504850 3300040 8 504790 3300040 10.4 504790 3299960 10.4</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </bottomSurface>
+        </SurfaceBoundedSolid>
+      </featureExtent>
+    </VolumetricSamplingFeature>
+  </samplingFeature>
+
+  <!-- ═══ SBS-17 — DEGENERATE: tilted PlanarSurface top and bottom, tilting toward each other, both under-cover ═══
+       *** Same coverage violation as SBS-16 (top covers the west 62.5 %, bottom the east
+       62.5 %), but the two planes tilt TOWARD each other. Schema-VALID; unenforced authoring
+       requirement. ***
+       
+       Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40].
+       Top: PlanarSurface, x in [cx-50,cx+10], z = 28 - 0.12*(x-cx)  (34.0 -> 26.8 m; dips
+       toward +x).
+       Bottom: PlanarSurface, x in [cx-10,cx+50], z = 10 + 0.10*(x-cx)  (9.0 -> 15.0 m; RISES
+       toward +x).
+       The planes would meet at x = cx+81.8 — outside the footprint, so they do NOT cross
+       over it, but the solid thins from 26.8 m (x = cx-40) to 9.2 m (x = cx+40) and any
+       extrapolation past the covered extent narrows it further.
+  -->
+  <samplingFeature>
+    <VolumetricSamplingFeature gml:id="SBS-17">
+      <gml:name>DEGENERATE: tilted PlanarSurface top and bottom, tilting toward each other, both under-cover</gml:name>
+      <projectRef xlink:href="#proj-sbs"/>
+      <referencePoint>
+        <PointLocation gml:id="pl-SBS-17" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3" uomLabels="m m m">
+          <gml:pos>505100 3300000 20</gml:pos>
+        </PointLocation>
+      </referencePoint>
+      <featureExtent>
+        <SurfaceBoundedSolid gml:id="sbs-SBS-17">
+          <footprint>
+            <PlanarSurface gml:id="fp-SBS-17" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>505060 3299970 0 505140 3299970 0 505140 3300030 0 505060 3300030 0 505060 3299970 0</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </footprint>
+          <topSurface>
+            <PlanarSurface gml:id="top-SBS-17" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>505050 3299960 34 505110 3299960 26.8 505110 3300040 26.8 505050 3300040 34 505050 3299960 34</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </topSurface>
+          <bottomSurface>
+            <PlanarSurface gml:id="bot-SBS-17" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>505090 3299960 9 505150 3299960 15 505150 3300040 15 505090 3300040 9 505090 3299960 9</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </bottomSurface>
+        </SurfaceBoundedSolid>
+      </featureExtent>
+    </VolumetricSamplingFeature>
+  </samplingFeature>
+
+  <!-- ═══ SBS-18 — DEGENERATE: tilted MultiPlanarSurface top and bottom, same direction, both under-cover ═══
+       *** SBS-16 with each bounding surface replaced by a MultiPlanarSurface: 3 x 2 =
+       6 tilted PlanarSurfacePatch each. Same coverage violation. Schema-VALID; unenforced
+       authoring requirement. ***
+       
+       Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40].
+       Top: x in [cx-50,cx+10]; three columns 20 m wide with slopes dz/dx = -0.07 / -0.12 /
+       -0.17 (34.0, 32.6, 30.2, 26.8 m at the four x-lines) — steepening toward +x. Ends at
+       the same heights as SBS-16's single plane (average slope 0.12).
+       Bottom: x in [cx-10,cx+50]; slopes -0.02 / -0.04 / -0.06 (10.4, 10.0, 9.2, 8.0 m); no
+       slope value is shared with the top, so every top/bottom pair differs in angle.
+       Both dip toward +x. Rows split at y = cy, with the same slope on both sides.
+       CONTINUOUS: patches share a lattice of vertices, so adjacent patches share their edge
+       exactly. There are NO vertical panels; the slope simply changes at each seam.
+  -->
+  <samplingFeature>
+    <VolumetricSamplingFeature gml:id="SBS-18">
+      <gml:name>DEGENERATE: tilted MultiPlanarSurface top and bottom, same direction, both under-cover</gml:name>
+      <projectRef xlink:href="#proj-sbs"/>
+      <referencePoint>
+        <PointLocation gml:id="pl-SBS-18" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3" uomLabels="m m m">
+          <gml:pos>505400 3300000 20</gml:pos>
+        </PointLocation>
+      </referencePoint>
+      <featureExtent>
+        <SurfaceBoundedSolid gml:id="sbs-SBS-18">
+          <footprint>
+            <PlanarSurface gml:id="fp-SBS-18" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>505360 3299970 0 505440 3299970 0 505440 3300030 0 505360 3300030 0 505360 3299970 0</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </footprint>
+          <topSurface>
+            <MultiPlanarSurface gml:id="top-SBS-18" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:patches>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505350 3299960 34 505370 3299960 32.6 505370 3300000 32.6 505350 3300000 34 505350 3299960 34</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505350 3300000 34 505370 3300000 32.6 505370 3300040 32.6 505350 3300040 34 505350 3300000 34</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505370 3299960 32.6 505390 3299960 30.2 505390 3300000 30.2 505370 3300000 32.6 505370 3299960 32.6</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505370 3300000 32.6 505390 3300000 30.2 505390 3300040 30.2 505370 3300040 32.6 505370 3300000 32.6</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505390 3299960 30.2 505410 3299960 26.8 505410 3300000 26.8 505390 3300000 30.2 505390 3299960 30.2</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505390 3300000 30.2 505410 3300000 26.8 505410 3300040 26.8 505390 3300040 30.2 505390 3300000 30.2</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+              </gml:patches>
+            </MultiPlanarSurface>
+          </topSurface>
+          <bottomSurface>
+            <MultiPlanarSurface gml:id="bot-SBS-18" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:patches>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505390 3299960 10.4 505410 3299960 10 505410 3300000 10 505390 3300000 10.4 505390 3299960 10.4</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505390 3300000 10.4 505410 3300000 10 505410 3300040 10 505390 3300040 10.4 505390 3300000 10.4</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505410 3299960 10 505430 3299960 9.2 505430 3300000 9.2 505410 3300000 10 505410 3299960 10</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505410 3300000 10 505430 3300000 9.2 505430 3300040 9.2 505410 3300040 10 505410 3300000 10</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505430 3299960 9.2 505450 3299960 8 505450 3300000 8 505430 3300000 9.2 505430 3299960 9.2</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505430 3300000 9.2 505450 3300000 8 505450 3300040 8 505430 3300040 9.2 505430 3300000 9.2</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+              </gml:patches>
+            </MultiPlanarSurface>
+          </bottomSurface>
+        </SurfaceBoundedSolid>
+      </featureExtent>
+    </VolumetricSamplingFeature>
+  </samplingFeature>
+
+  <!-- ═══ SBS-19 — DEGENERATE: tilted CompositeSurface top and bottom, tilting toward each other, both under-cover ═══
+       *** SBS-17 with each bounding surface replaced by a CompositeSurface of 6 tilted
+       PlanarSurface members (3 x 2). Same coverage violation. Schema-VALID; unenforced
+       authoring requirement. ***
+       
+       Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40].
+       Top: x in [cx-50,cx+10]; slopes -0.07 / -0.12 / -0.17 (34.0, 32.6, 30.2, 26.8 m).
+       Bottom: x in [cx-10,cx+50]; slopes +0.05 / +0.10 / +0.15 (9.0, 10.0, 12.0, 15.0 m) —
+       RISES toward +x, so the surfaces tilt toward each other.
+       Members share a lattice of vertices: every shared boundary coincides in 3D, with
+       consistent orientation (a conforming CompositeSurface). NO vertical members — compare
+       SBS-4, which has them.
+  -->
+  <samplingFeature>
+    <VolumetricSamplingFeature gml:id="SBS-19">
+      <gml:name>DEGENERATE: tilted CompositeSurface top and bottom, tilting toward each other, both under-cover</gml:name>
+      <projectRef xlink:href="#proj-sbs"/>
+      <referencePoint>
+        <PointLocation gml:id="pl-SBS-19" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3" uomLabels="m m m">
+          <gml:pos>505700 3300000 20</gml:pos>
+        </PointLocation>
+      </referencePoint>
+      <featureExtent>
+        <SurfaceBoundedSolid gml:id="sbs-SBS-19">
+          <footprint>
+            <PlanarSurface gml:id="fp-SBS-19" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>505660 3299970 0 505740 3299970 0 505740 3300030 0 505660 3300030 0 505660 3299970 0</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </footprint>
+          <topSurface>
+            <CompositeSurface gml:id="top-SBS-19" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-19-c1r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505650 3299960 34 505670 3299960 32.6 505670 3300000 32.6 505650 3300000 34 505650 3299960 34</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-19-c1r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505650 3300000 34 505670 3300000 32.6 505670 3300040 32.6 505650 3300040 34 505650 3300000 34</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-19-c2r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505670 3299960 32.6 505690 3299960 30.2 505690 3300000 30.2 505670 3300000 32.6 505670 3299960 32.6</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-19-c2r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505670 3300000 32.6 505690 3300000 30.2 505690 3300040 30.2 505670 3300040 32.6 505670 3300000 32.6</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-19-c3r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505690 3299960 30.2 505710 3299960 26.8 505710 3300000 26.8 505690 3300000 30.2 505690 3299960 30.2</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-19-c3r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505690 3300000 30.2 505710 3300000 26.8 505710 3300040 26.8 505690 3300040 30.2 505690 3300000 30.2</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+            </CompositeSurface>
+          </topSurface>
+          <bottomSurface>
+            <CompositeSurface gml:id="bot-SBS-19" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-19-c1r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505690 3299960 9 505710 3299960 10 505710 3300000 10 505690 3300000 9 505690 3299960 9</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-19-c1r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505690 3300000 9 505710 3300000 10 505710 3300040 10 505690 3300040 9 505690 3300000 9</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-19-c2r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505710 3299960 10 505730 3299960 12 505730 3300000 12 505710 3300000 10 505710 3299960 10</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-19-c2r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505710 3300000 10 505730 3300000 12 505730 3300040 12 505710 3300040 10 505710 3300000 10</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-19-c3r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505730 3299960 12 505750 3299960 15 505750 3300000 15 505730 3300000 12 505730 3299960 12</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-19-c3r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>505730 3300000 12 505750 3300000 15 505750 3300040 15 505730 3300040 12 505730 3300000 12</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+            </CompositeSurface>
+          </bottomSurface>
+        </SurfaceBoundedSolid>
+      </featureExtent>
+    </VolumetricSamplingFeature>
+  </samplingFeature>
+
+  <!-- ═══ SBS-20 — DEGENERATE: crossing tilted PlanarSurface top and bottom, same direction, both under-cover ═══
+       *** VIOLATES the coverage requirement (top covers the west 62.5 %, bottom the east
+       62.5 % of the footprint) AND the no-crossing requirement: the surfaces cross on the
+       line x = cx, inside the footprint and inside the region both surfaces cover.
+       Schema-VALID; unenforced authoring requirements. ***
+       
+       Crossing variant of SBS-16. Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40].
+       Top: PlanarSurface, x in [cx-50,cx+10], z = 28 - 0.12*(x-cx)  (34.0 -> 26.8 m).
+       Bottom: PlanarSurface, x in [cx-10,cx+50], z = 28 - 0.04*(x-cx)  (28.4 -> 26.0 m).
+       Both dip toward +x; the top dips faster, so it starts above the bottom and ends below
+       it. Cross at x = cx (z = 28.0). Thickness: +4.8 m at x = cx-40, -4.8 m at x = cx+40.
+  -->
+  <samplingFeature>
+    <VolumetricSamplingFeature gml:id="SBS-20">
+      <gml:name>DEGENERATE: crossing tilted PlanarSurface top and bottom, same direction, both under-cover</gml:name>
+      <projectRef xlink:href="#proj-sbs"/>
+      <referencePoint>
+        <PointLocation gml:id="pl-SBS-20" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3" uomLabels="m m m">
+          <gml:pos>506000 3300000 20</gml:pos>
+        </PointLocation>
+      </referencePoint>
+      <featureExtent>
+        <SurfaceBoundedSolid gml:id="sbs-SBS-20">
+          <footprint>
+            <PlanarSurface gml:id="fp-SBS-20" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>505960 3299970 0 506040 3299970 0 506040 3300030 0 505960 3300030 0 505960 3299970 0</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </footprint>
+          <topSurface>
+            <PlanarSurface gml:id="top-SBS-20" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>505950 3299960 34 506010 3299960 26.8 506010 3300040 26.8 505950 3300040 34 505950 3299960 34</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </topSurface>
+          <bottomSurface>
+            <PlanarSurface gml:id="bot-SBS-20" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>505990 3299960 28.4 506050 3299960 26 506050 3300040 26 505990 3300040 28.4 505990 3299960 28.4</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </bottomSurface>
+        </SurfaceBoundedSolid>
+      </featureExtent>
+    </VolumetricSamplingFeature>
+  </samplingFeature>
+
+  <!-- ═══ SBS-21 — DEGENERATE: crossing tilted PlanarSurface top and bottom, tilting toward each other, both under-cover ═══
+       *** VIOLATES the coverage requirement (top covers the west 62.5 %, bottom the east
+       62.5 % of the footprint) AND the no-crossing requirement: the surfaces cross on the
+       line x = cx, inside the footprint and inside the region both surfaces cover.
+       Schema-VALID; unenforced authoring requirements. ***
+       
+       Crossing variant of SBS-17. Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40].
+       Top: PlanarSurface, x in [cx-50,cx+10], z = 28 - 0.12*(x-cx)  (34.0 -> 26.8 m; dips +x).
+       Bottom: PlanarSurface, x in [cx-10,cx+50], z = 28 + 0.10*(x-cx)  (27.0 -> 33.0 m; rises +x).
+       The surfaces tilt toward each other and cross at x = cx (z = 28.0), closing at 0.22 m
+       per metre. Thickness: +8.8 m at x = cx-40, -8.8 m at x = cx+40.
+  -->
+  <samplingFeature>
+    <VolumetricSamplingFeature gml:id="SBS-21">
+      <gml:name>DEGENERATE: crossing tilted PlanarSurface top and bottom, tilting toward each other, both under-cover</gml:name>
+      <projectRef xlink:href="#proj-sbs"/>
+      <referencePoint>
+        <PointLocation gml:id="pl-SBS-21" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3" uomLabels="m m m">
+          <gml:pos>506300 3300000 20</gml:pos>
+        </PointLocation>
+      </referencePoint>
+      <featureExtent>
+        <SurfaceBoundedSolid gml:id="sbs-SBS-21">
+          <footprint>
+            <PlanarSurface gml:id="fp-SBS-21" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>506260 3299970 0 506340 3299970 0 506340 3300030 0 506260 3300030 0 506260 3299970 0</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </footprint>
+          <topSurface>
+            <PlanarSurface gml:id="top-SBS-21" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>506250 3299960 34 506310 3299960 26.8 506310 3300040 26.8 506250 3300040 34 506250 3299960 34</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </topSurface>
+          <bottomSurface>
+            <PlanarSurface gml:id="bot-SBS-21" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>506290 3299960 27 506350 3299960 33 506350 3300040 33 506290 3300040 27 506290 3299960 27</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </bottomSurface>
+        </SurfaceBoundedSolid>
+      </featureExtent>
+    </VolumetricSamplingFeature>
+  </samplingFeature>
+
+  <!-- ═══ SBS-22 — DEGENERATE: crossing tilted MultiPlanarSurface top and bottom, same direction, both under-cover ═══
+       *** VIOLATES the coverage requirement (top covers the west 62.5 %, bottom the east
+       62.5 % of the footprint) AND the no-crossing requirement: the surfaces cross on the
+       line x = cx, inside the footprint and inside the region both surfaces cover.
+       Schema-VALID; unenforced authoring requirements. ***
+       
+       Crossing variant of SBS-18 (3 x 2 = 6 tilted PlanarSurfacePatch per surface, shared
+       vertex lattice, no vertical panels). Footprint: 80 x 60 m rectangle.
+       Top: x in [cx-50,cx+10]; slopes -0.07 / -0.12 / -0.17 (34.0, 32.6, 30.2, 26.8 m).
+       Bottom: x in [cx-10,cx+50]; slopes -0.02 / -0.04 / -0.06 (28.7, 28.3, 27.5, 26.3 m).
+       Both dip toward +x. They meet at x = cx (z = 28.5), where the top is in its third
+       column and the bottom in its first — the crossing falls mid-patch on both, not on a seam.
+  -->
+  <samplingFeature>
+    <VolumetricSamplingFeature gml:id="SBS-22">
+      <gml:name>DEGENERATE: crossing tilted MultiPlanarSurface top and bottom, same direction, both under-cover</gml:name>
+      <projectRef xlink:href="#proj-sbs"/>
+      <referencePoint>
+        <PointLocation gml:id="pl-SBS-22" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3" uomLabels="m m m">
+          <gml:pos>506600 3300000 20</gml:pos>
+        </PointLocation>
+      </referencePoint>
+      <featureExtent>
+        <SurfaceBoundedSolid gml:id="sbs-SBS-22">
+          <footprint>
+            <PlanarSurface gml:id="fp-SBS-22" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>506560 3299970 0 506640 3299970 0 506640 3300030 0 506560 3300030 0 506560 3299970 0</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </footprint>
+          <topSurface>
+            <MultiPlanarSurface gml:id="top-SBS-22" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:patches>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506550 3299960 34 506570 3299960 32.6 506570 3300000 32.6 506550 3300000 34 506550 3299960 34</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506550 3300000 34 506570 3300000 32.6 506570 3300040 32.6 506550 3300040 34 506550 3300000 34</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506570 3299960 32.6 506590 3299960 30.2 506590 3300000 30.2 506570 3300000 32.6 506570 3299960 32.6</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506570 3300000 32.6 506590 3300000 30.2 506590 3300040 30.2 506570 3300040 32.6 506570 3300000 32.6</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506590 3299960 30.2 506610 3299960 26.8 506610 3300000 26.8 506590 3300000 30.2 506590 3299960 30.2</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506590 3300000 30.2 506610 3300000 26.8 506610 3300040 26.8 506590 3300040 30.2 506590 3300000 30.2</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+              </gml:patches>
+            </MultiPlanarSurface>
+          </topSurface>
+          <bottomSurface>
+            <MultiPlanarSurface gml:id="bot-SBS-22" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:patches>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506590 3299960 28.7 506610 3299960 28.3 506610 3300000 28.3 506590 3300000 28.7 506590 3299960 28.7</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506590 3300000 28.7 506610 3300000 28.3 506610 3300040 28.3 506590 3300040 28.7 506590 3300000 28.7</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506610 3299960 28.3 506630 3299960 27.5 506630 3300000 27.5 506610 3300000 28.3 506610 3299960 28.3</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506610 3300000 28.3 506630 3300000 27.5 506630 3300040 27.5 506610 3300040 28.3 506610 3300000 28.3</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506630 3299960 27.5 506650 3299960 26.3 506650 3300000 26.3 506630 3300000 27.5 506630 3299960 27.5</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506630 3300000 27.5 506650 3300000 26.3 506650 3300040 26.3 506630 3300040 27.5 506630 3300000 27.5</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+              </gml:patches>
+            </MultiPlanarSurface>
+          </bottomSurface>
+        </SurfaceBoundedSolid>
+      </featureExtent>
+    </VolumetricSamplingFeature>
+  </samplingFeature>
+
+  <!-- ═══ SBS-23 — DEGENERATE: crossing tilted CompositeSurface top and bottom, tilting toward each other, both under-cover ═══
+       *** VIOLATES the coverage requirement (top covers the west 62.5 %, bottom the east
+       62.5 % of the footprint) AND the no-crossing requirement: the surfaces cross on the
+       line x = cx, inside the footprint and inside the region both surfaces cover.
+       Schema-VALID; unenforced authoring requirements. ***
+       
+       Crossing variant of SBS-19 (CompositeSurface of 6 tilted PlanarSurface members per
+       surface, boundaries coincide in 3D, no vertical members). Footprint: 80 x 60 m rectangle.
+       Top: x in [cx-50,cx+10]; slopes -0.07 / -0.12 / -0.17 (34.0, 32.6, 30.2, 26.8 m).
+       Bottom: x in [cx-10,cx+50]; slopes +0.05 / +0.10 / +0.15 (28.0, 29.0, 31.0, 34.0 m).
+       They meet at x = cx (z = 28.5), mid-member on both surfaces.
+  -->
+  <samplingFeature>
+    <VolumetricSamplingFeature gml:id="SBS-23">
+      <gml:name>DEGENERATE: crossing tilted CompositeSurface top and bottom, tilting toward each other, both under-cover</gml:name>
+      <projectRef xlink:href="#proj-sbs"/>
+      <referencePoint>
+        <PointLocation gml:id="pl-SBS-23" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3" uomLabels="m m m">
+          <gml:pos>506900 3300000 20</gml:pos>
+        </PointLocation>
+      </referencePoint>
+      <featureExtent>
+        <SurfaceBoundedSolid gml:id="sbs-SBS-23">
+          <footprint>
+            <PlanarSurface gml:id="fp-SBS-23" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>506860 3299970 0 506940 3299970 0 506940 3300030 0 506860 3300030 0 506860 3299970 0</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </footprint>
+          <topSurface>
+            <CompositeSurface gml:id="top-SBS-23" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-23-c1r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506850 3299960 34 506870 3299960 32.6 506870 3300000 32.6 506850 3300000 34 506850 3299960 34</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-23-c1r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506850 3300000 34 506870 3300000 32.6 506870 3300040 32.6 506850 3300040 34 506850 3300000 34</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-23-c2r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506870 3299960 32.6 506890 3299960 30.2 506890 3300000 30.2 506870 3300000 32.6 506870 3299960 32.6</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-23-c2r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506870 3300000 32.6 506890 3300000 30.2 506890 3300040 30.2 506870 3300040 32.6 506870 3300000 32.6</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-23-c3r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506890 3299960 30.2 506910 3299960 26.8 506910 3300000 26.8 506890 3300000 30.2 506890 3299960 30.2</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-23-c3r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506890 3300000 30.2 506910 3300000 26.8 506910 3300040 26.8 506890 3300040 30.2 506890 3300000 30.2</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+            </CompositeSurface>
+          </topSurface>
+          <bottomSurface>
+            <CompositeSurface gml:id="bot-SBS-23" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-23-c1r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506890 3299960 28 506910 3299960 29 506910 3300000 29 506890 3300000 28 506890 3299960 28</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-23-c1r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506890 3300000 28 506910 3300000 29 506910 3300040 29 506890 3300040 28 506890 3300000 28</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-23-c2r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506910 3299960 29 506930 3299960 31 506930 3300000 31 506910 3300000 29 506910 3299960 29</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-23-c2r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506910 3300000 29 506930 3300000 31 506930 3300040 31 506910 3300040 29 506910 3300000 29</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-23-c3r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506930 3299960 31 506950 3299960 34 506950 3300000 34 506930 3300000 31 506930 3299960 31</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-23-c3r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>506930 3300000 31 506950 3300000 34 506950 3300040 34 506930 3300040 31 506930 3300000 31</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+            </CompositeSurface>
+          </bottomSurface>
+        </SurfaceBoundedSolid>
+      </featureExtent>
+    </VolumetricSamplingFeature>
+  </samplingFeature>
+
   <!-- ═══ GUO-MultiSolid — MultiSolid demonstrated via GeoUnitObservation/location ═══
        MultiSolid cannot appear in featureExtent (rejected — S32j-neg-03); this is NOT
        a VolumetricSamplingFeature. diggs:location (inherited from AbstractObservationType)
@@ -16666,6 +17546,216 @@
             </MultiSolid>
           </location>
           <unitName>Disjoint Demo Unit</unitName>
+        </GeoUnitObservation>
+      </geoUnitObservation>
+    </GeoUnitSystem>
+  </observation>
+
+  <!-- ═══ GUO-ms-disjoint — MultiSolid - three disjoint solids ═══
+       A diggs:MultiSolid of THREE unconnected SurfaceBoundedSolid members, each a different
+       shape, no two touching or overlapping (plan-view gaps of 30 m and 27 m):
+         a  rectangle 30 x 36 m centred msx-70, flat top 16 m, flat bottom 6 m
+         b  concave L-shape (6 vertices) centred msx, top dipping 22 m at msx (0.05 down +x),
+            flat bottom 10 m
+         c  regular hexagon, 18 m circumradius, centred msx+70, flat top 26 m, flat bottom 14 m
+       The "several unconnected bodies of one unit" case. Compare gus-multisolid-demo above
+       (two rectangles); this one varies footprint shape, top surface and elevation.
+       Carried by GeoUnitObservation/location — MultiSolid is not legal in featureExtent.
+  -->
+  <observation>
+    <GeoUnitSystem gml:id="gus-ms-disjoint">
+      <projectRef xlink:href="#proj-sbs"/>
+      <samplingFeatureRef xlink:href="#SBS-1"/>
+      <geoUnitObservation>
+        <GeoUnitObservation gml:id="guo-ms-disjoint">
+          <location>
+            <MultiSolid gml:id="ms-ms-disjoint">
+              <solidMember>
+                <SurfaceBoundedSolid gml:id="ms-disjoint-a">
+                  <footprint>
+                    <PlanarSurface gml:id="fp-ms-disjoint-a" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507115 3299982 0 507145 3299982 0 507145 3300018 0 507115 3300018 0 507115 3299982 0</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </footprint>
+                  <topSurface>
+                    <PlanarSurface gml:id="ms-disjoint-a-top" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507110 3299977 16 507150 3299977 16 507150 3300023 16 507110 3300023 16 507110 3299977 16</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </topSurface>
+                  <bottomSurface>
+                    <PlanarSurface gml:id="ms-disjoint-a-bot" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507110 3299977 6 507150 3299977 6 507150 3300023 6 507110 3300023 6 507110 3299977 6</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </bottomSurface>
+                </SurfaceBoundedSolid>
+              </solidMember>
+              <solidMember>
+                <SurfaceBoundedSolid gml:id="ms-disjoint-b">
+                  <footprint>
+                    <PlanarSurface gml:id="fp-ms-disjoint-b" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507175 3299980 0 507205 3299980 0 507205 3300000 0 507225 3300000 0 507225 3300020 0 507175 3300020 0 507175 3299980 0</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </footprint>
+                  <topSurface>
+                    <PlanarSurface gml:id="ms-disjoint-b-top" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507170 3299975 23.5 507230 3299975 20.5 507230 3300025 20.5 507170 3300025 23.5 507170 3299975 23.5</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </topSurface>
+                  <bottomSurface>
+                    <PlanarSurface gml:id="ms-disjoint-b-bot" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507170 3299975 10 507230 3299975 10 507230 3300025 10 507170 3300025 10 507170 3299975 10</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </bottomSurface>
+                </SurfaceBoundedSolid>
+              </solidMember>
+              <solidMember>
+                <SurfaceBoundedSolid gml:id="ms-disjoint-c">
+                  <footprint>
+                    <PlanarSurface gml:id="fp-ms-disjoint-c" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507288 3300000 0 507279 3300015.588 0 507261 3300015.588 0 507252 3300000 0 507261 3299984.412 0 507279 3299984.412 0 507288 3300000 0</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </footprint>
+                  <topSurface>
+                    <PlanarSurface gml:id="ms-disjoint-c-top" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507247 3299977 26 507293 3299977 26 507293 3300023 26 507247 3300023 26 507247 3299977 26</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </topSurface>
+                  <bottomSurface>
+                    <PlanarSurface gml:id="ms-disjoint-c-bot" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507247 3299977 14 507293 3299977 14 507293 3300023 14 507247 3300023 14 507247 3299977 14</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </bottomSurface>
+                </SurfaceBoundedSolid>
+              </solidMember>
+            </MultiSolid>
+          </location>
+          <unitName>MultiSolid - three disjoint solids</unitName>
+        </GeoUnitObservation>
+      </geoUnitObservation>
+    </GeoUnitSystem>
+  </observation>
+
+  <!-- ═══ GUO-ms-overlap — MultiSolid - two overlapping solids ═══
+       A diggs:MultiSolid of TWO SurfaceBoundedSolid members whose VOLUMES INTERSECT — legal for
+       a MultiSolid (ISO 19107 places no non-overlap constraint on it), illegal for a
+       CompositeSolid.
+         a  footprint x in [msx-50,msx+10], y in [msy-25,msy+25]; flat top 16 m, flat bottom 6 m
+         b  footprint x in [msx-10,msx+50], y in [msy-25,msy+25]; flat top 24 m, flat bottom 10 m
+       Overlap: x in [msx-10,msx+10] (20 m), y in [msy-25,msy+25] (50 m), z in [10,16] (6 m)
+       = 6,000 m3 shared by both members. Outside the overlap each member also has volume of
+       its own, and the two are offset in elevation, so the overlap is a genuine 3D
+       intersection and not a shared face.
+       Carried by GeoUnitObservation/location — MultiSolid is not legal in featureExtent.
+  -->
+  <observation>
+    <GeoUnitSystem gml:id="gus-ms-overlap">
+      <projectRef xlink:href="#proj-sbs"/>
+      <samplingFeatureRef xlink:href="#SBS-1"/>
+      <geoUnitObservation>
+        <GeoUnitObservation gml:id="guo-ms-overlap">
+          <location>
+            <MultiSolid gml:id="ms-ms-overlap">
+              <solidMember>
+                <SurfaceBoundedSolid gml:id="ms-overlap-a">
+                  <footprint>
+                    <PlanarSurface gml:id="fp-ms-overlap-a" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507450 3299975 0 507510 3299975 0 507510 3300025 0 507450 3300025 0 507450 3299975 0</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </footprint>
+                  <topSurface>
+                    <PlanarSurface gml:id="ms-overlap-a-top" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507445 3299970 16 507515 3299970 16 507515 3300030 16 507445 3300030 16 507445 3299970 16</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </topSurface>
+                  <bottomSurface>
+                    <PlanarSurface gml:id="ms-overlap-a-bot" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507445 3299970 6 507515 3299970 6 507515 3300030 6 507445 3300030 6 507445 3299970 6</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </bottomSurface>
+                </SurfaceBoundedSolid>
+              </solidMember>
+              <solidMember>
+                <SurfaceBoundedSolid gml:id="ms-overlap-b">
+                  <footprint>
+                    <PlanarSurface gml:id="fp-ms-overlap-b" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507490 3299975 0 507550 3299975 0 507550 3300025 0 507490 3300025 0 507490 3299975 0</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </footprint>
+                  <topSurface>
+                    <PlanarSurface gml:id="ms-overlap-b-top" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507485 3299970 24 507555 3299970 24 507555 3300030 24 507485 3300030 24 507485 3299970 24</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </topSurface>
+                  <bottomSurface>
+                    <PlanarSurface gml:id="ms-overlap-b-bot" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>507485 3299970 10 507555 3299970 10 507555 3300030 10 507485 3300030 10 507485 3299970 10</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </PlanarSurface>
+                  </bottomSurface>
+                </SurfaceBoundedSolid>
+              </solidMember>
+            </MultiSolid>
+          </location>
+          <unitName>MultiSolid - two overlapping solids</unitName>
         </GeoUnitObservation>
       </geoUnitObservation>
     </GeoUnitSystem>
