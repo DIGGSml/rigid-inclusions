@@ -11,7 +11,7 @@
   metres). Coordinate order is easting northing elevation, srsDimension="3", so all
   three axes are already metres and no unit conversion is needed to render.
 
-  Each solid obeys SurfaceBoundedSolid's authoring requirement: its topSurface and
+  Each solid in SBS-1..11 obeys SurfaceBoundedSolid's coverage requirement: its topSurface and
   bottomSurface both extend BEYOND the footprint on every side, so the footprint is
   what clips them. Features are spaced 300 m apart in easting.
 
@@ -25,7 +25,7 @@
   SBS-6  coarse TriangulatedSurface top (32 triangles, ~4 m relief), hexagonal footprint
   SBS-7  fine TriangulatedSurface top (1152 triangles, ~16 m relief) AND bottom TIN,
          irregular 12-vertex footprint with a hole: THE tier-2 vs tier-3 case
-  SBS-8  MultiSurface top (the second branch of SurfacePropertyType's choice),
+  SBS-8  CompositeSurface top (two flat members joined by a vertical riser),
          annular footprint
 
   Added 2026-09-18, alongside diggs:MultiSolid/diggs:CompositeSolid and the footprint
@@ -37,8 +37,8 @@
   SBS-11  footprint is a diggs:MultiSurface of THREE differently-shaped disjoint parts,
           TIN top
 
-  DEGENERATE CASES — schema-VALID, authoring-requirement-VIOLATING, built to observe
-  actual inspector behaviour before deciding how to handle them (Dan, 2026-09-18):
+  DEGENERATE CASES — schema-VALID, built to observe actual inspector behaviour before
+  deciding how to handle them (Dan, 2026-09-18; see STATUS at the end of this comment):
 
   SBS-12  topSurface covers only half the footprint (bottomSurface fully covers)
   SBS-13  BOTH bounding surfaces under-cover the footprint, non-congruently
@@ -71,6 +71,16 @@
   SBS-22  crossing variant of SBS-18 (MultiPlanarSurface, same direction)
   SBS-23  crossing variant of SBS-19 (CompositeSurface, toward each other)
 
+  VALID crossing cases with multi-patch surfaces, added 2026-09-19 (Dan) — both surfaces
+  cover the footprint completely, so unlike SBS-16..23 these are legal pinch-out fixtures.
+  Placed at grid slots 26 and 27 (24 and 25 are the MultiSolid examples below):
+
+  SBS-24  MultiPlanarSurface top and bottom, on DIFFERENT (misaligned) lattices, crossing
+          along an oblique line; continuous, no vertical members
+  SBS-25  CompositeSurface top with a VERTICAL RISER that the bottom surface cuts through
+          (riser fully solid, partly solid, then fully void along its length) and a
+          CompositeSurface bottom; the two also cross on either side of the riser
+
   Plus one non-VolumetricSamplingFeature addition: a GeoUnitObservation whose
   diggs:location holds a diggs:MultiSolid of two disjoint SurfaceBoundedSolid members —
   MultiSolid cannot appear in featureExtent (verified rejected), so it is demonstrated
@@ -82,6 +92,22 @@
   ms-disjoint  THREE mutually unconnected SurfaceBoundedSolids of different shapes
   ms-overlap   TWO SurfaceBoundedSolids whose volumes intersect (6,000 m3) — legal for a
                MultiSolid, not for a CompositeSolid
+
+  STATUS OF THE DEGENERATE CASES, 2026-09-19 (Dan, after seeing them in the viewer):
+  - COVERAGE is a firm requirement: topSurface and bottomSurface shall extend to or beyond the
+    footprint everywhere. SBS-12, SBS-13 and SBS-16..23 VIOLATE it. They are INVALID, kept as
+    negative fixtures: a geometry validator must flag them, and how a viewer renders them is
+    undefined (the inspector currently projects the surfaces out to the footprint).
+  - CROSSING surfaces are LEGAL: where the top is at or below the bottom the body pinches out
+    and that part of the footprint is empty. SBS-14 and SBS-15 (full coverage, crossing) are the
+    valid pinch-out fixtures with planar / TIN surfaces; SBS-24 and SBS-25 are the valid ones
+    with multi-patch surfaces. SBS-20..23 also cross but are invalid on coverage as well.
+  - topSurface/bottomSurface can no longer be a diggs:MultiSurface (diggs:BoundingSurface-
+    PropertyType). SBS-8 was one and is now a CompositeSurface with a vertical riser. A
+    disjoint body is expressed with a MultiSurface FOOTPRINT (SBS-10, SBS-11) instead.
+  - The members of a CompositeSurface and the patches of a MultiPlanarSurface shall share
+    boundaries in 3D. SBS-4 and SBS-8 (vertical risers), SBS-5, SBS-16..23, SBS-24 and
+    SBS-25 (a vertical riser) comply.
 -->
 <Diggs xmlns="http://diggsml.org/schemas/3" xmlns:diggs="http://diggsml.org/schemas/3"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -12547,19 +12573,22 @@
     </VolumetricSamplingFeature>
   </samplingFeature>
 
-  <!-- ═══ SBS-8 — MultiSurface top — the other branch of SurfacePropertyType ═══
+  <!-- ═══ SBS-8 — CompositeSurface top — two flat members joined by a vertical riser, annular footprint ═══
        Footprint: annulus — 45 m outer octagon with a 20 m inner octagon hole. The body
        is a ring in plan, so BOTH walls are closed loops and neither cap is simply
        connected.
-       Top: diggs:MultiSurface (NOT a diggs:AbstractSurface member — it is the second,
-       separate branch of SurfacePropertyType's choice, so a consumer that only
-       handles AbstractSurface substitutes will miss it). Two PlanarSurface members at
-       elev 18 and 20 m, each covering half the plan area.
+       Top: diggs:CompositeSurface of THREE PlanarSurface members — two flat halves at
+       elev 18 m (west) and 20 m (east), meeting on the line x = cx, plus a VERTICAL RISER
+       member on that line closing the 2 m step so the members' boundaries coincide in 3D.
+       The riser crosses the annulus's hole in plan, so within the footprint it is two
+       separate vertical strips (north and south of the hole) that a renderer must clip
+       to the ring. (This feature originally used a diggs:MultiSurface top; that is no
+       longer admitted by diggs:BoundingSurfacePropertyType — 2026-09-19.)
        Bottom: flat PlanarSurface at elev 2 m.
   -->
   <samplingFeature>
     <VolumetricSamplingFeature gml:id="SBS-8">
-      <gml:name>MultiSurface top — the other branch of SurfacePropertyType</gml:name>
+      <gml:name>CompositeSurface top — two flat members joined by a vertical riser, annular footprint</gml:name>
       <projectRef xlink:href="#proj-sbs"/>
       <referencePoint>
         <PointLocation gml:id="pl-SBS-8" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3" uomLabels="m m m">
@@ -12583,7 +12612,7 @@
             </PlanarSurface>
           </footprint>
           <topSurface>
-            <MultiSurface gml:id="top-SBS-8" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+            <CompositeSurface gml:id="top-SBS-8" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
               <surfaceMember>
                 <PlanarSurface gml:id="top-SBS-8-m1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
                   <gml:exterior>
@@ -12602,7 +12631,16 @@
                   </gml:exterior>
                 </PlanarSurface>
               </surfaceMember>
-            </MultiSurface>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-8-r12" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>502100 3300060 18 502100 3299940 18 502100 3299940 20 502100 3300060 20 502100 3300060 18</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+            </CompositeSurface>
           </topSurface>
           <bottomSurface>
             <PlanarSurface gml:id="bot-SBS-8" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
@@ -13740,10 +13778,10 @@
   </samplingFeature>
 
   <!-- ═══ SBS-12 — DEGENERATE: topSurface does not extend across the whole footprint ═══
-       *** VIOLATES the authoring requirement that bounding surfaces extend to/beyond the
+       *** VIOLATES the coverage requirement that bounding surfaces extend to/beyond the
        footprint everywhere — built deliberately, to see how the inspector behaves before
-       deciding how (or whether) to handle it. Still schema-VALID; the coverage requirement
-       is documentation-only, not machine-enforced (SurfaceBoundedSolid's own docs say so). ***
+       deciding how (or whether) to handle it. Schema-VALID (the XSD cannot express coverage),
+       but INVALID under the coverage requirement, which a geometry validator should flag. ***
        
        Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40].
        Top: flat PlanarSurface covering ONLY x in [cx-40,cx] (the west half) at 22 m — the
@@ -13799,7 +13837,7 @@
   <!-- ═══ SBS-13 — DEGENERATE: BOTH bounding surfaces under-cover the footprint, non-congruently ═══
        *** VIOLATES the coverage requirement on BOTH bounding surfaces at once, with
        DIFFERENT (non-congruent) under-coverage shapes and extents — a strictly harder case
-       than SBS-12. Schema-VALID; unenforced authoring requirement, as above. ***
+       than SBS-12. Schema-VALID but INVALID under the coverage requirement, as above. ***
        
        Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40].
        Top: flat PlanarSurface (a rectangle) covering x in [cx-40,cx+5] at 24 m.
@@ -13853,17 +13891,19 @@
   </samplingFeature>
 
   <!-- ═══ SBS-14 — DEGENERATE: top and bottom surfaces cross once — bottom rises above top ═══
-       *** VIOLATES "bottomSurface shall not rise above topSurface" — the two bounding
-       planes CROSS once within the footprint, so bottom is genuinely above top on one side.
-       Schema-VALID; unenforced authoring requirement, as above. ***
+       *** The two bounding planes CROSS once within the footprint, so bottom is above top on
+       one side. Crossing is LEGAL (Dan, 2026-09-19): where the top is at or below the bottom the
+       body has no thickness and that part of the footprint is empty — a PINCH-OUT. Full coverage,
+       so this is a VALID pinch-out fixture. ***
        
        Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40].
        Top: PlanarSurface dipping DOWN to the west: z = 20 + 0.15*(x-cx) -> 14 m..26 m.
        Bottom: PlanarSurface dipping DOWN to the east: z = 15 - 0.15*(x-cx) -> 21 m..9 m.
        The two planes cross at x = cx - 16.67 (well inside the footprint). West of the
-       crossing, bottom > top (inverted, physically nonsensical); east of it, top > bottom
-       (normal). Watch for negative-thickness wall panels or self-intersecting geometry
-       at and past the crossing line.
+       crossing, bottom > top: no material, the footprint is EMPTY there; east of it, top >
+       bottom: the solid. EXPECTED under the pinch-out rule: a wedge of solid over
+       x in [cx-16.67, cx+40], thinning to nothing at the crossing line, with NO wall panels
+       and NO cap on the west part of the footprint (and none negative-thickness).
   -->
   <samplingFeature>
     <VolumetricSamplingFeature gml:id="SBS-14">
@@ -13909,11 +13949,11 @@
   </samplingFeature>
 
   <!-- ═══ SBS-15 — DEGENERATE: bottom surface crosses top MULTIPLE times (rises, falls, rises...) ═══
-       *** VIOLATES the no-crossing requirement repeatedly, not just once — bottomSurface
+       *** Crossing is LEGAL (a pinch-out, Dan 2026-09-19); here it happens repeatedly — bottomSurface
        oscillates through topSurface exactly 3 times across the footprint's width (measured:
        zero-crossings of 8*sin(x/10) at x = 0, +-31.4, within the +-60 m footprint half-width;
        a fourth crossing at x=+-62.8 falls just outside it).
-       Schema-VALID; unenforced authoring requirement, as above. Elongated footprint (120 m
+       Full coverage, so a VALID fixture. Elongated footprint (120 m
        wide, 40 m deep) so the oscillation is sampled along the long north/south wall edges
        themselves (not just buried in the footprint interior, which tier-2 drape-only
        rendering cannot see at all — see SBS-7's bump/pit for that failure mode; this case
@@ -13928,6 +13968,10 @@
        Watch for: does the wall mesh self-intersect visibly, does the renderer clamp/skip,
        does it silently produce a plausible-looking but wrong solid (the same "plausible
        lie" failure mode flagged for the pre-integration generic path)?
+       
+       EXPECTED under the pinch-out rule: solid only where the bottom is BELOW the top, i.e.
+       where sin((x-cx)/10) < 0 -> x in (cx-31.4, cx) and (cx+31.4, cx+60) within the
+       footprint; empty in the two bands where it is above (x < cx-31.4, cx < x < cx+31.4).
   -->
   <samplingFeature>
     <VolumetricSamplingFeature gml:id="SBS-15">
@@ -16660,7 +16704,7 @@
   <!-- ═══ SBS-16 — DEGENERATE: tilted PlanarSurface top and bottom, same direction, both under-cover ═══
        *** VIOLATES the coverage requirement on both bounding surfaces (top covers only the
        west 62.5 % of the footprint, bottom only the east 62.5 %), AND both are tilted.
-       Schema-VALID; unenforced authoring requirement. Built to observe inspector behaviour
+       Schema-VALID but INVALID under the coverage requirement. Built to observe inspector behaviour
        (Dan, 2026-09-19): what does the wall/cap construction do at footprint vertices that
        have no surface above or below them, when the missing surface is TILTED rather than flat
        (SBS-12/13 were flat)? An extrapolated plane keeps its tilt; a nearest-triangle fallback
@@ -16720,8 +16764,8 @@
 
   <!-- ═══ SBS-17 — DEGENERATE: tilted PlanarSurface top and bottom, tilting toward each other, both under-cover ═══
        *** Same coverage violation as SBS-16 (top covers the west 62.5 %, bottom the east
-       62.5 %), but the two planes tilt TOWARD each other. Schema-VALID; unenforced authoring
-       requirement. ***
+       62.5 %), but the two planes tilt TOWARD each other. Schema-VALID but INVALID under the
+       coverage requirement. ***
        
        Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40].
        Top: PlanarSurface, x in [cx-50,cx+10], z = 28 - 0.12*(x-cx)  (34.0 -> 26.8 m; dips
@@ -16777,8 +16821,8 @@
 
   <!-- ═══ SBS-18 — DEGENERATE: tilted MultiPlanarSurface top and bottom, same direction, both under-cover ═══
        *** SBS-16 with each bounding surface replaced by a MultiPlanarSurface: 3 x 2 =
-       6 tilted PlanarSurfacePatch each. Same coverage violation. Schema-VALID; unenforced
-       authoring requirement. ***
+       6 tilted PlanarSurfacePatch each. Same coverage violation. Schema-VALID but INVALID under
+       the coverage requirement. ***
        
        Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40].
        Top: x in [cx-50,cx+10]; three columns 20 m wide with slopes dz/dx = -0.07 / -0.12 /
@@ -16913,8 +16957,8 @@
 
   <!-- ═══ SBS-19 — DEGENERATE: tilted CompositeSurface top and bottom, tilting toward each other, both under-cover ═══
        *** SBS-17 with each bounding surface replaced by a CompositeSurface of 6 tilted
-       PlanarSurface members (3 x 2). Same coverage violation. Schema-VALID; unenforced
-       authoring requirement. ***
+       PlanarSurface members (3 x 2). Same coverage violation. Schema-VALID but INVALID under
+       the coverage requirement. ***
        
        Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40].
        Top: x in [cx-50,cx+10]; slopes -0.07 / -0.12 / -0.17 (34.0, 32.6, 30.2, 26.8 m).
@@ -17067,9 +17111,10 @@
 
   <!-- ═══ SBS-20 — DEGENERATE: crossing tilted PlanarSurface top and bottom, same direction, both under-cover ═══
        *** VIOLATES the coverage requirement (top covers the west 62.5 %, bottom the east
-       62.5 % of the footprint) AND the no-crossing requirement: the surfaces cross on the
-       line x = cx, inside the footprint and inside the region both surfaces cover.
-       Schema-VALID; unenforced authoring requirements. ***
+       62.5 % of the footprint), and the surfaces also CROSS on the line x = cx, inside the
+       footprint and inside the region both surfaces cover. Crossing itself is legal (a
+       pinch-out); the invalidity here is the coverage. Schema-VALID but INVALID under the
+       coverage requirement. ***
        
        Crossing variant of SBS-16. Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40].
        Top: PlanarSurface, x in [cx-50,cx+10], z = 28 - 0.12*(x-cx)  (34.0 -> 26.8 m).
@@ -17122,9 +17167,10 @@
 
   <!-- ═══ SBS-21 — DEGENERATE: crossing tilted PlanarSurface top and bottom, tilting toward each other, both under-cover ═══
        *** VIOLATES the coverage requirement (top covers the west 62.5 %, bottom the east
-       62.5 % of the footprint) AND the no-crossing requirement: the surfaces cross on the
-       line x = cx, inside the footprint and inside the region both surfaces cover.
-       Schema-VALID; unenforced authoring requirements. ***
+       62.5 % of the footprint), and the surfaces also CROSS on the line x = cx, inside the
+       footprint and inside the region both surfaces cover. Crossing itself is legal (a
+       pinch-out); the invalidity here is the coverage. Schema-VALID but INVALID under the
+       coverage requirement. ***
        
        Crossing variant of SBS-17. Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40].
        Top: PlanarSurface, x in [cx-50,cx+10], z = 28 - 0.12*(x-cx)  (34.0 -> 26.8 m; dips +x).
@@ -17177,9 +17223,10 @@
 
   <!-- ═══ SBS-22 — DEGENERATE: crossing tilted MultiPlanarSurface top and bottom, same direction, both under-cover ═══
        *** VIOLATES the coverage requirement (top covers the west 62.5 %, bottom the east
-       62.5 % of the footprint) AND the no-crossing requirement: the surfaces cross on the
-       line x = cx, inside the footprint and inside the region both surfaces cover.
-       Schema-VALID; unenforced authoring requirements. ***
+       62.5 % of the footprint), and the surfaces also CROSS on the line x = cx, inside the
+       footprint and inside the region both surfaces cover. Crossing itself is legal (a
+       pinch-out); the invalidity here is the coverage. Schema-VALID but INVALID under the
+       coverage requirement. ***
        
        Crossing variant of SBS-18 (3 x 2 = 6 tilted PlanarSurfacePatch per surface, shared
        vertex lattice, no vertical panels). Footprint: 80 x 60 m rectangle.
@@ -17311,9 +17358,10 @@
 
   <!-- ═══ SBS-23 — DEGENERATE: crossing tilted CompositeSurface top and bottom, tilting toward each other, both under-cover ═══
        *** VIOLATES the coverage requirement (top covers the west 62.5 %, bottom the east
-       62.5 % of the footprint) AND the no-crossing requirement: the surfaces cross on the
-       line x = cx, inside the footprint and inside the region both surfaces cover.
-       Schema-VALID; unenforced authoring requirements. ***
+       62.5 % of the footprint), and the surfaces also CROSS on the line x = cx, inside the
+       footprint and inside the region both surfaces cover. Crossing itself is legal (a
+       pinch-out); the invalidity here is the coverage. Schema-VALID but INVALID under the
+       coverage requirement. ***
        
        Crossing variant of SBS-19 (CompositeSurface of 6 tilted PlanarSurface members per
        surface, boundaries coincide in 3D, no vertical members). Footprint: 80 x 60 m rectangle.
@@ -17451,6 +17499,351 @@
                   <gml:exterior>
                     <gml:LinearRing>
                       <gml:posList>506930 3300000 31 506950 3300000 34 506950 3300040 34 506930 3300040 31 506930 3300000 31</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+            </CompositeSurface>
+          </bottomSurface>
+        </SurfaceBoundedSolid>
+      </featureExtent>
+    </VolumetricSamplingFeature>
+  </samplingFeature>
+
+  <!-- ═══ SBS-24 — VALID pinch-out: MultiPlanarSurface top and bottom on misaligned lattices, crossing along an oblique line ═══
+       VALID: both surfaces cover the footprint completely, and cross inside it. A pinch-out
+       fixture for multi-patch surfaces (SBS-14 is planar, SBS-15 has a planar top).
+       
+       Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40], y in [cy-30,cy+30].
+       Top: MultiPlanarSurface, 4 columns x 2 rows, x in [cx-50,cx+50], y in [cy-40,cy+40]. Height
+       depends on x only: 34, 32, 29, 25, 20 m at x-offsets -50/-25/0/25/50 (slopes -0.08, -0.12,
+       -0.16, -0.20 — steepening toward +x).
+       Bottom: MultiPlanarSurface, 5 columns x 2 rows on a DIFFERENT lattice (x-offsets -50/-30/
+       -10/10/30/50; y-offsets -40/-10/40), so the top and bottom patches overlap in an
+       irregular pattern that a pairwise overlay has to resolve. Height = A(x) + B(y): x part 27.0,
+       26.8, 26.4, 25.8, 25.4, 25.2 m; y part -2.0, -0.5, +2.0 m (a 0.05 cross-slope).
+       Both are CONTINUOUS (shared vertex lattice, no vertical panels).
+       Crossing: an OBLIQUE line, not a constant-x one — top = bottom at x-offset ~30.5 at y = -30,
+       ~21.4 at y = 0 and ~10.7 at y = +30. West of the line top > bottom (solid); east of it the
+       bottom is above the top (empty).
+       EXPECTED: surviving area ~3,670 m2 of the 4,800 m2 footprint; volume ~13,360 m3; thickness
+       from +7.8 m (west) to -4.8 m (east, void). No wall or cap over the east part.
+  -->
+  <samplingFeature>
+    <VolumetricSamplingFeature gml:id="SBS-24">
+      <gml:name>VALID pinch-out: MultiPlanarSurface top and bottom on misaligned lattices, crossing along an oblique line</gml:name>
+      <projectRef xlink:href="#proj-sbs"/>
+      <referencePoint>
+        <PointLocation gml:id="pl-SBS-24" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3" uomLabels="m m m">
+          <gml:pos>507800 3300000 20</gml:pos>
+        </PointLocation>
+      </referencePoint>
+      <featureExtent>
+        <SurfaceBoundedSolid gml:id="sbs-SBS-24">
+          <footprint>
+            <PlanarSurface gml:id="fp-SBS-24" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>507760 3299970 0 507840 3299970 0 507840 3300030 0 507760 3300030 0 507760 3299970 0</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </footprint>
+          <topSurface>
+            <MultiPlanarSurface gml:id="top-SBS-24" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:patches>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507750 3299960 34 507775 3299960 32 507775 3300000 32 507750 3300000 34 507750 3299960 34</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507750 3300000 34 507775 3300000 32 507775 3300040 32 507750 3300040 34 507750 3300000 34</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507775 3299960 32 507800 3299960 29 507800 3300000 29 507775 3300000 32 507775 3299960 32</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507775 3300000 32 507800 3300000 29 507800 3300040 29 507775 3300040 32 507775 3300000 32</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507800 3299960 29 507825 3299960 25 507825 3300000 25 507800 3300000 29 507800 3299960 29</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507800 3300000 29 507825 3300000 25 507825 3300040 25 507800 3300040 29 507800 3300000 29</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507825 3299960 25 507850 3299960 20 507850 3300000 20 507825 3300000 25 507825 3299960 25</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507825 3300000 25 507850 3300000 20 507850 3300040 20 507825 3300040 25 507825 3300000 25</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+              </gml:patches>
+            </MultiPlanarSurface>
+          </topSurface>
+          <bottomSurface>
+            <MultiPlanarSurface gml:id="bot-SBS-24" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:patches>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507750 3299960 25 507770 3299960 24.8 507770 3299990 26.3 507750 3299990 26.5 507750 3299960 25</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507750 3299990 26.5 507770 3299990 26.3 507770 3300040 28.8 507750 3300040 29 507750 3299990 26.5</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507770 3299960 24.8 507790 3299960 24.4 507790 3299990 25.9 507770 3299990 26.3 507770 3299960 24.8</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507770 3299990 26.3 507790 3299990 25.9 507790 3300040 28.4 507770 3300040 28.8 507770 3299990 26.3</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507790 3299960 24.4 507810 3299960 23.8 507810 3299990 25.3 507790 3299990 25.9 507790 3299960 24.4</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507790 3299990 25.9 507810 3299990 25.3 507810 3300040 27.8 507790 3300040 28.4 507790 3299990 25.9</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507810 3299960 23.8 507830 3299960 23.4 507830 3299990 24.9 507810 3299990 25.3 507810 3299960 23.8</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507810 3299990 25.3 507830 3299990 24.9 507830 3300040 27.4 507810 3300040 27.8 507810 3299990 25.3</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507830 3299960 23.4 507850 3299960 23.2 507850 3299990 24.7 507830 3299990 24.9 507830 3299960 23.4</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+                <PlanarSurfacePatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>507830 3299990 24.9 507850 3299990 24.7 507850 3300040 27.2 507830 3300040 27.4 507830 3299990 24.9</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurfacePatch>
+              </gml:patches>
+            </MultiPlanarSurface>
+          </bottomSurface>
+        </SurfaceBoundedSolid>
+      </featureExtent>
+    </VolumetricSamplingFeature>
+  </samplingFeature>
+
+  <!-- ═══ SBS-25 — VALID pinch-out: CompositeSurface top with a vertical riser cut by a tilted CompositeSurface bottom ═══
+       VALID: both surfaces cover the footprint completely. The first fixture in which a VERTICAL
+       MEMBER meets the pinch-out (riser partly above the bottom surface).
+       
+       Footprint: 80 x 60 m rectangle, x in [cx-40,cx+40], y in [cy-30,cy+30].
+       Top: CompositeSurface of 6 PlanarSurface members over x in [cx-50,cx+50], y in [cy-40,cy+40]:
+       a west terrace at 32 m and an east terrace at 24 m (each split at y = cy into two members),
+       joined by a VERTICAL RISER on x = cx (also split at y = cy) closing the 8 m step. Boundaries
+       coincide in 3D, consistent orientation.
+       Bottom: CompositeSurface of 6 PlanarSurface members on a 3 x 2 lattice (x-offsets -50/-15/
+       15/50) — a different lattice from the top — all on the one plane z = 28 - 0.20*x + 0.15*y.
+       Along the riser (x = cx) the bottom runs from 22.0 to 34.0 m across the top's y range, i.e. it
+       cuts THROUGH the riser's 24-32 m height range, obliquely:
+         y < cy-26.7  bottom below 24 m: the riser is fully solid on both sides (a real 8 m step)
+         |y-cy| < 26.7  bottom between 24 and 32 m: the riser is PARTLY solid — only the part above
+                        the bottom survives, and the east terrace beside it is void
+         y > cy+26.7  bottom above 32 m: the riser and both terraces there are void
+       The two terraces also cross the bottom on their own: west solid where x-offset > -20 + 0.75*y-
+       offset, east solid where x-offset > 20 + 0.75*y-offset.
+       EXPECTED: surviving area 2,400 m2 of 4,800; volume ~6,822 m3; exposed riser face inside the
+       footprint 240 m2 (26.7 m2 full-height + 213.3 m2 partial); thickness from +8.5 to -8.5 m.
+  -->
+  <samplingFeature>
+    <VolumetricSamplingFeature gml:id="SBS-25">
+      <gml:name>VALID pinch-out: CompositeSurface top with a vertical riser cut by a tilted CompositeSurface bottom</gml:name>
+      <projectRef xlink:href="#proj-sbs"/>
+      <referencePoint>
+        <PointLocation gml:id="pl-SBS-25" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3" uomLabels="m m m">
+          <gml:pos>508100 3300000 20</gml:pos>
+        </PointLocation>
+      </referencePoint>
+      <featureExtent>
+        <SurfaceBoundedSolid gml:id="sbs-SBS-25">
+          <footprint>
+            <PlanarSurface gml:id="fp-SBS-25" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>508060 3299970 0 508140 3299970 0 508140 3300030 0 508060 3300030 0 508060 3299970 0</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </PlanarSurface>
+          </footprint>
+          <topSurface>
+            <CompositeSurface gml:id="top-SBS-25" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-25-w1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>508050 3299960 32 508100 3299960 32 508100 3300000 32 508050 3300000 32 508050 3299960 32</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-25-w2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>508050 3300000 32 508100 3300000 32 508100 3300040 32 508050 3300040 32 508050 3300000 32</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-25-e1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>508100 3299960 24 508150 3299960 24 508150 3300000 24 508100 3300000 24 508100 3299960 24</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-25-e2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>508100 3300000 24 508150 3300000 24 508150 3300040 24 508100 3300040 24 508100 3300000 24</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-25-r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>508100 3300000 32 508100 3299960 32 508100 3299960 24 508100 3300000 24 508100 3300000 32</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="top-SBS-25-r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>508100 3300040 32 508100 3300000 32 508100 3300000 24 508100 3300040 24 508100 3300040 32</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+            </CompositeSurface>
+          </topSurface>
+          <bottomSurface>
+            <CompositeSurface gml:id="bot-SBS-25" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-25-c1r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>508050 3299960 32 508085 3299960 25 508085 3300000 31 508050 3300000 38 508050 3299960 32</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-25-c1r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>508050 3300000 38 508085 3300000 31 508085 3300040 37 508050 3300040 44 508050 3300000 38</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-25-c2r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>508085 3299960 25 508115 3299960 19 508115 3300000 25 508085 3300000 31 508085 3299960 25</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-25-c2r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>508085 3300000 31 508115 3300000 25 508115 3300040 31 508085 3300040 37 508085 3300000 31</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-25-c3r1" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>508115 3299960 19 508150 3299960 12 508150 3300000 18 508115 3300000 25 508115 3299960 19</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </PlanarSurface>
+              </surfaceMember>
+              <surfaceMember>
+                <PlanarSurface gml:id="bot-SBS-25-c3r2" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>508115 3300000 25 508150 3300000 18 508150 3300040 24 508115 3300040 31 508115 3300000 25</gml:posList>
                     </gml:LinearRing>
                   </gml:exterior>
                 </PlanarSurface>
