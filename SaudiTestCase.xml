@@ -42877,16 +42877,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="g1-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>60000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="g1-bulk_density">
+                        <AuthorizedParameter gml:id="g1-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>16000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -42895,7 +42895,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="g1-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -42904,7 +42904,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="g1-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>38</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -42913,7 +42913,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="g1-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -42952,16 +42952,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-fillwp-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>30000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g1-fillwp-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g1-fillwp-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>16000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -42970,7 +42970,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-fillwp-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -42979,7 +42979,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-fillwp-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>28</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -42988,7 +42988,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-fillwp-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -43027,16 +43027,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-fill-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>7500</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g1-fill-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g1-fill-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>16000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -43045,7 +43045,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-fill-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -43054,7 +43054,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-fill-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>29</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -43063,7 +43063,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-fill-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -43102,16 +43102,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-sabkha-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>1260</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g1-sabkha-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g1-sabkha-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -43120,7 +43120,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-sabkha-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -43129,7 +43129,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-sabkha-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -43138,7 +43138,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-sabkha-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -43177,16 +43177,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-cleansand-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>45000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g1-cleansand-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g1-cleansand-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -43195,7 +43195,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-cleansand-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -43204,7 +43204,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-cleansand-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -43213,7 +43213,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-cleansand-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -43252,16 +43252,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-clayeysilt1-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>15000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g1-clayeysilt1-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g1-clayeysilt1-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -43270,7 +43270,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-clayeysilt1-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>20</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -43279,7 +43279,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-clayeysilt1-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -43288,7 +43288,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-clayeysilt1-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -43327,16 +43327,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-siltysand-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>21000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g1-siltysand-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g1-siltysand-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -43345,7 +43345,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-siltysand-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -43354,7 +43354,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-siltysand-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -43363,7 +43363,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-siltysand-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -43402,16 +43402,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-clayeysilt2-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>30000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g1-clayeysilt2-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g1-clayeysilt2-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -43420,7 +43420,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-clayeysilt2-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>20</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -43429,7 +43429,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-clayeysilt2-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -43438,7 +43438,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-clayeysilt2-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -43477,16 +43477,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-siltysandtosandysilt-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>36000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g1-siltysandtosandysilt-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g1-siltysandtosandysilt-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -43495,7 +43495,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-siltysandtosandysilt-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -43504,7 +43504,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-siltysandtosandysilt-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -43513,7 +43513,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-siltysandtosandysilt-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -43552,16 +43552,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-clayeysilt3-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>24000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g1-clayeysilt3-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g1-clayeysilt3-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -43570,7 +43570,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-clayeysilt3-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>20</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -43579,7 +43579,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-clayeysilt3-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -43588,7 +43588,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g1-clayeysilt3-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -43720,16 +43720,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="g2-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>60000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="g2-bulk_density">
+                        <AuthorizedParameter gml:id="g2-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>16000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -43738,7 +43738,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="g2-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -43747,7 +43747,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="g2-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>38</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -43756,7 +43756,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="g2-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -43795,16 +43795,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-fillwp-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>30000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g2-fillwp-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g2-fillwp-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>16000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -43813,7 +43813,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-fillwp-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -43822,7 +43822,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-fillwp-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>28</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -43831,7 +43831,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-fillwp-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -43870,16 +43870,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-fill-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>3000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g2-fill-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g2-fill-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>16000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -43888,7 +43888,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-fill-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -43897,7 +43897,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-fill-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>29</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -43906,7 +43906,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-fill-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -43945,16 +43945,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-sabkha-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>1320</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g2-sabkha-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g2-sabkha-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -43963,7 +43963,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-sabkha-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -43972,7 +43972,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-sabkha-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -43981,7 +43981,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-sabkha-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -44020,16 +44020,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-cleansand-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>24000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g2-cleansand-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g2-cleansand-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -44038,7 +44038,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-cleansand-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -44047,7 +44047,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-cleansand-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -44056,7 +44056,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-cleansand-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -44095,16 +44095,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-clayeysilt1-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>18000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g2-clayeysilt1-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g2-clayeysilt1-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -44113,7 +44113,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-clayeysilt1-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>20</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -44122,7 +44122,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-clayeysilt1-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -44131,7 +44131,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-clayeysilt1-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -44170,16 +44170,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-siltysandtosandysilt-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>36000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g2-siltysandtosandysilt-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g2-siltysandtosandysilt-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -44188,7 +44188,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-siltysandtosandysilt-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -44197,7 +44197,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-siltysandtosandysilt-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -44206,7 +44206,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-siltysandtosandysilt-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -44245,16 +44245,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-clayeysilt2-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>24000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g2-clayeysilt2-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g2-clayeysilt2-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -44263,7 +44263,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-clayeysilt2-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>20</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -44272,7 +44272,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-clayeysilt2-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -44281,7 +44281,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g2-clayeysilt2-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -44911,16 +44911,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="g3-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>60000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="g3-bulk_density">
+                        <AuthorizedParameter gml:id="g3-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>16000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -44929,7 +44929,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="g3-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -44938,7 +44938,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="g3-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>38</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -44947,7 +44947,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="g3-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -44986,16 +44986,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-fillwp-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>30000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g3-fillwp-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g3-fillwp-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>16000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45004,7 +45004,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-fillwp-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45013,7 +45013,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-fillwp-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>28</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45022,7 +45022,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-fillwp-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45061,16 +45061,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-fill-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>6250</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g3-fill-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g3-fill-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45079,7 +45079,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-fill-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45088,7 +45088,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-fill-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>29</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45097,7 +45097,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-fill-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45136,16 +45136,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-sabkha-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>2925</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g3-sabkha-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g3-sabkha-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45154,7 +45154,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-sabkha-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45163,7 +45163,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-sabkha-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45172,7 +45172,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-sabkha-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45211,16 +45211,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-cleansand-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>23250</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g3-cleansand-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g3-cleansand-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45229,7 +45229,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-cleansand-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45238,7 +45238,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-cleansand-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45247,7 +45247,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-cleansand-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45286,16 +45286,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-clayeysilt1-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>20000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-g3-clayeysilt1-bulk_density">
+                        <AuthorizedParameter gml:id="guo-g3-clayeysilt1-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45304,7 +45304,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-clayeysilt1-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>20</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45313,7 +45313,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-clayeysilt1-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45322,7 +45322,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-g3-clayeysilt1-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45349,16 +45349,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-fill-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>3000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh1-fill-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh1-fill-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>16000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45367,7 +45367,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-fill-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45376,7 +45376,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-fill-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>29</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45385,7 +45385,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-fill-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45404,16 +45404,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-sabkha-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>1320</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh1-sabkha-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh1-sabkha-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45422,7 +45422,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-sabkha-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45431,7 +45431,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-sabkha-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45440,7 +45440,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-sabkha-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45459,16 +45459,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-cleansand-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>24000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh1-cleansand-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh1-cleansand-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45477,7 +45477,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-cleansand-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45486,7 +45486,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-cleansand-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45495,7 +45495,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-cleansand-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45514,16 +45514,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-clayeysilt1-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>18000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh1-clayeysilt1-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh1-clayeysilt1-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45532,7 +45532,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-clayeysilt1-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>20</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45541,7 +45541,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-clayeysilt1-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45550,7 +45550,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-clayeysilt1-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45569,16 +45569,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-siltysandtosandysilt-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>36000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh1-siltysandtosandysilt-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh1-siltysandtosandysilt-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45587,7 +45587,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-siltysandtosandysilt-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45596,7 +45596,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-siltysandtosandysilt-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45605,7 +45605,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh1-siltysandtosandysilt-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45632,16 +45632,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-fill-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>3000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh2-fill-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh2-fill-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>16000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45650,7 +45650,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-fill-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45659,7 +45659,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-fill-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>29</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45668,7 +45668,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-fill-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45687,16 +45687,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-sabkha-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>1320</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh2-sabkha-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh2-sabkha-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45705,7 +45705,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-sabkha-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45714,7 +45714,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-sabkha-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45723,7 +45723,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-sabkha-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45742,16 +45742,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-cleansand-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>24000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh2-cleansand-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh2-cleansand-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45760,7 +45760,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-cleansand-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45769,7 +45769,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-cleansand-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45778,7 +45778,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-cleansand-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45797,16 +45797,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-clayeysilt1-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>18000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh2-clayeysilt1-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh2-clayeysilt1-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45815,7 +45815,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-clayeysilt1-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>20</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45824,7 +45824,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-clayeysilt1-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45833,7 +45833,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-clayeysilt1-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45852,16 +45852,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-siltysandtosandysilt-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>36000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh2-siltysandtosandysilt-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh2-siltysandtosandysilt-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45870,7 +45870,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-siltysandtosandysilt-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45879,7 +45879,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-siltysandtosandysilt-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45888,7 +45888,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh2-siltysandtosandysilt-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45915,16 +45915,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh3-fill-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>6250</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh3-fill-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh3-fill-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45933,7 +45933,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh3-fill-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45942,7 +45942,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh3-fill-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>29</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -45951,7 +45951,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh3-fill-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -45970,16 +45970,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh3-sabkha-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>2925</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh3-sabkha-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh3-sabkha-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -45988,7 +45988,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh3-sabkha-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -45997,7 +45997,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh3-sabkha-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -46006,7 +46006,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh3-sabkha-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -46025,16 +46025,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh3-cleansand-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>23250</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh3-cleansand-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh3-cleansand-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -46043,7 +46043,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh3-cleansand-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -46052,7 +46052,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh3-cleansand-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -46061,7 +46061,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh3-cleansand-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -46088,16 +46088,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh4-fill-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>6250</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh4-fill-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh4-fill-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -46106,7 +46106,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh4-fill-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -46115,7 +46115,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh4-fill-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>29</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -46124,7 +46124,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh4-fill-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -46143,16 +46143,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh4-sabkha-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>2925</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh4-sabkha-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh4-sabkha-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -46161,7 +46161,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh4-sabkha-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -46170,7 +46170,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh4-sabkha-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -46179,7 +46179,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh4-sabkha-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -46198,16 +46198,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh4-cleansand-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>23250</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh4-cleansand-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh4-cleansand-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -46216,7 +46216,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh4-cleansand-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -46225,7 +46225,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh4-cleansand-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -46234,7 +46234,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh4-cleansand-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -46261,16 +46261,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-fill-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>3000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh5-fill-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh5-fill-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>16000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -46279,7 +46279,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-fill-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -46288,7 +46288,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-fill-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>29</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -46297,7 +46297,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-fill-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -46316,16 +46316,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-sabkha-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>1320</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh5-sabkha-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh5-sabkha-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -46334,7 +46334,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-sabkha-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -46343,7 +46343,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-sabkha-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -46352,7 +46352,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-sabkha-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -46371,16 +46371,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-cleansand-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>24000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh5-cleansand-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh5-cleansand-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -46389,7 +46389,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-cleansand-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -46398,7 +46398,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-cleansand-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>27</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -46407,7 +46407,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-cleansand-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
@@ -46426,16 +46426,16 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-clayeysilt1-modulus_youngs">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">Young's Modulus</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>18000</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
-                        <AuthorizedParameter gml:id="guo-bh5-clayeysilt1-bulk_density">
+                        <AuthorizedParameter gml:id="guo-bh5-clayeysilt1-bulk_unit_weight">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>17000</parameterValue>
                             <parameterUnits>N/m3</parameterUnits>
@@ -46444,7 +46444,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-clayeysilt1-cohesion_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">Peak Cohesion</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>20</parameterValue>
                             <parameterUnits>kPa</parameterUnits>
@@ -46453,7 +46453,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-clayeysilt1-friction_angle_peak">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">Peak Angle of Internal Friction</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0</parameterValue>
                             <parameterUnits>dega</parameterUnits>
@@ -46462,7 +46462,7 @@
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="guo-bh5-clayeysilt1-poisson_ratio">
                             <parameterName
-                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">Poisson Ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.3</parameterValue>
                             <parameterUnits>Euc</parameterUnits>
