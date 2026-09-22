@@ -45338,7 +45338,7 @@
             <gml:name>Soil Model Log - BH-1</gml:name>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-1"/>
-            <geoUnitType>borehole log</geoUnitType>
+            <geoUnitType>assigned soil parameters</geoUnitType>
             <geoUnitObservation>
                 <GeoUnitObservation gml:id="guo-bh1-fill">
                     <location>
@@ -45622,7 +45622,7 @@
             <gml:name>Soil Model Log - BH-2</gml:name>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-2"/>
-            <geoUnitType>borehole log</geoUnitType>
+            <geoUnitType>assigned soil parameters</geoUnitType>
             <geoUnitObservation>
                 <GeoUnitObservation gml:id="guo-bh2-fill">
                     <location>
@@ -45906,7 +45906,7 @@
             <gml:name>Soil Model Log - BH-3</gml:name>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-3"/>
-            <geoUnitType>borehole log</geoUnitType>
+            <geoUnitType>assigned soil parameters</geoUnitType>
             <geoUnitObservation>
                 <GeoUnitObservation gml:id="guo-bh3-fill">
                     <location>
@@ -46080,7 +46080,7 @@
             <gml:name>Soil Model Log - BH-4</gml:name>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-4"/>
-            <geoUnitType>borehole log</geoUnitType>
+            <geoUnitType>assigned soil parameters</geoUnitType>
             <geoUnitObservation>
                 <GeoUnitObservation gml:id="guo-bh4-fill">
                     <location>
@@ -46254,7 +46254,7 @@
             <gml:name>Soil Model Log - BH-5</gml:name>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-5"/>
-            <geoUnitType>borehole log</geoUnitType>
+            <geoUnitType>assigned soil parameters</geoUnitType>
             <geoUnitObservation>
                 <GeoUnitObservation gml:id="guo-bh5-fill">
                     <location>
