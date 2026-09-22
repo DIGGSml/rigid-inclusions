@@ -42888,8 +42888,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>16000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>16</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -42963,8 +42963,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>16000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>16</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -43038,8 +43038,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>16000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>16</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -43113,8 +43113,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -43188,8 +43188,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -43263,8 +43263,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -43338,8 +43338,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -43413,8 +43413,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -43488,8 +43488,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -43563,8 +43563,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -43731,8 +43731,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>16000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>16</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -43806,8 +43806,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>16000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>16</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -43881,8 +43881,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>16000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>16</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -43956,8 +43956,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -44031,8 +44031,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -44106,8 +44106,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -44181,8 +44181,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -44256,8 +44256,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -44922,8 +44922,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>16000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>16</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -44997,8 +44997,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>16000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>16</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45072,8 +45072,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45147,8 +45147,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45222,8 +45222,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45297,8 +45297,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45334,6 +45334,7 @@
     </observation>
     <observation>
         <GeoUnitSystem gml:id="gus-bh-1">
+            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D soil model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
             <gml:name>Soil Model Log - BH-1</gml:name>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-1"/>
@@ -45360,8 +45361,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>16000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>16</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45415,8 +45416,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45470,8 +45471,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45525,8 +45526,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45580,8 +45581,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45617,6 +45618,7 @@
     </observation>
     <observation>
         <GeoUnitSystem gml:id="gus-bh-2">
+            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D soil model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
             <gml:name>Soil Model Log - BH-2</gml:name>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-2"/>
@@ -45643,8 +45645,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>16000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>16</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45698,8 +45700,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45753,8 +45755,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45808,8 +45810,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45863,8 +45865,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45900,6 +45902,7 @@
     </observation>
     <observation>
         <GeoUnitSystem gml:id="gus-bh-3">
+            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D soil model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
             <gml:name>Soil Model Log - BH-3</gml:name>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-3"/>
@@ -45926,8 +45929,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -45981,8 +45984,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -46036,8 +46039,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -46073,6 +46076,7 @@
     </observation>
     <observation>
         <GeoUnitSystem gml:id="gus-bh-4">
+            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D soil model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
             <gml:name>Soil Model Log - BH-4</gml:name>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-4"/>
@@ -46099,8 +46103,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -46154,8 +46158,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -46209,8 +46213,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -46246,6 +46250,7 @@
     </observation>
     <observation>
         <GeoUnitSystem gml:id="gus-bh-5">
+            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D soil model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
             <gml:name>Soil Model Log - BH-5</gml:name>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <samplingFeatureRef xlink:href="#GBL-GT-24136_BH-5"/>
@@ -46272,8 +46277,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>16000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>16</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -46327,8 +46332,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -46382,8 +46387,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
@@ -46437,8 +46442,8 @@
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_unit_weight">Unit Weight, Bulk (Natural)</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>17000</parameterValue>
-                            <parameterUnits>N/m3</parameterUnits>
+                            <parameterValue>17</parameterValue>
+                            <parameterUnits>kN/m3</parameterUnits>
                         </AuthorizedParameter>
                     </characteristicProperty>
                     <characteristicProperty>
