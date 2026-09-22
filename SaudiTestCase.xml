@@ -42921,6 +42921,606 @@
                     </characteristicProperty>
                 </GeoUnitObservation>
             </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g1-fillwp">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g1-fillwp">
+                            <footprint xlink:href="#fp-gus-g1"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g1-fillwp" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 6.25 502988.472 2443908.101 6.25 503014.658 2443923.105 6.25 503013.102 2443925.822 6.25 503008.18 2443929.137 6.25 502981.994 2443914.133 6.25 502975.171 2443910.222 6.25 502979.377 2443902.894 6.25</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g1-fillwp" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 5.81 502988.472 2443908.101 5.81 503014.658 2443923.105 5.81 503013.102 2443925.822 5.81 503008.18 2443929.137 5.81 502981.994 2443914.133 5.81 502975.171 2443910.222 5.81 502979.377 2443902.894 5.81</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Fill material (working platform)</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-fillwp-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>30000</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-fillwp-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>16000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-fillwp-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-fillwp-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>28</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-fillwp-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g1-fill">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g1-fill">
+                            <footprint xlink:href="#fp-gus-g1"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g1-fill" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 5.81 502988.472 2443908.101 5.81 503014.658 2443923.105 5.81 503013.102 2443925.822 5.81 503008.18 2443929.137 5.81 502981.994 2443914.133 5.81 502975.171 2443910.222 5.81 502979.377 2443902.894 5.81</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g1-fill" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 5.21 502988.472 2443908.101 5.21 503014.658 2443923.105 5.21 503013.102 2443925.822 5.21 503008.18 2443929.137 5.21 502981.994 2443914.133 5.21 502975.171 2443910.222 5.21 502979.377 2443902.894 5.21</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Fill material</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-fill-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>7500</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-fill-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>16000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-fill-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-fill-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>29</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-fill-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g1-sabkha">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g1-sabkha">
+                            <footprint xlink:href="#fp-gus-g1"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g1-sabkha" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 5.21 502988.472 2443908.101 5.21 503014.658 2443923.105 5.21 503013.102 2443925.822 5.21 503008.18 2443929.137 5.21 502981.994 2443914.133 5.21 502975.171 2443910.222 5.21 502979.377 2443902.894 5.21</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g1-sabkha" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 2.17 502988.472 2443908.101 2.17 503014.658 2443923.105 2.17 503013.102 2443925.822 2.17 503008.18 2443929.137 2.17 502981.994 2443914.133 2.17 502975.171 2443910.222 2.17 502979.377 2443902.894 2.17</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Sabkha (Drained)</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-sabkha-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>1260</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-sabkha-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>17000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-sabkha-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-sabkha-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>27</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-sabkha-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g1-cleansand">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g1-cleansand">
+                            <footprint xlink:href="#fp-gus-g1"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g1-cleansand" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 2.17 502988.472 2443908.101 2.17 503014.658 2443923.105 2.17 503013.102 2443925.822 2.17 503008.18 2443929.137 2.17 502981.994 2443914.133 2.17 502975.171 2443910.222 2.17 502979.377 2443902.894 2.17</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g1-cleansand" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 -2.73 502988.472 2443908.101 -2.73 503014.658 2443923.105 -2.73 503013.102 2443925.822 -2.73 503008.18 2443929.137 -2.73 502981.994 2443914.133 -2.73 502975.171 2443910.222 -2.73 502979.377 2443902.894 -2.73</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Clean sand to silty sand</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-cleansand-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>45000</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-cleansand-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>17000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-cleansand-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-cleansand-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>27</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-cleansand-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g1-clayeysilt1">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g1-clayeysilt1">
+                            <footprint xlink:href="#fp-gus-g1"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g1-clayeysilt1" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 -2.73 502988.472 2443908.101 -2.73 503014.658 2443923.105 -2.73 503013.102 2443925.822 -2.73 503008.18 2443929.137 -2.73 502981.994 2443914.133 -2.73 502975.171 2443910.222 -2.73 502979.377 2443902.894 -2.73</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g1-clayeysilt1" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 -3.23 502988.472 2443908.101 -3.23 503014.658 2443923.105 -3.23 503013.102 2443925.822 -3.23 503008.18 2443929.137 -3.23 502981.994 2443914.133 -3.23 502975.171 2443910.222 -3.23 502979.377 2443902.894 -3.23</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Clayey silt to silty clay</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-clayeysilt1-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>15000</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-clayeysilt1-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>17000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-clayeysilt1-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>20</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-clayeysilt1-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-clayeysilt1-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g1-siltysand">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g1-siltysand">
+                            <footprint xlink:href="#fp-gus-g1"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g1-siltysand" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 -3.23 502988.472 2443908.101 -3.23 503014.658 2443923.105 -3.23 503013.102 2443925.822 -3.23 503008.18 2443929.137 -3.23 502981.994 2443914.133 -3.23 502975.171 2443910.222 -3.23 502979.377 2443902.894 -3.23</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g1-siltysand" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 -4.61 502988.472 2443908.101 -4.61 503014.658 2443923.105 -4.61 503013.102 2443925.822 -4.61 503008.18 2443929.137 -4.61 502981.994 2443914.133 -4.61 502975.171 2443910.222 -4.61 502979.377 2443902.894 -4.61</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Silty sand</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-siltysand-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>21000</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-siltysand-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>17000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-siltysand-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-siltysand-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>27</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-siltysand-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g1-clayeysilt2">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g1-clayeysilt2">
+                            <footprint xlink:href="#fp-gus-g1"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g1-clayeysilt2" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 -4.61 502988.472 2443908.101 -4.61 503014.658 2443923.105 -4.61 503013.102 2443925.822 -4.61 503008.18 2443929.137 -4.61 502981.994 2443914.133 -4.61 502975.171 2443910.222 -4.61 502979.377 2443902.894 -4.61</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g1-clayeysilt2" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 -7.21 502988.472 2443908.101 -7.21 503014.658 2443923.105 -7.21 503013.102 2443925.822 -7.21 503008.18 2443929.137 -7.21 502981.994 2443914.133 -7.21 502975.171 2443910.222 -7.21 502979.377 2443902.894 -7.21</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Clayey silt to silty clay</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-clayeysilt2-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>30000</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-clayeysilt2-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>17000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-clayeysilt2-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>20</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-clayeysilt2-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-clayeysilt2-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g1-siltysandtosandysilt">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g1-siltysandtosandysilt">
+                            <footprint xlink:href="#fp-gus-g1"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g1-siltysandtosandysilt" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 -7.21 502988.472 2443908.101 -7.21 503014.658 2443923.105 -7.21 503013.102 2443925.822 -7.21 503008.18 2443929.137 -7.21 502981.994 2443914.133 -7.21 502975.171 2443910.222 -7.21 502979.377 2443902.894 -7.21</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g1-siltysandtosandysilt" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502979.377 2443902.894 -13.83 502988.472 2443908.101 -13.83 503014.658 2443923.105 -13.83 503013.102 2443925.822 -13.83 503008.18 2443929.137 -13.83 502981.994 2443914.133 -13.83 502975.171 2443910.222 -13.83 502979.377 2443902.894 -13.83</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Silty sand to sandy silt</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-siltysandtosandysilt-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>36000</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-siltysandtosandysilt-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>17000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-siltysandtosandysilt-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-siltysandtosandysilt-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>27</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g1-siltysandtosandysilt-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
         </GeoUnitSystem>
     </observation>
     <observation>
@@ -43080,6 +43680,456 @@
                     </characteristicProperty>
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="g2-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g2-fillwp">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g2-fillwp">
+                            <footprint xlink:href="#fp-gus-g2"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g2-fillwp" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502984.641 2443909.509 6.25 502997.734 2443917.011 6.25 503010.818 2443924.509 6.25 503013.161 2443925.855 6.25 502999.991 2443950.012 6.25 502998.724 2443952.232 6.25 502996.713 2443955.742 6.25 502993.303 2443961.687 6.25 502978.403 2443953.15 6.25 502976.195 2443951.88 6.25 502958.625 2443941.234 6.25 502965.726 2443922.024 6.25 502971.27 2443912.349 6.25 502984.641 2443909.509 6.25</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g2-fillwp" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502984.641 2443909.509 6.1 502997.734 2443917.011 6.1 503010.818 2443924.509 6.1 503013.161 2443925.855 6.1 502999.991 2443950.012 6.1 502998.724 2443952.232 6.1 502996.713 2443955.742 6.1 502993.303 2443961.687 6.1 502978.403 2443953.15 6.1 502976.195 2443951.88 6.1 502958.625 2443941.234 6.1 502965.726 2443922.024 6.1 502971.27 2443912.349 6.1 502984.641 2443909.509 6.1</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Fill material (working platform)</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-fillwp-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>30000</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-fillwp-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>16000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-fillwp-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-fillwp-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>28</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-fillwp-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g2-fill">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g2-fill">
+                            <footprint xlink:href="#fp-gus-g2"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g2-fill" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502984.641 2443909.509 6.1 502997.734 2443917.011 6.1 503010.818 2443924.509 6.1 503013.161 2443925.855 6.1 502999.991 2443950.012 6.1 502998.724 2443952.232 6.1 502996.713 2443955.742 6.1 502993.303 2443961.687 6.1 502978.403 2443953.15 6.1 502976.195 2443951.88 6.1 502958.625 2443941.234 6.1 502965.726 2443922.024 6.1 502971.27 2443912.349 6.1 502984.641 2443909.509 6.1</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g2-fill" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502984.641 2443909.509 4.76 502997.734 2443917.011 4.76 503010.818 2443924.509 4.76 503013.161 2443925.855 4.76 502999.991 2443950.012 4.76 502998.724 2443952.232 4.76 502996.713 2443955.742 4.76 502993.303 2443961.687 4.76 502978.403 2443953.15 4.76 502976.195 2443951.88 4.76 502958.625 2443941.234 4.76 502965.726 2443922.024 4.76 502971.27 2443912.349 4.76 502984.641 2443909.509 4.76</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Fill material</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-fill-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>3000</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-fill-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>16000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-fill-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-fill-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>29</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-fill-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g2-sabkha">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g2-sabkha">
+                            <footprint xlink:href="#fp-gus-g2"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g2-sabkha" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502984.641 2443909.509 4.76 502997.734 2443917.011 4.76 503010.818 2443924.509 4.76 503013.161 2443925.855 4.76 502999.991 2443950.012 4.76 502998.724 2443952.232 4.76 502996.713 2443955.742 4.76 502993.303 2443961.687 4.76 502978.403 2443953.15 4.76 502976.195 2443951.88 4.76 502958.625 2443941.234 4.76 502965.726 2443922.024 4.76 502971.27 2443912.349 4.76 502984.641 2443909.509 4.76</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g2-sabkha" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502984.641 2443909.509 1.5 502997.734 2443917.011 1.5 503010.818 2443924.509 1.5 503013.161 2443925.855 1.5 502999.991 2443950.012 1.5 502998.724 2443952.232 1.5 502996.713 2443955.742 1.5 502993.303 2443961.687 1.5 502978.403 2443953.15 1.5 502976.195 2443951.88 1.5 502958.625 2443941.234 1.5 502965.726 2443922.024 1.5 502971.27 2443912.349 1.5 502984.641 2443909.509 1.5</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Sabkha (Drained)</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-sabkha-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>1320</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-sabkha-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>17000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-sabkha-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-sabkha-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>27</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-sabkha-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g2-cleansand">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g2-cleansand">
+                            <footprint xlink:href="#fp-gus-g2"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g2-cleansand" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502984.641 2443909.509 1.5 502997.734 2443917.011 1.5 503010.818 2443924.509 1.5 503013.161 2443925.855 1.5 502999.991 2443950.012 1.5 502998.724 2443952.232 1.5 502996.713 2443955.742 1.5 502993.303 2443961.687 1.5 502978.403 2443953.15 1.5 502976.195 2443951.88 1.5 502958.625 2443941.234 1.5 502965.726 2443922.024 1.5 502971.27 2443912.349 1.5 502984.641 2443909.509 1.5</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g2-cleansand" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502984.641 2443909.509 -3.48 502997.734 2443917.011 -3.48 503010.818 2443924.509 -3.48 503013.161 2443925.855 -3.48 502999.991 2443950.012 -3.48 502998.724 2443952.232 -3.48 502996.713 2443955.742 -3.48 502993.303 2443961.687 -3.48 502978.403 2443953.15 -3.48 502976.195 2443951.88 -3.48 502958.625 2443941.234 -3.48 502965.726 2443922.024 -3.48 502971.27 2443912.349 -3.48 502984.641 2443909.509 -3.48</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Clean sand to silty sand</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-cleansand-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>24000</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-cleansand-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>17000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-cleansand-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-cleansand-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>27</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-cleansand-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g2-clayeysilt1">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g2-clayeysilt1">
+                            <footprint xlink:href="#fp-gus-g2"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g2-clayeysilt1" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502984.641 2443909.509 -3.48 502997.734 2443917.011 -3.48 503010.818 2443924.509 -3.48 503013.161 2443925.855 -3.48 502999.991 2443950.012 -3.48 502998.724 2443952.232 -3.48 502996.713 2443955.742 -3.48 502993.303 2443961.687 -3.48 502978.403 2443953.15 -3.48 502976.195 2443951.88 -3.48 502958.625 2443941.234 -3.48 502965.726 2443922.024 -3.48 502971.27 2443912.349 -3.48 502984.641 2443909.509 -3.48</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g2-clayeysilt1" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502984.641 2443909.509 -7.86 502997.734 2443917.011 -7.86 503010.818 2443924.509 -7.86 503013.161 2443925.855 -7.86 502999.991 2443950.012 -7.86 502998.724 2443952.232 -7.86 502996.713 2443955.742 -7.86 502993.303 2443961.687 -7.86 502978.403 2443953.15 -7.86 502976.195 2443951.88 -7.86 502958.625 2443941.234 -7.86 502965.726 2443922.024 -7.86 502971.27 2443912.349 -7.86 502984.641 2443909.509 -7.86</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Clayey silt to silty clay</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-clayeysilt1-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>18000</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-clayeysilt1-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>17000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-clayeysilt1-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>20</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-clayeysilt1-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-clayeysilt1-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g2-siltysandtosandysilt">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g2-siltysandtosandysilt">
+                            <footprint xlink:href="#fp-gus-g2"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g2-siltysandtosandysilt" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502984.641 2443909.509 -7.86 502997.734 2443917.011 -7.86 503010.818 2443924.509 -7.86 503013.161 2443925.855 -7.86 502999.991 2443950.012 -7.86 502998.724 2443952.232 -7.86 502996.713 2443955.742 -7.86 502993.303 2443961.687 -7.86 502978.403 2443953.15 -7.86 502976.195 2443951.88 -7.86 502958.625 2443941.234 -7.86 502965.726 2443922.024 -7.86 502971.27 2443912.349 -7.86 502984.641 2443909.509 -7.86</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g2-siltysandtosandysilt" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502984.641 2443909.509 -13.86 502997.734 2443917.011 -13.86 503010.818 2443924.509 -13.86 503013.161 2443925.855 -13.86 502999.991 2443950.012 -13.86 502998.724 2443952.232 -13.86 502996.713 2443955.742 -13.86 502993.303 2443961.687 -13.86 502978.403 2443953.15 -13.86 502976.195 2443951.88 -13.86 502958.625 2443941.234 -13.86 502965.726 2443922.024 -13.86 502971.27 2443912.349 -13.86 502984.641 2443909.509 -13.86</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Silty sand to sandy silt</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-siltysandtosandysilt-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>36000</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-siltysandtosandysilt-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>17000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-siltysandtosandysilt-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-siltysandtosandysilt-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>27</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g2-siltysandtosandysilt-poisson_ratio">
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
                             <typeData>double</typeData>
@@ -43746,6 +44796,306 @@
                     </characteristicProperty>
                     <characteristicProperty>
                         <AuthorizedParameter gml:id="g3-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g3-fillwp">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g3-fillwp">
+                            <footprint xlink:href="#fp-gus-g3"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g3-fillwp" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502994.66 2443973.28 6.25 502933.92 2443938.47 6.25 502963.76 2443886.41 6.25 503024.5 2443921.22 6.25 502994.66 2443973.28 6.25</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g3-fillwp" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502994.66 2443973.28 6.1 502933.92 2443938.47 6.1 502963.76 2443886.41 6.1 503024.5 2443921.22 6.1 502994.66 2443973.28 6.1</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Fill material (working platform)</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-fillwp-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>30000</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-fillwp-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>16000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-fillwp-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-fillwp-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>28</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-fillwp-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g3-fill">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g3-fill">
+                            <footprint xlink:href="#fp-gus-g3"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g3-fill" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502994.66 2443973.28 6.1 502933.92 2443938.47 6.1 502963.76 2443886.41 6.1 503024.5 2443921.22 6.1 502994.66 2443973.28 6.1</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g3-fill" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502994.66 2443973.28 4.92 502933.92 2443938.47 4.92 502963.76 2443886.41 4.92 503024.5 2443921.22 4.92 502994.66 2443973.28 4.92</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Fill material</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-fill-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>6250</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-fill-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>17000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-fill-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-fill-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>29</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-fill-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g3-sabkha">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g3-sabkha">
+                            <footprint xlink:href="#fp-gus-g3"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g3-sabkha" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502994.66 2443973.28 4.92 502933.92 2443938.47 4.92 502963.76 2443886.41 4.92 503024.5 2443921.22 4.92 502994.66 2443973.28 4.92</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g3-sabkha" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502994.66 2443973.28 2.34 502933.92 2443938.47 2.34 502963.76 2443886.41 2.34 503024.5 2443921.22 2.34 502994.66 2443973.28 2.34</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Sabkha (Drained)</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-sabkha-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>2925</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-sabkha-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>17000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-sabkha-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-sabkha-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>27</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-sabkha-poisson_ratio">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.3</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                </GeoUnitObservation>
+            </geoUnitObservation>
+            <geoUnitObservation>
+                <GeoUnitObservation gml:id="guo-g3-cleansand">
+                    <location>
+                        <SurfaceBoundedSolid gml:id="sbs-g3-cleansand">
+                            <footprint xlink:href="#fp-gus-g3"/>
+                            <topSurface>
+                                <PlanarSurface gml:id="top-guo-g3-cleansand" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502994.66 2443973.28 2.34 502933.92 2443938.47 2.34 502963.76 2443886.41 2.34 503024.5 2443921.22 2.34 502994.66 2443973.28 2.34</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </topSurface>
+                            <bottomSurface>
+                                <PlanarSurface gml:id="bot-guo-g3-cleansand" srsDimension="3"
+                                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList>502994.66 2443973.28 -13.8 502933.92 2443938.47 -13.8 502963.76 2443886.41 -13.8 503024.5 2443921.22 -13.8 502994.66 2443973.28 -13.8</gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                </PlanarSurface>
+                            </bottomSurface>
+                        </SurfaceBoundedSolid>
+                    </location>
+                    <unitName>Clean sand to silty sand</unitName>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-cleansand-modulus_youngs">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>23250</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-cleansand-bulk_density">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#bulk_density">bulk_density</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>17000</parameterValue>
+                            <parameterUnits>N/m3</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-cleansand-cohesion_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#cohesion_peak">cohesion_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-cleansand-friction_angle_peak">
+                            <parameterName
+                                codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#friction_angle_peak">friction_angle_peak</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>27</parameterValue>
+                            <parameterUnits>dega</parameterUnits>
+                        </AuthorizedParameter>
+                    </characteristicProperty>
+                    <characteristicProperty>
+                        <AuthorizedParameter gml:id="guo-g3-cleansand-poisson_ratio">
                             <parameterName
                                 codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#poisson_ratio">poisson_ratio</parameterName>
                             <typeData>double</typeData>
