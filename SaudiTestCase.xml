@@ -140,6 +140,243 @@
                     <groutDesignRef xlink:href="#DGM-MIX-A"/>
                 </RITreatedAreaDesign>
             </design>
+            <design>
+                <RILTPDesign gml:id="riltpd-brt">
+                    <gml:name>LTP design — Building Raft and TR Tunnels</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>This zone's own CMC design row (FMSA24047-FTR-CMC-00 Table 4) combines the Building Raft foundation with the Transformer (TR) cable tunnels; Figure 2 of the same report labels only "BUILDING RAFT FOUNDATION" and does not delineate the tunnels separately. supportedStructureType states the structure that governs this platform's design, per PB1's convention, rather than attempting to state both.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FMSA24047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FMSA24047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                        </Remark>
+                    </remark>
+                    <scope>
+                        <ProgramScope>
+                            <appliesToFeatureRef xlink:href="#zone-brt"/>
+                        </ProgramScope>
+                    </scope>
+                    <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#mat">mat</supportedStructureType>
+                    <ltpThickness uom="m">0.60</ltpThickness>
+                    <youngsModulus uom="kPa">60000</youngsModulus>
+                    <unitWeight uom="kN/m3">16</unitWeight>
+                    <cohesion uom="kPa">0</cohesion>
+                    <frictionAngle uom="dega">38</frictionAngle>
+                    <poissonsRatio uom="Euc">0.3</poissonsRatio>
+                </RILTPDesign>
+            </design>
+            <design>
+                <RILTPDesign gml:id="riltpd-bif">
+                    <gml:name>LTP design — Building Isolated Footing</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FMSA24047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FMSA24047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                        </Remark>
+                    </remark>
+                    <scope>
+                        <ProgramScope>
+                            <appliesToFeatureRef xlink:href="#zone-bif"/>
+                        </ProgramScope>
+                    </scope>
+                    <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#footing">footing</supportedStructureType>
+                    <ltpThickness uom="m">0.60</ltpThickness>
+                    <youngsModulus uom="kPa">60000</youngsModulus>
+                    <unitWeight uom="kN/m3">16</unitWeight>
+                    <cohesion uom="kPa">0</cohesion>
+                    <frictionAngle uom="dega">38</frictionAngle>
+                    <poissonsRatio uom="Euc">0.3</poissonsRatio>
+                </RILTPDesign>
+            </design>
+            <design>
+                <RILTPDesign gml:id="riltpd-st">
+                    <gml:name>LTP design — Septic Tank</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Mapped from the structure's own identity (a septic tank) to the tank code - no source document states a foundation-type classification for it directly.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1). This zone's own elevationTopLTP was not read from a Bottom of Foundation value in FMSA24047-FTR-CMC-00 (none is stated for the septic tank) - it came from Dan's own elevation-picks image, supplied during the GUS1 soil-model build (see docs/build/GUS1/NOTES.md), not from the report text directly. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FMSA24047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                        </Remark>
+                    </remark>
+                    <scope>
+                        <ProgramScope>
+                            <appliesToFeatureRef xlink:href="#zone-st"/>
+                        </ProgramScope>
+                    </scope>
+                    <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#tank">tank</supportedStructureType>
+                    <ltpThickness uom="m">1.50</ltpThickness>
+                    <youngsModulus uom="kPa">60000</youngsModulus>
+                    <unitWeight uom="kN/m3">16</unitWeight>
+                    <cohesion uom="kPa">0</cohesion>
+                    <frictionAngle uom="dega">38</frictionAngle>
+                    <poissonsRatio uom="Euc">0.3</poissonsRatio>
+                </RILTPDesign>
+            </design>
+            <design>
+                <RILTPDesign gml:id="riltpd-pt">
+                    <gml:name>LTP design — Power Transformer</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>supportedStructureType is inferred from common substation industry practice (power transformers are typically founded on a heavy reinforced-concrete block or plinth, not discrete column footings) and is not stated in the project record. Figure 2 of the final technical report (FMSA24047-FTR-CMC-00) draws this zone's foundation as three separate rectangular pads - one per transformer unit - without naming a foundation type.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FMSA24047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FMSA24047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                        </Remark>
+                    </remark>
+                    <scope>
+                        <ProgramScope>
+                            <appliesToFeatureRef xlink:href="#zone-pt"/>
+                        </ProgramScope>
+                    </scope>
+                    <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#equipment_block">equipment_block</supportedStructureType>
+                    <ltpThickness uom="m">1.00</ltpThickness>
+                    <youngsModulus uom="kPa">60000</youngsModulus>
+                    <unitWeight uom="kN/m3">16</unitWeight>
+                    <cohesion uom="kPa">0</cohesion>
+                    <frictionAngle uom="dega">38</frictionAngle>
+                    <poissonsRatio uom="Euc">0.3</poissonsRatio>
+                </RILTPDesign>
+            </design>
+            <design>
+                <RILTPDesign gml:id="riltpd-ra">
+                    <gml:name>LTP design — Remaining Area</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>No single supported structure is identified for this zone in the project record - "Remaining Area" reads as general ground treatment rather than a specific loaded structure, and Figure 2 of the final technical report (FMSA24047-FTR-CMC-00) does not label it. supportedStructureType is deliberately left absent rather than assigned a placeholder value.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness. This zone's own elevationTopLTP is not independently sourced - it is the "background" elevation of Group 3's stepped soil-model composite (docs/build/GUS1/NOTES.md), shared with zone-bw because neither is singled out for its own elevated structure, not a value stated anywhere specifically for "Remaining Area." youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FMSA24047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them. A platform can have a stated thickness and material without a single named supported structure, which is exactly this zone's case.</content>
+                        </Remark>
+                    </remark>
+                    <scope>
+                        <ProgramScope>
+                            <appliesToFeatureRef xlink:href="#zone-ra"/>
+                        </ProgramScope>
+                    </scope>
+                    <ltpThickness uom="m">0.30</ltpThickness>
+                    <youngsModulus uom="kPa">60000</youngsModulus>
+                    <unitWeight uom="kN/m3">16</unitWeight>
+                    <cohesion uom="kPa">0</cohesion>
+                    <frictionAngle uom="dega">38</frictionAngle>
+                    <poissonsRatio uom="Euc">0.3</poissonsRatio>
+                </RILTPDesign>
+            </design>
+            <design>
+                <RILTPDesign gml:id="riltpd-oe">
+                    <gml:name>LTP design — Outdoor Equipment</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>supportedStructureType is an inferred, unconfirmed judgment call: this zone's CMC length (12 m, FMSA24047-FTR-CMC-00 Table 4) is shorter than the heavy power-equipment zones (Power Transformer, Shunt Reactor, Auxiliary Tr, all 14-18.5 m), suggesting lighter equipment - breaker stands, disconnect switches, instrument transformers - more typically founded on discrete isolated footings than a heavy equipment block. Neither the foundation type nor the equipment itself is named in the project record; flagged for review rather than treated as settled.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FMSA24047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FMSA24047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                        </Remark>
+                    </remark>
+                    <scope>
+                        <ProgramScope>
+                            <appliesToFeatureRef xlink:href="#zone-oe"/>
+                        </ProgramScope>
+                    </scope>
+                    <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#footing">footing</supportedStructureType>
+                    <ltpThickness uom="m">1.50</ltpThickness>
+                    <youngsModulus uom="kPa">60000</youngsModulus>
+                    <unitWeight uom="kN/m3">16</unitWeight>
+                    <cohesion uom="kPa">0</cohesion>
+                    <frictionAngle uom="dega">38</frictionAngle>
+                    <poissonsRatio uom="Euc">0.3</poissonsRatio>
+                </RILTPDesign>
+            </design>
+            <design>
+                <RILTPDesign gml:id="riltpd-bw">
+                    <gml:name>LTP design — Boundary Wall</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Figure 2 of the final technical report (FMSA24047-FTR-CMC-00) also shows small isolated "Fence Foundation" pads along the boundary, distinct in the drawing from the continuous boundary wall strip but carrying the same average applied load (150 kN/m2) and given no row of their own in Table 4's CMC design parameters. Treated here as incorporated into this zone's LTP design rather than as a separate structure - supportedStructureType states wall for the zone as a whole. The fence foundations' own type is not stated in the project record; their small, discrete pad geometry reads most plausibly as isolated footings, but this is inferred, not confirmed.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FMSA24047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FMSA24047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                        </Remark>
+                    </remark>
+                    <scope>
+                        <ProgramScope>
+                            <appliesToFeatureRef xlink:href="#zone-bw"/>
+                        </ProgramScope>
+                    </scope>
+                    <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#wall">wall</supportedStructureType>
+                    <ltpThickness uom="m">0.30</ltpThickness>
+                    <youngsModulus uom="kPa">60000</youngsModulus>
+                    <unitWeight uom="kN/m3">16</unitWeight>
+                    <cohesion uom="kPa">0</cohesion>
+                    <frictionAngle uom="dega">38</frictionAngle>
+                    <poissonsRatio uom="Euc">0.3</poissonsRatio>
+                </RILTPDesign>
+            </design>
+            <design>
+                <RILTPDesign gml:id="riltpd-at">
+                    <gml:name>LTP design — Auxiliary Transformer</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>supportedStructureType is inferred from common substation industry practice (auxiliary transformers are typically founded on a heavy reinforced-concrete block or plinth, not discrete column footings) and is not stated in the project record.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FMSA24047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FMSA24047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                        </Remark>
+                    </remark>
+                    <scope>
+                        <ProgramScope>
+                            <appliesToFeatureRef xlink:href="#zone-at"/>
+                        </ProgramScope>
+                    </scope>
+                    <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#equipment_block">equipment_block</supportedStructureType>
+                    <ltpThickness uom="m">1.75</ltpThickness>
+                    <youngsModulus uom="kPa">60000</youngsModulus>
+                    <unitWeight uom="kN/m3">16</unitWeight>
+                    <cohesion uom="kPa">0</cohesion>
+                    <frictionAngle uom="dega">38</frictionAngle>
+                    <poissonsRatio uom="Euc">0.3</poissonsRatio>
+                </RILTPDesign>
+            </design>
+            <design>
+                <RILTPDesign gml:id="riltpd-sr">
+                    <gml:name>LTP design — Shunt Reactor</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>supportedStructureType is inferred from common substation industry practice (shunt reactors are typically founded on a heavy reinforced-concrete block or plinth, not discrete column footings) and is not stated in the project record.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FMSA24047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FMSA24047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                        </Remark>
+                    </remark>
+                    <scope>
+                        <ProgramScope>
+                            <appliesToFeatureRef xlink:href="#zone-sr"/>
+                        </ProgramScope>
+                    </scope>
+                    <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#equipment_block">equipment_block</supportedStructureType>
+                    <ltpThickness uom="m">1.75</ltpThickness>
+                    <youngsModulus uom="kPa">60000</youngsModulus>
+                    <unitWeight uom="kN/m3">16</unitWeight>
+                    <cohesion uom="kPa">0</cohesion>
+                    <frictionAngle uom="dega">38</frictionAngle>
+                    <poissonsRatio uom="Euc">0.3</poissonsRatio>
+                </RILTPDesign>
+            </design>
         </RigidInclusionProgram>
     </program>
     <samplingFeature>
