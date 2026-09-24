@@ -137,6 +137,7 @@
             </design>
             <design>
                 <RITreatedAreaDesign gml:id="risd-01">
+                    <basisRef xlink:href="#ripb-01"/>
                     <groutDesignRef xlink:href="#DGM-MIX-A"/>
                 </RITreatedAreaDesign>
             </design>
@@ -158,6 +159,7 @@
                             <appliesToFeatureRef xlink:href="#zone-brt"/>
                         </ProgramScope>
                     </scope>
+                    <basisRef xlink:href="#ripb-g2-buildings"/>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#mat">mat</supportedStructureType>
                     <ltpThickness uom="m">0.60</ltpThickness>
                     <youngsModulus uom="kPa">60000</youngsModulus>
@@ -180,6 +182,7 @@
                             <appliesToFeatureRef xlink:href="#zone-bif"/>
                         </ProgramScope>
                     </scope>
+                    <basisRef xlink:href="#ripb-g2-buildings"/>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#footing">footing</supportedStructureType>
                     <ltpThickness uom="m">0.60</ltpThickness>
                     <youngsModulus uom="kPa">60000</youngsModulus>
@@ -207,6 +210,7 @@
                             <appliesToFeatureRef xlink:href="#zone-st"/>
                         </ProgramScope>
                     </scope>
+                    <basisRef xlink:href="#ripb-g3-defaultsite"/>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#tank">tank</supportedStructureType>
                     <ltpThickness uom="m">1.50</ltpThickness>
                     <youngsModulus uom="kPa">60000</youngsModulus>
@@ -234,6 +238,7 @@
                             <appliesToFeatureRef xlink:href="#zone-pt"/>
                         </ProgramScope>
                     </scope>
+                    <basisRef xlink:href="#ripb-g1-transformers"/>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#equipment_block">equipment_block</supportedStructureType>
                     <ltpThickness uom="m">1.00</ltpThickness>
                     <youngsModulus uom="kPa">60000</youngsModulus>
@@ -261,6 +266,7 @@
                             <appliesToFeatureRef xlink:href="#zone-ra"/>
                         </ProgramScope>
                     </scope>
+                    <basisRef xlink:href="#ripb-g3-defaultsite"/>
                     <ltpThickness uom="m">0.30</ltpThickness>
                     <youngsModulus uom="kPa">60000</youngsModulus>
                     <unitWeight uom="kN/m3">16</unitWeight>
@@ -287,6 +293,7 @@
                             <appliesToFeatureRef xlink:href="#zone-oe"/>
                         </ProgramScope>
                     </scope>
+                    <basisRef xlink:href="#ripb-g3-defaultsite"/>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#footing">footing</supportedStructureType>
                     <ltpThickness uom="m">1.50</ltpThickness>
                     <youngsModulus uom="kPa">60000</youngsModulus>
@@ -314,6 +321,7 @@
                             <appliesToFeatureRef xlink:href="#zone-bw"/>
                         </ProgramScope>
                     </scope>
+                    <basisRef xlink:href="#ripb-g3-defaultsite"/>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#wall">wall</supportedStructureType>
                     <ltpThickness uom="m">0.30</ltpThickness>
                     <youngsModulus uom="kPa">60000</youngsModulus>
@@ -341,6 +349,7 @@
                             <appliesToFeatureRef xlink:href="#zone-at"/>
                         </ProgramScope>
                     </scope>
+                    <basisRef xlink:href="#ripb-g3-defaultsite"/>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#equipment_block">equipment_block</supportedStructureType>
                     <ltpThickness uom="m">1.75</ltpThickness>
                     <youngsModulus uom="kPa">60000</youngsModulus>
@@ -368,6 +377,7 @@
                             <appliesToFeatureRef xlink:href="#zone-sr"/>
                         </ProgramScope>
                     </scope>
+                    <basisRef xlink:href="#ripb-g3-defaultsite"/>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#equipment_block">equipment_block</supportedStructureType>
                     <ltpThickness uom="m">1.75</ltpThickness>
                     <youngsModulus uom="kPa">60000</youngsModulus>
@@ -377,6 +387,270 @@
                     <poissonsRatio uom="Euc">0.3</poissonsRatio>
                 </RILTPDesign>
             </design>
+            <basis>
+                <RIProgramBasis gml:id="ripb-01">
+                    <gml:description>The site-wide basis the Controlled Modulus Column program design was prepared from: the standards it was prepared under, the class of calculation used, the safety format those standards imply, and the ground aggressivity adopted as its durability premise. ONE BASIS FOR THE WHOLE PROGRAM, not one per zone - FMSA24047-FTR-CMC-00 8 states a single method, a single in-house calculation tool and a single set of governing standards applied uniformly across all nine zones, and what varies per zone is the resulting design output, not the premise. Sources are FMSA24047-FTR-CMC-00 (the CMC final technical report) and GBL-GT-24136 (the geotechnical investigation it was prepared from).</gml:description>
+                    <gml:name>CMC program design basis</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Seven governing standards, which is not simply FMSA24047-FTR-CMC-00 2.2's list. Excluded from that list deliberately: reference [6], "ASTM. American Society for Testing and Materials", names no standard number or year and cannot be resolved to a specification; references [8] MENARD Quality Assurance and Quality Control System &amp; Procedures, [9] OHSAS 18001:2007 and [10] ISO 14001:2004 are contractor management-system and quality-procedure documents governing how the work is executed rather than premises the design was prepared from, so they are out of scope for a program basis (PB4) - they are candidates for the construction-activity side instead. Added beyond that list, because the design demonstrably rests on them although 2.2 omits them: NF P94-261 and NF P94-262 carry the bearing-capacity and skin-friction formulae of 8.2, and SBC 301-CR-18 is the cited source of every seismic parameter in GBL-24136 3.2 Table 1.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>safetyFormat is INFERRED and is not stated by the project. FMSA24047-FTR-CMC-00 names no safety format anywhere, and a keyword sweep of both reports returns no "partial factor", "global factor" or any stated factor of safety value (PB4 6.5). The inference rests on 8.2's capacity chain being taken from NF P94-262 (toe bearing q_b, limit skin friction q_s, negative skin friction Ktan-delta) and NF P94-261 (q_net), which are France's Eurocode 7 national application standards and which implement Design Approach 2 - verified 2026-09-23 against CEREMA's own methodological guide to NF P94-262 rather than assumed. Weighed against it: the method actually executed is a pressuremeter/CPT correlation chain using Frank and Zhao (1982) mobilization factors, not a visible partial-factor verification, so DA2 is implied by the standards adopted rather than exercised in the calculation. Recorded as inferred per the convention PB2 established for every inferred value on this program.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>Two exposureClassification values, on the two independent axes the property is repeatable for - chemical attack on the concrete and grout, and electrical corrosivity to embedded steel - not one finding stated twice. Both come from GBL-24136 and neither appears in the CMC report at all. sec_tmss_very_severe is from 5.4.3's chemical analysis (BS 1377 part 3: sulphates 5810-8515 ppm, chlorides 0.510-0.705 %, magnesium 571-954 ppm, pH 7.90-8.20), with 7.11 naming 70-TMSS-03 Rev. 02 Table 8B as the authority that sets cement type from it. palmer_very_severe is from 5.2's soil resistivity, where all six ERT stations returned 0.11-0.23 ohm-m against Table 5's 0-10 ohm-m VERY SEVERE band (Palmer 1974).</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>Fields left absent, checked against the full source set at PB4 rather than assumed: designWorkingLife and consequenceClass (no service life or reliability/consequence class stated anywhere in either report); designMethod and archingModel (both concern LTP load-transfer mechanics, which neither report addresses - the design is a column bearing-capacity calculation); factor (the coefficients 8.2 does state - the rheological factor alpha-M, the penetrometer bearing factor Kc, and the Frank and Zhao mobilization factors Kq and KT - are adopted correlation coefficients, not the partial or global safety factor set a safetyFormat applies, which is what diggs:DesignFactor and this type's factor element are defined for); peakGroundAcceleration (GBL-24136 3.2 Table 1 gives Ss, S1, Fa and Fv but no a_g, and deriving one from them is not code-sanctioned - ASCE 7 and SBC 301 derive site-adjusted PGA from a separately mapped PGA and its own F_PGA coefficient, neither of which the report provides).</content>
+                        </Remark>
+                    </remark>
+                    <seismicHazard>
+                        <SeismicHazardParameters gml:id="shp-sub-001">
+                            <gml:name>SBC 301-CR-18 seismic hazard, Substation site</gml:name>
+                            <remark>
+                                <Remark>
+                                    <content>Per-value clauses, all from GBL-24136 3.2 Table 1 and all cited there to SBC 301-CR-18: Ss from Figure 22-1, S1 from Figure 22-2, the site class from Table 20-1 (against SPT N less than 15), Fa from Table 11-1 and Fv from Table 11-2. The report's own prose at 3.2 says &quot;SBC 301-2008&quot; while every row of its table cites SBC 301-CR-18; the 2018 edition is taken as correct because it is what the table rows themselves name.</content>
+                                </Remark>
+                            </remark>
+                            <remark>
+                                <Remark>
+                                    <content>peakGroundAcceleration is deliberately ABSENT. No a_g is stated anywhere in the project record, and it cannot be derived from the values here: in ASCE 7 and the codes derived from it a site-adjusted peak ground acceleration comes from a separately mapped PGA and its own F_PGA coefficient, whereas Fa and Fv apply only to the spectral ordinates. Synthesising one from Fa and Ss would apply the wrong coefficient to the wrong hazard parameter and present the result as sourced.</content>
+                                </Remark>
+                            </remark>
+                            <remark>
+                                <Remark>
+                                    <content>seismicSiteClass here is the AS-INVESTIGATED class - the ground as found, read against SPT N less than 15 in the seven boreholes of a pre-construction investigation. It is therefore neither diggs:RITreatedAreaDesignType/seismicSiteClass (the class a design predicts after improvement) nor diggs:RITreatedAreaType/seismicSiteClass (the class achieved). Both of those are left empty on this project, because nothing in the record measures or predicts a post-improvement class.</content>
+                                </Remark>
+                            </remark>
+                            <shortPeriodSpectralAcceleration uom="gn">0.20</shortPeriodSpectralAcceleration>
+                            <onePeriodSpectralAcceleration uom="gn">0.04</onePeriodSpectralAcceleration>
+                            <seismicSiteClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/seismicSiteClass.xml#class_e">class_e</seismicSiteClass>
+                            <shortPeriodSiteCoefficient uom="Euc">0.9</shortPeriodSiteCoefficient>
+                            <longPeriodSiteCoefficient uom="Euc">2.4</longPeriodSiteCoefficient>
+                            <hazardStandard xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#sbc_301_cr_18"/>
+                        </SeismicHazardParameters>
+                    </seismicHazard>
+                    <basisParameter>
+                        <DesignBasisParameter gml:id="dbp-kq-coarse">
+                            <gml:description>Frank and Zhao (1982) toe mobilization factor Kq for coarse-grained soils, which FMSA24047-FTR-CMC-00 8.2 states is the value governing at this site.</gml:description>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/design_basis_properties.xml#frank_zhao_toe_factor">frank_zhao_toe_factor</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>4.8</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                            <derivation>adopted</derivation>
+                            <appliesToCondition>coarse_grained</appliesToCondition>
+                            <sourceSpecification xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_262"/>
+                        </DesignBasisParameter>
+                    </basisParameter>
+                    <basisParameter>
+                        <DesignBasisParameter gml:id="dbp-kq-fine">
+                            <gml:description>Frank and Zhao (1982) toe mobilization factor Kq for fine-grained soils. Stated by FMSA24047-FTR-CMC-00 8.2 alongside the coarse-grained value; recorded because the report states it, although the site is governed by the coarse-grained case.</gml:description>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/design_basis_properties.xml#frank_zhao_toe_factor">frank_zhao_toe_factor</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>11</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                            <derivation>adopted</derivation>
+                            <appliesToCondition>fine_grained</appliesToCondition>
+                            <sourceSpecification xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_262"/>
+                        </DesignBasisParameter>
+                    </basisParameter>
+                    <basisParameter>
+                        <DesignBasisParameter gml:id="dbp-kt-coarse">
+                            <gml:description>Frank and Zhao (1982) skin friction mobilization factor KT for coarse-grained soils, per FMSA24047-FTR-CMC-00 8.2.</gml:description>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/design_basis_properties.xml#frank_zhao_friction_factor">frank_zhao_friction_factor</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.8</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                            <derivation>adopted</derivation>
+                            <appliesToCondition>coarse_grained</appliesToCondition>
+                            <sourceSpecification xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_262"/>
+                        </DesignBasisParameter>
+                    </basisParameter>
+                    <basisParameter>
+                        <DesignBasisParameter gml:id="dbp-kt-fine">
+                            <gml:description>Frank and Zhao (1982) skin friction mobilization factor KT for fine-grained soils, per FMSA24047-FTR-CMC-00 8.2.</gml:description>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/design_basis_properties.xml#frank_zhao_friction_factor">frank_zhao_friction_factor</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>2.0</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                            <derivation>adopted</derivation>
+                            <appliesToCondition>fine_grained</appliesToCondition>
+                            <sourceSpecification xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_262"/>
+                        </DesignBasisParameter>
+                    </basisParameter>
+                    <basisParameter>
+                        <DesignBasisParameter gml:id="dbp-kc-qnet">
+                            <gml:description>Penetrometer bearing factor Kc used for the net bearing pressure beneath the foundation. FMSA24047-FTR-CMC-00 8.2 states the value adopted and notes it varies with formation level; 0.1 is the value the report writes out.</gml:description>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/design_basis_properties.xml#penetrometer_bearing_factor">penetrometer_bearing_factor</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.1</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                            <derivation>adopted</derivation>
+                            <appliesToCondition>net_bearing_below_foundation</appliesToCondition>
+                            <functionExpression>qnet = Kc x qc, with qc the equivalent cone tip resistance 1.5B below the foundation</functionExpression>
+                            <sourceSpecification xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_261"/>
+                        </DesignBasisParameter>
+                    </basisParameter>
+                    <basisParameter>
+                        <DesignBasisParameter gml:id="dbp-kc-toe">
+                            <gml:description>Penetrometer bearing factor Kc for the limit end bearing pressure at the inclusion toe. Read from the source standard's chart as a function of soil class and effective anchorage depth, so no single value applies and none is stated.</gml:description>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/design_basis_properties.xml#penetrometer_bearing_factor">penetrometer_bearing_factor</parameterName>
+                            <typeData>string</typeData>
+                            <derivation>adopted</derivation>
+                            <appliesToCondition>inclusion_toe</appliesToCondition>
+                            <functionExpression>qb = Kc x qc, with qc the equivalent cone tip resistance below the CMC toe; Kc from NF P94-262 Figure 7 by soil class and effective anchorage</functionExpression>
+                            <sourceSpecification xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_262"/>
+                        </DesignBasisParameter>
+                    </basisParameter>
+                    <basisParameter>
+                        <DesignBasisParameter gml:id="dbp-alpha-m">
+                            <gml:description>The pressuremeter rheological factor alphaM, needed because the design method is pressuremeter-theory based while the soil stiffnesses were derived from CPT. Published as a table by soil type, so no single value is stated.</gml:description>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/design_basis_properties.xml#rheological_factor">rheological_factor</parameterName>
+                            <typeData>string</typeData>
+                            <derivation>adopted</derivation>
+                            <functionExpression>Em = alphaM x EY, with EY the Young's modulus of the layer and alphaM read by soil type</functionExpression>
+                            <sourceSpecification xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_261"/>
+                        </DesignBasisParameter>
+                    </basisParameter>
+                    <basisParameter>
+                        <DesignBasisParameter gml:id="dbp-qs">
+                            <gml:description>The limit unit skin friction adopted per layer, read from NF P94-262's published curve against CPT tip resistance. A curve with no closed form, so the value elements are left absent and the figure is cited instead.</gml:description>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/design_basis_properties.xml#limit_skin_friction">limit_skin_friction</parameterName>
+                            <typeData>string</typeData>
+                            <derivation>adopted</derivation>
+                            <sourceSpecification xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_262"/>
+                        </DesignBasisParameter>
+                    </basisParameter>
+                    <basisParameter>
+                        <DesignBasisParameter gml:id="dbp-de">
+                            <gml:description>Foundation embedment depth De. FMSA24047-FTR-CMC-00 8.2 states it as conservatively assumed to be zero rather than measured or derived - one of the two explicit assumptions the report makes.</gml:description>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/design_basis_properties.xml#embedment_depth">embedment_depth</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0</parameterValue>
+                            <parameterUnits>m</parameterUnits>
+                            <derivation>assumed</derivation>
+                        </DesignBasisParameter>
+                    </basisParameter>
+                    <basisParameter>
+                        <DesignBasisParameter gml:id="dbp-wtl">
+                            <gml:description>The average water table level adopted for design, as an elevation, per FMSA24047-FTR-CMC-00 4.1. Distinct from the measured groundwater: the same clause records water encountered throughout all borings at 0.65 to 0.75 m below natural ground level, and this single value is the design premise chosen to represent them.</gml:description>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/design_basis_properties.xml#design_groundwater_level">design_groundwater_level</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>5.25</parameterValue>
+                            <parameterUnits>m</parameterUnits>
+                            <derivation>assumed</derivation>
+                        </DesignBasisParameter>
+                    </basisParameter>
+                    <basisParameter>
+                        <DesignBasisParameter gml:id="dbp-egl">
+                            <gml:description>The average existing ground level adopted for design, as an elevation, per FMSA24047-FTR-CMC-00 4.1, which attributes it to Menard's own pre-treatment CPTs.</gml:description>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/design_basis_properties.xml#design_ground_level">design_ground_level</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>5.90</parameterValue>
+                            <parameterUnits>m</parameterUnits>
+                            <derivation>assumed</derivation>
+                        </DesignBasisParameter>
+                    </basisParameter>
+                    <basisParameter>
+                        <DesignBasisParameter gml:id="dbp-anchorage">
+                            <gml:description>The premise, stated at FMSA24047-FTR-CMC-00 8.2 alongside the toe bearing formulation, that the CMCs are embedded into a competent bearing or anchorage layer. Carried as text because it is a condition asserted of the ground rather than a quantity.</gml:description>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/design_basis_properties.xml#anchorage_condition">anchorage_condition</parameterName>
+                            <typeData>string</typeData>
+                            <derivation>assumed</derivation>
+                        </DesignBasisParameter>
+                    </basisParameter>
+                    <governingStandard xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#sbc_303_cr_18"/>
+                    <governingStandard xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#asiri_2012"/>
+                    <governingStandard xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_8006_1995"/>
+                    <governingStandard xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_261"/>
+                    <governingStandard xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_262"/>
+                    <governingStandard xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#sbc_301_cr_18"/>
+                    <governingStandard xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#sec_70_tmss_03"/>
+                    <analysisApproach codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/analysisApproach.xml#analytical_method">analytical_method</analysisApproach>
+                    <safetyFormat codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/safetyFormat.xml#ec7_da2">ec7_da2</safetyFormat>
+                    <exposureClassification codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/exposureClassification.xml#sec_tmss_very_severe">sec_tmss_very_severe</exposureClassification>
+                    <exposureClassification codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/exposureClassification.xml#palmer_very_severe">palmer_very_severe</exposureClassification>
+                </RIProgramBasis>
+            </basis>
+            <basis>
+                <RIProgramBasis gml:id="ripb-g1-transformers">
+                    <gml:name>Soil model basis - Transformers group</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>This basis exists because the ground model is the one premise on this program that is NOT site-wide. FMSA24047-FTR-CMC-00 derives three soil profiles (Table 1 here), each from a different set of pre-treatment CPTs (CPT-09, CPT-10 and CPT-11), each governing a different set of LTP zones. Everything else the design rests on - the governing standards, the analysis approach, the safety format, the adopted coefficients, the exposure classification and the seismic hazard - is common to the whole program and is stated once on the master basis this one specialises through basedOnRef. Resolution is per property, most specific first, so a design citing this basis inherits all of that and adds only the ground model that applies to it.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>Scoped to the 1 LTP zone(s) whose designs this ground model governs, by appliesToFeatureRef rather than by restating a boundary - those zones already carry their own extents. The grouping is the one recorded at GUS1 from Dan's explicit list, NOT inferred from the CPT groupings, and the two are not the same mapping: CPT-08 is averaged into Group 3's profile while the Building isolated footing zone it was drilled in belongs to Group 2. Neither grouping can be derived from the other.</content>
+                        </Remark>
+                    </remark>
+                    <scope>
+                        <ProgramScope>
+                            <appliesToFeatureRef xlink:href="#zone-pt"/>
+                        </ProgramScope>
+                    </scope>
+                    <basedOnRef xlink:href="#ripb-01"/>
+                    <groundModelRef xlink:href="#gus-g1-transformers"/>
+                </RIProgramBasis>
+            </basis>
+            <basis>
+                <RIProgramBasis gml:id="ripb-g2-buildings">
+                    <gml:name>Soil model basis - Buildings group</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>This basis exists because the ground model is the one premise on this program that is NOT site-wide. FMSA24047-FTR-CMC-00 derives three soil profiles (Table 2 here), each from a different set of pre-treatment CPTs (CPT-03, CPT-04, CPT-06 and CPT-07), each governing a different set of LTP zones. Everything else the design rests on - the governing standards, the analysis approach, the safety format, the adopted coefficients, the exposure classification and the seismic hazard - is common to the whole program and is stated once on the master basis this one specialises through basedOnRef. Resolution is per property, most specific first, so a design citing this basis inherits all of that and adds only the ground model that applies to it.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>Scoped to the 2 LTP zone(s) whose designs this ground model governs, by appliesToFeatureRef rather than by restating a boundary - those zones already carry their own extents. The grouping is the one recorded at GUS1 from Dan's explicit list, NOT inferred from the CPT groupings, and the two are not the same mapping: CPT-08 is averaged into Group 3's profile while the Building isolated footing zone it was drilled in belongs to Group 2. Neither grouping can be derived from the other.</content>
+                        </Remark>
+                    </remark>
+                    <scope>
+                        <ProgramScope>
+                            <appliesToFeatureRef xlink:href="#zone-brt"/>
+                            <appliesToFeatureRef xlink:href="#zone-bif"/>
+                        </ProgramScope>
+                    </scope>
+                    <basedOnRef xlink:href="#ripb-01"/>
+                    <groundModelRef xlink:href="#gus-g2-buildings"/>
+                </RIProgramBasis>
+            </basis>
+            <basis>
+                <RIProgramBasis gml:id="ripb-g3-defaultsite">
+                    <gml:name>Soil model basis - Default Site group</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>This basis exists because the ground model is the one premise on this program that is NOT site-wide. FMSA24047-FTR-CMC-00 derives three soil profiles (Table 3 here), each from a different set of pre-treatment CPTs (CPT-01, CPT-02, CPT-05, CPT-08 and CPT-12), each governing a different set of LTP zones. Everything else the design rests on - the governing standards, the analysis approach, the safety format, the adopted coefficients, the exposure classification and the seismic hazard - is common to the whole program and is stated once on the master basis this one specialises through basedOnRef. Resolution is per property, most specific first, so a design citing this basis inherits all of that and adds only the ground model that applies to it.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>Scoped to the 6 LTP zone(s) whose designs this ground model governs, by appliesToFeatureRef rather than by restating a boundary - those zones already carry their own extents. The grouping is the one recorded at GUS1 from Dan's explicit list, NOT inferred from the CPT groupings, and the two are not the same mapping: CPT-08 is averaged into Group 3's profile while the Building isolated footing zone it was drilled in belongs to Group 2. Neither grouping can be derived from the other.</content>
+                        </Remark>
+                    </remark>
+                    <scope>
+                        <ProgramScope>
+                            <appliesToFeatureRef xlink:href="#zone-bw"/>
+                            <appliesToFeatureRef xlink:href="#zone-ra"/>
+                            <appliesToFeatureRef xlink:href="#zone-sr"/>
+                            <appliesToFeatureRef xlink:href="#zone-at"/>
+                            <appliesToFeatureRef xlink:href="#zone-oe"/>
+                            <appliesToFeatureRef xlink:href="#zone-st"/>
+                        </ProgramScope>
+                    </scope>
+                    <basedOnRef xlink:href="#ripb-01"/>
+                    <groundModelRef xlink:href="#gus-g3-defaultsite"/>
+                </RIProgramBasis>
+            </basis>
         </RigidInclusionProgram>
     </program>
     <samplingFeature>
