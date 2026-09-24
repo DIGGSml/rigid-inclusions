@@ -411,6 +411,11 @@
                             <content>Fields left absent, checked against the full source set at PB4 rather than assumed: designWorkingLife and consequenceClass (no service life or reliability/consequence class stated anywhere in either report); designMethod and archingModel (both concern LTP load-transfer mechanics, which neither report addresses - the design is a column bearing-capacity calculation); factor (the coefficients 8.2 does state - the rheological factor alpha-M, the penetrometer bearing factor Kc, and the Frank and Zhao mobilization factors Kq and KT - are adopted correlation coefficients, not the partial or global safety factor set a safetyFormat applies, which is what diggs:DesignFactor and this type's factor element are defined for); peakGroundAcceleration (GBL-24136 3.2 Table 1 gives Ss, S1, Fa and Fv but no a_g, and deriving one from them is not code-sanctioned - ASCE 7 and SBC 301 derive site-adjusted PGA from a separately mapped PGA and its own F_PGA coefficient, neither of which the report provides).</content>
                         </Remark>
                     </remark>
+                    <remark>
+                        <Remark>
+                            <content>References [2] and [3] of FMSA24047-FTR-CMC-00 2.1 ("CMC Design report document reference &#8211; FMSA-EN24313-TP" and the General Plot Plan drawing WA 884920 sheet 003 rev. 00) are acknowledged but NOT built as associatedFile: diggs:AssociatedFileType/fileURL is mandatory and neither document is held or retrievable, so no real URL exists to cite and none is fabricated. [1], the geotechnical investigation GBL-GT-24136, is not an associatedFile either but for a different reason - it is already the diggs:Project this program's projectRef targets.</content>
+                        </Remark>
+                    </remark>
                     <seismicHazard>
                         <SeismicHazardParameters gml:id="shp-sub-001">
                             <gml:name>SBC 301-CR-18 seismic hazard, Substation site</gml:name>
