@@ -91,21 +91,41 @@
             <projectRef xlink:href="#GBL-GT-24136"/>
             <design>
                 <DesignGroutMix gml:id="DGM-MIX-A">
-                    <gml:name>MIX-A — Very Severe (Mg&gt;1000) Design Mix</gml:name>
+                    <gml:name>MIX-A — Very Severe (Mg&lt;1000) Design Mix</gml:name>
                     <remark>
                         <Remark>
-                            <content>Per 70-TMSS-03 Rev.02 Table 8B, Very Severe (Mg&gt;1000) exposure. Cement: Type I (C3A 8-14%) (SG=3.15); Fly Ash at 25% replacement of total binder by mass (SG=2.3). W/BM (max)=0.36; W/C=0.48. Min binding material=390 kg/m3 (cement + SCM). Max Cl in concrete=0.1%. Min compressive strength (f'c)=38 MPa. Air content assumed 2%. Specific gravities: cement=3.15, Fly Ash=2.3, sand=2.65, water=1.0. Mix proportions expressed per 1 m3 of concrete.</content>
+                            <content>Per 70-TMSS-03 Rev.02 Table 8B, appended in full to GBL-24136-Geotech-Final-Report.pdf (and its own extracted copy, GBL-24136-Geotech-Report-MA .xlsx) - documents not available when this design was first authored. CORRECTED from an earlier version that used the Table 8B row for Mg&gt;1000 ppm (Type I cement, Fly Ash admixture, max W/BM=0.36): GBL-24136 5.4.3's own chemical analysis (BS 1377 Part 3) measured magnesium at 571-954 ppm across all three tested boreholes/depths - every value below 1000 ppm - while sulphate (5810-8515 ppm) and chloride (0.510-0.705%) both clear the &gt;2000 ppm / &gt;0.10% thresholds, and the site is stated as Very Severe exposure. That combination selects a DIFFERENT row of the same table: Type I (C3A 8-14%) cement with Silica Fume admixture, max W/BM=0.40, min binding material 390 kg/m3 (cement+SCM), max Cl in concrete 0.10%, min f'c 38 MPa (Note 1) - not the Fly Ash/0.36 row this design used before.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>Table 8B fixes only the cement type, admixture type, the maximum W/BM ratio and the minimum binder content - it states no batch recipe, and neither FMSA24047-FTR-CMC-00 nor GBL-24136-Geotech-Final-Report (nor their extracted CMC-Final-Report-Extracted.xlsx / GBL-24136-Geotech-Report-MA .xlsx workbooks) states one either. The proportions below are therefore an INFERRED, illustrative design meeting the stated constraints, not a project-specified recipe: an 8% silica fume replacement of total binder by mass (within ACI 234R's typical 5-10% dosage range for durability applications - a literature value, not project-stated); the maximum W/BM (0.40) used directly as the design value, matching how the earlier Fly Ash version used its own ceiling (0.36); an assumed 2% air content; and specific gravities cement=3.15 (Table 8B), silica fume=2.2 (typical/literature, not project-stated), sand=2.65, water=1.0. Mix proportions expressed per 1 m3 of concrete.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>Two different minimum compressive strengths appear in the project record, for different reasons, not a conflict to resolve to one number. FMSA24047-FTR-CMC-00 Table 4 (and its extracted copy, CMC-Final-Report-Extracted.xlsx) state a 25 MPa "Minimum Required Compressive Strength (per design)" - the structural design value, also the fck used in modulusDesign below, and the QA/QC pass/fail threshold the realized concrete batches were checked against (all 41 passed - see the remark below). 70-TMSS-03 Table 8B Note 1 separately sets f'c &gt;= 38 MPa for Very Severe/Severe exposure - a durability, not a structural, minimum. strengthDesign here keeps the higher, governing 38 MPa value; both are satisfied in practice, with margin.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>modulusDesign is newly populated (previously absent - the element exists for exactly this purpose, per its own schema documentation, but had never been instantiated on this object). EY = 3700 x fck^(1/3), per ASIRI 2012 Clause 3.1.1.4 as cited in FMSA24047-FTR-CMC-00 Section 6, fck = 25 MPa (the report's own "not less than" design value) -&gt; EY = 10,818,866 kPa (~10.82 GPa). This is the CMC column stiffness the settlement calculation (FMSA24047-FTR-CMC-00 Sections 6/8) uses, distinct from strengthDesign.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>One mix design covers the whole program, confirmed on this pass, not one per zone: FMSA24047-FTR-CMC-00 Section 8 states a single method and a single set of governing standards applied uniformly across all nine zones (matching the single-basis finding already recorded on RIProgramBasis[ripb-01]); the Load Transfer Platform is a separate, non-cementitious compacted granular fill (DesignRILTP), not a second grout/concrete mix. No additional DesignGroutMix is warranted. CMC-Final-Report-Extracted.xlsx also carries real per-batch field data (41 batches, 1,099 CMCs, cast 14-Oct-2024 to 16-Dec-2024, 7-day and 28-day cylinder strengths, all 41 batches passing the 25 MPa threshold, 28-day range 40.7-54.5 MPa/average 46.6 MPa) that the still-open "realized grout batch instances" phase (NEXT_SESSION.md) can draw on directly - not built here, out of this task's scope, but recorded so that phase does not have to rediscover the source.</content>
                         </Remark>
                     </remark>
                     <activityType>aggregate</activityType>
-                    <placementDescription>CMC rigid inclusions and Load Transfer Platform; Very Severe sulphate/chloride exposure with Mg&gt;1000 ppm</placementDescription>
+                    <placementDescription>CMC rigid inclusion columns across the treated area; the Load Transfer Platform is a separate compacted granular fill (DesignRILTP) and does not use this concrete mix. Very Severe exposure per 70-TMSS-03 Table 8B, Mg&lt;1000 ppm row: Type I cement, Silica Fume admixture.</placementDescription>
                     <binder>
                         <Binder gml:id="binder-01">
-                            <gml:name>Fly Ash</gml:name>
-                            <specificGravity>2.3</specificGravity>
-                            <type>Fly Ash</type>
-                            <volume uom="m3">0.04239</volume>
-                            <weight uom="kN">97.5</weight>
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">0.01418</volume>
+                            <weight uom="kN">0.306</weight>
                         </Binder>
                     </binder>
                     <cement>
@@ -113,8 +133,8 @@
                             <gml:name>Type I (C3A 8-14%)</gml:name>
                             <specificGravity>3.15</specificGravity>
                             <type>Type I (C3A 8-14%)</type>
-                            <volume uom="m3">0.09286</volume>
-                            <weight uom="kN">0.956</weight>
+                            <volume uom="m3">0.11390</volume>
+                            <weight uom="kN">3.520</weight>
                         </Cement>
                     </cement>
                     <filler>
@@ -122,17 +142,19 @@
                             <gml:name>Fine Aggregate (Sand)</gml:name>
                             <specificGravity>2.65</specificGravity>
                             <type>Fine Aggregate</type>
-                            <volume uom="m3">0.70435</volume>
-                            <weight uom="kN">18.307</weight>
+                            <volume uom="m3">0.69591</volume>
+                            <weight uom="kN">18.091</weight>
                         </Filler>
                     </filler>
                     <theoreticalYield uom="m3">1.000</theoreticalYield>
                     <typeMix>cement</typeMix>
-                    <volumeWater uom="m3">0.1404</volumeWater>
+                    <volumeWater uom="m3">0.1560</volumeWater>
+                    <waterCementRatio>0.4348</waterCementRatio>
                     <bleedDesign uom="m3/m3">0.01</bleedDesign>
-                    <mudBalanceDensityDesign uom="kg/m3">2397.0</mudBalanceDensityDesign>
+                    <modulusDesign uom="kPa">10818866</modulusDesign>
+                    <mudBalanceDensityDesign uom="kg/m3">2390.2</mudBalanceDensityDesign>
                     <slumpDesign uom="mm">120</slumpDesign>
-                    <specificGravityMixDesign>2.397</specificGravityMixDesign>
+                    <specificGravityMixDesign>2.390</specificGravityMixDesign>
                     <strengthDesign uom="Pa">38000000</strengthDesign>
                 </DesignGroutMix>
             </design>
@@ -49479,6 +49501,14 @@
             <samplingMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#iso_22475_1"/>
         </SamplingActivity>
     </samplingActivity>
+    <samplingActivity>
+        <SamplingActivity gml:id="sa-gb-1">
+            <gml:description>Grout mixing/batching activity for MIX-A. One activity per design mixed - a batching operation mixing to a different design would be a separate SamplingActivity instance (DS2, 2026-09-28).</gml:description>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <currentDesign><ProgramDesignReference><programDesignRef xlink:href="#DGM-MIX-A"/></ProgramDesignReference></currentDesign>
+            <activityType>aggregate</activityType>
+        </SamplingActivity>
+    </samplingActivity>
     <sample>
         <Sample gml:id="s-BH-1_1-1">
             <gml:name>1-1</gml:name>
@@ -50394,22 +50424,22 @@
     </sample>
     <sample>
         <GroutBatch gml:id="s-gb-1">
-            <gml:name>MIX-A — Very Severe (Mg&gt;1000) Grout Batch (6.0 m³)</gml:name>
+            <gml:name>MIX-A — Very Severe (Mg&lt;1000) Grout Batch (6.0 m³)</gml:name>
             <remark>
                 <Remark>
-                    <content>Very Severe exposure; Type I restricted C₃A, fly ash SCM at 25%</content>
+                    <content>Very Severe exposure; Type I restricted C₃A, silica fume SCM at 8%. Rescaled (×6) from DGM-MIX-A's own per-1m3 design mix after that design was corrected to the Table 8B Mg&lt;1000 row - was previously Fly Ash SCM at 25%, matching the design's own pre-correction proportions. See DGM-MIX-A's remarks for the full account. The link to DGM-MIX-A was carried by designGroutMixRef until GB2 (2026-09-28) retired that grout-specific element in favor of the generic programDesignRef (diggs:AbstractSampleType); DS2 (2026-09-28) removed programDesignRef from AbstractSampleType in turn, so the link now runs through sa-gb-1's own currentDesign instead - fixing sa-gb-1's own previously dangling reference in the process.</content>
                 </Remark>
             </remark>
             <projectRef xlink:href="#GBL-GT-24136"/>
-            <samplingActivityRef xlink:href="sa-gb-1"/>
+            <samplingActivityRef xlink:href="#sa-gb-1"/>
             <sampleProducedRef xlink:href="sp-gb-1"/>
             <binder>
                 <Binder gml:id="binder-s-gb-1">
-                    <gml:name>Fly Ash</gml:name>
-                    <specificGravity>2.3</specificGravity>
-                    <type>Fly Ash</type>
-                    <volume uom="m3">0.2543</volume>
-                    <weight uom="kN">5.737</weight>
+                    <gml:name>Silica Fume</gml:name>
+                    <specificGravity>2.2</specificGravity>
+                    <type>Silica Fume</type>
+                    <volume uom="m3">0.0851</volume>
+                    <weight uom="kN">1.836</weight>
                 </Binder>
             </binder>
             <cement>
@@ -50417,8 +50447,8 @@
                     <gml:name>Type I (C3A 8-14%)</gml:name>
                     <specificGravity>3.15</specificGravity>
                     <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">0.5571</volume>
-                    <weight uom="kN">17.211</weight>
+                    <volume uom="m3">0.6834</volume>
+                    <weight uom="kN">21.119</weight>
                 </Cement>
             </cement>
             <filler>
@@ -50426,18 +50456,17 @@
                     <gml:name>Fine Aggregate (Sand)</gml:name>
                     <specificGravity>2.65</specificGravity>
                     <type>Fine Aggregate</type>
-                    <volume uom="m3">4.2261</volume>
-                    <weight uom="kN">109.840</weight>
+                    <volume uom="m3">4.1755</volume>
+                    <weight uom="kN">108.548</weight>
                 </Filler>
             </filler>
-            <specificGravityMix>2.397</specificGravityMix>
+            <specificGravityMix>2.390</specificGravityMix>
             <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">6.0</totalBatchVolume>
             <typeMix>cement</typeMix>
-            <volumeWater uom="m3">0.8424</volumeWater>
-            <waterCementRatio>0.48</waterCementRatio>
-            <waterCementRatioOfMix>0.36</waterCementRatioOfMix>
-            <designGroutMixRef xlink:href="#DGM-MIX-A"/>
+            <volumeWater uom="m3">0.9360</volumeWater>
+            <waterCementRatio>0.4348</waterCementRatio>
+            <waterCementRatioOfMix>0.40</waterCementRatioOfMix>
         </GroutBatch>
     </sample>
     <sample>
