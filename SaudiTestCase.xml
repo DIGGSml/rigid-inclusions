@@ -97,6 +97,7 @@
                             <content>Per 70-TMSS-03 Rev.02 Table 8B, Very Severe (Mg&gt;1000) exposure. Cement: Type I (C3A 8-14%) (SG=3.15); Fly Ash at 25% replacement of total binder by mass (SG=2.3). W/BM (max)=0.36; W/C=0.48. Min binding material=390 kg/m3 (cement + SCM). Max Cl in concrete=0.1%. Min compressive strength (f'c)=38 MPa. Air content assumed 2%. Specific gravities: cement=3.15, Fly Ash=2.3, sand=2.65, water=1.0. Mix proportions expressed per 1 m3 of concrete.</content>
                         </Remark>
                     </remark>
+                    <activityType>aggregate</activityType>
                     <placementDescription>CMC rigid inclusions and Load Transfer Platform; Very Severe sulphate/chloride exposure with Mg&gt;1000 ppm</placementDescription>
                     <binder>
                         <Binder gml:id="binder-01">
@@ -136,13 +137,19 @@
                 </DesignGroutMix>
             </design>
             <design>
-                <RITreatedAreaDesign gml:id="risd-01">
+                <DesignRITreatedArea gml:id="risd-01">
                     <basisRef xlink:href="#ripb-01"/><samplingFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#ri_treatment_area">ri_treatment_area</samplingFeatureType>
                     <groutDesignRef xlink:href="#DGM-MIX-A"/>
-                </RITreatedAreaDesign>
+                    <designLoad>
+                        <DesignLoad>
+                            <actionType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/actionType.xml#surcharge">surcharge</actionType>
+                            <magnitudePressure uom="kPa">150</magnitudePressure>
+                        </DesignLoad>
+                    </designLoad>
+                </DesignRITreatedArea>
             </design>
             <design>
-                <RILTPDesign gml:id="riltpd-brt">
+                <DesignRILTP gml:id="riltpd-brt">
                     <gml:name>LTP design — Building Raft and TR Tunnels</gml:name>
                     <remark>
                         <Remark>
@@ -162,10 +169,10 @@
                     <cohesion uom="kPa">0</cohesion>
                     <frictionAngle uom="dega">38</frictionAngle>
                     <poissonsRatio uom="Euc">0.3</poissonsRatio>
-                </RILTPDesign>
+                </DesignRILTP>
             </design>
             <design>
-                <RILTPDesign gml:id="riltpd-bif">
+                <DesignRILTP gml:id="riltpd-bif">
                     <gml:name>LTP design — Building Isolated Footing</gml:name>
                     <remark>
                         <Remark>
@@ -180,10 +187,10 @@
                     <cohesion uom="kPa">0</cohesion>
                     <frictionAngle uom="dega">38</frictionAngle>
                     <poissonsRatio uom="Euc">0.3</poissonsRatio>
-                </RILTPDesign>
+                </DesignRILTP>
             </design>
             <design>
-                <RILTPDesign gml:id="riltpd-st">
+                <DesignRILTP gml:id="riltpd-st">
                     <gml:name>LTP design — Septic Tank</gml:name>
                     <remark>
                         <Remark>
@@ -203,10 +210,10 @@
                     <cohesion uom="kPa">0</cohesion>
                     <frictionAngle uom="dega">38</frictionAngle>
                     <poissonsRatio uom="Euc">0.3</poissonsRatio>
-                </RILTPDesign>
+                </DesignRILTP>
             </design>
             <design>
-                <RILTPDesign gml:id="riltpd-pt">
+                <DesignRILTP gml:id="riltpd-pt">
                     <gml:name>LTP design — Power Transformer</gml:name>
                     <remark>
                         <Remark>
@@ -226,10 +233,10 @@
                     <cohesion uom="kPa">0</cohesion>
                     <frictionAngle uom="dega">38</frictionAngle>
                     <poissonsRatio uom="Euc">0.3</poissonsRatio>
-                </RILTPDesign>
+                </DesignRILTP>
             </design>
             <design>
-                <RILTPDesign gml:id="riltpd-ra">
+                <DesignRILTP gml:id="riltpd-ra">
                     <gml:name>LTP design — Remaining Area</gml:name>
                     <remark>
                         <Remark>
@@ -248,10 +255,10 @@
                     <cohesion uom="kPa">0</cohesion>
                     <frictionAngle uom="dega">38</frictionAngle>
                     <poissonsRatio uom="Euc">0.3</poissonsRatio>
-                </RILTPDesign>
+                </DesignRILTP>
             </design>
             <design>
-                <RILTPDesign gml:id="riltpd-oe">
+                <DesignRILTP gml:id="riltpd-oe">
                     <gml:name>LTP design — Outdoor Equipment</gml:name>
                     <remark>
                         <Remark>
@@ -271,10 +278,10 @@
                     <cohesion uom="kPa">0</cohesion>
                     <frictionAngle uom="dega">38</frictionAngle>
                     <poissonsRatio uom="Euc">0.3</poissonsRatio>
-                </RILTPDesign>
+                </DesignRILTP>
             </design>
             <design>
-                <RILTPDesign gml:id="riltpd-bw">
+                <DesignRILTP gml:id="riltpd-bw">
                     <gml:name>LTP design — Boundary Wall</gml:name>
                     <remark>
                         <Remark>
@@ -294,10 +301,10 @@
                     <cohesion uom="kPa">0</cohesion>
                     <frictionAngle uom="dega">38</frictionAngle>
                     <poissonsRatio uom="Euc">0.3</poissonsRatio>
-                </RILTPDesign>
+                </DesignRILTP>
             </design>
             <design>
-                <RILTPDesign gml:id="riltpd-at">
+                <DesignRILTP gml:id="riltpd-at">
                     <gml:name>LTP design — Auxiliary Transformer</gml:name>
                     <remark>
                         <Remark>
@@ -317,10 +324,10 @@
                     <cohesion uom="kPa">0</cohesion>
                     <frictionAngle uom="dega">38</frictionAngle>
                     <poissonsRatio uom="Euc">0.3</poissonsRatio>
-                </RILTPDesign>
+                </DesignRILTP>
             </design>
             <design>
-                <RILTPDesign gml:id="riltpd-sr">
+                <DesignRILTP gml:id="riltpd-sr">
                     <gml:name>LTP design — Shunt Reactor</gml:name>
                     <remark>
                         <Remark>
@@ -340,7 +347,7 @@
                     <cohesion uom="kPa">0</cohesion>
                     <frictionAngle uom="dega">38</frictionAngle>
                     <poissonsRatio uom="Euc">0.3</poissonsRatio>
-                </RILTPDesign>
+                </DesignRILTP>
             </design>
             <basis>
                 <RIProgramBasis gml:id="ripb-01">
@@ -386,7 +393,7 @@
                             </remark>
                             <remark>
                                 <Remark>
-                                    <content>seismicSiteClass here is the AS-INVESTIGATED class - the ground as found, read against SPT N less than 15 in the seven boreholes of a pre-construction investigation. It is therefore neither diggs:RITreatedAreaDesignType/seismicSiteClass (the class a design predicts after improvement) nor diggs:RITreatedAreaType/seismicSiteClass (the class achieved). Both of those are left empty on this project, because nothing in the record measures or predicts a post-improvement class.</content>
+                                    <content>seismicSiteClass here is the AS-INVESTIGATED class - the ground as found, read against SPT N less than 15 in the seven boreholes of a pre-construction investigation. It is therefore neither diggs:DesignRITreatedAreaType/seismicSiteClass (the class a design predicts after improvement) nor diggs:RITreatedAreaType/seismicSiteClass (the class achieved). Both of those are left empty on this project, because nothing in the record measures or predicts a post-improvement class.</content>
                                 </Remark>
                             </remark>
                             <shortPeriodSpectralAcceleration uom="gn">0.20</shortPeriodSpectralAcceleration>
@@ -549,7 +556,7 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>Which zones this ground model governs is read from the citing side - the RILTPDesign objects whose own basisRef names this basis (riltpd-pt), each in turn named by its zone's LoadTransferPlatform/programDesignRef - and is not declared here. An earlier form of this object carried scope/appliesToFeatureRef pointing at those zones; removed at TAD2 as redundant with that chain, and as a reference to features this basis precedes. The grouping is the one recorded at GUS1 from Dan's explicit list, NOT inferred from the CPT groupings, and the two are not the same mapping: CPT-08 is averaged into Group 3's profile while the Building isolated footing zone it was drilled in belongs to Group 2. Neither grouping can be derived from the other.</content>
+                            <content>Which zones this ground model governs is read from the citing side - the DesignRILTP objects whose own basisRef names this basis (riltpd-pt), each in turn named by its zone's LoadTransferPlatform/programDesignRef - and is not declared here. An earlier form of this object carried scope/appliesToFeatureRef pointing at those zones; removed at TAD2 as redundant with that chain, and as a reference to features this basis precedes. The grouping is the one recorded at GUS1 from Dan's explicit list, NOT inferred from the CPT groupings, and the two are not the same mapping: CPT-08 is averaged into Group 3's profile while the Building isolated footing zone it was drilled in belongs to Group 2. Neither grouping can be derived from the other.</content>
                         </Remark>
                     </remark>
                     <basedOnRef xlink:href="#ripb-01"/>
@@ -566,7 +573,7 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>Which zones this ground model governs is read from the citing side - the RILTPDesign objects whose own basisRef names this basis (riltpd-brt, riltpd-bif), each in turn named by its zone's LoadTransferPlatform/programDesignRef - and is not declared here. An earlier form of this object carried scope/appliesToFeatureRef pointing at those zones; removed at TAD2 as redundant with that chain, and as a reference to features this basis precedes. The grouping is the one recorded at GUS1 from Dan's explicit list, NOT inferred from the CPT groupings, and the two are not the same mapping: CPT-08 is averaged into Group 3's profile while the Building isolated footing zone it was drilled in belongs to Group 2. Neither grouping can be derived from the other.</content>
+                            <content>Which zones this ground model governs is read from the citing side - the DesignRILTP objects whose own basisRef names this basis (riltpd-brt, riltpd-bif), each in turn named by its zone's LoadTransferPlatform/programDesignRef - and is not declared here. An earlier form of this object carried scope/appliesToFeatureRef pointing at those zones; removed at TAD2 as redundant with that chain, and as a reference to features this basis precedes. The grouping is the one recorded at GUS1 from Dan's explicit list, NOT inferred from the CPT groupings, and the two are not the same mapping: CPT-08 is averaged into Group 3's profile while the Building isolated footing zone it was drilled in belongs to Group 2. Neither grouping can be derived from the other.</content>
                         </Remark>
                     </remark>
                     <basedOnRef xlink:href="#ripb-01"/>
@@ -583,7 +590,7 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>Which zones this ground model governs is read from the citing side - the RILTPDesign objects whose own basisRef names this basis (riltpd-bw, riltpd-ra, riltpd-sr, riltpd-at, riltpd-oe, riltpd-st), each in turn named by its zone's LoadTransferPlatform/programDesignRef - and is not declared here. An earlier form of this object carried scope/appliesToFeatureRef pointing at those zones; removed at TAD2 as redundant with that chain, and as a reference to features this basis precedes. The grouping is the one recorded at GUS1 from Dan's explicit list, NOT inferred from the CPT groupings, and the two are not the same mapping: CPT-08 is averaged into Group 3's profile while the Building isolated footing zone it was drilled in belongs to Group 2. Neither grouping can be derived from the other.</content>
+                            <content>Which zones this ground model governs is read from the citing side - the DesignRILTP objects whose own basisRef names this basis (riltpd-bw, riltpd-ra, riltpd-sr, riltpd-at, riltpd-oe, riltpd-st), each in turn named by its zone's LoadTransferPlatform/programDesignRef - and is not declared here. An earlier form of this object carried scope/appliesToFeatureRef pointing at those zones; removed at TAD2 as redundant with that chain, and as a reference to features this basis precedes. The grouping is the one recorded at GUS1 from Dan's explicit list, NOT inferred from the CPT groupings, and the two are not the same mapping: CPT-08 is averaged into Group 3's profile while the Building isolated footing zone it was drilled in belongs to Group 2. Neither grouping can be derived from the other.</content>
                         </Remark>
                     </remark>
                     <basedOnRef xlink:href="#ripb-01"/>
