@@ -190,6 +190,7 @@
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g2-buildings"/>
+                    <programSpecificationRef xlink:href="#LTPS-RAFT"/>
                     <samplingFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#load_transfer_platform">load_transfer_platform</samplingFeatureType>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#mat">mat</supportedStructureType>
                     <ltpThickness uom="m">0.60</ltpThickness>
@@ -209,6 +210,7 @@
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g2-buildings"/>
+                    <programSpecificationRef xlink:href="#LTPS-FOOTING"/>
                     <samplingFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#load_transfer_platform">load_transfer_platform</samplingFeatureType>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#footing">footing</supportedStructureType>
                     <ltpThickness uom="m">0.60</ltpThickness>
@@ -233,6 +235,7 @@
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g3-defaultsite"/>
+                    <programSpecificationRef xlink:href="#LTPS-GEN"/>
                     <samplingFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#load_transfer_platform">load_transfer_platform</samplingFeatureType>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#tank">tank</supportedStructureType>
                     <ltpThickness uom="m">1.50</ltpThickness>
@@ -257,6 +260,7 @@
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g1-transformers"/>
+                    <programSpecificationRef xlink:href="#LTPS-GEN"/>
                     <samplingFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#load_transfer_platform">load_transfer_platform</samplingFeatureType>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#equipment_block">equipment_block</supportedStructureType>
                     <ltpThickness uom="m">1.00</ltpThickness>
@@ -281,6 +285,7 @@
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g3-defaultsite"/>
+                    <programSpecificationRef xlink:href="#LTPS-GEN"/>
                     <samplingFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#load_transfer_platform">load_transfer_platform</samplingFeatureType>
                     <ltpThickness uom="m">0.30</ltpThickness>
                     <youngsModulus uom="kPa">60000</youngsModulus>
@@ -304,6 +309,7 @@
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g3-defaultsite"/>
+                    <programSpecificationRef xlink:href="#LTPS-GEN"/>
                     <samplingFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#load_transfer_platform">load_transfer_platform</samplingFeatureType>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#footing">footing</supportedStructureType>
                     <ltpThickness uom="m">1.50</ltpThickness>
@@ -328,6 +334,7 @@
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g3-defaultsite"/>
+                    <programSpecificationRef xlink:href="#LTPS-GEN"/>
                     <samplingFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#load_transfer_platform">load_transfer_platform</samplingFeatureType>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#wall">wall</supportedStructureType>
                     <ltpThickness uom="m">0.30</ltpThickness>
@@ -352,6 +359,7 @@
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g3-defaultsite"/>
+                    <programSpecificationRef xlink:href="#LTPS-GEN"/>
                     <samplingFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#load_transfer_platform">load_transfer_platform</samplingFeatureType>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#equipment_block">equipment_block</supportedStructureType>
                     <ltpThickness uom="m">1.75</ltpThickness>
@@ -376,6 +384,7 @@
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g3-defaultsite"/>
+                    <programSpecificationRef xlink:href="#LTPS-GEN"/>
                     <samplingFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#load_transfer_platform">load_transfer_platform</samplingFeatureType>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#equipment_block">equipment_block</supportedStructureType>
                     <ltpThickness uom="m">1.75</ltpThickness>
@@ -577,6 +586,115 @@
                     </limit>
                     <partOfSpecificationRef xlink:href="#GS-MIX-A"/>
                 </DesignConformanceCriterion>
+            </specification>
+            <specification>
+                <RILTPSpecification gml:id="LTPS-GEN">
+                    <gml:name>LTP specification - all platform zones</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>FMSA24047-FTR-CMC-00 s.7.1.1 and s.8 (Table 4 note): the Load Transfer Platform is "good quality well compacted granular material"; no geosynthetic reinforcement or cementitious binder is mentioned, hence platformType unreinforced_granular_fill. LTP works were executed by the Main Contractor, not Menard. Applies to all nine LTP zones; the two building zones additionally cite a settlement specification that is based on this one. No fill gradation envelope is stated in the FTR or the geotechnical report, so aggregateGradationCurveCoarseLimit/FineLimit and materialType are not populated. Thin by design: the requirements are sibling criteria attached through partOfSpecificationRef.</content>
+                        </Remark>
+                    </remark>
+                    <appliesToFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#load_transfer_platform">load_transfer_platform</appliesToFeatureType>
+                    <platformType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/platformType.xml#unreinforced_granular_fill">unreinforced_granular_fill</platformType>
+                </RILTPSpecification>
+            </specification>
+            <specification>
+                <RILTPSpecification gml:id="LTPS-RAFT">
+                    <gml:name>LTP specification - raft foundation zone</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Specializes LTPS-GEN for the building raft zone. Allowable settlement 50 mm for raft foundations: National Grid SA (EDD) review comments on submittal DTS-091 R03, ref. 30501201/35327-J/24 dated 13/11/2024, comment 7 (the owner asked that the contractor change the allowable settlement values to 50 mm for raft and 25 mm for isolated foundations; the contractor responded that this was complied with in the revised report), reproduced in FMSA24047-FTR-CMC-00 s.4 and s.6.2, and consistent with GBL-GT-24136 Table 12 (raft settlement at most 50 mm).</content>
+                        </Remark>
+                    </remark>
+                    <basedOnRef xlink:href="#LTPS-GEN"/>
+                    <appliesToFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#load_transfer_platform">load_transfer_platform</appliesToFeatureType>
+                </RILTPSpecification>
+            </specification>
+            <specification>
+                <RILTPSpecification gml:id="LTPS-FOOTING">
+                    <gml:name>LTP specification - isolated footing zone</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Specializes LTPS-GEN for the building isolated-footing zone. Allowable settlement 25 mm for isolated foundations - same sources as LTPS-RAFT (owner comment 7; FMSA24047-FTR-CMC-00 s.4; GBL-GT-24136 Table 12, isolated settlement at most 25 mm).</content>
+                        </Remark>
+                    </remark>
+                    <basedOnRef xlink:href="#LTPS-GEN"/>
+                    <appliesToFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#load_transfer_platform">load_transfer_platform</appliesToFeatureType>
+                </RILTPSpecification>
+            </specification>
+            <specification>
+                <PerformanceCriterion gml:id="crit-ltp-modulus-min">
+                    <remark>
+                        <Remark>
+                            <content>FMSA24047-FTR-CMC-00 s.8 (note under Table 4): "The compaction requirements for this LTP are EY > 65 MPa"; also CMC-Final-Report-Extracted.xlsx sheet 1 (Min. LTP Young modulus (Ey) > 65 MPa) and LTP_Parameters_Jazera.xlsx s.2. The source states a strict inequality, carried as gt. The report names no test method for demonstrating it: the contractor submittal response (Rev.02) proposed plate load tests on top of the LTP, but no such test is reported. The owner review comment asked that compaction be stated as a modified AASHTO density needed to obtain the required Young modulus; the contractor noted it, and the report states only the modulus, so no density criterion is modelled. The design value is 60 MPa (DesignRILTP/youngsModulus); this acceptance limit is separate. Not evaluated: there is no LTP modulus evidence.</content>
+                        </Remark>
+                    </remark>
+                    <operator>gt</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#modulus_youngs">modulus_youngs</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>65</parameterValue>
+                            <parameterUnits>MPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#LTPS-GEN"/>
+                </PerformanceCriterion>
+            </specification>
+            <specification>
+                <PerformanceCriterion gml:id="crit-ltp-settlement-raft">
+                    <remark>
+                        <Remark>
+                            <content>Allowable settlement of the foundation on the finished LTP over the CMC network (the composite of platform, columns and ground), at the 150 kPa design pressure - not a property of the platform fill alone. Source and limit: see LTPS-RAFT. Evidence is the zone load test (ZLT-201, 2.0 m x 2.0 m, BS 1377 Part 9 s.4.1, CMC 155/156/172/173, 3.36 mm at 150 kPa), which was performed on the compacted ground after the platform was built; which of the two building zones it lies in is not stated in the report. Not evaluated.</content>
+                        </Remark>
+                    </remark>
+                    <operator>le</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#settlement">settlement</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>50</parameterValue>
+                            <parameterUnits>mm</parameterUnits>
+                        </AuthorizedParameter>
+                    </limit>
+                    <evidenceCondition>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/evidenceCondition.xml#applied_pressure">applied_pressure</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>150</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </evidenceCondition>
+                    <partOfSpecificationRef xlink:href="#LTPS-RAFT"/>
+                </PerformanceCriterion>
+            </specification>
+            <specification>
+                <PerformanceCriterion gml:id="crit-ltp-settlement-footing">
+                    <remark>
+                        <Remark>
+                            <content>Allowable settlement of the foundation on the finished LTP over the CMC network, at the 150 kPa design pressure; limit 25 mm for isolated foundations. See crit-ltp-settlement-raft for what the limit applies to and for the evidence available. Not evaluated.</content>
+                        </Remark>
+                    </remark>
+                    <operator>le</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#settlement">settlement</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>25</parameterValue>
+                            <parameterUnits>mm</parameterUnits>
+                        </AuthorizedParameter>
+                    </limit>
+                    <evidenceCondition>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/evidenceCondition.xml#applied_pressure">applied_pressure</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>150</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </evidenceCondition>
+                    <partOfSpecificationRef xlink:href="#LTPS-FOOTING"/>
+                </PerformanceCriterion>
             </specification>
             <basis>
                 <RIProgramBasis gml:id="ripb-01">
@@ -859,7 +977,6 @@
         <Borehole gml:id="GBL-GT-24136_BH-1">
             <gml:name>BH-1</gml:name>
             <projectRef xlink:href="#GBL-GT-24136"/>
-            <samplingFeatureGroupRef xlink:href="#RIFS-SUB-001"/>
             <referencePoint>
                 <PointLocation srsDimension="3"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -1876,6 +1993,7 @@
         <RITreatedArea gml:id="RTA-SUB-001">
             <gml:name>Substation Treated Area</gml:name>
             <projectRef xlink:href="#GBL-GT-24136"/>
+            <samplingFeatureGroupRef xlink:href="#RIFS-SUB-001"/>
             <referencePoint>
                 <PointLocation gml:id="pl-RTA-SUB-001"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
