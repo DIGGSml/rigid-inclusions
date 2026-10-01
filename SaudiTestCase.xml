@@ -104,7 +104,7 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>Two different minimum compressive strengths appear in the project record, for different reasons, not a conflict to resolve to one number. FMSA24047-FTR-CMC-00 Table 4 (and its extracted copy, CMC-Final-Report-Extracted.xlsx) state a 25 MPa "Minimum Required Compressive Strength (per design)" - the structural design value, also the fck used in modulusDesign below, and the QA/QC pass/fail threshold the realized concrete batches were checked against (all 41 passed - see the remark below). 70-TMSS-03 Table 8B Note 1 separately sets f'c &gt;= 38 MPa for Very Severe/Severe exposure - a durability, not a structural, minimum. strengthDesign here keeps the higher, governing 38 MPa value; both are satisfied in practice, with margin.</content>
+                            <content>Three compressive strength figures appear in the project record, for different purposes. 25 MPa is the structural design value (FMSA24047-FTR-CMC-00 Table 4 and its extracted copy, CMC-Final-Report-Extracted.xlsx) - also the fck used in modulusDesign below. 30 MPa is the owner's minimum for construction, set in National Grid SA's review of submittal DTS-091 R03 (ref. 30501201/35327-J/24, 13/11/2024, comment 7: construction 30 MPa, design 25 MPa; the contractor accepted it); it is the acceptance threshold in crit-grout-strength-qc-min and crit-grout-strength-qc-mean, applied to all 41 batches because nothing in the record shows the grout design changed after the letter. 70-TMSS-03 Table 8B Note 1 separately sets f'c &gt;= 38 MPa for Very Severe/Severe exposure - a durability, not a structural, minimum. strengthDesign here keeps the higher, governing 38 MPa value; all three are satisfied in practice, with margin.</content>
                         </Remark>
                     </remark>
                     <remark>
@@ -409,7 +409,7 @@
                 <PerformanceCriterion gml:id="crit-grout-strength-qc-min">
                     <remark>
                         <Remark>
-                            <content>FMSA24047-FTR-CMC-00 Table 4 and its extracted copy, CMC-Final-Report-Extracted.xlsx sheet "7. Concrete Compressive" (A10/D10, "Minimum Required Compressive Strength (per design)" = 25 MPa) - the project's own QA/QC pass/fail threshold, checked against every one of the 41 real field batches (all 41 passed; 28-day range 40.7-54.5 MPa). A structural, not durability, minimum - contrast crit-grout-strength-durability-min below, which is higher and separately authorized.</content>
+                            <content>Owner minimum compressive strength for construction, 30 MPa: National Grid SA review of submittal DTS-091 R03, ref. 30501201/35327-J/24, 13/11/2024, comment 7 (construction 30 MPa, design 25 MPa; the contractor responded that for construction 30 MPa will be considered), in the scanned appendix of FMSA24047-FTR-CMC-00 (PDF pp.61-67). The final report and CMC-Final-Report-Extracted.xlsx sheet "7. Concrete Compressive" (A10/D10) still label the pass/fail threshold with the 25 MPa design value; the owner's higher construction value governs acceptance and is applied to all 41 field batches (all 41 satisfy it; 28-day range 40.7-54.5 MPa). A structural, not durability, minimum - contrast crit-grout-strength-durability-min below, which is higher and separately authorized.</content>
                         </Remark>
                     </remark>
                     <statistic>minimum</statistic>
@@ -419,7 +419,7 @@
                         <AuthorizedParameter>
                             <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#compressive_strength_unconfined">compressive_strength_unconfined</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>25</parameterValue>
+                            <parameterValue>30</parameterValue>
                             <parameterUnits>MPa</parameterUnits>
                         </AuthorizedParameter>
                     </limit>
@@ -467,7 +467,7 @@
                 <PerformanceCriterion gml:id="crit-grout-strength-qc-mean">
                     <remark>
                         <Remark>
-                            <content>Same authority and limit as crit-grout-strength-qc-min (CMC-Final-Report-Extracted.xlsx sheet "7. Concrete Compressive" A70/B70, "Required Min Strength (Design)" = 25), stated at the mean statistic rather than the per-batch minimum - mirroring the mean/minimum pair GroutSpecificationType's own strengthAverage/strengthMinimum fields carried before GB4 retired them in favour of sibling PerformanceCriterion objects. The 41 real batches actually achieved 46.58 MPa average (28-day, sheet7 B67) against this requirement, comfortably clearing it - the achieved value is evidence, not restated here as the limit; it belongs on the realized GroutBatch/measurement objects the still-open "realized grout batch instances" phase (NEXT_SESSION.md) will build.</content>
+                            <content>Same authority and limit as crit-grout-strength-qc-min (30 MPa, the owner construction minimum; CMC-Final-Report-Extracted.xlsx sheet "7. Concrete Compressive" A70/B70 still shows the 25 MPa design value), stated at the mean statistic rather than the per-batch minimum - mirroring the mean/minimum pair GroutSpecificationType's own strengthAverage/strengthMinimum fields carried before GB4 retired them in favour of sibling PerformanceCriterion objects. The 41 real batches actually achieved 46.58 MPa average (28-day, sheet7 B67) against this requirement, comfortably clearing it - the achieved value is evidence, not restated here as the limit; it belongs on the realized GroutBatch/measurement objects the still-open "realized grout batch instances" phase (NEXT_SESSION.md) will build.</content>
                         </Remark>
                     </remark>
                     <statistic>mean</statistic>
@@ -477,7 +477,7 @@
                         <AuthorizedParameter>
                             <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#compressive_strength_unconfined">compressive_strength_unconfined</parameterName>
                             <typeData>double</typeData>
-                            <parameterValue>25</parameterValue>
+                            <parameterValue>30</parameterValue>
                             <parameterUnits>MPa</parameterUnits>
                         </AuthorizedParameter>
                     </limit>
