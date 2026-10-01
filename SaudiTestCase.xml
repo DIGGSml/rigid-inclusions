@@ -159,7 +159,6 @@
                     <bleedDesign uom="m3/m3">0.01</bleedDesign>
                     <modulusDesign uom="kPa">10818866</modulusDesign>
                     <mudBalanceDensityDesign uom="kg/m3">2390.2</mudBalanceDensityDesign>
-                    <slumpDesign uom="mm">120</slumpDesign>
                     <specificGravityMixDesign>2.390</specificGravityMixDesign>
                     <strengthDesign uom="Pa">38000000</strengthDesign>
                 </DesignGroutMix>
@@ -488,13 +487,13 @@
                 <DesignConformanceCriterion gml:id="crit-grout-chloride-max">
                     <remark>
                         <Remark>
-                            <content>70-TMSS-03 Rev.02 Table 8B (appended to GBL-24136-Geotech-Final-Report.pdf; clean structured extraction in GBL-24136-Geotech-Report-MA .xlsx sheet "7. Chemical Analysis" row 21/F column, "Max Cl in Concrete %") - a fixed 0.10% ceiling across every exposure row regardless of admixture route. Modelled as a DesignConformanceCriterion, not a PerformanceCriterion (revised, GB5/GB6, 2026-09-28): this is a mix-composition requirement checked against what was actually batched, not a tested emergent behaviour of the cured material the way compressive strength is - see designProperty.xml#chloride_content_in_concrete's own definition for the full reasoning, including why it is a distinct subject from properties.xml#chloride_content (soil/groundwater, the exposure condition that selects this table row - not the same quantity). The property named here is chloride content in concrete, direction-neutral like every other entry in this dictionary and in properties.xml - the "maximum" is carried by operator/limit below, not baked into the property's own name (corrected, GB7, 2026-09-28, Dan's observation).</content>
+                            <content>70-TMSS-03 Rev.02 Table 8B (appended to GBL-24136-Geotech-Final-Report.pdf; clean structured extraction in GBL-24136-Geotech-Report-MA .xlsx sheet "7. Chemical Analysis" row 21/F column, "Max Cl in Concrete %") - a fixed 0.10% ceiling across every exposure row regardless of admixture route. The table extract states neither which chloride fraction nor what basis; the limit is read as the WATER-SOLUBLE chloride content, as a mass fraction of the cement (reading of the 70-TMSS-03 text supplied 2026-09-30). Acid-soluble chloride (designProperty.xml#acid_soluble_chloride_content_in_concrete) is a distinct quantity; the extract states no acid-soluble limit, so none is modelled. Modelled as a DesignConformanceCriterion, not a PerformanceCriterion (GB5/GB6): a mix-composition requirement, not an emergent behaviour of the cured material. Compliance is shown by testing (constituent materials and hardened concrete, for example ASTM C1218/C1218M), and no such test is presented for this project, so the criterion is not evaluated - see ev-grout-mix-a. The property is the water-soluble chloride content in concrete - distinct from properties.xml#chloride_content (soil/groundwater, the exposure condition that selects the Table 8B row) - direction-neutral; the "maximum" is carried by operator/limit below.</content>
                         </Remark>
                     </remark>
                     <operator>le</operator>
                     <limit>
                         <AuthorizedParameter>
-                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#chloride_content_in_concrete">chloride_content_in_concrete</parameterName>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#water_soluble_chloride_content_in_concrete">water_soluble_chloride_content_in_concrete</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.10</parameterValue>
                             <parameterUnits>%</parameterUnits>
@@ -535,6 +534,45 @@
                             <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#water_binding_material_ratio">water_binding_material_ratio</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.40</parameterValue>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#GS-MIX-A"/>
+                </DesignConformanceCriterion>
+            </specification>
+            <specification>
+                <PerformanceCriterion gml:id="crit-grout-slump">
+                    <remark>
+                        <Remark>
+                            <content>FMSA24047-FTR-CMC-00 work method statement, p.54: "Slump test shall not be lower than 180mm and not greater than 260mm", performed before placement. The method statement does not make clear whether that is once per batch or for every CMC; the criterion is stated per placement and the subject kind of a check (batch or column) would follow whichever applies. Not evaluated: the report presents no slump records. DGM-MIX-A's former slumpDesign of 120 mm was removed - it had no source in the project reports (carried over from an earlier draft) and lies outside this range; the design states no slump target of its own, the acceptance range lives here.</content>
+                        </Remark>
+                    </remark>
+                    <operator>within</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#slump">slump</parameterName>
+                            <typeData>double</typeData>
+                            <parameterMinValue>180</parameterMinValue>
+                            <parameterMaxValue>260</parameterMaxValue>
+                            <parameterUnits>mm</parameterUnits>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#GS-MIX-A"/>
+                </PerformanceCriterion>
+            </specification>
+            <specification>
+                <DesignConformanceCriterion gml:id="crit-grout-sampling-frequency">
+                    <remark>
+                        <Remark>
+                            <content>FMSA24047-FTR-CMC-00 work method statement, p.54: compressive strength testing at a minimum of 1 sampling per 100 m3 of concrete placed. Stated as a rate (0.01 per m3). Not evaluated: Appendix 5 reports one averaged strength per age per casting date and does not say how many samplings stand behind it, so the count cannot be shown. Were the samplings recorded, each would be its own sample with its specimens and tests citing it, and one check per batch (that batch the only subject, its 28-day tests the evidence) would compare the count of distinct samplings to the batch volume.</content>
+                        </Remark>
+                    </remark>
+                    <operator>ge</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#sampling_frequency">sampling_frequency</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.01</parameterValue>
+                            <parameterUnits>1/m3</parameterUnits>
                         </AuthorizedParameter>
                     </limit>
                     <partOfSpecificationRef xlink:href="#GS-MIX-A"/>
@@ -85666,7 +85704,7 @@
         </remark>
         <remark>
             <Remark>
-                <content>crit-grout-chloride-max is deliberately NOT evaluated. No chloride test or mix-constituent chloride result exists for any batch, and a design mix does not by its nature put chloride content within a limit, so there is no value to compare and a declared verdict would assert what nothing supports. The criterion remains in GS-MIX-A.</content>
+                <content>crit-grout-chloride-max (water-soluble chloride content) is deliberately NOT evaluated. Acceptance against it requires testing - of the constituent materials and of the hardened concrete - and no such test is presented for this project, so there is no value to compare; a design mix does not by its nature put chloride content within a limit, and a declared verdict would assert what nothing supports. The criterion remains in GS-MIX-A. Likewise NOT evaluated: crit-grout-slump (the report presents no slump records) and crit-grout-sampling-frequency (the number of samplings behind each reported strength is not stated).</content>
             </Remark>
         </remark>
         <remark>
