@@ -2979,7 +2979,7 @@
                 <DesignConformanceCriterion gml:id="crit-col-position">
                     <remark>
                         <Remark>
-                            <content>Freyssinet Menard work method statement FMSA-EN24313-MS-CMC Rev 00 (05/09/2024), reproduced in FMSA24047-FTR-CMC-00 Appendix 2, s.9.1, p.9 of 27 (FTR PDF pp.44, 54): "the tolerance is 200 mm in each direction". ASSUMPTION (Dan, 2026-10-03): read as a radial distance in plan, 0.20 m; the per-axis reading is available through the easting_position_deviation and northing_position_deviation dictionary entries.</content>
+                            <content>Freyssinet Menard work method statement FMSA-EN24313-MS-CMC Rev 00 (05/09/2024), reproduced in FMSA24047-FTR-CMC-00 Appendix 2, s.9.1, p.9 of 27 (FTR PDF pp.44, 54): "the tolerance is 200 mm in each direction". ASSUMPTION (Dan, 2026-10-03): read as a radial distance in plan, 0.20 m, which is what the dictionary entry position states; the per-axis reading is available through the easting_position_deviation and northing_position_deviation entries.</content>
                         </Remark>
                     </remark>
                     <remark>
@@ -2990,7 +2990,7 @@
                     <operator>le</operator>
                     <limit>
                         <AuthorizedParameter>
-                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#radial_position_deviation">radial_position_deviation</parameterName>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#position">position</parameterName>
                             <typeData>double</typeData>
                             <parameterValue>0.20</parameterValue>
                             <parameterUnits>m</parameterUnits>
