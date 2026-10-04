@@ -3046,7 +3046,7 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>Evaluated only for the six columns that have an installation record (CMC-430, CMC-1097, CMC-942, CMC-666, CMC-80, CMC-1043); each check cites the record and compares the depth the tool gained in the two minutes of downward push that end when it first reaches its maximum depth - the pause at total depth is not part of the window - with the limit. All six records are SYNTHETIC: no drilling records exist for this project, and the four rig logs at the repo root are from a different job (FMSA 25053, Jubail, 2026). Every other column has no record and is not evaluated.</content>
+                            <content>Evaluated only for the six columns that have an installation record (CMC-430, CMC-1097, CMC-942, CMC-666, CMC-80, CMC-1043); each check cites the construction activity that holds the record and compares the depth the tool gained in the two minutes of downward push that end when it first reaches its maximum depth - the pause at total depth is not part of the window - with the limit. All six records are SYNTHETIC: no drilling records exist for this project, and the four rig logs at the repo root are from a different job (FMSA 25053, Jubail, 2026). Every other column has no record and is not evaluated.</content>
                         </Remark>
                     </remark>
                     <operator>lt</operator>
@@ -102428,7 +102428,7 @@
                 <samplingFeatureRef xlink:href="#CMC-430"/>
                 <determination>derived</determination>
                 <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
-                <evidenceMeasurementRef xlink:href="#rec-CMC-430"/>
+                <evidenceConstructionActivityRef xlink:href="#rcc-CMC-430"/>
                 <observedValue>
                     <Parameter>
                         <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#penetration_over_interval">penetration_over_interval</parameterName>
@@ -122708,7 +122708,7 @@
                 <samplingFeatureRef xlink:href="#CMC-666"/>
                 <determination>derived</determination>
                 <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
-                <evidenceMeasurementRef xlink:href="#rec-CMC-666"/>
+                <evidenceConstructionActivityRef xlink:href="#rcc-CMC-666"/>
                 <observedValue>
                     <Parameter>
                         <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#penetration_over_interval">penetration_over_interval</parameterName>
@@ -149604,7 +149604,7 @@
                 <samplingFeatureRef xlink:href="#CMC-80"/>
                 <determination>derived</determination>
                 <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
-                <evidenceMeasurementRef xlink:href="#rec-CMC-80"/>
+                <evidenceConstructionActivityRef xlink:href="#rcc-CMC-80"/>
                 <observedValue>
                     <Parameter>
                         <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#penetration_over_interval">penetration_over_interval</parameterName>
@@ -166350,7 +166350,7 @@
                 <samplingFeatureRef xlink:href="#CMC-1043"/>
                 <determination>derived</determination>
                 <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
-                <evidenceMeasurementRef xlink:href="#rec-CMC-1043"/>
+                <evidenceConstructionActivityRef xlink:href="#rcc-CMC-1043"/>
                 <observedValue>
                     <Parameter>
                         <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#penetration_over_interval">penetration_over_interval</parameterName>
@@ -169516,7 +169516,7 @@
                 <samplingFeatureRef xlink:href="#CMC-942"/>
                 <determination>derived</determination>
                 <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
-                <evidenceMeasurementRef xlink:href="#rec-CMC-942"/>
+                <evidenceConstructionActivityRef xlink:href="#rcc-CMC-942"/>
                 <observedValue>
                     <Parameter>
                         <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#penetration_over_interval">penetration_over_interval</parameterName>
@@ -171842,7 +171842,7 @@
                 <samplingFeatureRef xlink:href="#CMC-1097"/>
                 <determination>derived</determination>
                 <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
-                <evidenceMeasurementRef xlink:href="#rec-CMC-1097"/>
+                <evidenceConstructionActivityRef xlink:href="#rcc-CMC-1097"/>
                 <observedValue>
                     <Parameter>
                         <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#penetration_over_interval">penetration_over_interval</parameterName>
