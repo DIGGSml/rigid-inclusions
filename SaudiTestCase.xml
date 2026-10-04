@@ -94552,7 +94552,7 @@
             <gml:name>Installation of CMC-1097</gml:name>
             <remark>
                 <Remark>
-                    <content>SYNTHETIC installation record. No Jazeera drilling record exists. The record is shaped on the four BAUER OmniBox logs from the FMSA 25053 Jubail job (depth against time, torque pressure, up and down speed) and extended with the full property suite a rig logs; values are generated from the project soil model (Default, g3) Young's modulus and unit weight, with random variation, at 1 s intervals, and are not measured data. Outdoor equipment column stopped 2 m short of its 12 m design length while still advancing: the last two minutes of push gain 0.800 m, so refusal is not shown. No termination outcome is stated: neither design depth nor refusal applies.</content>
+                    <content>SYNTHETIC installation record. No Jazeera drilling record exists. The record is shaped on the four BAUER OmniBox logs from the FMSA 25053 Jubail job (depth against time, torque pressure, up and down speed) and extended with the full property suite a rig logs; values are generated from the project soil model (Default, g3) Young's modulus and unit weight, with random variation, at 1 s intervals, and are not measured data. Outdoor equipment column stopped 2 m short of its 12 m design length while still advancing: the last two minutes of push gain 0.800 m, so refusal is not shown. Its termination outcome is stopped_short: neither design depth was reached nor refusal met, and the reason it stopped is not recorded.</content>
                 </Remark>
             </remark>
             <remark>
@@ -94795,6 +94795,7 @@
                   </results>
                 </RIInstallationRecord>
             </installationRecord>
+            <terminationOutcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/terminationOutcome.xml#stopped_short">stopped_short</terminationOutcome>
             <toeEmbedment uom="m">6.09</toeEmbedment>
             <embedmentLayerRef xlink:href="#guo-g3-cleansand"/>
             <riInstallationMethod codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/riInstallationMethod.xml#full_displacement">full_displacement</riInstallationMethod>
