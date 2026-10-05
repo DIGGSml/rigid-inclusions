@@ -2743,6 +2743,66 @@
                     <testLoadPercentDesignLoad uom="%">150</testLoadPercentDesignLoad>
                 </DesignMeasurement>
             </design>
+            <design>
+                <DesignMeasurement gml:id="dm-PIT">
+                    <gml:name>Pile integrity test design - CMC production layout test locations</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>The plan is the CMC production layout drawing EN24313-DWG-SD-6001 Rev 0 as annotated in the integrity test report (Applus Arabia, 3 February 2025; FMSA24047-FTR-CMC-00 Appendix 4, PDF p.121): 55 original test pile locations, 41 marked as used and 14 marked as not used. The 14 not used carry the reasons the drawing states: head surface not leveled (CMC-417, 476); head surface not exposed, under backfilling (CMC-902, 316, 318, 323, 325, 327, 563); crane location (CMC-53); backfilled area for ZLT (CMC-155, 200); backfill stockpile (CMC-500); not reached 7th day age (CMC-576). CMC-646 and CMC-1058 are marked as used but have no reflectogram in the report; they are taken as planned and not tested, marked as used in error (Dan, 2026-10-05). The nodes of measurementLocation are the reference points of the 55 planned columns, indexed 0 to 54 in ascending column number. Five tests were made on 28 November 2024 at locations marked as identified test locations, which are not part of the plan; of the planned locations, eleven were replaced on 21 December 2024 by new locations (and five dropped); see the realized tests.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>An earlier testing layout, EN24313-DWG-SD-8001 Rev 0 (05-09-24, issued for approval; FTR PDF pp.48 and 101), lists 10 integrity test locations PIT-201-01 to 10 (CMC-819, 962, 317, 62, 399, 37, 279, 997, 1036, 1082). It is read as superseded by the 55 location layout and is not the plan; only CMC-819, 399 and 317 were tested.</content>
+                        </Remark>
+                    </remark>
+                    <remark>
+                        <Remark>
+                            <content>The report cites no test standard. The method is a low-strain pulse echo test, the method of ASTM D5882 and of NF P94-160-2; neither is cited here as the method. Report s.2.0 and s.3.0 (FTR PDF pp.118-119): pile heads cut to sound concrete level, leveled, cleaned and smoothed by grinder; test made with a PIT Collector device, a one pound hand-held hammer with an integral cushion and an accelerometer fixed with wax; three hammer blows averaged at each test location; wave speed taken as 4000 m/s. Owner comment 8 on submittal DTS-091 asked for integrity tests for confirmation of verticality and soundness of the drilled CMCs, with a detailed method statement and acceptance criteria (FTR PDF pp.27-28); the method statement the contractor attached is not in the project record. No percentage of columns to be tested is stated.</content>
+                        </Remark>
+                    </remark>
+                    <programSpecificationRef xlink:href="#MS-PIT"/>
+                    <plannedEquipment>
+                        <Equipment gml:id="eq-PIT-hammer">
+                            <gml:name>Hand-held hammer, one pound, with integral cushion</gml:name>
+                            <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#low_strain_impact_hammer">low_strain_impact_hammer</class>
+                        </Equipment>
+                    </plannedEquipment>
+                    <plannedEquipment>
+                        <Equipment gml:id="eq-PIT-accelerometer">
+                            <gml:name>Accelerometer fixed to the pile head with wax, PIT Collector</gml:name>
+                            <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#accelerometer">accelerometer</class>
+                        </Equipment>
+                    </plannedEquipment>
+                    <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#pile_integrity_test">pile_integrity_test</measurementKind>
+                    <samplingFeatureDesignRef xlink:href="#DRC-G1"/>
+                    <samplingFeatureDesignRef xlink:href="#DRC-G1-at"/>
+                    <samplingFeatureDesignRef xlink:href="#DRC-G1-bif"/>
+                    <samplingFeatureDesignRef xlink:href="#DRC-G1-brt"/>
+                    <samplingFeatureDesignRef xlink:href="#DRC-G1-bw"/>
+                    <samplingFeatureDesignRef xlink:href="#DRC-G1-oe"/>
+                    <samplingFeatureDesignRef xlink:href="#DRC-G1-sr"/>
+                    <samplingFeatureDesignRef xlink:href="#DRC-G2"/>
+                    <samplingFeatureDesignRef xlink:href="#DRC-NG-316"/>
+                    <samplingFeatureDesignRef xlink:href="#DRC-NG-318"/>
+                    <samplingFeatureDesignRef xlink:href="#DRC-NG-930"/>
+                    <measurementLocation>
+                        <ReferenceableGridByArray gml:id="rga-dm-PIT" dimension="1" srsName="http://www.opengis.net/def/crs/EPSG/0/9357" srsDimension="2">
+                            <limits><gml:GridEnvelope><gml:low>0</gml:low><gml:high>54</gml:high></gml:GridEnvelope></limits>
+                            <axisLabels>i</axisLabels>
+                            <gml:posList>502969.730 2443927.678 502966.747 2443932.884 502962.770 2443939.825 502976.438 2443919.996 502981.156 2443915.785 502973.688 2443936.861 502969.711 2443943.803 502986.849 2443925.962 502981.877 2443934.639 502983.359 2443940.098 502995.038 2443923.740 502990.554 2443939.611 503001.979 2443927.717 503000.732 2443933.918 502997.495 2443943.588 503011.904 2443926.489 502977.740 2443950.728 502988.094 2443957.965 502993.057 2443960.809 502986.357 2443950.547 502990.865 2443953.130 502995.827 2443955.974 502997.372 2443950.719 502943.626 2443926.744 502948.597 2443918.067 502954.564 2443907.656 502958.541 2443900.715 502939.541 2443938.696 502973.729 2443895.126 502994.552 2443907.059 503011.905 2443917.003 502997.860 2443962.433 503003.826 2443952.021 503006.810 2443946.815 503010.787 2443939.874 503013.770 2443934.669 503018.742 2443925.992 502987.189 2443964.156 502953.099 2443936.588 502955.341 2443928.653 502954.854 2443921.458 502966.533 2443905.100 502966.026 2443914.030 502989.306 2443945.811 502993.609 2443969.448 502973.307 2443956.201 502955.059 2443947.819 503008.213 2443922.069 503001.539 2443922.855 502998.842 2443916.699 502992.168 2443917.485 502987.483 2443914.800 502984.787 2443908.645 502978.113 2443909.430 502970.745 2443909.691</gml:posList>
+                            <sequenceRule>Linear</sequenceRule>
+                        </ReferenceableGridByArray>
+                    </measurementLocation>
+                    <plannedProcedure>
+                        <LowStrainIntegrityTest gml:id="dm-PIT-proc">
+                            <testMethod codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/lowStrainTestMethod.xml#pulse_echo">pulse_echo</testMethod>
+                            <assumedWaveSpeed uom="m/s">4000</assumedWaveSpeed>
+                            <averagedImpactCount>3</averagedImpactCount>
+                        </LowStrainIntegrityTest>
+                    </plannedProcedure>
+                </DesignMeasurement>
+            </design>
             <specification>
                 <GroutSpecification gml:id="GS-MIX-A">
                     <gml:name>MIX-A — concrete acceptance specification</gml:name>
@@ -3419,6 +3479,147 @@
                     </limit>
                     <partOfSpecificationRef xlink:href="#MS-PLT"/>
                 </DesignConformanceCriterion>
+            </specification>
+            <specification>
+                <MeasurementSpecification gml:id="MS-PIT">
+                    <gml:name>Pile integrity test specification - rigid inclusion columns</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Requirements on the low-strain integrity tests of the CMC columns. The project record states no acceptance criterion for them: owner comment 8 on submittal DTS-091 asked for acceptance criteria (FTR PDF pp.27-28) and the report states only that a deviation of the plot from the straight line of a sound pile indicates a change in cross-section or cracks (FTR PDF p.119). The criteria that cite this specification through partOfSpecificationRef are therefore of two kinds: requirements on how the test is carried out, taken from the plan and the report (crit-pit-count, crit-pit-location, crit-pit-impacts-min), and limits on what the records show, inferred (crit-pit-toe-depth, crit-pit-flaw, crit-pit-defect, and the composite crit-pit-acceptance). A low-strain test locates major defects and gives no information on load capacity, and its classification is not by itself grounds to accept or reject a column.</content>
+                        </Remark>
+                    </remark>
+                    <appliesToFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#ri_column">ri_column</appliesToFeatureType>
+                    <appliesToMeasurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#pile_integrity_test">pile_integrity_test</appliesToMeasurementKind>
+                    <recordingParameter codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#toe_depth">toe_depth</recordingParameter>
+                    <recordingParameter codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_reflection_amplitude">relative_reflection_amplitude</recordingParameter>
+                </MeasurementSpecification>
+            </specification>
+            <specification>
+                <DesignConformanceCriterion gml:id="crit-pit-count">
+                    <remark>
+                        <Remark>
+                            <content>The plan is 55 test locations (dm-PIT). Compared with the number of integrity tests made, the realized measurements of the program with a pile_integrity_test kind: 55 were made, 39 at planned locations, 11 at locations that replaced planned ones and 5 at locations that were not in the plan.</content>
+                        </Remark>
+                    </remark>
+                    <operator>ge</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#test_count">test_count</parameterName>
+                            <typeData>integer</typeData>
+                            <parameterValue>55</parameterValue>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#MS-PIT"/>
+                </DesignConformanceCriterion>
+            </specification>
+            <specification>
+                <DesignConformanceCriterion gml:id="crit-pit-location">
+                    <remark>
+                        <Remark>
+                            <content>Each test is made at a planned location: the horizontal distance between the column tested and the planned node the test realizes (realizesGridIndex, in the grid of dm-PIT) is within the position tolerance of the columns, 0.20 m, the limit of crit-col-position (Dan, 2026-10-05). A test with no planned node is outside the limit. A test outside the limit is not rejected: the relocations were made for access or age (see the reasons recorded at the planned locations in dm-PIT) and are accepted as is.</content>
+                        </Remark>
+                    </remark>
+                    <operator>le</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#position">position</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.20</parameterValue>
+                            <parameterUnits>m</parameterUnits>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#MS-PIT"/>
+                </DesignConformanceCriterion>
+            </specification>
+            <specification>
+                <DesignConformanceCriterion gml:id="crit-pit-impacts-min">
+                    <remark>
+                        <Remark>
+                            <content>Report s.3.0 (FTR PDF p.119): three hammer blows are made at each test location and the average recorded. Three is also the smallest number of similar impacts the Piletest PET User Manual allows for an easily tested pile. Compared with the averagedImpactCount of each test's procedure; the 'Avg' of each reflectogram header states it (15 to 19).</content>
+                        </Remark>
+                    </remark>
+                    <operator>ge</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#averaged_impact_count">averaged_impact_count</parameterName>
+                            <typeData>integer</typeData>
+                            <parameterValue>3</parameterValue>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#MS-PIT"/>
+                </DesignConformanceCriterion>
+            </specification>
+            <specification>
+                <PerformanceCriterion gml:id="crit-pit-toe-depth">
+                    <remark>
+                        <Remark>
+                            <content>ASSUMPTION (Dan, 2026-10-05): the toe depth read from a record is the depth of its largest-amplitude reflection, not the length marker the software places, and is acceptable within 10 percent of the as-built column length. The assumed wave speed of 4000 m/s is uncertain by about 10 percent for concrete from one week of age (Piletest PET User Manual), and length from low-strain records by 5 to 10 percent (Webster, Rausche and Webster, 2011); a larger difference means a short column, a column that reached refusal short of design, or a wrong wave speed. Without sign; compared with the columnLength of the column tested.</content>
+                        </Remark>
+                    </remark>
+                    <operator>le</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#toe_depth_deviation">toe_depth_deviation</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>10</parameterValue>
+                            <parameterUnits>%</parameterUnits>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#MS-PIT"/>
+                </PerformanceCriterion>
+            </specification>
+            <specification>
+                <PerformanceCriterion gml:id="crit-pit-flaw">
+                    <remark>
+                        <Remark>
+                            <content>ASSUMPTION (Dan, 2026-10-05): a reflection above the toe of the same sign as the impact (a reduction in impedance: a neck, a crack or poor concrete; PDI, Interpretation of Results from a Pile Integrity Tester) whose height is more than 0.11 of the impact peak indicates a flaw to be reviewed. 0.11 is the reflection coefficient of an impedance ratio of 0.8, the limit between slightly damaged and damaged in the beta method (Rausche and Goble, 1979, as given by Likins and Rausche). A flaw is a cause for review, not for rejection. Applies to a record whose amplification balances the toe reflection against the impact (the practice for setting it, Piletest PET User Manual; PDI, Interpretation of Results from a Pile Integrity Tester): the relative height is then read as an approximation of the reflection coefficient (Z1 - Z2)/(Z1 + Z2) of the impedance change. A record that is not balanced, or shows no clear toe, is inconclusive for this criterion and is not failed by it.</content>
+                        </Remark>
+                    </remark>
+                    <operator>le</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_reflection_amplitude">relative_reflection_amplitude</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.11</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#MS-PIT"/>
+                </PerformanceCriterion>
+            </specification>
+            <specification>
+                <PerformanceCriterion gml:id="crit-pit-defect">
+                    <remark>
+                        <Remark>
+                            <content>ASSUMPTION (Dan, 2026-10-05): a reflection above the toe of the same sign as the impact whose height is more than 0.25 of the impact peak indicates a defect. 0.25 is the reflection coefficient of an impedance ratio of 0.6, the limit between damaged and broken in the beta method (Rausche and Goble, 1979, as given by Likins and Rausche). Applies to a record whose amplification balances the toe reflection against the impact (the practice for setting it, Piletest PET User Manual; PDI, Interpretation of Results from a Pile Integrity Tester): the relative height is then read as an approximation of the reflection coefficient (Z1 - Z2)/(Z1 + Z2) of the impedance change. A record that is not balanced, or shows no clear toe, is inconclusive for this criterion and is not failed by it.</content>
+                        </Remark>
+                    </remark>
+                    <operator>le</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_reflection_amplitude">relative_reflection_amplitude</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.25</parameterValue>
+                            <parameterUnits>Euc</parameterUnits>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#MS-PIT"/>
+                </PerformanceCriterion>
+            </specification>
+            <specification>
+                <CompositeAcceptanceCriterion gml:id="crit-pit-acceptance">
+                    <gml:name>Pile integrity: toe depth within tolerance AND no defect indicated</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>The two limits on what a record shows that indicate a column to be reviewed or replaced: the toe depth agrees with the as-built length, and no reflection above the toe reaches the defect limit. crit-pit-flaw is not a member: a flaw calls for review of the record, not for a failed acceptance.</content>
+                        </Remark>
+                    </remark>
+                    <appliesToFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#ri_column">ri_column</appliesToFeatureType>
+                    <logicalOperator>and</logicalOperator>
+                    <criterionRef xlink:href="#crit-pit-toe-depth"/>
+                    <criterionRef xlink:href="#crit-pit-defect"/>
+                    <partOfSpecificationRef xlink:href="#MS-PIT"/>
+                </CompositeAcceptanceCriterion>
             </specification>
             <basis>
                 <RIProgramBasis gml:id="ripb-01">
