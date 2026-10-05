@@ -95632,7 +95632,7 @@
             <remark>
                 <Remark>
                     <content>Zone load test ZLT-201 on load transfer platform zone-brt, over CMC-155, 156, 172 and 173, 22 December 2024. Gulf Consult (Gulf Laboratory for Construction Materials) job GC/10373JO/17823/24, form GFT-424, "Full Scale Load Test (BS-1377 P-9)", test no. ZLT 1 (S/Station Building), project Al Jazeera Palace S/Station, client Menard, 2.0 m x 2.0 m plate, weather fair, signed Sheik Masthan. Readings are from the handwritten field sheets, FMSA24047-FTR-CMC-00 PDF pp.80-84; the calibration certificates are PDF pp.85-99. The test was inspected and accepted by SEC-PDC (West) on RFI C-63 (FTR PDF p.61) on 22-Dec-24.
-Location: the 2D footprint is the square through the four column positions (CMC-155, 172, 173, 156; 2.00 m sides, 4.0 m2), which are the columns the plate was placed over; the plate edges themselves were not surveyed.
+Location: the footprint is the square through the four column positions (CMC-155, 172, 173, 156; 2.00 m sides, 4.0 m2), which are the columns the plate was placed over, at the top elevation of the load transfer platform (6.85 m, zone-brt elevationTopLTP); the plate edges themselves were not surveyed.
 Stresses are recorded as printed (38, 75, 113, 150, 188, 225 kPa, in a column headed "Applied Load (Kg)"); the nominal 25 % increments of the 150 kPa design pressure are 37.5, 75, 112.5, 150, 187.5 and 225 kPa, which are 150, 300, 450, 600, 750 and 900 kN on 4.0 m2 (appliedLoad). The pressure column, headed Kg/cm2, holds the jack pressure in bar (0, 53, 105, 157, 210, 262, 314 bar).
 Stages: 15 stages as in the report's Table 1 (FTR) - a zero reading at 10:10 and a 15 min wait; a seating (pre-loading) cycle, 38 kPa for 15 min then released to 0 for 15 min, headed PRE-LOADING on the sheet; then loading 38, 75, 113, 150, 188, 225 kPa, and unloading 188, 150, 113, 75, 38, 0 kPa. Hold times differ from Table 1: 38, 75 and 113 kPa were held 60 min, 150 and 188 kPa 90 min (the 60-min settlement-rate remark exceeded 0.25: "0.29 &gt; 0.25" at 150 kPa, "0.46 &gt; 0.25" at 188 kPa, and 0.03 and 0.11 at 90 min), 225 kPa 120 min; unloading stages 30 min. Rate remarks printed on the sheet, units not printed: 0.07 (38 kPa, 60 min), 0.04 (75), 0.17 (113), 0.02 (225, 120 min). The 0.25 limit is the only criterion on the sheet and its unit is not printed, so no stabilizationCriterion is recorded. Reading times 0, 1.5, 3, 5, 10, 15, 30, 60 (90, 120) min.
 Series: one series per stage, each reading with jack pressure, the four dial gauges and their mean in mm (printed in 0.01 mm), the settlement printed, and the air temperature. The outcome is the last reading of each stage. Settlement is the mean dial reading / 100 truncated to 3 decimals. The temperature is blank at 10:10.
@@ -95653,10 +95653,11 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                 </TimeInterval>
             </samplingTime>
             <monitorLocation>
-                <PlanarSurface gml:id="ps-ZLT-201" srsName="http://www.opengis.net/def/crs/EPSG/0/9357" srsDimension="2">
+                <PlanarSurface gml:id="ps-ZLT-201" srsDimension="3"
+                    srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
                     <gml:exterior>
                         <gml:LinearRing>
-                            <gml:posList>502986.849 2443925.962 502988.585 2443926.957 502987.590 2443928.692 502985.855 2443927.698 502986.849 2443925.962</gml:posList>
+                            <gml:posList>502986.849 2443925.962 6.85 502988.585 2443926.957 6.85 502987.590 2443928.692 6.85 502985.855 2443927.698 6.85 502986.849 2443925.962 6.85</gml:posList>
                         </gml:LinearRing>
                     </gml:exterior>
                 </PlanarSurface>
