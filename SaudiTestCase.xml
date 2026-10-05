@@ -173542,7 +173542,7 @@
                 </remark>
                 <remark>
                     <Remark>
-                        <content>Outcomes: 15 satisfied, 1 not satisfied. PLT-201 (m-PLT-201, CMC-942) was loaded to 2.25 kgf/cm2 = 220.65 kPa against the required 225 kPa (the other three reached 225, 225 and 294.2 kPa; a test above the minimum conforms). Every loading increment of every test was held 900 s or longer (the maximum-load increment of PLT-201, 202 and 203 longer), every test applied four or more loading increments, and the settlement gained in the last five minutes of an increment was at most 0.0167 mm (PLT-202 and PLT-204) against the 0.02 mm limit. No non-conformance is raised for PLT-201: its disposition is not recorded in any source. The crit-zlt-max-stress criterion is not evaluated; the zone load test is not yet recorded.</content>
+                        <content>Outcomes: 15 satisfied, 1 not satisfied. PLT-201 (m-PLT-201, CMC-942) was loaded to 2.25 kgf/cm2 = 220.65 kPa against the required 225 kPa (the other three reached 225, 225 and 294.2 kPa; a test above the minimum conforms). Every loading increment of every test was held 900 s or longer (the maximum-load increment of PLT-201, 202 and 203 longer), every test applied four or more loading increments, and the settlement gained in the last five minutes of an increment was at most 0.0167 mm (PLT-202 and PLT-204) against the 0.02 mm limit. The PLT-201 shortfall is recorded as non-conformance nc-PLT-201-maxstress, disposition accept as is (Dan, 2026-10-05). The crit-zlt-max-stress criterion is not evaluated; the zone load test is not yet recorded.</content>
                     </Remark>
                 </remark>
                 <projectRef xlink:href="#GBL-GT-24136"/>
@@ -173783,6 +173783,20 @@
                         </observedValue>
                     </AcceptanceCheck>
                 </acceptanceCheck>
+            <nonConformance>
+                <NonConformance gml:id="nc-PLT-201-maxstress">
+                    <gml:name>PLT-201 loaded to 220.65 kPa, below the 225 kPa minimum</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>The certificate of PLT-201 (CMC-942) states a maximum load of 2.25 kgf/cm2, which is 220.65 kPa: 4.35 kPa, 1.9 percent, below the 225 kPa (1.5 times the 150 kPa design bearing pressure) that crit-plt-max-stress requires. Disposition accept as is, recorded on Dan's instruction (2026-10-05); no source document states a decision on this test. The requirement itself is unchanged.</content>
+                        </Remark>
+                    </remark>
+                    <measurementRef xlink:href="#m-PLT-201"/>
+                    <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
+                    <breachedSpecificationRef xlink:href="#crit-plt-max-stress"/>
+                    <detectedByRef xlink:href="#ac-plt-maxstress-201"/>
+                </NonConformance>
+            </nonConformance>
         </AcceptanceEvaluation>
     </evaluation>
 </Diggs>
