@@ -3013,7 +3013,7 @@
                 <PerformanceCriterion gml:id="crit-ltp-settlement-raft">
                     <remark>
                         <Remark>
-                            <content>Allowable settlement of the foundation on the finished LTP over the CMC network (the composite of platform, columns and ground), at the 150 kPa design pressure - not a property of the platform fill alone. Source and limit: see LTPS-RAFT. Evidence is the zone load test (ZLT-201, 2.0 m x 2.0 m, BS 1377 Part 9 s.4.1, CMC 155/156/172/173, 3.36 mm at 150 kPa), which was performed on the compacted ground after the platform was built; which of the two building zones it lies in is not stated in the report. Not evaluated.</content>
+                            <content>Allowable settlement of the foundation on the finished LTP over the CMC network (the composite of platform, columns and ground), at the 150 kPa design pressure - not a property of the platform fill alone. Source and limit: see LTPS-RAFT. Evidence is the zone load test (ZLT-201, 2.0 m x 2.0 m, BS 1377 Part 9 s.4.1, CMC 155/156/172/173, 3.36 mm at 150 kPa), which was performed on the compacted ground after the platform was built, on the four columns of zone-brt. The compared value is the settlement at the criterion's 150 kPa on the loading leg of m-ZLT-201, interpolated from the loading increments by the settlement definition's value_at binding. Evaluated in ev-zone-load-test.</content>
                         </Remark>
                     </remark>
                     <operator>le</operator>
@@ -3345,7 +3345,7 @@
                 <DesignConformanceCriterion gml:id="crit-zlt-max-stress">
                     <remark>
                         <Remark>
-                            <content>The zone load test is taken to at least 150 percent of the design bearing pressure: 225 kPa, from the test report's stated maximum test pressure of 225 kN/m2 = 150 percent of the 150 kN/m2 design bearing pressure (CMC-Final-Report-Extracted.xlsx sheet 5; Dan, 2026-10-04: the report's 150 percent is accepted as the source, no zone load test method statement being in hand). Compared with the maxTestStress of the zone load test's procedure. Not evaluated: the realized zone load test is not yet recorded.</content>
+                            <content>The zone load test is taken to at least 150 percent of the design bearing pressure: 225 kPa, from the test report's stated maximum test pressure of 225 kN/m2 = 150 percent of the 150 kN/m2 design bearing pressure (CMC-Final-Report-Extracted.xlsx sheet 5; Dan, 2026-10-04: the report's 150 percent is accepted as the source, no zone load test method statement being in hand). Compared with the maxTestStress of the zone load test's procedure. Evaluated in ev-zone-load-test against m-ZLT-201: 225 kPa reached.</content>
                         </Remark>
                     </remark>
                     <operator>ge</operator>
@@ -174862,7 +174862,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                 </remark>
                 <remark>
                     <Remark>
-                        <content>Outcomes: 15 satisfied, 1 not satisfied. PLT-201 (m-PLT-201, CMC-942) was loaded to 2.25 kgf/cm2 = 220.65 kPa against the required 225 kPa (the other three reached 225, 225 and 294.2 kPa; a test above the minimum conforms). Every loading increment of every test was held 900 s or longer (the maximum-load increment of PLT-201, 202 and 203 longer), every test applied four or more loading increments, and the settlement gained in the last five minutes of an increment was at most 0.0167 mm (PLT-202 and PLT-204) against the 0.02 mm limit. The PLT-201 shortfall is recorded as non-conformance nc-PLT-201-maxstress, disposition accept as is (Dan, 2026-10-05). The crit-zlt-max-stress criterion is not evaluated; the zone load test is not yet recorded.</content>
+                        <content>Outcomes: 15 satisfied, 1 not satisfied. PLT-201 (m-PLT-201, CMC-942) was loaded to 2.25 kgf/cm2 = 220.65 kPa against the required 225 kPa (the other three reached 225, 225 and 294.2 kPa; a test above the minimum conforms). Every loading increment of every test was held 900 s or longer (the maximum-load increment of PLT-201, 202 and 203 longer), every test applied four or more loading increments, and the settlement gained in the last five minutes of an increment was at most 0.0167 mm (PLT-202 and PLT-204) against the 0.02 mm limit. The PLT-201 shortfall is recorded as non-conformance nc-PLT-201-maxstress, disposition accept as is (Dan, 2026-10-05). The zone load test is evaluated in ev-zone-load-test.</content>
                     </Remark>
                 </remark>
                 <projectRef xlink:href="#GBL-GT-24136"/>
@@ -175117,6 +175117,64 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <detectedByRef xlink:href="#ac-plt-maxstress-201"/>
                 </NonConformance>
             </nonConformance>
+        </AcceptanceEvaluation>
+    </evaluation>
+    <evaluation>
+        <AcceptanceEvaluation gml:id="ev-zone-load-test">
+            <gml:name>MS-ZLT zone load test acceptance - ZLT-201 on zone-brt</gml:name>
+            <remark>
+                <Remark>
+                    <content>Evaluation of the zone load test ZLT-201 (m-ZLT-201, CMC-155/156/172/173 on zone-brt) against crit-zlt-max-stress (MS-ZLT) and crit-ltp-settlement-raft (LTPS-RAFT), plus the owner's declared acceptance on RFI C-63. The maximum test stress is read from the test's procedure (225 kPa, 150 percent of the 150 kPa design bearing pressure; Dan, 2026-10-05). The settlement is the loading-leg settlement at the criterion's 150 kPa evidence condition, taken from the 150 kPa increment of the loading series (6 loading increments, seating cycle excluded): 3.360 mm against the 50 mm limit; the unloading leg passes 150 kPa again at 6.177 mm and is not the value. Both values were computed independently of the dictionary's bindings and checked against them (docs/build/ZLT1/checks).</content>
+                </Remark>
+            </remark>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <programRef xlink:href="#rip-01"/>
+            <acceptanceCheck>
+                <AcceptanceCheck gml:id="ac-zlt-maxstress">
+                    <criterionRef xlink:href="#crit-zlt-max-stress"/>
+                    <measurementRef xlink:href="#m-ZLT-201"/>
+                    <determination>measured</determination>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                    <observedValue>
+                        <Parameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#maximum_test_stress">maximum_test_stress</parameterName>
+                            <parameterValue>225</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </Parameter>
+                    </observedValue>
+                </AcceptanceCheck>
+            </acceptanceCheck>
+            <acceptanceCheck>
+                <AcceptanceCheck gml:id="ac-zlt-settlement-raft">
+                    <criterionRef xlink:href="#crit-ltp-settlement-raft"/>
+                    <samplingFeatureRef xlink:href="#zone-brt"/>
+                    <determination>derived</determination>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                    <evidenceMeasurementRef xlink:href="#m-ZLT-201"/>
+                    <observedValue>
+                        <Parameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#settlement">settlement</parameterName>
+                            <parameterValue>3.360</parameterValue>
+                            <parameterUnits>mm</parameterUnits>
+                        </Parameter>
+                    </observedValue>
+                </AcceptanceCheck>
+            </acceptanceCheck>
+            <acceptanceCheck>
+                <AcceptanceCheck gml:id="ac-zlt-rfi-c63">
+                    <gml:name>RFI C-63 - SEC-PDC acceptance of the zone load test</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Declared by the owner's representative. Request for Inspection C-63 (FMSA24047-FTR-CMC-00 PDF p.61), dated 21-Dec-24, inspection 22-Dec-24 4:00 PM, "Zone Load Test (ZLT) on CMC# 155, 156, 172 and 173", drawing EN24313-DWG-SD-6001: SEC-PDC (West) comment "According to the test results from the third party and allowable settlement, the test results are accepted", box APPROVED, signed 22-Dec-24. The declaration is against the allowable settlement, so it is recorded on crit-ltp-settlement-raft.</content>
+                        </Remark>
+                    </remark>
+                    <criterionRef xlink:href="#crit-ltp-settlement-raft"/>
+                    <samplingFeatureRef xlink:href="#zone-brt"/>
+                    <determination>declared</determination>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                    <checkDate>2024-12-22</checkDate>
+                </AcceptanceCheck>
+            </acceptanceCheck>
         </AcceptanceEvaluation>
     </evaluation>
 </Diggs>
