@@ -2774,7 +2774,7 @@
                             <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#accelerometer">accelerometer</class>
                         </Equipment>
                     </plannedEquipment>
-                    <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#pile_integrity_test">pile_integrity_test</measurementKind>
+                    <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#low_strain_integrity_test">low_strain_integrity_test</measurementKind>
                     <samplingFeatureDesignRef xlink:href="#DRC-G1"/>
                     <samplingFeatureDesignRef xlink:href="#DRC-G1-at"/>
                     <samplingFeatureDesignRef xlink:href="#DRC-G1-bif"/>
@@ -3489,7 +3489,7 @@
                         </Remark>
                     </remark>
                     <appliesToFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#ri_column">ri_column</appliesToFeatureType>
-                    <appliesToMeasurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#pile_integrity_test">pile_integrity_test</appliesToMeasurementKind>
+                    <appliesToMeasurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#low_strain_integrity_test">low_strain_integrity_test</appliesToMeasurementKind>
                     <recordingParameter codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#toe_depth">toe_depth</recordingParameter>
                     <recordingParameter codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_reflection_amplitude">relative_reflection_amplitude</recordingParameter>
                 </MeasurementSpecification>
@@ -3498,7 +3498,7 @@
                 <DesignConformanceCriterion gml:id="crit-pit-count">
                     <remark>
                         <Remark>
-                            <content>The plan is 55 test locations (dm-PIT). Compared with the number of integrity tests made, the realized measurements of the program with a pile_integrity_test kind: 55 were made, 39 at planned locations, 11 at locations that replaced planned ones and 5 at locations that were not in the plan.</content>
+                            <content>The plan is 55 test locations (dm-PIT). Compared with the number of integrity tests made, the realized measurements of the program with a low_strain_integrity_test kind: 55 were made, 39 at planned locations, 11 at locations that replaced planned ones and 5 at locations that were not in the plan.</content>
                         </Remark>
                     </remark>
                     <operator>ge</operator>
