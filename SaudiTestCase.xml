@@ -95586,6 +95586,1325 @@
             </procedure>
         </Monitor>
     </measurement>
+    <measurement>
+        <Monitor gml:id="m-ZLT-201">
+            <gml:name>ZLT-201 zone load test, building raft (zone-brt), CMC-155, 156, 172, 173</gml:name>
+            <role>
+                <Role>
+                    <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#laboratory_name">Laboratory</rolePerformed>
+                    <businessAssociate>
+                        <BusinessAssociate gml:id="ba-gulf-consult">
+                            <gml:name>Gulf Laboratory for Construction Materials (Gulf Consult), Al-Khobar</gml:name>
+                        </BusinessAssociate>
+                    </businessAssociate>
+                </Role>
+            </role>
+            <role>
+                <Role>
+                    <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#tester">Tested By</rolePerformed>
+                    <businessAssociate>
+                        <BusinessAssociate gml:id="ba-ZLT-tester">
+                            <gml:name>Bong Larumbe</gml:name>
+                        </BusinessAssociate>
+                    </businessAssociate>
+                </Role>
+            </role>
+            <role>
+                <Role>
+                    <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#checker">Reviewed By</rolePerformed>
+                    <businessAssociate>
+                        <BusinessAssociate gml:id="ba-ZLT-checker">
+                            <gml:name>Eric Serioza, QA/QC Engineer</gml:name>
+                        </BusinessAssociate>
+                    </businessAssociate>
+                </Role>
+            </role>
+            <role>
+                <Role>
+                    <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#approver">Approved By</rolePerformed>
+                    <businessAssociate>
+                        <BusinessAssociate gml:id="ba-ZLT-approver">
+                            <gml:name>B. Sao, Technical Manager</gml:name>
+                        </BusinessAssociate>
+                    </businessAssociate>
+                </Role>
+            </role>
+            <remark>
+                <Remark>
+                    <content>Zone load test ZLT-201 on load transfer platform zone-brt, over CMC-155, 156, 172 and 173, 22 December 2024. Gulf Consult (Gulf Laboratory for Construction Materials) job GC/10373JO/17823/24, form GFT-424, "Full Scale Load Test (BS-1377 P-9)", test no. ZLT 1 (S/Station Building), project Al Jazeera Palace S/Station, client Menard, 2.0 m x 2.0 m plate, weather fair, signed Sheik Masthan. Readings are from the handwritten field sheets, FMSA24047-FTR-CMC-00 PDF pp.80-84; the calibration certificates are PDF pp.85-99. The test was inspected and accepted by SEC-PDC (West) on RFI C-63 (FTR PDF p.61) on 22-Dec-24.
+Location: the 2D footprint is the square through the four column positions (CMC-155, 172, 173, 156; 2.00 m sides, 4.0 m2), which are the columns the plate was placed over; the plate edges themselves were not surveyed.
+Stresses are recorded as printed (38, 75, 113, 150, 188, 225 kPa, in a column headed "Applied Load (Kg)"); the nominal 25 % increments of the 150 kPa design pressure are 37.5, 75, 112.5, 150, 187.5 and 225 kPa, which are 150, 300, 450, 600, 750 and 900 kN on 4.0 m2 (appliedLoad). The pressure column, headed Kg/cm2, holds the jack pressure in bar (0, 53, 105, 157, 210, 262, 314 bar).
+Stages: 15 stages as in the report's Table 1 (FTR) - a zero reading at 10:10 and a 15 min wait; a seating (pre-loading) cycle, 38 kPa for 15 min then released to 0 for 15 min, headed PRE-LOADING on the sheet; then loading 38, 75, 113, 150, 188, 225 kPa, and unloading 188, 150, 113, 75, 38, 0 kPa. Hold times differ from Table 1: 38, 75 and 113 kPa were held 60 min, 150 and 188 kPa 90 min (the 60-min settlement-rate remark exceeded 0.25: "0.29 &gt; 0.25" at 150 kPa, "0.46 &gt; 0.25" at 188 kPa, and 0.03 and 0.11 at 90 min), 225 kPa 120 min; unloading stages 30 min. Rate remarks printed on the sheet, units not printed: 0.07 (38 kPa, 60 min), 0.04 (75), 0.17 (113), 0.02 (225, 120 min). The 0.25 limit is the only criterion on the sheet and its unit is not printed, so no stabilizationCriterion is recorded. Reading times 0, 1.5, 3, 5, 10, 15, 30, 60 (90, 120) min.
+Series: one series per stage, each reading with jack pressure, the four dial gauges and their mean in mm (printed in 0.01 mm), the settlement printed, and the air temperature. The outcome is the last reading of each stage. Settlement is the mean dial reading / 100 truncated to 3 decimals. The temperature is blank at 10:10.
+Transcription: every row's gauge readings were checked against the printed mean. Gauge cells that were illegible or disagreed with the printed mean were set to the nearest digits that reproduce the printed mean: 10:25 gauge 3 = 39; 12:59 gauge 4 = 172; 13:04 gauge 4 = 161; 14:01 gauge 1 = 256; 15:34 gauge 4 = 473; 15:41 gauge 2 = 575; 16:01 gauges 3, 4 = 400, 500; 18:04 gauge 2 = 774; 19:04 gauge 3 = 539; 19:05 gauge 1 = 460; 19:35 to 19:38 gauge 2 = 759; 21:05 and 21:06 gauge 3 = 494; 21:35 gauge 3 = 426 (second stage at 21:35); 21:40 gauge 3 = 415; 10:41 gauge 1 and 2 read 21 and 36. Where a settlement was hard to read the value computed from the mean is used: 21:35 (end of the 38 kPa unloading) is 5.465 mm from the mean 546.50, while the report's Table 1 prints 5.415 mm; and the first reading of the final unloading, 21:35, is 4.685 mm. The 150 kPa unloading stage jack pressure is 210 bar (confirmed). Settlement at the stage ends otherwise equals Table 1.
+Equipment: four STARRETT 25-4081 dial gauges GCDG-109 to 112 (the report's table prints GCGD), a WIKA Bourdon-tube pressure gauge P.G.212739-47-9, and two POWER TEAM 80225 hydraulic jacks HJGC-05 and HJGC-06; the sheets do not say which jack or whether both were used. Each carries its INAT calibration certificate (pp.86-99).
+The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51 mm; no shear failure; "PASS - well below 50 mm allowable".</content>
+                </Remark>
+            </remark>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <programRef xlink:href="#rip-01"/>
+            <programDesignRef xlink:href="#dm-ZLT-201"/>
+            <programSpecificationRef xlink:href="#MS-ZLT"/>
+            <samplingFeatureRef xlink:href="#zone-brt"/>
+            <samplingTime>
+                <TimeInterval gml:id="ti-ZLT-201">
+                    <start>2024-12-22T10:10:00+03:00</start>
+                    <end>2024-12-22T22:05:00+03:00</end>
+                </TimeInterval>
+            </samplingTime>
+            <monitorLocation>
+                <PlanarSurface gml:id="ps-ZLT-201" srsName="http://www.opengis.net/def/crs/EPSG/0/9357" srsDimension="2">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>502986.849 2443925.962 502988.585 2443926.957 502987.590 2443928.692 502985.855 2443927.698 502986.849 2443925.962</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </PlanarSurface>
+            </monitorLocation>
+            <outcome>
+                <TemporalResult gml:id="tr-ZLT-201">
+                    <timeDomain>
+                        <TimePositionList gml:id="tp-ZLT-201">
+                            <timePositionList>2024-12-22T10:10:00+03:00 2024-12-22T10:40:00+03:00 2024-12-22T10:56:00+03:00 2024-12-22T11:57:00+03:00 2024-12-22T12:58:00+03:00 2024-12-22T13:59:00+03:00 2024-12-22T15:30:00+03:00 2024-12-22T17:01:00+03:00 2024-12-22T19:04:00+03:00 2024-12-22T19:35:00+03:00 2024-12-22T20:05:00+03:00 2024-12-22T20:35:00+03:00 2024-12-22T21:05:00+03:00 2024-12-22T21:35:00+03:00 2024-12-22T22:05:00+03:00</timePositionList>
+                        </TimePositionList>
+                    </timeDomain>
+                    <results>
+                        <ResultSet>
+                            <parameters xlink:href="#pp-plt-curve-kpa"/>
+                            <dataValues cs="," ts=" " decimal=".">0,0,seating 38,0.642,seating 0,0.117,seating 38,0.717,loading 75,1.295,loading 113,2.2,loading 150,3.36,loading 188,4.732,loading 225,6.29,loading 188,6.272,unloading 150,6.177,unloading 113,5.99,unloading 75,5.797,unloading 38,5.465,unloading 0,4.51,unloading</dataValues>
+                        </ResultSet>
+                    </results>
+                </TemporalResult>
+            </outcome>
+            <procedure>
+                <ZoneLoadTest gml:id="zlt-ZLT-201">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#bs_1377_9"/>
+                    <testProcedureEquipment>
+                        <Equipment gml:id="eq-ZLT-201-plate">
+                            <gml:name>Bearing plate 2.0 m x 2.0 m</gml:name>
+                        </Equipment>
+                    </testProcedureEquipment>
+                    <testProcedureEquipment>
+                        <Equipment gml:id="eq-ZLT-201-pg">
+                            <gml:name>Pressure gauge P.G.212739-47-9</gml:name>
+                            <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#pressure_gauge">pressure_gauge</class>
+                            <make>WIKA</make>
+                            <modelNumber>Bourdon Tube</modelNumber>
+                            <serialNumber>P.G.212739-47-9</serialNumber>
+                            <calibrationAuditTrail>
+                                <Calibration gml:id="cal-INAT-024-03976">
+                                    <gml:name>Calibration certificate INAT-024-03976</gml:name>
+                                    <role>
+                                        <Role>
+                                            <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#laboratory_name">Calibration laboratory</rolePerformed>
+                                            <businessAssociate>
+                                                <BusinessAssociate gml:id="ba-INAT">
+                                                    <gml:name>International Agent Group for Calibration Laboratory Services (INAT), Al-Khobar</gml:name>
+                                                </BusinessAssociate>
+                                            </businessAssociate>
+                                        </Role>
+                                    </role>
+                                    <remark><Remark><content>Pressure gauge calibration certificate as printed. Deviation is the applied (reference) value minus the gauge setting. The points are listed in the order printed (up to 700 bar, then back down). Zero check: Pass. Acceptance/tolerance is printed truncated ("As per manufacturer specifica").</content></Remark></remark>
+                                    <calibrationData>Certificate INAT-024-03976, calibration date 2024-04-29, FTR FMSA24047-FTR-CMC-00 PDF pp.86-87.</calibrationData>
+                                    <calibrationValues>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#instrument_resolution">Instrument Resolution</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>10</parameterValue>
+                                            <parameterUnits>bar</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#maximum_expanded_uncertainty">Maximum Expanded Uncertainty</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>3.6472</parameterValue>
+                                            <parameterUnits>bar</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coverage_factor">Coverage Factor</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>2</parameterValue>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_minimum">Calibrated Range Minimum</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0</parameterValue>
+                                            <parameterUnits>bar</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_maximum">Calibrated Range Maximum</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>700</parameterValue>
+                                            <parameterUnits>bar</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#acceptance_tolerance">Acceptance Tolerance</parameterName>
+                                            <typeData>string</typeData>
+                                            <parameterValue>As per manufacturer specifications</parameterValue>
+                                        </AuthorizedParameter>
+                                    </calibrationValues>
+                                    <certificateNumber>INAT-024-03976</certificateNumber>
+                                    <date>2024-04-29</date>
+                                    <dueDate>2025-04-28</dueDate>
+                                    <calibrationMethod>
+                                        <Specification gml:id="spec-INAT-MLCP-002-EN837">
+                                            <gml:name>INAT calibration procedure M/LCP-002 (BS EN 837)</gml:name>
+                                            <standardReferenceNumber>M/LCP-002 / BS EN 837</standardReferenceNumber>
+                                        </Specification>
+                                    </calibrationMethod>
+                                    <calibrationConditions>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#ambient_temperature">Ambient Temperature</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterMinValue>19</parameterMinValue>
+                                            <parameterValue>22</parameterValue>
+                                            <parameterMaxValue>25</parameterMaxValue>
+                                            <parameterUnits>degC</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_humidity">Relative Humidity</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterMinValue>40</parameterMinValue>
+                                            <parameterValue>50</parameterValue>
+                                            <parameterMaxValue>60</parameterMaxValue>
+                                            <parameterUnits>%</parameterUnits>
+                                        </AuthorizedParameter>
+                                    </calibrationConditions>
+                                    <referenceStandard>
+                                        <Equipment gml:id="eq-std-dwt-32373">
+                                            <gml:name>Dead weight tester</gml:name>
+                                            <serialNumber>32373</serialNumber>
+                                            <calibrationAuditTrail>
+                                                <Calibration gml:id="cal-std-dwt-32373">
+                                                    <gml:name>Dead weight tester 32373 certificate</gml:name>
+                                                    <remark><Remark><content>Traceability N-C-00100, as printed in the reference-instrument table of the INAT certificates that cite it (FTR PDF pp.86-99). Only the certificate number and due date are stated.</content></Remark></remark>
+                                                    <certificateNumber>202316282</certificateNumber>
+                                                    <dueDate>2026-10-31</dueDate>
+                                                </Calibration>
+                                            </calibrationAuditTrail>
+                                        </Equipment>
+                                    </referenceStandard>
+                                    <calibrationResults>
+                                        <ResultSet>
+                                            <parameters>
+                                                <PropertyParameters gml:id="pp-cal-pressure-bar">
+                                                    <properties>
+                                                        <Property index="1">
+                                                            <propertyName>Reference value</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_reference_value">Calibration Reference Value</propertyClass>
+                                                            <uom>bar</uom>
+                                                        </Property>
+                                                        <Property index="2">
+                                                            <propertyName>Indicated value</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_indicated_value">Calibration Indicated Value</propertyClass>
+                                                            <uom>bar</uom>
+                                                        </Property>
+                                                        <Property index="3">
+                                                            <propertyName>Deviation</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_deviation">Calibration Deviation</propertyClass>
+                                                            <uom>bar</uom>
+                                                        </Property>
+                                                        <Property index="4">
+                                                            <propertyName>Expanded uncertainty</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_expanded_uncertainty">Calibration Expanded Uncertainty</propertyClass>
+                                                            <uom>bar</uom>
+                                                        </Property>
+                                                    </properties>
+                                                </PropertyParameters>
+                                            </parameters>
+                                            <dataValues cs="," ts=" " decimal=".">199.9,200,-0.1,1.516 399.9,400,-0.1,1.5162 597.3,600,-2.7,2.4372 705.3,700,5.3,2.5314 498.9,500,-1.1,3.6472 299.2,300,-0.8,1.6552 100.2,100,0.2,1.555</dataValues>
+                                        </ResultSet>
+                                    </calibrationResults>
+                                </Calibration>
+                            </calibrationAuditTrail>
+                        </Equipment>
+                    </testProcedureEquipment>
+                    <testProcedureEquipment>
+                        <Equipment gml:id="eq-ZLT-201-jack-05">
+                            <gml:name>Hydraulic jack HJGC-05</gml:name>
+                            <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#hydraulic_jack">hydraulic_jack</class>
+                            <make>POWER TEAM</make>
+                            <modelNumber>80225</modelNumber>
+                            <serialNumber>212739-47-9/HJGC-05</serialNumber>
+                            <calibrationAuditTrail>
+                                <Calibration gml:id="cal-INAT-024-03989">
+                                    <gml:name>Calibration certificate INAT-024-03989</gml:name>
+                                    <role>
+                                        <Role>
+                                            <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#laboratory_name">Calibration laboratory</rolePerformed>
+                                            <businessAssociate xlink:href="#ba-INAT"/>
+                                        </Role>
+                                    </role>
+                                    <remark><Remark><content>Hydraulic jack calibration certificate as printed. Deviation is the measured value minus the true value. The points are listed in the order printed. The jack force is calibrated against jack pressure in bar. Acceptance/tolerance is printed truncated ("As per manufacturer specifica").</content></Remark></remark>
+                                    <calibrationData>Certificate INAT-024-03989, calibration date 2024-04-29, FTR FMSA24047-FTR-CMC-00 PDF pp.88-89.</calibrationData>
+                                    <calibrationValues>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#instrument_resolution">Instrument Resolution</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>1</parameterValue>
+                                            <parameterUnits>bar</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#maximum_expanded_uncertainty">Maximum Expanded Uncertainty</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>7.76</parameterValue>
+                                            <parameterUnits>kN</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coverage_factor">Coverage Factor</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>2</parameterValue>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_minimum">Calibrated Range Minimum</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0</parameterValue>
+                                            <parameterUnits>kN</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_maximum">Calibrated Range Maximum</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>980</parameterValue>
+                                            <parameterUnits>kN</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#acceptance_tolerance">Acceptance Tolerance</parameterName>
+                                            <typeData>string</typeData>
+                                            <parameterValue>As per manufacturer specifications</parameterValue>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#jack_ram_area">Jack Ram Area</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>143</parameterValue>
+                                            <parameterUnits>cm2</parameterUnits>
+                                        </AuthorizedParameter>
+                                    </calibrationValues>
+                                    <certificateNumber>INAT-024-03989</certificateNumber>
+                                    <date>2024-04-29</date>
+                                    <dueDate>2025-04-28</dueDate>
+                                    <calibrationMethod>
+                                        <Specification gml:id="spec-INAT-MLCP-002-B301">
+                                            <gml:name>INAT calibration procedure M/LCP-002 (ASME B30.1)</gml:name>
+                                            <standardReferenceNumber>M/LCP-002 / ASME B30.1</standardReferenceNumber>
+                                        </Specification>
+                                    </calibrationMethod>
+                                    <calibrationConditions>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#ambient_temperature">Ambient Temperature</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterMinValue>19</parameterMinValue>
+                                            <parameterValue>22</parameterValue>
+                                            <parameterMaxValue>25</parameterMaxValue>
+                                            <parameterUnits>degC</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_humidity">Relative Humidity</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterMinValue>40</parameterMinValue>
+                                            <parameterValue>50</parameterValue>
+                                            <parameterMaxValue>60</parameterMaxValue>
+                                            <parameterUnits>%</parameterUnits>
+                                        </AuthorizedParameter>
+                                    </calibrationConditions>
+                                    <referenceStandard>
+                                        <Equipment gml:id="eq-std-hpi-2111113790003">
+                                            <gml:name>Digital Hi-Pressure Indicator</gml:name>
+                                            <serialNumber>2111113790003</serialNumber>
+                                            <calibrationAuditTrail>
+                                                <Calibration gml:id="cal-std-hpi-2111113790003">
+                                                    <gml:name>Digital Hi-Pressure Indicator 2111113790003 certificate</gml:name>
+                                                    <remark><Remark><content>Traceability N-C-00100, as printed in the reference-instrument table of the INAT certificates that cite it (FTR PDF pp.86-99). Only the certificate number and due date are stated.</content></Remark></remark>
+                                                    <certificateNumber>202314439</certificateNumber>
+                                                    <dueDate>2024-11-09</dueDate>
+                                                </Calibration>
+                                            </calibrationAuditTrail>
+                                        </Equipment>
+                                    </referenceStandard>
+                                    <referenceStandard>
+                                        <Equipment gml:id="eq-std-loadcell-INAT-CT-0019">
+                                            <gml:name>Load cell</gml:name>
+                                            <serialNumber>INAT-CT-0019</serialNumber>
+                                            <calibrationAuditTrail>
+                                                <Calibration gml:id="cal-std-loadcell-INAT-CT-0019">
+                                                    <gml:name>Load cell INAT-CT-0019 certificate</gml:name>
+                                                    <remark><Remark><content>Traceability 3512.06, as printed in the reference-instrument table of the INAT certificates that cite it (FTR PDF pp.86-99). Only the certificate number and due date are stated.</content></Remark></remark>
+                                                    <certificateNumber>178165-202451</certificateNumber>
+                                                    <dueDate>2024-08-08</dueDate>
+                                                </Calibration>
+                                            </calibrationAuditTrail>
+                                        </Equipment>
+                                    </referenceStandard>
+                                    <calibrationResults>
+                                        <ResultSet>
+                                            <parameters>
+                                                <PropertyParameters gml:id="pp-cal-jack-kn">
+                                                    <properties>
+                                                        <Property index="1">
+                                                            <propertyName>Reference value</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_reference_value">Calibration Reference Value</propertyClass>
+                                                            <uom>kN</uom>
+                                                        </Property>
+                                                        <Property index="2">
+                                                            <propertyName>Indicated value</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_indicated_value">Calibration Indicated Value</propertyClass>
+                                                            <uom>kN</uom>
+                                                        </Property>
+                                                        <Property index="3">
+                                                            <propertyName>Deviation</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_deviation">Calibration Deviation</propertyClass>
+                                                            <uom>kN</uom>
+                                                        </Property>
+                                                        <Property index="4">
+                                                            <propertyName>Expanded uncertainty</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_expanded_uncertainty">Calibration Expanded Uncertainty</propertyClass>
+                                                            <uom>kN</uom>
+                                                        </Property>
+                                                    </properties>
+                                                </PropertyParameters>
+                                            </parameters>
+                                            <dataValues cs="," ts=" " decimal=".">143.0,142.99,-0.01,7.32 286.0,286.03,0.03,6.24 429.0,429.13,0.13,7.34 572.0,572.01,0.01,7.44 715.0,715.12,0.12,7.54 858.0,857.93,-0.07,7.66 929.5,929.43,-0.07,7.76</dataValues>
+                                        </ResultSet>
+                                    </calibrationResults>
+                                </Calibration>
+                            </calibrationAuditTrail>
+                        </Equipment>
+                    </testProcedureEquipment>
+                    <testProcedureEquipment>
+                        <Equipment gml:id="eq-ZLT-201-jack-06">
+                            <gml:name>Hydraulic jack HJGC-06</gml:name>
+                            <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#hydraulic_jack">hydraulic_jack</class>
+                            <make>POWER TEAM</make>
+                            <modelNumber>80225</modelNumber>
+                            <serialNumber>212739-47-9/HJGC-06</serialNumber>
+                            <calibrationAuditTrail>
+                                <Calibration gml:id="cal-INAT-024-03990">
+                                    <gml:name>Calibration certificate INAT-024-03990</gml:name>
+                                    <role>
+                                        <Role>
+                                            <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#laboratory_name">Calibration laboratory</rolePerformed>
+                                            <businessAssociate xlink:href="#ba-INAT"/>
+                                        </Role>
+                                    </role>
+                                    <remark><Remark><content>Hydraulic jack calibration certificate as printed. Deviation is the measured value minus the true value. The points are listed in the order printed. The jack force is calibrated against jack pressure in bar. Acceptance/tolerance is printed truncated ("As per manufacturer specifica").</content></Remark></remark>
+                                    <calibrationData>Certificate INAT-024-03990, calibration date 2024-04-29, FTR FMSA24047-FTR-CMC-00 PDF pp.90-91.</calibrationData>
+                                    <calibrationValues>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#instrument_resolution">Instrument Resolution</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>1</parameterValue>
+                                            <parameterUnits>bar</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#maximum_expanded_uncertainty">Maximum Expanded Uncertainty</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>8.18</parameterValue>
+                                            <parameterUnits>kN</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coverage_factor">Coverage Factor</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>2</parameterValue>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_minimum">Calibrated Range Minimum</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0</parameterValue>
+                                            <parameterUnits>kN</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_maximum">Calibrated Range Maximum</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>980</parameterValue>
+                                            <parameterUnits>kN</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#acceptance_tolerance">Acceptance Tolerance</parameterName>
+                                            <typeData>string</typeData>
+                                            <parameterValue>As per manufacturer specifications</parameterValue>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#jack_ram_area">Jack Ram Area</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>143</parameterValue>
+                                            <parameterUnits>cm2</parameterUnits>
+                                        </AuthorizedParameter>
+                                    </calibrationValues>
+                                    <certificateNumber>INAT-024-03990</certificateNumber>
+                                    <date>2024-04-29</date>
+                                    <dueDate>2025-04-28</dueDate>
+                                    <calibrationMethod xlink:href="#spec-INAT-MLCP-002-B301"/>
+                                    <calibrationConditions>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#ambient_temperature">Ambient Temperature</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterMinValue>19</parameterMinValue>
+                                            <parameterValue>22</parameterValue>
+                                            <parameterMaxValue>25</parameterMaxValue>
+                                            <parameterUnits>degC</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_humidity">Relative Humidity</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterMinValue>40</parameterMinValue>
+                                            <parameterValue>50</parameterValue>
+                                            <parameterMaxValue>60</parameterMaxValue>
+                                            <parameterUnits>%</parameterUnits>
+                                        </AuthorizedParameter>
+                                    </calibrationConditions>
+                                    <referenceStandard xlink:href="#eq-std-hpi-2111113790003"/>
+                                    <referenceStandard xlink:href="#eq-std-loadcell-INAT-CT-0019"/>
+                                    <calibrationResults>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-cal-jack-kn"/>
+                                            <dataValues cs="," ts=" " decimal=".">143.0,142.63,-0.37,7.18 286.0,285.67,-0.33,7.3 429.0,429.77,0.77,7.98 572.0,571.66,-0.34,7.52 715.0,714.77,-0.23,7.64 858.0,857.27,-0.73,7.66 929.5,929.77,0.27,8.18</dataValues>
+                                        </ResultSet>
+                                    </calibrationResults>
+                                </Calibration>
+                            </calibrationAuditTrail>
+                        </Equipment>
+                    </testProcedureEquipment>
+                    <testProcedureEquipment>
+                        <Equipment gml:id="eq-ZLT-201-dg-109">
+                            <gml:name>Dial gauge GCDG-109</gml:name>
+                            <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#dial_gauge">dial_gauge</class>
+                            <make>STARRETT</make>
+                            <modelNumber>25-4081</modelNumber>
+                            <serialNumber>GCDG-109</serialNumber>
+                            <calibrationAuditTrail>
+                                <Calibration gml:id="cal-INAT-024-04845">
+                                    <gml:name>Calibration certificate INAT-024-04845</gml:name>
+                                    <role>
+                                        <Role>
+                                            <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#laboratory_name">Calibration laboratory</rolePerformed>
+                                            <businessAssociate xlink:href="#ba-INAT"/>
+                                        </Role>
+                                    </role>
+                                    <remark><Remark><content>Dial gauge calibration certificate as printed. Deviation is the measured value minus the applied value. Zero check: Pass (not stated on the GCDG-112 certificate). Acceptance/tolerance is printed truncated ("As per manufacturer specifica"). The certificate prints the serial as GCDG-nnn; the report calibration table (FTR PDF p.85) prints GCGD-nnn.</content></Remark></remark>
+                                    <calibrationData>Certificate INAT-024-04845, calibration date 2024-05-16, FTR FMSA24047-FTR-CMC-00 PDF pp.92-93.</calibrationData>
+                                    <calibrationValues>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#instrument_resolution">Instrument Resolution</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0.01</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#maximum_expanded_uncertainty">Maximum Expanded Uncertainty</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0.036</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coverage_factor">Coverage Factor</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>2</parameterValue>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_minimum">Calibrated Range Minimum</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_maximum">Calibrated Range Maximum</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>100</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#acceptance_tolerance">Acceptance Tolerance</parameterName>
+                                            <typeData>string</typeData>
+                                            <parameterValue>As per manufacturer specifications</parameterValue>
+                                        </AuthorizedParameter>
+                                    </calibrationValues>
+                                    <certificateNumber>INAT-024-04845</certificateNumber>
+                                    <date>2024-05-16</date>
+                                    <dueDate>2025-05-15</dueDate>
+                                    <calibrationMethod>
+                                        <Specification gml:id="spec-INAT-DLCP-003-B89">
+                                            <gml:name>INAT calibration procedure D/LCP-003 (ASME B89.1.10M-2021)</gml:name>
+                                            <standardReferenceNumber>D/LCP-003 / ASME B89.1.10M-2021</standardReferenceNumber>
+                                        </Specification>
+                                    </calibrationMethod>
+                                    <calibrationConditions>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#ambient_temperature">Ambient Temperature</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterMinValue>19</parameterMinValue>
+                                            <parameterValue>20</parameterValue>
+                                            <parameterMaxValue>21</parameterMaxValue>
+                                            <parameterUnits>degC</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_humidity">Relative Humidity</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>45</parameterValue>
+                                            <parameterUnits>%</parameterUnits>
+                                        </AuthorizedParameter>
+                                    </calibrationConditions>
+                                    <referenceStandard>
+                                        <Equipment gml:id="eq-std-gaugeblock-3588">
+                                            <gml:name>Gauge block with accessories</gml:name>
+                                            <serialNumber>3588</serialNumber>
+                                            <calibrationAuditTrail>
+                                                <Calibration gml:id="cal-std-gaugeblock-3588">
+                                                    <gml:name>Gauge block with accessories 3588 certificate</gml:name>
+                                                    <remark><Remark><content>Traceability CC-3638, as printed in the reference-instrument table of the INAT certificates that cite it (FTR PDF pp.86-99). Only the certificate number and due date are stated.</content></Remark></remark>
+                                                    <certificateNumber>C/01/230101</certificateNumber>
+                                                    <dueDate>2026-10-22</dueDate>
+                                                </Calibration>
+                                            </calibrationAuditTrail>
+                                        </Equipment>
+                                    </referenceStandard>
+                                    <referenceStandard>
+                                        <Equipment gml:id="eq-std-dialcal-CU6900-01">
+                                            <gml:name>Dial gauge calibrator</gml:name>
+                                            <serialNumber>CU6900-01</serialNumber>
+                                            <calibrationAuditTrail>
+                                                <Calibration gml:id="cal-std-dialcal-CU6900-01">
+                                                    <gml:name>Dial gauge calibrator CU6900-01 certificate</gml:name>
+                                                    <remark><Remark><content>Traceability N-C-00100, as printed in the reference-instrument table of the INAT certificates that cite it (FTR PDF pp.86-99). Only the certificate number and due date are stated.</content></Remark></remark>
+                                                    <certificateNumber>202312238</certificateNumber>
+                                                    <dueDate>2024-09-17</dueDate>
+                                                </Calibration>
+                                            </calibrationAuditTrail>
+                                        </Equipment>
+                                    </referenceStandard>
+                                    <calibrationResults>
+                                        <ResultSet>
+                                            <parameters>
+                                                <PropertyParameters gml:id="pp-cal-dial-mm">
+                                                    <properties>
+                                                        <Property index="1">
+                                                            <propertyName>Reference value</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_reference_value">Calibration Reference Value</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                        <Property index="2">
+                                                            <propertyName>Indicated value</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_indicated_value">Calibration Indicated Value</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                        <Property index="3">
+                                                            <propertyName>Deviation</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_deviation">Calibration Deviation</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                        <Property index="4">
+                                                            <propertyName>Expanded uncertainty</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibration_expanded_uncertainty">Calibration Expanded Uncertainty</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                    </properties>
+                                                </PropertyParameters>
+                                            </parameters>
+                                            <dataValues cs="," ts=" " decimal=".">1,1.0,0.0,0.028 5,5.0,0.0,0.03 10,9.99,-0.01,0.03 20,19.98,-0.02,0.036 30,30.0,0.0,0.03 40,40.01,0.01,0.036 50,49.99,-0.01,0.036 70,69.99,-0.01,0.028 90,90.0,0.0,0.036 100,99.98,-0.02,0.036</dataValues>
+                                        </ResultSet>
+                                    </calibrationResults>
+                                </Calibration>
+                            </calibrationAuditTrail>
+                        </Equipment>
+                    </testProcedureEquipment>
+                    <testProcedureEquipment>
+                        <Equipment gml:id="eq-ZLT-201-dg-110">
+                            <gml:name>Dial gauge GCDG-110</gml:name>
+                            <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#dial_gauge">dial_gauge</class>
+                            <make>STARRETT</make>
+                            <modelNumber>25-4081</modelNumber>
+                            <serialNumber>GCDG-110</serialNumber>
+                            <calibrationAuditTrail>
+                                <Calibration gml:id="cal-INAT-024-04846">
+                                    <gml:name>Calibration certificate INAT-024-04846</gml:name>
+                                    <role>
+                                        <Role>
+                                            <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#laboratory_name">Calibration laboratory</rolePerformed>
+                                            <businessAssociate xlink:href="#ba-INAT"/>
+                                        </Role>
+                                    </role>
+                                    <remark><Remark><content>Dial gauge calibration certificate as printed. Deviation is the measured value minus the applied value. Zero check: Pass (not stated on the GCDG-112 certificate). Acceptance/tolerance is printed truncated ("As per manufacturer specifica"). The certificate prints the serial as GCDG-nnn; the report calibration table (FTR PDF p.85) prints GCGD-nnn. Maximum expanded uncertainty is cut off at the page edge on the scan; 0.036 mm is read from the table.</content></Remark></remark>
+                                    <calibrationData>Certificate INAT-024-04846, calibration date 2024-05-16, FTR FMSA24047-FTR-CMC-00 PDF pp.94-95.</calibrationData>
+                                    <calibrationValues>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#instrument_resolution">Instrument Resolution</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0.01</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#maximum_expanded_uncertainty">Maximum Expanded Uncertainty</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0.036</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coverage_factor">Coverage Factor</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>2</parameterValue>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_minimum">Calibrated Range Minimum</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_maximum">Calibrated Range Maximum</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>100</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#acceptance_tolerance">Acceptance Tolerance</parameterName>
+                                            <typeData>string</typeData>
+                                            <parameterValue>As per manufacturer specifications</parameterValue>
+                                        </AuthorizedParameter>
+                                    </calibrationValues>
+                                    <certificateNumber>INAT-024-04846</certificateNumber>
+                                    <date>2024-05-16</date>
+                                    <dueDate>2025-05-15</dueDate>
+                                    <calibrationMethod xlink:href="#spec-INAT-DLCP-003-B89"/>
+                                    <calibrationConditions>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#ambient_temperature">Ambient Temperature</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterMinValue>19</parameterMinValue>
+                                            <parameterValue>20</parameterValue>
+                                            <parameterMaxValue>21</parameterMaxValue>
+                                            <parameterUnits>degC</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_humidity">Relative Humidity</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>45</parameterValue>
+                                            <parameterUnits>%</parameterUnits>
+                                        </AuthorizedParameter>
+                                    </calibrationConditions>
+                                    <referenceStandard xlink:href="#eq-std-gaugeblock-3588"/>
+                                    <referenceStandard xlink:href="#eq-std-dialcal-CU6900-01"/>
+                                    <calibrationResults>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-cal-dial-mm"/>
+                                            <dataValues cs="," ts=" " decimal=".">1,1.0,0.0,0.028 5,5.0,0.0,0.03 10,10.0,0.0,0.036 20,20.0,0.0,0.036 30,29.99,-0.01,0.036 40,39.99,-0.01,0.036 50,49.98,-0.02,0.03 70,69.99,-0.01,0.03 90,90.0,0.0,0.036 100,99.98,-0.02,0.03</dataValues>
+                                        </ResultSet>
+                                    </calibrationResults>
+                                </Calibration>
+                            </calibrationAuditTrail>
+                        </Equipment>
+                    </testProcedureEquipment>
+                    <testProcedureEquipment>
+                        <Equipment gml:id="eq-ZLT-201-dg-111">
+                            <gml:name>Dial gauge GCDG-111</gml:name>
+                            <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#dial_gauge">dial_gauge</class>
+                            <make>STARRETT</make>
+                            <modelNumber>25-4081</modelNumber>
+                            <serialNumber>GCDG-111</serialNumber>
+                            <calibrationAuditTrail>
+                                <Calibration gml:id="cal-INAT-024-04847">
+                                    <gml:name>Calibration certificate INAT-024-04847</gml:name>
+                                    <role>
+                                        <Role>
+                                            <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#laboratory_name">Calibration laboratory</rolePerformed>
+                                            <businessAssociate xlink:href="#ba-INAT"/>
+                                        </Role>
+                                    </role>
+                                    <remark><Remark><content>Dial gauge calibration certificate as printed. Deviation is the measured value minus the applied value. Zero check: Pass (not stated on the GCDG-112 certificate). Acceptance/tolerance is printed truncated ("As per manufacturer specifica"). The certificate prints the serial as GCDG-nnn; the report calibration table (FTR PDF p.85) prints GCGD-nnn.</content></Remark></remark>
+                                    <calibrationData>Certificate INAT-024-04847, calibration date 2024-05-16, FTR FMSA24047-FTR-CMC-00 PDF pp.96-97.</calibrationData>
+                                    <calibrationValues>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#instrument_resolution">Instrument Resolution</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0.01</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#maximum_expanded_uncertainty">Maximum Expanded Uncertainty</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0.044</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coverage_factor">Coverage Factor</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>2</parameterValue>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_minimum">Calibrated Range Minimum</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_maximum">Calibrated Range Maximum</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>100</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#acceptance_tolerance">Acceptance Tolerance</parameterName>
+                                            <typeData>string</typeData>
+                                            <parameterValue>As per manufacturer specifications</parameterValue>
+                                        </AuthorizedParameter>
+                                    </calibrationValues>
+                                    <certificateNumber>INAT-024-04847</certificateNumber>
+                                    <date>2024-05-16</date>
+                                    <dueDate>2025-05-15</dueDate>
+                                    <calibrationMethod xlink:href="#spec-INAT-DLCP-003-B89"/>
+                                    <calibrationConditions>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#ambient_temperature">Ambient Temperature</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterMinValue>19</parameterMinValue>
+                                            <parameterValue>20</parameterValue>
+                                            <parameterMaxValue>21</parameterMaxValue>
+                                            <parameterUnits>degC</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_humidity">Relative Humidity</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>45</parameterValue>
+                                            <parameterUnits>%</parameterUnits>
+                                        </AuthorizedParameter>
+                                    </calibrationConditions>
+                                    <referenceStandard xlink:href="#eq-std-gaugeblock-3588"/>
+                                    <referenceStandard xlink:href="#eq-std-dialcal-CU6900-01"/>
+                                    <calibrationResults>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-cal-dial-mm"/>
+                                            <dataValues cs="," ts=" " decimal=".">1,1.0,0.0,0.028 5,5.0,0.0,0.028 10,10.0,0.0,0.03 20,19.99,-0.01,0.03 30,29.99,-0.01,0.036 40,39.99,-0.01,0.036 50,49.99,-0.01,0.03 70,69.97,-0.03,0.03 90,90.0,0.0,0.044 100,99.97,-0.03,0.03</dataValues>
+                                        </ResultSet>
+                                    </calibrationResults>
+                                </Calibration>
+                            </calibrationAuditTrail>
+                        </Equipment>
+                    </testProcedureEquipment>
+                    <testProcedureEquipment>
+                        <Equipment gml:id="eq-ZLT-201-dg-112">
+                            <gml:name>Dial gauge GCDG-112</gml:name>
+                            <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#dial_gauge">dial_gauge</class>
+                            <make>STARRETT</make>
+                            <modelNumber>25-4081</modelNumber>
+                            <serialNumber>GCDG-112</serialNumber>
+                            <calibrationAuditTrail>
+                                <Calibration gml:id="cal-INAT-024-04848">
+                                    <gml:name>Calibration certificate INAT-024-04848</gml:name>
+                                    <role>
+                                        <Role>
+                                            <rolePerformed codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/roles.xml#laboratory_name">Calibration laboratory</rolePerformed>
+                                            <businessAssociate xlink:href="#ba-INAT"/>
+                                        </Role>
+                                    </role>
+                                    <remark><Remark><content>Dial gauge calibration certificate as printed. Deviation is the measured value minus the applied value. Zero check: Pass (not stated on the GCDG-112 certificate). Acceptance/tolerance is printed truncated ("As per manufacturer specifica"). The certificate prints the serial as GCDG-nnn; the report calibration table (FTR PDF p.85) prints GCGD-nnn.</content></Remark></remark>
+                                    <calibrationData>Certificate INAT-024-04848, calibration date 2024-05-16, FTR FMSA24047-FTR-CMC-00 PDF pp.98-99.</calibrationData>
+                                    <calibrationValues>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#instrument_resolution">Instrument Resolution</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0.01</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#maximum_expanded_uncertainty">Maximum Expanded Uncertainty</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0.044</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#coverage_factor">Coverage Factor</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>2</parameterValue>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_minimum">Calibrated Range Minimum</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>0</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#calibrated_range_maximum">Calibrated Range Maximum</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>100</parameterValue>
+                                            <parameterUnits>mm</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#acceptance_tolerance">Acceptance Tolerance</parameterName>
+                                            <typeData>string</typeData>
+                                            <parameterValue>As per manufacturer specifications</parameterValue>
+                                        </AuthorizedParameter>
+                                    </calibrationValues>
+                                    <certificateNumber>INAT-024-04848</certificateNumber>
+                                    <date>2024-05-16</date>
+                                    <dueDate>2025-05-15</dueDate>
+                                    <calibrationMethod xlink:href="#spec-INAT-DLCP-003-B89"/>
+                                    <calibrationConditions>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#ambient_temperature">Ambient Temperature</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterMinValue>19</parameterMinValue>
+                                            <parameterValue>20</parameterValue>
+                                            <parameterMaxValue>21</parameterMaxValue>
+                                            <parameterUnits>degC</parameterUnits>
+                                        </AuthorizedParameter>
+                                        <AuthorizedParameter>
+                                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_humidity">Relative Humidity</parameterName>
+                                            <typeData>double</typeData>
+                                            <parameterValue>45</parameterValue>
+                                            <parameterUnits>%</parameterUnits>
+                                        </AuthorizedParameter>
+                                    </calibrationConditions>
+                                    <referenceStandard xlink:href="#eq-std-gaugeblock-3588"/>
+                                    <referenceStandard xlink:href="#eq-std-dialcal-CU6900-01"/>
+                                    <calibrationResults>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-cal-dial-mm"/>
+                                            <dataValues cs="," ts=" " decimal=".">1,1.0,0.0,0.028 5,4.99,-0.01,0.03 10,9.99,-0.01,0.044 20,20.0,0.0,0.036 30,30.0,0.0,0.03 40,39.99,-0.01,0.03 50,50.0,0.0,0.03 70,69.99,-0.01,0.036 90,89.99,-0.01,0.036 100,99.99,-0.01,0.03</dataValues>
+                                        </ResultSet>
+                                    </calibrationResults>
+                                </Calibration>
+                            </calibrationAuditTrail>
+                        </Equipment>
+                    </testProcedureEquipment>
+                    <referenceSystem codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestReferenceSystem.xml#independent_reference_beam">independent_reference_beam</referenceSystem>
+                    <maxTestLoad uom="kN">900</maxTestLoad>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-01">
+                            <incrementNumber>1</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#seating">seating</loadingPhase>
+                            <appliedLoad uom="kN">0</appliedLoad>
+                            <holdDuration uom="min">15</holdDuration>
+                            <appliedStress uom="kPa">0</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-01">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-01">
+                                            <timePositionList>2024-12-22T10:10:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters>
+                                                <PropertyParameters gml:id="pp-zlt-readings">
+                                                    <properties>
+                                                        <Property index="1">
+                                                            <propertyName>Jack reading</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#jack_pressure">Jack Pressure</propertyClass>
+                                                            <uom>bar</uom>
+                                                        </Property>
+                                                        <Property index="2">
+                                                            <propertyName>Dial Gage 1</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#gage_reading">Gage Reading</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                        <Property index="3">
+                                                            <propertyName>Dial Gage 2</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#gage_reading">Gage Reading</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                        <Property index="4">
+                                                            <propertyName>Dial Gage 3</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#gage_reading">Gage Reading</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                        <Property index="5">
+                                                            <propertyName>Dial Gage 4</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#gage_reading">Gage Reading</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                        <Property index="6">
+                                                            <propertyName>Dial Gage Average</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#gage_reading">Gage Reading</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                        <Property index="7">
+                                                            <propertyName>Settlement</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#settlement">Settlement</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                        <Property index="8">
+                                                            <propertyName>Temperature</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#temperature">Temperature</propertyClass>
+                                                            <uom>degC</uom>
+                                                        </Property>
+                                                    </properties>
+                                                </PropertyParameters>
+                                            </parameters>
+                                            <dataValues cs="," ts=" " decimal=".">0,0,0,0,0,0,0,</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-02">
+                            <incrementNumber>2</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#seating">seating</loadingPhase>
+                            <appliedLoad uom="kN">150</appliedLoad>
+                            <holdDuration uom="min">15</holdDuration>
+                            <appliedStress uom="kPa">38</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-02">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-02">
+                                            <timePositionList>2024-12-22T10:25:00+03:00 2024-12-22T10:26:00+03:00 2024-12-22T10:28:00+03:00 2024-12-22T10:30:00+03:00 2024-12-22T10:35:00+03:00 2024-12-22T10:40:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-zlt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">53,0.5,0.7,0.39,0.41,0.5,0.5,25 53,0.53,0.75,0.42,0.48,0.545,0.545,25 53,0.54,0.78,0.45,0.5,0.5675,0.567,25 53,0.55,0.8,0.46,0.51,0.58,0.58,25 53,0.56,0.82,0.46,0.51,0.5875,0.587,25 53,0.6,0.9,0.49,0.58,0.6425,0.642,25</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-03">
+                            <incrementNumber>3</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#seating">seating</loadingPhase>
+                            <appliedLoad uom="kN">0</appliedLoad>
+                            <holdDuration uom="min">15</holdDuration>
+                            <appliedStress uom="kPa">0</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-03">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-03">
+                                            <timePositionList>2024-12-22T10:41:00+03:00 2024-12-22T10:42:00+03:00 2024-12-22T10:44:00+03:00 2024-12-22T10:46:00+03:00 2024-12-22T10:51:00+03:00 2024-12-22T10:56:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-zlt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">0,0.21,0.36,0.2,0.25,0.255,0.255,26 0,0.17,0.35,0.15,0.21,0.22,0.22,26 0,0.15,0.34,0.12,0.15,0.19,0.19,26 0,0.12,0.34,0.06,0.07,0.1475,0.147,26 0,0.1,0.34,0.04,0,0.12,0.12,26 0,0.1,0.34,0.03,0,0.1175,0.117,26</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-04">
+                            <incrementNumber>4</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <appliedLoad uom="kN">150</appliedLoad>
+                            <holdDuration uom="min">60</holdDuration>
+                            <appliedStress uom="kPa">38</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-04">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-04">
+                                            <timePositionList>2024-12-22T10:57:00+03:00 2024-12-22T10:58:00+03:00 2024-12-22T11:00:00+03:00 2024-12-22T11:02:00+03:00 2024-12-22T11:07:00+03:00 2024-12-22T11:12:00+03:00 2024-12-22T11:27:00+03:00 2024-12-22T11:57:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-zlt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">53,0.6,1.29,0.32,0.36,0.6425,0.642,27 53,0.61,1.29,0.37,0.36,0.6575,0.657,27 53,0.62,1.33,0.37,0.36,0.67,0.67,27 53,0.62,1.34,0.37,0.36,0.6725,0.672,27 53,0.65,1.39,0.37,0.36,0.6925,0.692,27 53,0.67,1.43,0.37,0.36,0.7075,0.707,27 53,0.67,1.43,0.37,0.36,0.7075,0.707,27 53,0.7,1.44,0.37,0.36,0.7175,0.717,27</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-05">
+                            <incrementNumber>5</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <appliedLoad uom="kN">300</appliedLoad>
+                            <holdDuration uom="min">60</holdDuration>
+                            <appliedStress uom="kPa">75</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-05">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-05">
+                                            <timePositionList>2024-12-22T11:58:00+03:00 2024-12-22T11:59:00+03:00 2024-12-22T12:01:00+03:00 2024-12-22T12:03:00+03:00 2024-12-22T12:08:00+03:00 2024-12-22T12:13:00+03:00 2024-12-22T12:28:00+03:00 2024-12-22T12:58:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-zlt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">105,1.17,2.19,0.77,0.86,1.2475,1.247,28 105,1.18,2.19,0.78,0.88,1.2575,1.257,28 105,1.19,2.2,0.79,0.91,1.2725,1.272,28 105,1.21,2.21,0.81,0.93,1.29,1.29,28 105,1.21,2.21,0.81,0.93,1.29,1.29,28 105,1.21,2.21,0.81,0.93,1.29,1.29,28 105,1.21,2.21,0.81,0.93,1.29,1.29,28 105,1.21,2.21,0.82,0.94,1.295,1.295,28</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-06">
+                            <incrementNumber>6</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <appliedLoad uom="kN">450</appliedLoad>
+                            <holdDuration uom="min">60</holdDuration>
+                            <appliedStress uom="kPa">113</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-06">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-06">
+                                            <timePositionList>2024-12-22T12:59:00+03:00 2024-12-22T13:00:00+03:00 2024-12-22T13:02:00+03:00 2024-12-22T13:04:00+03:00 2024-12-22T13:09:00+03:00 2024-12-22T13:14:00+03:00 2024-12-22T13:29:00+03:00 2024-12-22T13:59:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-zlt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">157,1.75,3.07,1.57,1.72,2.0275,2.027,28 157,1.78,3.08,1.59,1.76,2.0525,2.052,28 157,1.79,3.08,1.59,1.76,2.055,2.055,28 157,1.81,3.12,1.63,1.61,2.0425,2.042,28 157,1.84,3.16,1.67,1.83,2.125,2.125,28 157,1.86,3.2,1.69,1.84,2.1475,2.147,28 157,1.91,3.26,1.69,1.85,2.1775,2.177,28 157,1.95,3.26,1.73,1.86,2.2,2.2,28</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-07">
+                            <incrementNumber>7</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <appliedLoad uom="kN">600</appliedLoad>
+                            <holdDuration uom="min">90</holdDuration>
+                            <appliedStress uom="kPa">150</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-07">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-07">
+                                            <timePositionList>2024-12-22T14:00:00+03:00 2024-12-22T14:01:00+03:00 2024-12-22T14:03:00+03:00 2024-12-22T14:05:00+03:00 2024-12-22T14:10:00+03:00 2024-12-22T14:15:00+03:00 2024-12-22T14:30:00+03:00 2024-12-22T15:00:00+03:00 2024-12-22T15:30:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-zlt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">210,2.47,4.15,2.57,3.03,3.055,3.055,28 210,2.56,4.21,2.61,3.04,3.105,3.105,28 210,2.59,4.3,2.65,3.14,3.17,3.17,28 210,2.6,4.3,2.65,3.14,3.1725,3.172,28 210,2.65,4.38,2.74,3.24,3.2525,3.252,28 210,2.66,4.39,2.75,3.25,3.2625,3.262,28 210,2.7,4.4,2.84,3.35,3.3225,3.322,28 210,2.74,4.46,2.85,3.35,3.35,3.35,28 210,2.74,4.46,2.86,3.38,3.36,3.36,28</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-08">
+                            <incrementNumber>8</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <appliedLoad uom="kN">750</appliedLoad>
+                            <holdDuration uom="min">90</holdDuration>
+                            <appliedStress uom="kPa">188</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-08">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-08">
+                                            <timePositionList>2024-12-22T15:31:00+03:00 2024-12-22T15:32:00+03:00 2024-12-22T15:34:00+03:00 2024-12-22T15:36:00+03:00 2024-12-22T15:41:00+03:00 2024-12-22T15:46:00+03:00 2024-12-22T16:01:00+03:00 2024-12-22T16:31:00+03:00 2024-12-22T17:01:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-zlt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">262,3.24,5.43,3.67,4.61,4.2375,4.237,28 262,3.3,5.5,3.71,4.65,4.29,4.29,28 262,3.36,5.52,3.75,4.73,4.34,4.34,28 262,3.45,5.69,3.81,4.77,4.43,4.43,28 262,3.51,5.75,3.88,4.84,4.495,4.495,28 262,3.56,5.81,3.93,4.88,4.545,4.545,28 262,3.61,5.86,4,5,4.6175,4.617,28 262,3.64,5.9,4.1,5.17,4.7025,4.702,28 262,3.66,6,4.1,5.17,4.7325,4.732,28</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-09">
+                            <incrementNumber>9</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <appliedLoad uom="kN">900</appliedLoad>
+                            <holdDuration uom="min">120</holdDuration>
+                            <appliedStress uom="kPa">225</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-09">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-09">
+                                            <timePositionList>2024-12-22T17:04:00+03:00 2024-12-22T17:05:00+03:00 2024-12-22T17:07:00+03:00 2024-12-22T17:09:00+03:00 2024-12-22T17:14:00+03:00 2024-12-22T17:19:00+03:00 2024-12-22T17:34:00+03:00 2024-12-22T18:04:00+03:00 2024-12-22T18:34:00+03:00 2024-12-22T19:04:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-zlt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">314,4.15,7.2,4.86,6.67,5.72,5.72,27 314,4.21,7.29,4.97,6.79,5.815,5.815,27 314,4.3,7.37,5.01,6.85,5.8825,5.882,27 314,4.33,7.41,5.05,6.92,5.9275,5.927,27 314,4.38,7.46,5.1,7.01,5.9875,5.987,27 314,4.44,7.54,5.15,7.1,6.0575,6.057,27 314,4.52,7.63,5.24,7.2,6.1475,6.147,27 314,4.55,7.74,5.29,7.24,6.205,6.205,27 314,4.6,7.75,5.35,7.35,6.2625,6.262,27 314,4.62,7.77,5.39,7.38,6.29,6.29,27</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-10">
+                            <incrementNumber>10</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <appliedLoad uom="kN">750</appliedLoad>
+                            <holdDuration uom="min">30</holdDuration>
+                            <appliedStress uom="kPa">188</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-10">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-10">
+                                            <timePositionList>2024-12-22T19:05:00+03:00 2024-12-22T19:06:00+03:00 2024-12-22T19:08:00+03:00 2024-12-22T19:10:00+03:00 2024-12-22T19:15:00+03:00 2024-12-22T19:20:00+03:00 2024-12-22T19:35:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-zlt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">262,4.6,7.74,5.38,7.37,6.2725,6.272,25 262,4.6,7.74,5.38,7.37,6.2725,6.272,25 262,4.6,7.74,5.38,7.37,6.2725,6.272,25 262,4.6,7.74,5.38,7.37,6.2725,6.272,25 262,4.6,7.74,5.38,7.37,6.2725,6.272,24 262,4.6,7.74,5.38,7.37,6.2725,6.272,24 262,4.6,7.74,5.38,7.37,6.2725,6.272,24</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-11">
+                            <incrementNumber>11</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <appliedLoad uom="kN">600</appliedLoad>
+                            <holdDuration uom="min">30</holdDuration>
+                            <appliedStress uom="kPa">150</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-11">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-11">
+                                            <timePositionList>2024-12-22T19:35:00+03:00 2024-12-22T19:36:00+03:00 2024-12-22T19:38:00+03:00 2024-12-22T19:40:00+03:00 2024-12-22T19:45:00+03:00 2024-12-22T19:50:00+03:00 2024-12-22T20:05:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-zlt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">210,4.52,7.59,5.36,7.3,6.1925,6.192,24 210,4.52,7.59,5.36,7.3,6.1925,6.192,24 210,4.52,7.59,5.36,7.3,6.1925,6.192,24 210,4.51,7.58,5.36,7.29,6.185,6.185,24 210,4.5,7.57,5.36,7.28,6.1775,6.177,24 210,4.5,7.57,5.36,7.28,6.1775,6.177,24 210,4.5,7.57,5.36,7.28,6.1775,6.177,24</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-12">
+                            <incrementNumber>12</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <appliedLoad uom="kN">450</appliedLoad>
+                            <holdDuration uom="min">30</holdDuration>
+                            <appliedStress uom="kPa">113</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-12">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-12">
+                                            <timePositionList>2024-12-22T20:05:00+03:00 2024-12-22T20:06:00+03:00 2024-12-22T20:08:00+03:00 2024-12-22T20:10:00+03:00 2024-12-22T20:15:00+03:00 2024-12-22T20:20:00+03:00 2024-12-22T20:35:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-zlt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">157,4.36,7.34,5.28,7.17,6.0375,6.037,24 157,4.36,7.34,5.28,7.17,6.0375,6.037,24 157,4.36,7.34,5.28,7.17,6.0375,6.037,24 157,4.33,7.31,5.27,7.16,6.0175,6.017,24 157,4.32,7.3,5.26,7.15,6.0075,6.007,24 157,4.31,7.29,5.26,7.15,6.0025,6.002,24 157,4.3,7.27,5.25,7.14,5.99,5.99,24</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-13">
+                            <incrementNumber>13</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <appliedLoad uom="kN">300</appliedLoad>
+                            <holdDuration uom="min">30</holdDuration>
+                            <appliedStress uom="kPa">75</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-13">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-13">
+                                            <timePositionList>2024-12-22T20:35:00+03:00 2024-12-22T20:36:00+03:00 2024-12-22T20:38:00+03:00 2024-12-22T20:40:00+03:00 2024-12-22T20:45:00+03:00 2024-12-22T20:50:00+03:00 2024-12-22T21:05:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-zlt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">105,4.12,7.02,5.13,7.01,5.82,5.82,24 105,4.12,7.02,5.13,7.01,5.82,5.82,24 105,4.12,7.02,5.13,7.01,5.82,5.82,24 105,4.11,7,5.12,7,5.8075,5.807,24 105,4.1,6.99,5.12,7,5.8025,5.802,24 105,4.1,6.99,5.12,7,5.8025,5.802,24 105,4.09,6.98,5.12,7,5.7975,5.797,24</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-14">
+                            <incrementNumber>14</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <appliedLoad uom="kN">150</appliedLoad>
+                            <holdDuration uom="min">30</holdDuration>
+                            <appliedStress uom="kPa">38</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-14">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-14">
+                                            <timePositionList>2024-12-22T21:05:00+03:00 2024-12-22T21:06:00+03:00 2024-12-22T21:08:00+03:00 2024-12-22T21:10:00+03:00 2024-12-22T21:15:00+03:00 2024-12-22T21:20:00+03:00 2024-12-22T21:35:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-zlt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">53,3.81,6.52,4.94,6.7,5.4925,5.492,23 53,3.81,6.52,4.94,6.7,5.4925,5.492,23 53,3.8,6.56,4.89,6.7,5.4875,5.487,23 53,3.78,6.55,4.89,6.7,5.48,5.48,23 53,3.78,6.53,4.89,6.7,5.475,5.475,23 53,3.77,6.53,4.89,6.7,5.4725,5.472,23 53,3.76,6.52,4.89,6.69,5.465,5.465,23</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-ZLT-201-15">
+                            <incrementNumber>15</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <appliedLoad uom="kN">0</appliedLoad>
+                            <holdDuration uom="min">30</holdDuration>
+                            <appliedStress uom="kPa">0</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-ZLT-201-15">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-ZLT-201-15">
+                                            <timePositionList>2024-12-22T21:35:00+03:00 2024-12-22T21:36:00+03:00 2024-12-22T21:38:00+03:00 2024-12-22T21:40:00+03:00 2024-12-22T21:45:00+03:00 2024-12-22T21:50:00+03:00 2024-12-22T22:05:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-zlt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">0,2.85,5.51,4.26,6.12,4.685,4.685,23 0,2.82,5.48,4.23,6.1,4.6575,4.657,23 0,2.79,5.46,4.21,6.09,4.6375,4.637,23 0,2.74,5.41,4.15,6.03,4.5825,4.582,23 0,2.69,5.35,4.15,6,4.5475,4.547,23 0,2.67,5.34,4.15,5.97,4.5325,4.532,23 0,2.65,5.33,4.12,5.94,4.51,4.51,23</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <maxTestStress uom="kPa">225</maxTestStress>
+                    <plateWidth uom="m">2</plateWidth>
+                    <plateLength uom="m">2</plateLength>
+                    <plateArea uom="m2">4</plateArea>
+                    <seatingLoad uom="kN">150</seatingLoad>
+                    <loadingProcedure codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/plateBearingTestProcedure.xml#nonrepetitive">nonrepetitive</loadingProcedure>
+                    <seatingStress uom="kPa">38</seatingStress>
+                    <loadedFootprint xlink:href="#ps-ZLT-201"/>
+                    <testedColumnRef xlink:href="#CMC-155"/>
+                    <testedColumnRef xlink:href="#CMC-156"/>
+                    <testedColumnRef xlink:href="#CMC-172"/>
+                    <testedColumnRef xlink:href="#CMC-173"/>
+                </ZoneLoadTest>
+            </procedure>
+        </Monitor>
+    </measurement>
     <constructionActivity>
         <RIColumnConstruction gml:id="rcc-CMC-430">
             <gml:name>Installation of CMC-430</gml:name>
