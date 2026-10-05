@@ -3298,7 +3298,7 @@
                     <gml:name>Plate load test specification - rigid inclusion column heads</gml:name>
                     <remark>
                         <Remark>
-                            <content>Requirements on how the column-head plate load tests are carried out, from the Freyssinet Menard work method statement FMSA-EN24313-MS-CMC Rev 00 (05/09/2024) s.10, reproduced in FMSA24047-FTR-CMC-00 Appendix 2 (PDF pp.44-47). The method statement itself is cited through measurementMethod (spec-ms-cmc). The requirement the schema can check on the realized test is carried by the criterion that cites this specification through partOfSpecificationRef (crit-plt-max-stress). The method statement also states the plate, the bed, the dial gauges and the load increments and holds; those are planned values on the planned procedures of dm-PLT-201 to 204 or are not yet criteria. No criterion on the settlement the test produces exists in any source: FTR s.6.2 lists the measured settlements under a heading of allowable settlements and states no limit, and method statement s.10.2 asks only that the allowable bearing pressure and settlement be evaluated. The platform settlement limits (LTPS-RAFT, LTPS-FOOTING) apply to the platform, not to a column.</content>
+                            <content>Requirements on how the column-head plate load tests are carried out, from the Freyssinet Menard work method statement FMSA-EN24313-MS-CMC Rev 00 (05/09/2024) s.10, reproduced in FMSA24047-FTR-CMC-00 Appendix 2 (PDF pp.44-47). The method statement itself is cited through measurementMethod (spec-ms-cmc). The requirements the schema can check on the realized test are carried by the criteria that cite this specification through partOfSpecificationRef. The method statement's increments, hold and stabilization are criteria that cite this specification (crit-plt-increments-min, crit-plt-hold-min, crit-plt-stabilization); its plate, bed and dial gauges are planned values on the planned procedures of dm-PLT-201 to 204 and are not criteria. No criterion on the settlement the test produces exists in any source: FTR s.6.2 lists the measured settlements under a heading of allowable settlements and states no limit, and method statement s.10.2 asks only that the allowable bearing pressure and settlement be evaluated. The platform settlement limits (LTPS-RAFT, LTPS-FOOTING) apply to the platform, not to a column.</content>
                         </Remark>
                     </remark>
                     <appliesToFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#ri_column">ri_column</appliesToFeatureType>
@@ -3326,7 +3326,7 @@
                 <DesignConformanceCriterion gml:id="crit-plt-max-stress">
                     <remark>
                         <Remark>
-                            <content>Method statement FMSA-EN24313-MS-CMC s.10.1 item 8 (FTR PDF p.46): load "to a maximum of one and a half times design bearing pressure"; design bearing pressure 150 kN/m2 (FTR s.6.1), so 225 kPa. Read as a minimum the test must reach: a test taken above it still conforms (PLT-204 went to about 294 kPa and is flagged on its record). Compared with the maxTestStress of each plate load test's procedure, converted to kPa. The two certificates that state their loading in kgf/cm2 (PLT-201, 2.25 kgf/cm2 = 220.6 kPa; PLT-204, 3.00 kgf/cm2 = 294.2 kPa) are compared after conversion, so PLT-201's recorded 2.25 kgf/cm2 falls 4.4 kPa short of 225 kPa. Not evaluated.</content>
+                            <content>Method statement FMSA-EN24313-MS-CMC s.10.1 item 8 (FTR PDF p.46): load "to a maximum of one and a half times design bearing pressure"; design bearing pressure 150 kN/m2 (FTR s.6.1), so 225 kPa. Read as a minimum the test must reach: a test taken above it still conforms (PLT-204 went to about 294 kPa and is flagged on its record). Compared with the maxTestStress of each plate load test's procedure, converted to kPa. The two certificates that state their loading in kgf/cm2 (PLT-201, 2.25 kgf/cm2 = 220.6 kPa; PLT-204, 3.00 kgf/cm2 = 294.2 kPa) are compared after conversion, so PLT-201's recorded 2.25 kgf/cm2 falls 4.4 kPa short of 225 kPa. Evaluated in ev-load-tests.</content>
                         </Remark>
                     </remark>
                     <operator>ge</operator>
@@ -3358,6 +3358,66 @@
                         </AuthorizedParameter>
                     </limit>
                     <partOfSpecificationRef xlink:href="#MS-ZLT"/>
+                </DesignConformanceCriterion>
+            </specification>
+            <specification>
+                <DesignConformanceCriterion gml:id="crit-plt-increments-min">
+                    <remark>
+                        <Remark>
+                            <content>Freyssinet Menard work method statement FMSA-EN24313-MS-CMC Rev 00 (05/09/2024) s.10.1 items 8 and 9, reproduced in FMSA24047-FTR-CMC-00 Appendix 2 (FTR PDF p.46): "Load shall then be applied in at least three increments to a maximum of one and a half times design bearing pressure." Counts the loading increments recorded in the test's procedure; unloading increments are not counted. Evaluated in ev-load-tests.</content>
+                        </Remark>
+                    </remark>
+                    <operator>ge</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#load_increment_count">load_increment_count</parameterName>
+                            <typeData>integer</typeData>
+                            <parameterValue>3</parameterValue>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#MS-PLT"/>
+                </DesignConformanceCriterion>
+            </specification>
+            <specification>
+                <DesignConformanceCriterion gml:id="crit-plt-hold-min">
+                    <remark>
+                        <Remark>
+                            <content>Freyssinet Menard work method statement FMSA-EN24313-MS-CMC Rev 00 (05/09/2024) s.10.1 items 8 and 9, reproduced in FMSA24047-FTR-CMC-00 Appendix 2 (FTR PDF p.46): "Each load increment shall be held for a minimum of 15 minutes, and until the rate of settlement rate is less than 0.02mm per 5-minute interval." This criterion is the 15 minutes (900 s), taken from the first to the last reading of each loading increment; the shortest hold over the loading increments is compared. The stabilization half is crit-plt-stabilization. Evaluated in ev-load-tests.</content>
+                        </Remark>
+                    </remark>
+                    <statistic>minimum</statistic>
+                    <statisticScope>series</statisticScope>
+                    <operator>ge</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#increment_hold_duration">increment_hold_duration</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>900</parameterValue>
+                            <parameterUnits>s</parameterUnits>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#MS-PLT"/>
+                </DesignConformanceCriterion>
+            </specification>
+            <specification>
+                <DesignConformanceCriterion gml:id="crit-plt-stabilization">
+                    <remark>
+                        <Remark>
+                            <content>Freyssinet Menard work method statement FMSA-EN24313-MS-CMC Rev 00 (05/09/2024) s.10.1 items 8 and 9, reproduced in FMSA24047-FTR-CMC-00 Appendix 2 (FTR PDF p.46): each increment is held "until the rate of settlement rate is less than 0.02mm per 5-minute interval". Read as: at the end of each loading increment the settlement gained over the last five minutes is below 0.02 mm, and the largest of them over the loading increments is compared. The readings of an increment are three minutes apart, so the settlement five minutes before the last reading is interpolated between readings. This tests the recorded readings; the stabilizationCriterion recorded on each increment (0.004 mm/min = 0.02 mm per 5 minutes) restates the limit and is not the evidence. Evaluated in ev-load-tests.</content>
+                        </Remark>
+                    </remark>
+                    <statistic>maximum</statistic>
+                    <statisticScope>series</statisticScope>
+                    <operator>lt</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#settlement_change_last_five_minutes">settlement_change_last_five_minutes</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>0.02</parameterValue>
+                            <parameterUnits>mm</parameterUnits>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#MS-PLT"/>
                 </DesignConformanceCriterion>
             </specification>
             <basis>
@@ -173470,6 +173530,259 @@
                 <detectedByRef xlink:href="#ac-dor-CMC-1097"/>
             </NonConformance>
         </nonConformance>
+        </AcceptanceEvaluation>
+    </evaluation>
+    <evaluation>
+        <AcceptanceEvaluation gml:id="ev-load-tests">
+            <gml:name>MS-PLT plate load test acceptance - four tests</gml:name>
+                <remark>
+                    <Remark>
+                        <content>Evaluation of the four criteria attached to MS-PLT (crit-plt-max-stress, crit-plt-increments-min, crit-plt-hold-min, crit-plt-stabilization) against the four realized plate load tests m-PLT-201 to 204, from the values recorded on each test's procedure and increment readings. Each value was computed independently of the dictionary's bindings and checked against them (docs/build/PLT3). 16 checks.</content>
+                    </Remark>
+                </remark>
+                <remark>
+                    <Remark>
+                        <content>Outcomes: 15 satisfied, 1 not satisfied. PLT-201 (m-PLT-201, CMC-942) was loaded to 2.25 kgf/cm2 = 220.65 kPa against the required 225 kPa (the other three reached 225, 225 and 294.2 kPa; a test above the minimum conforms). Every loading increment of every test was held 900 s or longer (the maximum-load increment of PLT-201, 202 and 203 longer), every test applied four or more loading increments, and the settlement gained in the last five minutes of an increment was at most 0.0167 mm (PLT-202 and PLT-204) against the 0.02 mm limit. No non-conformance is raised for PLT-201: its disposition is not recorded in any source. The crit-zlt-max-stress criterion is not evaluated; the zone load test is not yet recorded.</content>
+                    </Remark>
+                </remark>
+                <projectRef xlink:href="#GBL-GT-24136"/>
+                <programRef xlink:href="#rip-01"/>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-maxstress-201">
+                        <criterionRef xlink:href="#crit-plt-max-stress"/>
+                        <measurementRef xlink:href="#m-PLT-201"/>
+                        <determination>measured</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#maximum_test_stress">maximum_test_stress</parameterName>
+                                <parameterValue>220.65</parameterValue>
+                                <parameterUnits>kPa</parameterUnits>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-incr-201">
+                        <criterionRef xlink:href="#crit-plt-increments-min"/>
+                        <measurementRef xlink:href="#m-PLT-201"/>
+                        <determination>derived</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#load_increment_count">load_increment_count</parameterName>
+                                <parameterValue>6</parameterValue>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-hold-201">
+                        <criterionRef xlink:href="#crit-plt-hold-min"/>
+                        <measurementRef xlink:href="#m-PLT-201"/>
+                        <determination>derived</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#increment_hold_duration">increment_hold_duration</parameterName>
+                                <parameterValue>900</parameterValue>
+                                <parameterUnits>s</parameterUnits>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-stab-201">
+                        <criterionRef xlink:href="#crit-plt-stabilization"/>
+                        <measurementRef xlink:href="#m-PLT-201"/>
+                        <determination>derived</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#settlement_change_last_five_minutes">settlement_change_last_five_minutes</parameterName>
+                                <parameterValue>0.0000</parameterValue>
+                                <parameterUnits>mm</parameterUnits>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-maxstress-202">
+                        <criterionRef xlink:href="#crit-plt-max-stress"/>
+                        <measurementRef xlink:href="#m-PLT-202"/>
+                        <determination>measured</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#maximum_test_stress">maximum_test_stress</parameterName>
+                                <parameterValue>225</parameterValue>
+                                <parameterUnits>kPa</parameterUnits>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-incr-202">
+                        <criterionRef xlink:href="#crit-plt-increments-min"/>
+                        <measurementRef xlink:href="#m-PLT-202"/>
+                        <determination>derived</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#load_increment_count">load_increment_count</parameterName>
+                                <parameterValue>7</parameterValue>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-hold-202">
+                        <criterionRef xlink:href="#crit-plt-hold-min"/>
+                        <measurementRef xlink:href="#m-PLT-202"/>
+                        <determination>derived</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#increment_hold_duration">increment_hold_duration</parameterName>
+                                <parameterValue>900</parameterValue>
+                                <parameterUnits>s</parameterUnits>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-stab-202">
+                        <criterionRef xlink:href="#crit-plt-stabilization"/>
+                        <measurementRef xlink:href="#m-PLT-202"/>
+                        <determination>derived</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#settlement_change_last_five_minutes">settlement_change_last_five_minutes</parameterName>
+                                <parameterValue>0.0167</parameterValue>
+                                <parameterUnits>mm</parameterUnits>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-maxstress-203">
+                        <criterionRef xlink:href="#crit-plt-max-stress"/>
+                        <measurementRef xlink:href="#m-PLT-203"/>
+                        <determination>measured</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#maximum_test_stress">maximum_test_stress</parameterName>
+                                <parameterValue>225</parameterValue>
+                                <parameterUnits>kPa</parameterUnits>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-incr-203">
+                        <criterionRef xlink:href="#crit-plt-increments-min"/>
+                        <measurementRef xlink:href="#m-PLT-203"/>
+                        <determination>derived</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#load_increment_count">load_increment_count</parameterName>
+                                <parameterValue>7</parameterValue>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-hold-203">
+                        <criterionRef xlink:href="#crit-plt-hold-min"/>
+                        <measurementRef xlink:href="#m-PLT-203"/>
+                        <determination>derived</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#increment_hold_duration">increment_hold_duration</parameterName>
+                                <parameterValue>900</parameterValue>
+                                <parameterUnits>s</parameterUnits>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-stab-203">
+                        <criterionRef xlink:href="#crit-plt-stabilization"/>
+                        <measurementRef xlink:href="#m-PLT-203"/>
+                        <determination>derived</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#settlement_change_last_five_minutes">settlement_change_last_five_minutes</parameterName>
+                                <parameterValue>0.0033</parameterValue>
+                                <parameterUnits>mm</parameterUnits>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-maxstress-204">
+                        <criterionRef xlink:href="#crit-plt-max-stress"/>
+                        <measurementRef xlink:href="#m-PLT-204"/>
+                        <determination>measured</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#maximum_test_stress">maximum_test_stress</parameterName>
+                                <parameterValue>294.20</parameterValue>
+                                <parameterUnits>kPa</parameterUnits>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-incr-204">
+                        <criterionRef xlink:href="#crit-plt-increments-min"/>
+                        <measurementRef xlink:href="#m-PLT-204"/>
+                        <determination>derived</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#load_increment_count">load_increment_count</parameterName>
+                                <parameterValue>4</parameterValue>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-hold-204">
+                        <criterionRef xlink:href="#crit-plt-hold-min"/>
+                        <measurementRef xlink:href="#m-PLT-204"/>
+                        <determination>derived</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#increment_hold_duration">increment_hold_duration</parameterName>
+                                <parameterValue>900</parameterValue>
+                                <parameterUnits>s</parameterUnits>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
+                <acceptanceCheck>
+                    <AcceptanceCheck gml:id="ac-plt-stab-204">
+                        <criterionRef xlink:href="#crit-plt-stabilization"/>
+                        <measurementRef xlink:href="#m-PLT-204"/>
+                        <determination>derived</determination>
+                        <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#satisfied">Satisfied</outcome>
+                        <observedValue>
+                            <Parameter>
+                                <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#settlement_change_last_five_minutes">settlement_change_last_five_minutes</parameterName>
+                                <parameterValue>0.0167</parameterValue>
+                                <parameterUnits>mm</parameterUnits>
+                            </Parameter>
+                        </observedValue>
+                    </AcceptanceCheck>
+                </acceptanceCheck>
         </AcceptanceEvaluation>
     </evaluation>
 </Diggs>
