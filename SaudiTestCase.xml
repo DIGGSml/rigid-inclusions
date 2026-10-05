@@ -94216,6 +94216,1134 @@
             </procedure>
         </MaterialTest>
     </measurement>
+    <measurement>
+        <Monitor gml:id="m-PLT-201">
+            <gml:name>PLT-201 plate load test, CMC-942</gml:name>
+            <remark>
+                <Remark>
+                    <content>Plate load test PLT-201 on CMC-942. Column assigned by the PLT location table on drawing FMSA24047-DWG-ABD-9001 (FMSA24047-FTR-CMC-00 PDF p.18), point 502968.101 2443953.218, which coincides with CMC-942; the report table s.6.2 labels the CMC-942 test PLT-204. Readings from the Applus certificate RBG-QCR-24-02600, test no. PLT-01, location "CMC -942", FTR Appendix 2 PDF pp.39-42, stresses as printed in kg/cm2. Dial gage readings (printed in 0.01 mm) are recorded in mm. Three readings absent from the extracted workbook are taken from the certificate: the sixth 1.87 kg/cm2 reading and the fifth and sixth readings of the final unloading to 0 kg/cm2; the times of the 12:05 and 14:26 readings are hidden by the certificate barcode and stamp and are inferred from the 3-minute reading interval. The certificate has no reading at 0 kg/cm2 before loading. Its jack capacity reads "1000.00 Kg/cm2", a pressure unit, and is not recorded. Plate diameter 60.00 cm as printed; the method statement (FMSA-EN24313-MS-CMC) gives 620 mm. The outcome is the last reading of each increment.</content>
+                </Remark>
+            </remark>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <programRef xlink:href="#rip-01"/>
+            <samplingFeatureRef xlink:href="#CMC-942"/>
+            <samplingTime>
+                <TimeInterval gml:id="ti-PLT-201">
+                    <start>2024-12-15T10:38:00+03:00</start>
+                    <end>2024-12-15T14:26:00+03:00</end>
+                </TimeInterval>
+            </samplingTime>
+            <monitorLocation xlink:href="#pl-RI-942"/>
+            <outcome>
+                <TemporalResult gml:id="tr-PLT-201">
+                    <timeDomain>
+                        <TimePositionList gml:id="tp-PLT-201">
+                            <timePositionList>2024-12-15T10:53:00+03:00 2024-12-15T11:11:00+03:00 2024-12-15T11:29:00+03:00 2024-12-15T11:47:00+03:00 2024-12-15T12:05:00+03:00 2024-12-15T13:35:00+03:00 2024-12-15T13:50:00+03:00 2024-12-15T14:08:00+03:00 2024-12-15T14:26:00+03:00</timePositionList>
+                        </TimePositionList>
+                    </timeDomain>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters gml:id="pp-plt-curve-kgfcm2">
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>Applied stress</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#applied_stress">Applied Stress</propertyClass>
+                                            <uom>kgf/cm2</uom>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Settlement</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#settlement">Settlement</propertyClass>
+                                            <uom>mm</uom>
+                                        </Property>
+                                        <Property index="3">
+                                            <propertyName>Loading phase</propertyName>
+                                            <typeData>string</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#loading_phase">Loading Phase</propertyClass>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues cs="," ts=" " decimal=".">0.38,0.05,loading 0.75,0.07,loading 1.12,0.1,loading 1.5,0.14,loading 1.87,0.16,loading 2.25,0.25,loading 1.5,0.24,unloading 0.75,0.2,unloading 0,0.11,unloading</dataValues>
+                        </ResultSet>
+                    </results>
+                </TemporalResult>
+            </outcome>
+            <procedure>
+                <PlateLoadTest gml:id="plt-PLT-201">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1194"/>
+                    <referenceSystem codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestReferenceSystem.xml#independent_reference_beam">independent_reference_beam</referenceSystem>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-201-01">
+                            <incrementNumber>1</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">0.38</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-201-01">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-201-01">
+                                            <timePositionList>2024-12-15T10:38:00+03:00 2024-12-15T10:41:00+03:00 2024-12-15T10:44:00+03:00 2024-12-15T10:47:00+03:00 2024-12-15T10:50:00+03:00 2024-12-15T10:53:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters>
+                                                <PropertyParameters gml:id="pp-plt-readings">
+                                                    <properties>
+                                                        <Property index="1">
+                                                            <propertyName>Jack reading</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#jack_pressure">Jack Pressure</propertyClass>
+                                                            <uom>bar</uom>
+                                                        </Property>
+                                                        <Property index="2">
+                                                            <propertyName>Dial Gage 1</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#gage_reading">Gage Reading</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                        <Property index="3">
+                                                            <propertyName>Dial Gage 2</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#gage_reading">Gage Reading</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                        <Property index="4">
+                                                            <propertyName>Dial Gage 3</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#gage_reading">Gage Reading</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                        <Property index="5">
+                                                            <propertyName>Dial Gage Average</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#gage_reading">Gage Reading</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                        <Property index="6">
+                                                            <propertyName>Settlement</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#settlement">Settlement</propertyClass>
+                                                            <uom>mm</uom>
+                                                        </Property>
+                                                        <Property index="7">
+                                                            <propertyName>Temperature</propertyName>
+                                                            <typeData>double</typeData>
+                                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#temperature">Temperature</propertyClass>
+                                                            <uom>degC</uom>
+                                                        </Property>
+                                                    </properties>
+                                                </PropertyParameters>
+                                            </parameters>
+                                            <dataValues cs="," ts=" " decimal=".">31.3,0.05,0.05,0.05,0.05,0.05,34 31.3,0.05,0.05,0.05,0.05,0.05,34 31.3,0.05,0.05,0.05,0.05,0.05,34 31.3,0.05,0.05,0.05,0.05,0.05,34 31.3,0.05,0.05,0.05,0.05,0.05,34 31.3,0.05,0.05,0.05,0.05,0.05,34</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-201-02">
+                            <incrementNumber>2</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">0.75</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-201-02">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-201-02">
+                                            <timePositionList>2024-12-15T10:56:00+03:00 2024-12-15T10:59:00+03:00 2024-12-15T11:02:00+03:00 2024-12-15T11:05:00+03:00 2024-12-15T11:08:00+03:00 2024-12-15T11:11:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">62.7,0.06,0.07,0.07,0.067,0.07,34 62.7,0.06,0.07,0.07,0.067,0.07,34 62.7,0.06,0.07,0.07,0.067,0.07,34 62.7,0.06,0.07,0.07,0.067,0.07,34 62.7,0.06,0.07,0.07,0.067,0.07,34 62.7,0.06,0.07,0.07,0.067,0.07,34</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-201-03">
+                            <incrementNumber>3</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">1.12</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-201-03">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-201-03">
+                                            <timePositionList>2024-12-15T11:14:00+03:00 2024-12-15T11:17:00+03:00 2024-12-15T11:20:00+03:00 2024-12-15T11:23:00+03:00 2024-12-15T11:26:00+03:00 2024-12-15T11:29:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">94,0.09,0.1,0.11,0.1,0.1,35 94,0.09,0.1,0.11,0.1,0.1,35 94,0.09,0.1,0.11,0.1,0.1,35 94,0.09,0.1,0.11,0.1,0.1,35 94,0.09,0.1,0.11,0.1,0.1,35 94,0.09,0.1,0.11,0.1,0.1,35</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-201-04">
+                            <incrementNumber>4</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">1.5</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-201-04">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-201-04">
+                                            <timePositionList>2024-12-15T11:32:00+03:00 2024-12-15T11:35:00+03:00 2024-12-15T11:38:00+03:00 2024-12-15T11:41:00+03:00 2024-12-15T11:44:00+03:00 2024-12-15T11:47:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">125.3,0.13,0.14,0.15,0.14,0.14,35 125.3,0.13,0.14,0.15,0.14,0.14,35 125.3,0.13,0.14,0.15,0.14,0.14,35 125.3,0.13,0.14,0.15,0.14,0.14,35 125.3,0.13,0.14,0.15,0.14,0.14,35 125.3,0.13,0.14,0.15,0.14,0.14,35</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-201-05">
+                            <incrementNumber>5</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">1.87</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-201-05">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-201-05">
+                                            <timePositionList>2024-12-15T11:50:00+03:00 2024-12-15T11:53:00+03:00 2024-12-15T11:56:00+03:00 2024-12-15T11:59:00+03:00 2024-12-15T12:02:00+03:00 2024-12-15T12:05:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">156.7,0.15,0.16,0.17,0.16,0.16,35 156.7,0.15,0.16,0.17,0.16,0.16,35 156.7,0.15,0.16,0.17,0.16,0.16,35 156.7,0.15,0.16,0.17,0.16,0.16,35 156.7,0.15,0.16,0.17,0.16,0.16,35 156.7,0.15,0.16,0.17,0.16,0.16,35</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-201-06">
+                            <incrementNumber>6</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">2.25</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-201-06">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-201-06">
+                                            <timePositionList>2024-12-15T12:20:00+03:00 2024-12-15T12:35:00+03:00 2024-12-15T12:50:00+03:00 2024-12-15T13:05:00+03:00 2024-12-15T13:20:00+03:00 2024-12-15T13:35:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">188,0.19,0.2,0.21,0.2,0.2,35 188,0.19,0.2,0.21,0.2,0.2,35 188,0.21,0.22,0.23,0.22,0.22,35 188,0.24,0.25,0.26,0.25,0.25,35 188,0.24,0.25,0.26,0.25,0.25,35 188,0.24,0.25,0.26,0.25,0.25,35</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-201-07">
+                            <incrementNumber>7</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">1.5</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-201-07">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-201-07">
+                                            <timePositionList>2024-12-15T13:38:00+03:00 2024-12-15T13:41:00+03:00 2024-12-15T13:44:00+03:00 2024-12-15T13:47:00+03:00 2024-12-15T13:50:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">125.3,0.23,0.24,0.25,0.24,0.24,35 125.3,0.23,0.24,0.25,0.24,0.24,35 125.3,0.23,0.24,0.25,0.24,0.24,35 125.3,0.23,0.24,0.25,0.24,0.24,35 125.3,0.23,0.24,0.25,0.24,0.24,35</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-201-08">
+                            <incrementNumber>8</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">0.75</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-201-08">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-201-08">
+                                            <timePositionList>2024-12-15T13:53:00+03:00 2024-12-15T13:56:00+03:00 2024-12-15T13:59:00+03:00 2024-12-15T14:02:00+03:00 2024-12-15T14:05:00+03:00 2024-12-15T14:08:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">62.7,0.2,0.21,0.21,0.207,0.21,35 62.7,0.19,0.2,0.2,0.197,0.2,35 62.7,0.19,0.2,0.2,0.197,0.2,35 62.7,0.19,0.2,0.2,0.197,0.2,35 62.7,0.19,0.2,0.2,0.197,0.2,35 62.7,0.19,0.2,0.2,0.197,0.2,35</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-201-09">
+                            <incrementNumber>9</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">0</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-201-09">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-201-09">
+                                            <timePositionList>2024-12-15T14:11:00+03:00 2024-12-15T14:14:00+03:00 2024-12-15T14:17:00+03:00 2024-12-15T14:20:00+03:00 2024-12-15T14:23:00+03:00 2024-12-15T14:26:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">0,0.11,0.12,0.13,0.12,0.12,35 0,0.1,0.11,0.12,0.11,0.11,35 0,0.1,0.11,0.12,0.11,0.11,35 0,0.1,0.11,0.12,0.11,0.11,35 0,0.1,0.11,0.12,0.11,0.11,35 0,0.1,0.11,0.12,0.11,0.11,35</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <maxTestStress uom="kgf/cm2">2.25</maxTestStress>
+                    <plateDiameter uom="cm">60.00</plateDiameter>
+                    <loadingProcedure codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/plateBearingTestProcedure.xml#nonrepetitive">nonrepetitive</loadingProcedure>
+                    <beddingMaterial>sand, 25 mm maximum thickness (method statement FMSA-EN24313-MS-CMC s.10.1)</beddingMaterial>
+                </PlateLoadTest>
+            </procedure>
+        </Monitor>
+    </measurement>
+    <measurement>
+        <Monitor gml:id="m-PLT-202">
+            <gml:name>PLT-202 plate load test, CMC-80</gml:name>
+            <remark>
+                <Remark>
+                    <content>Plate load test PLT-202 on CMC-80. Column assigned by the PLT location table on drawing FMSA24047-DWG-ABD-9001 (FMSA24047-FTR-CMC-00 PDF p.18), point 502968.229 2443938.343, which coincides with CMC-80. Readings from the Applus certificate REF 2024-6508, test no. PLT-02, "Pile no. 80", FTR Appendix 2 PDF pp.29-33. Dial gage readings (printed in 0.01 mm) are recorded in mm. Plate diameter 45.72 cm as printed; the method statement (FMSA-EN24313-MS-CMC) gives 620 mm. Jack capacity printed 50.00 ton. The outcome is the last reading of each increment.</content>
+                </Remark>
+            </remark>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <programRef xlink:href="#rip-01"/>
+            <samplingFeatureRef xlink:href="#CMC-80"/>
+            <samplingTime>
+                <TimeInterval gml:id="ti-PLT-202">
+                    <start>2024-12-17T14:10:00+03:00</start>
+                    <end>2024-12-17T17:43:00+03:00</end>
+                </TimeInterval>
+            </samplingTime>
+            <monitorLocation xlink:href="#pl-RI-80"/>
+            <outcome>
+                <TemporalResult gml:id="tr-PLT-202">
+                    <timeDomain>
+                        <TimePositionList gml:id="tp-PLT-202">
+                            <timePositionList>2024-12-17T14:25:00+03:00 2024-12-17T14:43:00+03:00 2024-12-17T15:01:00+03:00 2024-12-17T15:19:00+03:00 2024-12-17T15:37:00+03:00 2024-12-17T15:55:00+03:00 2024-12-17T16:58:00+03:00 2024-12-17T17:13:00+03:00 2024-12-17T17:28:00+03:00 2024-12-17T17:43:00+03:00</timePositionList>
+                        </TimePositionList>
+                    </timeDomain>
+                    <results>
+                        <ResultSet>
+                            <parameters>
+                                <PropertyParameters gml:id="pp-plt-curve-kpa">
+                                    <properties>
+                                        <Property index="1">
+                                            <propertyName>Applied stress</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#applied_stress">Applied Stress</propertyClass>
+                                            <uom>kPa</uom>
+                                        </Property>
+                                        <Property index="2">
+                                            <propertyName>Settlement</propertyName>
+                                            <typeData>double</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#settlement">Settlement</propertyClass>
+                                            <uom>mm</uom>
+                                        </Property>
+                                        <Property index="3">
+                                            <propertyName>Loading phase</propertyName>
+                                            <typeData>string</typeData>
+                                            <propertyClass codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#loading_phase">Loading Phase</propertyClass>
+                                        </Property>
+                                    </properties>
+                                </PropertyParameters>
+                            </parameters>
+                            <dataValues cs="," ts=" " decimal=".">0,0,loading 37.5,0.06,loading 75,0.09,loading 112.5,0.15,loading 150,0.21,loading 187.5,0.36,loading 225,0.61,loading 150,0.56,unloading 75,0.48,unloading 0,0.17,unloading</dataValues>
+                        </ResultSet>
+                    </results>
+                </TemporalResult>
+            </outcome>
+            <procedure>
+                <PlateLoadTest gml:id="plt-PLT-202">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1194"/>
+                    <testProcedureEquipment>
+                        <Equipment gml:id="eq-PLT-202-plate">
+                            <gml:name>Bearing plate, 45.72 cm</gml:name>
+                            <otherEquipmentProperty>
+                                <Parameter gml:id="eq-PLT-202-plate-mass">
+                                    <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#equipment_mass">Equipment Mass</parameterName>
+                                    <parameterValue>36.68</parameterValue>
+                                    <parameterUnits>kg</parameterUnits>
+                                </Parameter>
+                            </otherEquipmentProperty>
+                        </Equipment>
+                    </testProcedureEquipment>
+                    <testProcedureEquipment>
+                        <Equipment gml:id="eq-PLT-202-jack">
+                            <gml:name>Hydraulic jack, 50.00 ton</gml:name>
+                            <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#hydraulic_jack">hydraulic_jack</class>
+                            <otherEquipmentProperty>
+                                <Parameter gml:id="eq-PLT-202-jack-mass">
+                                    <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#equipment_mass">Equipment Mass</parameterName>
+                                    <parameterValue>25.0</parameterValue>
+                                    <parameterUnits>kg</parameterUnits>
+                                </Parameter>
+                            </otherEquipmentProperty>
+                        </Equipment>
+                    </testProcedureEquipment>
+                    <referenceSystem codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestReferenceSystem.xml#independent_reference_beam">independent_reference_beam</referenceSystem>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-202-01">
+                            <incrementNumber>1</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">0</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-202-01">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-202-01">
+                                            <timePositionList>2024-12-17T14:10:00+03:00 2024-12-17T14:13:00+03:00 2024-12-17T14:16:00+03:00 2024-12-17T14:19:00+03:00 2024-12-17T14:22:00+03:00 2024-12-17T14:25:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">0,0,0,0,0,0,36 0,0,0,0,0,0,36 0,0,0,0,0,0,36 0,0,0,0,0,0,36 0,0,0,0,0,0,36 0,0,0,0,0,0,36</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-202-02">
+                            <incrementNumber>2</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">37.5</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-202-02">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-202-02">
+                                            <timePositionList>2024-12-17T14:28:00+03:00 2024-12-17T14:31:00+03:00 2024-12-17T14:34:00+03:00 2024-12-17T14:37:00+03:00 2024-12-17T14:40:00+03:00 2024-12-17T14:43:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">31.4,0.05,0.06,0.07,0.06,0.06,36 31.4,0.05,0.06,0.07,0.06,0.06,36 31.4,0.05,0.06,0.07,0.06,0.06,36 31.4,0.05,0.06,0.07,0.06,0.06,36 31.4,0.05,0.06,0.07,0.06,0.06,36 31.4,0.05,0.06,0.07,0.06,0.06,36</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-202-03">
+                            <incrementNumber>3</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">75</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-202-03">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-202-03">
+                                            <timePositionList>2024-12-17T14:46:00+03:00 2024-12-17T14:49:00+03:00 2024-12-17T14:52:00+03:00 2024-12-17T14:55:00+03:00 2024-12-17T14:58:00+03:00 2024-12-17T15:01:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">62.67,0.08,0.09,0.1,0.09,0.09,37 62.67,0.08,0.09,0.1,0.09,0.09,37 62.67,0.08,0.09,0.1,0.09,0.09,37 62.67,0.08,0.09,0.1,0.09,0.09,37 62.67,0.08,0.09,0.1,0.09,0.09,37 62.67,0.08,0.09,0.1,0.09,0.09,37</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-202-04">
+                            <incrementNumber>4</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">112.5</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-202-04">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-202-04">
+                                            <timePositionList>2024-12-17T15:04:00+03:00 2024-12-17T15:07:00+03:00 2024-12-17T15:10:00+03:00 2024-12-17T15:13:00+03:00 2024-12-17T15:16:00+03:00 2024-12-17T15:19:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">94,0.14,0.15,0.16,0.15,0.15,36 94,0.14,0.15,0.16,0.15,0.15,36 94,0.14,0.15,0.16,0.15,0.15,36 94,0.14,0.15,0.16,0.15,0.15,36 94,0.14,0.15,0.16,0.15,0.15,36 94,0.14,0.15,0.16,0.15,0.15,36</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-202-05">
+                            <incrementNumber>5</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">150</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-202-05">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-202-05">
+                                            <timePositionList>2024-12-17T15:22:00+03:00 2024-12-17T15:25:00+03:00 2024-12-17T15:28:00+03:00 2024-12-17T15:31:00+03:00 2024-12-17T15:34:00+03:00 2024-12-17T15:37:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">125.3,0.2,0.21,0.22,0.21,0.21,35 125.3,0.2,0.21,0.22,0.21,0.21,35 125.3,0.2,0.21,0.22,0.21,0.21,35 125.3,0.2,0.21,0.22,0.21,0.21,35 125.3,0.2,0.21,0.22,0.21,0.21,35 125.3,0.2,0.21,0.22,0.21,0.21,35</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-202-06">
+                            <incrementNumber>6</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">187.5</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-202-06">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-202-06">
+                                            <timePositionList>2024-12-17T15:40:00+03:00 2024-12-17T15:43:00+03:00 2024-12-17T15:46:00+03:00 2024-12-17T15:49:00+03:00 2024-12-17T15:52:00+03:00 2024-12-17T15:55:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">156.7,0.3,0.31,0.32,0.31,0.31,35 156.7,0.31,0.32,0.33,0.32,0.32,35 156.7,0.32,0.33,0.34,0.33,0.33,35 156.7,0.34,0.34,0.35,0.343,0.34,35 156.7,0.35,0.35,0.36,0.353,0.35,35 156.7,0.36,0.36,0.37,0.363,0.36,35</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-202-07">
+                            <incrementNumber>7</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">225</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-202-07">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-202-07">
+                                            <timePositionList>2024-12-17T15:58:00+03:00 2024-12-17T16:13:00+03:00 2024-12-17T16:28:00+03:00 2024-12-17T16:43:00+03:00 2024-12-17T16:58:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">188,0.56,0.57,0.58,0.57,0.57,35 188,0.57,0.58,0.59,0.58,0.58,35 188,0.58,0.59,0.6,0.59,0.59,35 188,0.59,0.6,0.61,0.6,0.6,35 188,0.6,0.61,0.62,0.61,0.61,35</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-202-08">
+                            <incrementNumber>8</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">150</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-202-08">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-202-08">
+                                            <timePositionList>2024-12-17T17:01:00+03:00 2024-12-17T17:04:00+03:00 2024-12-17T17:07:00+03:00 2024-12-17T17:10:00+03:00 2024-12-17T17:13:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">125.3,0.55,0.56,0.57,0.56,0.56,34 125.3,0.55,0.56,0.57,0.56,0.56,34 125.3,0.55,0.56,0.57,0.56,0.56,34 125.3,0.55,0.56,0.57,0.56,0.56,34 125.3,0.55,0.56,0.57,0.56,0.56,34</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-202-09">
+                            <incrementNumber>9</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">75</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-202-09">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-202-09">
+                                            <timePositionList>2024-12-17T17:16:00+03:00 2024-12-17T17:19:00+03:00 2024-12-17T17:22:00+03:00 2024-12-17T17:25:00+03:00 2024-12-17T17:28:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">62.7,0.48,0.49,0.5,0.49,0.49,37 62.7,0.48,0.49,0.49,0.487,0.49,37 62.7,0.48,0.49,0.48,0.483,0.48,37 62.7,0.48,0.49,0.47,0.48,0.48,37 62.7,0.48,0.49,0.47,0.48,0.48,37</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-202-10">
+                            <incrementNumber>10</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">0</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-202-10">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-202-10">
+                                            <timePositionList>2024-12-17T17:31:00+03:00 2024-12-17T17:34:00+03:00 2024-12-17T17:37:00+03:00 2024-12-17T17:40:00+03:00 2024-12-17T17:43:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">0,0.22,0.21,0.2,0.21,0.21,37 0,0.21,0.2,0.19,0.2,0.2,37 0,0.2,0.19,0.18,0.19,0.19,37 0,0.19,0.18,0.17,0.18,0.18,37 0,0.18,0.17,0.16,0.17,0.17,37</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <maxTestStress uom="kPa">225</maxTestStress>
+                    <deadLoad uom="kgf">61.68</deadLoad>
+                    <plateDiameter uom="cm">45.72</plateDiameter>
+                    <loadingProcedure codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/plateBearingTestProcedure.xml#nonrepetitive">nonrepetitive</loadingProcedure>
+                    <beddingMaterial>sand, 25 mm maximum thickness (method statement FMSA-EN24313-MS-CMC s.10.1)</beddingMaterial>
+                </PlateLoadTest>
+            </procedure>
+        </Monitor>
+    </measurement>
+    <measurement>
+        <Monitor gml:id="m-PLT-203">
+            <gml:name>PLT-203 plate load test, CMC-1043</gml:name>
+            <remark>
+                <Remark>
+                    <content>Plate load test PLT-203 on CMC-1043. Column assigned by the PLT location table on drawing FMSA24047-DWG-ABD-9001 (FMSA24047-FTR-CMC-00 PDF p.18), point 502992.168 2443917.485, which coincides with CMC-1043; the report table s.6.2 labels the CMC-1043 test PLT-201. Readings from the Applus certificate REF 2024-6508, test no. PLT-01, "Pile no. 1043", FTR Appendix 2 PDF pp.34-38. Dial gage readings (printed in 0.01 mm) are recorded in mm. Plate diameter 45.72 cm as printed; the method statement (FMSA-EN24313-MS-CMC) gives 620 mm. Jack capacity printed 50.00 ton. The outcome is the last reading of each increment.</content>
+                </Remark>
+            </remark>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <programRef xlink:href="#rip-01"/>
+            <samplingFeatureRef xlink:href="#CMC-1043"/>
+            <samplingTime>
+                <TimeInterval gml:id="ti-PLT-203">
+                    <start>2024-12-17T10:25:00+03:00</start>
+                    <end>2024-12-17T13:58:00+03:00</end>
+                </TimeInterval>
+            </samplingTime>
+            <monitorLocation xlink:href="#pl-RI-1043"/>
+            <outcome>
+                <TemporalResult gml:id="tr-PLT-203">
+                    <timeDomain>
+                        <TimePositionList gml:id="tp-PLT-203">
+                            <timePositionList>2024-12-17T10:40:00+03:00 2024-12-17T10:58:00+03:00 2024-12-17T11:16:00+03:00 2024-12-17T11:34:00+03:00 2024-12-17T11:52:00+03:00 2024-12-17T12:10:00+03:00 2024-12-17T13:13:00+03:00 2024-12-17T13:28:00+03:00 2024-12-17T13:43:00+03:00 2024-12-17T13:58:00+03:00</timePositionList>
+                        </TimePositionList>
+                    </timeDomain>
+                    <results>
+                        <ResultSet>
+                            <parameters xlink:href="#pp-plt-curve-kpa"/>
+                            <dataValues cs="," ts=" " decimal=".">0,0,loading 37.5,0.06,loading 75,0.09,loading 112.5,0.12,loading 150,0.19,loading 187.5,0.26,loading 225,0.45,loading 150,0.39,unloading 75,0.27,unloading 0,0.07,unloading</dataValues>
+                        </ResultSet>
+                    </results>
+                </TemporalResult>
+            </outcome>
+            <procedure>
+                <PlateLoadTest gml:id="plt-PLT-203">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1194"/>
+                    <testProcedureEquipment>
+                        <Equipment gml:id="eq-PLT-203-plate">
+                            <gml:name>Bearing plate, 45.72 cm</gml:name>
+                            <otherEquipmentProperty>
+                                <Parameter gml:id="eq-PLT-203-plate-mass">
+                                    <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#equipment_mass">Equipment Mass</parameterName>
+                                    <parameterValue>36.68</parameterValue>
+                                    <parameterUnits>kg</parameterUnits>
+                                </Parameter>
+                            </otherEquipmentProperty>
+                        </Equipment>
+                    </testProcedureEquipment>
+                    <testProcedureEquipment>
+                        <Equipment gml:id="eq-PLT-203-jack">
+                            <gml:name>Hydraulic jack, 50.00 ton</gml:name>
+                            <class codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/equipmentClass.xml#hydraulic_jack">hydraulic_jack</class>
+                            <otherEquipmentProperty>
+                                <Parameter gml:id="eq-PLT-203-jack-mass">
+                                    <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#equipment_mass">Equipment Mass</parameterName>
+                                    <parameterValue>25.0</parameterValue>
+                                    <parameterUnits>kg</parameterUnits>
+                                </Parameter>
+                            </otherEquipmentProperty>
+                        </Equipment>
+                    </testProcedureEquipment>
+                    <referenceSystem codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestReferenceSystem.xml#independent_reference_beam">independent_reference_beam</referenceSystem>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-203-01">
+                            <incrementNumber>1</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">0</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-203-01">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-203-01">
+                                            <timePositionList>2024-12-17T10:25:00+03:00 2024-12-17T10:28:00+03:00 2024-12-17T10:31:00+03:00 2024-12-17T10:34:00+03:00 2024-12-17T10:37:00+03:00 2024-12-17T10:40:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">0,0,0,0,0,0,36 0,0,0,0,0,0,36 0,0,0,0,0,0,36 0,0,0,0,0,0,36 0,0,0,0,0,0,36 0,0,0,0,0,0,36</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-203-02">
+                            <incrementNumber>2</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">37.5</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-203-02">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-203-02">
+                                            <timePositionList>2024-12-17T10:43:00+03:00 2024-12-17T10:46:00+03:00 2024-12-17T10:49:00+03:00 2024-12-17T10:52:00+03:00 2024-12-17T10:55:00+03:00 2024-12-17T10:58:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">31.4,0.05,0.06,0.07,0.06,0.06,36 31.4,0.05,0.06,0.07,0.06,0.06,36 31.4,0.05,0.06,0.07,0.06,0.06,36 31.4,0.05,0.06,0.07,0.06,0.06,36 31.4,0.05,0.06,0.07,0.06,0.06,36 31.4,0.05,0.06,0.07,0.06,0.06,36</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-203-03">
+                            <incrementNumber>3</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">75</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-203-03">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-203-03">
+                                            <timePositionList>2024-12-17T11:01:00+03:00 2024-12-17T11:04:00+03:00 2024-12-17T11:07:00+03:00 2024-12-17T11:10:00+03:00 2024-12-17T11:13:00+03:00 2024-12-17T11:16:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">62.67,0.08,0.09,0.1,0.09,0.09,37 62.67,0.08,0.09,0.1,0.09,0.09,37 62.67,0.08,0.09,0.1,0.09,0.09,37 62.67,0.08,0.09,0.1,0.09,0.09,37 62.67,0.08,0.09,0.1,0.09,0.09,37 62.67,0.08,0.09,0.1,0.09,0.09,37</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-203-04">
+                            <incrementNumber>4</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">112.5</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-203-04">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-203-04">
+                                            <timePositionList>2024-12-17T11:19:00+03:00 2024-12-17T11:22:00+03:00 2024-12-17T11:25:00+03:00 2024-12-17T11:28:00+03:00 2024-12-17T11:31:00+03:00 2024-12-17T11:34:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">94,0.11,0.12,0.13,0.12,0.12,37 94,0.11,0.12,0.13,0.12,0.12,37 94,0.11,0.12,0.13,0.12,0.12,37 94,0.11,0.12,0.13,0.12,0.12,37 94,0.11,0.12,0.13,0.12,0.12,37 94,0.11,0.12,0.13,0.12,0.12,37</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-203-05">
+                            <incrementNumber>5</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">150</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-203-05">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-203-05">
+                                            <timePositionList>2024-12-17T11:37:00+03:00 2024-12-17T11:40:00+03:00 2024-12-17T11:43:00+03:00 2024-12-17T11:46:00+03:00 2024-12-17T11:49:00+03:00 2024-12-17T11:52:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">125.3,0.18,0.19,0.2,0.19,0.19,37 125.3,0.18,0.19,0.2,0.19,0.19,37 125.3,0.18,0.19,0.2,0.19,0.19,37 125.3,0.18,0.19,0.2,0.19,0.19,37 125.3,0.18,0.19,0.2,0.19,0.19,37 125.3,0.18,0.19,0.2,0.19,0.19,37</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-203-06">
+                            <incrementNumber>6</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">187.5</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-203-06">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-203-06">
+                                            <timePositionList>2024-12-17T11:55:00+03:00 2024-12-17T11:58:00+03:00 2024-12-17T12:01:00+03:00 2024-12-17T12:04:00+03:00 2024-12-17T12:07:00+03:00 2024-12-17T12:10:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">156.7,0.25,0.26,0.27,0.26,0.26,38 156.7,0.25,0.26,0.27,0.26,0.26,38 156.7,0.25,0.26,0.27,0.26,0.26,38 156.7,0.25,0.26,0.27,0.26,0.26,38 156.7,0.25,0.26,0.27,0.26,0.26,38 156.7,0.25,0.26,0.27,0.26,0.26,38</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-203-07">
+                            <incrementNumber>7</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">225</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-203-07">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-203-07">
+                                            <timePositionList>2024-12-17T12:13:00+03:00 2024-12-17T12:28:00+03:00 2024-12-17T12:43:00+03:00 2024-12-17T12:58:00+03:00 2024-12-17T13:13:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">188,0.4,0.41,0.42,0.41,0.41,37 188,0.41,0.42,0.43,0.42,0.42,37 188,0.42,0.43,0.44,0.43,0.43,37 188,0.43,0.44,0.45,0.44,0.44,37 188,0.44,0.45,0.46,0.45,0.45,37</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-203-08">
+                            <incrementNumber>8</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">150</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-203-08">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-203-08">
+                                            <timePositionList>2024-12-17T13:16:00+03:00 2024-12-17T13:19:00+03:00 2024-12-17T13:22:00+03:00 2024-12-17T13:25:00+03:00 2024-12-17T13:28:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">125.3,0.42,0.43,0.44,0.43,0.43,37 125.3,0.41,0.42,0.43,0.42,0.42,37 125.3,0.4,0.41,0.42,0.41,0.41,37 125.3,0.39,0.4,0.41,0.4,0.4,37 125.3,0.38,0.39,0.4,0.39,0.39,37</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-203-09">
+                            <incrementNumber>9</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">75</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-203-09">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-203-09">
+                                            <timePositionList>2024-12-17T13:31:00+03:00 2024-12-17T13:34:00+03:00 2024-12-17T13:37:00+03:00 2024-12-17T13:40:00+03:00 2024-12-17T13:43:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">62.7,0.3,0.31,0.32,0.31,0.31,37 62.7,0.29,0.3,0.31,0.3,0.3,37 62.7,0.28,0.29,0.3,0.29,0.29,37 62.7,0.27,0.28,0.29,0.28,0.28,37 62.7,0.26,0.27,0.28,0.27,0.27,37</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-203-10">
+                            <incrementNumber>10</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kPa">0</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-203-10">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-203-10">
+                                            <timePositionList>2024-12-17T13:46:00+03:00 2024-12-17T13:49:00+03:00 2024-12-17T13:52:00+03:00 2024-12-17T13:55:00+03:00 2024-12-17T13:58:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">0,0.1,0.11,0.12,0.11,0.11,37 0,0.09,0.1,0.11,0.1,0.1,37 0,0.08,0.09,0.1,0.09,0.09,37 0,0.07,0.08,0.09,0.08,0.08,37 0,0.06,0.07,0.08,0.07,0.07,37</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <maxTestStress uom="kPa">225</maxTestStress>
+                    <deadLoad uom="kgf">61.68</deadLoad>
+                    <plateDiameter uom="cm">45.72</plateDiameter>
+                    <loadingProcedure codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/plateBearingTestProcedure.xml#nonrepetitive">nonrepetitive</loadingProcedure>
+                    <beddingMaterial>sand, 25 mm maximum thickness (method statement FMSA-EN24313-MS-CMC s.10.1)</beddingMaterial>
+                </PlateLoadTest>
+            </procedure>
+        </Monitor>
+    </measurement>
+    <measurement>
+        <Monitor gml:id="m-PLT-204">
+            <gml:name>PLT-204 plate load test, CMC-666</gml:name>
+            <remark>
+                <Remark>
+                    <content>Plate load test PLT-204 on CMC-666. The PLT location table on drawing FMSA24047-DWG-ABD-9001 (FMSA24047-FTR-CMC-00 PDF p.18) gives 502951.32 2443934.315, 1.7 m from CMC-666; the drawing plots the test on CMC-666. Readings from the Applus certificate RBG-QCR-24-02450, test no. PLT-01, FTR Appendix 2 PDF pp.50-52, stresses as printed in kg/cm2; the certificate location reads "Thuwal" and names no pile. The extracted workbook labels this certificate CMC-317, which is a transcription error; the report table s.6.2 names CMC-666 for PLT-203. FLAG: the test was loaded to 3.00 kg/cm2 (about 294 kPa), above the 1.5 x design pressure of 225 kPa the method statement (FMSA-EN24313-MS-CMC) specifies. The certificate has no reading at 0 kg/cm2 before loading; settlement is zeroed at the first 0.75 kg/cm2 reading. Its jack capacity reads "1000.00 Kg/cm2", a pressure unit, and is not recorded. Plate diameter 60.00 cm as printed; the method statement gives 620 mm. The outcome is the last reading of each increment.</content>
+                </Remark>
+            </remark>
+            <projectRef xlink:href="#GBL-GT-24136"/>
+            <programRef xlink:href="#rip-01"/>
+            <samplingFeatureRef xlink:href="#CMC-666"/>
+            <samplingTime>
+                <TimeInterval gml:id="ti-PLT-204">
+                    <start>2024-11-27T11:14:00+03:00</start>
+                    <end>2024-11-27T12:53:00+03:00</end>
+                </TimeInterval>
+            </samplingTime>
+            <monitorLocation xlink:href="#pl-RI-666"/>
+            <outcome>
+                <TemporalResult gml:id="tr-PLT-204">
+                    <timeDomain>
+                        <TimePositionList gml:id="tp-PLT-204">
+                            <timePositionList>2024-11-27T11:29:00+03:00 2024-11-27T11:47:00+03:00 2024-11-27T12:05:00+03:00 2024-11-27T12:23:00+03:00 2024-11-27T12:38:00+03:00 2024-11-27T12:53:00+03:00</timePositionList>
+                        </TimePositionList>
+                    </timeDomain>
+                    <results>
+                        <ResultSet>
+                            <parameters xlink:href="#pp-plt-curve-kgfcm2"/>
+                            <dataValues cs="," ts=" " decimal=".">0.75,0.06,loading 1.5,0.15,loading 2.25,0.26,loading 3,0.36,loading 1.5,0.29,unloading 0,0.18,unloading</dataValues>
+                        </ResultSet>
+                    </results>
+                </TemporalResult>
+            </outcome>
+            <procedure>
+                <PlateLoadTest gml:id="plt-PLT-204">
+                    <testProcedureMethod xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#astm_d1194"/>
+                    <referenceSystem codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestReferenceSystem.xml#independent_reference_beam">independent_reference_beam</referenceSystem>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-204-01">
+                            <incrementNumber>1</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">0.75</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-204-01">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-204-01">
+                                            <timePositionList>2024-11-27T11:14:00+03:00 2024-11-27T11:17:00+03:00 2024-11-27T11:20:00+03:00 2024-11-27T11:23:00+03:00 2024-11-27T11:26:00+03:00 2024-11-27T11:29:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">62.8,0,0,0,0,0,34 62.8,0.02,0.02,0.03,0.023,0.02,34 62.8,0.03,0.03,0.04,0.033,0.03,34 62.8,0.04,0.04,0.05,0.043,0.04,34 62.8,0.05,0.05,0.06,0.053,0.05,34 62.8,0.06,0.06,0.07,0.063,0.06,34</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-204-02">
+                            <incrementNumber>2</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">1.5</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-204-02">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-204-02">
+                                            <timePositionList>2024-11-27T11:32:00+03:00 2024-11-27T11:35:00+03:00 2024-11-27T11:38:00+03:00 2024-11-27T11:41:00+03:00 2024-11-27T11:44:00+03:00 2024-11-27T11:47:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">125.3,0.1,0.1,0.11,0.103,0.1,34 125.3,0.11,0.11,0.12,0.113,0.11,34 125.3,0.12,0.12,0.13,0.123,0.12,34 125.3,0.13,0.13,0.14,0.133,0.13,34 125.3,0.14,0.14,0.15,0.143,0.14,34 125.3,0.15,0.15,0.16,0.153,0.15,34</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-204-03">
+                            <incrementNumber>3</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">2.25</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-204-03">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-204-03">
+                                            <timePositionList>2024-11-27T11:50:00+03:00 2024-11-27T11:53:00+03:00 2024-11-27T11:56:00+03:00 2024-11-27T11:59:00+03:00 2024-11-27T12:02:00+03:00 2024-11-27T12:05:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">188,0.2,0.21,0.22,0.21,0.21,35 188,0.21,0.22,0.23,0.22,0.22,35 188,0.22,0.23,0.24,0.23,0.23,35 188,0.23,0.24,0.25,0.24,0.24,35 188,0.24,0.25,0.26,0.25,0.25,35 188,0.25,0.26,0.27,0.26,0.26,35</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-204-04">
+                            <incrementNumber>4</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#loading">loading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">3</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-204-04">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-204-04">
+                                            <timePositionList>2024-11-27T12:08:00+03:00 2024-11-27T12:11:00+03:00 2024-11-27T12:14:00+03:00 2024-11-27T12:17:00+03:00 2024-11-27T12:20:00+03:00 2024-11-27T12:23:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">250.7,0.3,0.31,0.32,0.31,0.31,35 250.7,0.31,0.32,0.33,0.32,0.32,35 250.7,0.32,0.33,0.34,0.33,0.33,35 250.7,0.33,0.34,0.35,0.34,0.34,35 250.7,0.34,0.35,0.36,0.35,0.35,35 250.7,0.35,0.36,0.37,0.36,0.36,35</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-204-05">
+                            <incrementNumber>5</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">1.5</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-204-05">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-204-05">
+                                            <timePositionList>2024-11-27T12:26:00+03:00 2024-11-27T12:29:00+03:00 2024-11-27T12:32:00+03:00 2024-11-27T12:35:00+03:00 2024-11-27T12:38:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">125.3,0.32,0.33,0.34,0.33,0.33,35 125.3,0.31,0.32,0.33,0.32,0.32,35 125.3,0.3,0.31,0.32,0.31,0.31,35 125.3,0.29,0.3,0.31,0.3,0.3,35 125.3,0.28,0.29,0.3,0.29,0.29,35</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <increment>
+                        <LoadTestIncrement gml:id="inc-PLT-204-06">
+                            <incrementNumber>6</incrementNumber>
+                            <loadingPhase codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestIncrementPhase.xml#unloading">unloading</loadingPhase>
+                            <stabilizationCriterion uom="mm/min">0.004</stabilizationCriterion>
+                            <appliedStress uom="kgf/cm2">0</appliedStress>
+                            <incrementTimeSeries>
+                                <TemporalResult gml:id="its-PLT-204-06">
+                                    <timeDomain>
+                                        <TimePositionList gml:id="itp-PLT-204-06">
+                                            <timePositionList>2024-11-27T12:41:00+03:00 2024-11-27T12:44:00+03:00 2024-11-27T12:47:00+03:00 2024-11-27T12:50:00+03:00 2024-11-27T12:53:00+03:00</timePositionList>
+                                        </TimePositionList>
+                                    </timeDomain>
+                                    <results>
+                                        <ResultSet>
+                                            <parameters xlink:href="#pp-plt-readings"/>
+                                            <dataValues cs="," ts=" " decimal=".">0,0.21,0.22,0.24,0.223,0.22,35 0,0.2,0.21,0.23,0.213,0.21,35 0,0.19,0.2,0.22,0.203,0.2,35 0,0.18,0.19,0.21,0.193,0.19,35 0,0.17,0.18,0.2,0.183,0.18,35</dataValues>
+                                        </ResultSet>
+                                    </results>
+                                </TemporalResult>
+                            </incrementTimeSeries>
+                        </LoadTestIncrement>
+                    </increment>
+                    <maxTestStress uom="kgf/cm2">3.00</maxTestStress>
+                    <plateDiameter uom="cm">60.00</plateDiameter>
+                    <loadingProcedure codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/plateBearingTestProcedure.xml#nonrepetitive">nonrepetitive</loadingProcedure>
+                    <beddingMaterial>sand, 25 mm maximum thickness (method statement FMSA-EN24313-MS-CMC s.10.1)</beddingMaterial>
+                </PlateLoadTest>
+            </procedure>
+        </Monitor>
+    </measurement>
     <constructionActivity>
         <RIColumnConstruction gml:id="rcc-CMC-430">
             <gml:name>Installation of CMC-430</gml:name>
