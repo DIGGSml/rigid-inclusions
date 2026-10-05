@@ -2636,6 +2636,113 @@
                     <step xlink:href="#DRC-G2" sequenceNumber="1099">21 1</step>
                 </DesignProductionSequence>
             </design>
+            <design>
+                <DesignMeasurement gml:id="dm-PLT-201">
+                    <gml:name>PLT-201 plate load test design - shunt reactor foundations</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Contractor response (Rev.02) to National Grid SA comment 8 on submittal DTS-091 (FMSA24047-FTR-CMC-00 PDF p.27): one plate load test for the main building raft foundation, one for the power transformer foundations, one for the shunt reactor foundations and one for the remaining outdoor foundations, exact locations as per the SEC site consultant; drawing FMSA24047-DWG-ABD-9001 legend (PDF p.18): PLATE LOAD TEST - 4 NOS. This design is the shunt reactor foundations (realized on CMC-942, zone-sr) test. Planned maximum stress 225 kPa: method statement FMSA-EN24313-MS-CMC s.10.1 item 8 loads to a maximum of one and a half times the design bearing pressure, and FTR s.6.1 gives that pressure as 150 kN/m2. 150 kPa is the platform design pressure (DesignRITreatedArea risd-01); the test applies it to a column head. Read as conservative for the column, which carries only part of the platform load (Dan, 2026-10-04). The platform settlement limits (LTPS-RAFT, LTPS-FOOTING) are not a limit on this test and no performance criterion is stated for it. The plate diameter is the method statement's (s.10, 620 mm); the certificates of the realized tests state other diameters. The method statement places the plate on the exposed column head on a sand bed (s.10.1 items 2-3), where the Rev.02 response says the test is on top of the load transfer layer; the realized tests follow the method statement. samplingFeatureDesignRef cites the design of the column the test was made on, as assigned by the location table on the drawing; the plan itself fixes only the group.</content>
+                        </Remark>
+                    </remark>
+                    <programSpecificationRef xlink:href="#MS-PLT"/>
+                    <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test">plate_load_test</measurementKind>
+                    <samplingFeatureDesignRef xlink:href="#DRC-NG-942"/>
+                    <measurementMethod xlink:href="#spec-ms-cmc"/>
+                    <plannedProcedure>
+                        <PlateLoadTest gml:id="dm-PLT-201-proc">
+                            <referenceSystem codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestReferenceSystem.xml#independent_reference_beam">independent_reference_beam</referenceSystem>
+                            <maxTestStress uom="kPa">225</maxTestStress>
+                            <plateDiameter uom="mm">620</plateDiameter>
+                            <beddingMaterial>sand bed, 25 mm maximum thickness (method statement FMSA-EN24313-MS-CMC s.10.1)</beddingMaterial>
+                        </PlateLoadTest>
+                    </plannedProcedure>
+                </DesignMeasurement>
+            </design>
+            <design>
+                <DesignMeasurement gml:id="dm-PLT-202">
+                    <gml:name>PLT-202 plate load test design - main building raft foundation</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Contractor response (Rev.02) to National Grid SA comment 8 on submittal DTS-091 (FMSA24047-FTR-CMC-00 PDF p.27): one plate load test for the main building raft foundation, one for the power transformer foundations, one for the shunt reactor foundations and one for the remaining outdoor foundations, exact locations as per the SEC site consultant; drawing FMSA24047-DWG-ABD-9001 legend (PDF p.18): PLATE LOAD TEST - 4 NOS. This design is the main building raft (realized on CMC-80, zone-brt) test. Planned maximum stress 225 kPa: method statement FMSA-EN24313-MS-CMC s.10.1 item 8 loads to a maximum of one and a half times the design bearing pressure, and FTR s.6.1 gives that pressure as 150 kN/m2. 150 kPa is the platform design pressure (DesignRITreatedArea risd-01); the test applies it to a column head. Read as conservative for the column, which carries only part of the platform load (Dan, 2026-10-04). The platform settlement limits (LTPS-RAFT, LTPS-FOOTING) are not a limit on this test and no performance criterion is stated for it. The plate diameter is the method statement's (s.10, 620 mm); the certificates of the realized tests state other diameters. The method statement places the plate on the exposed column head on a sand bed (s.10.1 items 2-3), where the Rev.02 response says the test is on top of the load transfer layer; the realized tests follow the method statement. samplingFeatureDesignRef cites the design of the column the test was made on, as assigned by the location table on the drawing; the plan itself fixes only the group.</content>
+                        </Remark>
+                    </remark>
+                    <programSpecificationRef xlink:href="#MS-PLT"/>
+                    <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test">plate_load_test</measurementKind>
+                    <samplingFeatureDesignRef xlink:href="#DRC-G1-brt"/>
+                    <measurementMethod xlink:href="#spec-ms-cmc"/>
+                    <plannedProcedure>
+                        <PlateLoadTest gml:id="dm-PLT-202-proc">
+                            <referenceSystem codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestReferenceSystem.xml#independent_reference_beam">independent_reference_beam</referenceSystem>
+                            <maxTestStress uom="kPa">225</maxTestStress>
+                            <plateDiameter uom="mm">620</plateDiameter>
+                            <beddingMaterial>sand bed, 25 mm maximum thickness (method statement FMSA-EN24313-MS-CMC s.10.1)</beddingMaterial>
+                        </PlateLoadTest>
+                    </plannedProcedure>
+                </DesignMeasurement>
+            </design>
+            <design>
+                <DesignMeasurement gml:id="dm-PLT-203">
+                    <gml:name>PLT-203 plate load test design - power transformer foundations</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Contractor response (Rev.02) to National Grid SA comment 8 on submittal DTS-091 (FMSA24047-FTR-CMC-00 PDF p.27): one plate load test for the main building raft foundation, one for the power transformer foundations, one for the shunt reactor foundations and one for the remaining outdoor foundations, exact locations as per the SEC site consultant; drawing FMSA24047-DWG-ABD-9001 legend (PDF p.18): PLATE LOAD TEST - 4 NOS. This design is the power transformer foundations (realized on CMC-1043, zone-pt) test. Planned maximum stress 225 kPa: method statement FMSA-EN24313-MS-CMC s.10.1 item 8 loads to a maximum of one and a half times the design bearing pressure, and FTR s.6.1 gives that pressure as 150 kN/m2. 150 kPa is the platform design pressure (DesignRITreatedArea risd-01); the test applies it to a column head. Read as conservative for the column, which carries only part of the platform load (Dan, 2026-10-04). The platform settlement limits (LTPS-RAFT, LTPS-FOOTING) are not a limit on this test and no performance criterion is stated for it. The plate diameter is the method statement's (s.10, 620 mm); the certificates of the realized tests state other diameters. The method statement places the plate on the exposed column head on a sand bed (s.10.1 items 2-3), where the Rev.02 response says the test is on top of the load transfer layer; the realized tests follow the method statement. samplingFeatureDesignRef cites the design of the column the test was made on, as assigned by the location table on the drawing; the plan itself fixes only the group.</content>
+                        </Remark>
+                    </remark>
+                    <programSpecificationRef xlink:href="#MS-PLT"/>
+                    <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test">plate_load_test</measurementKind>
+                    <samplingFeatureDesignRef xlink:href="#DRC-G2"/>
+                    <measurementMethod xlink:href="#spec-ms-cmc"/>
+                    <plannedProcedure>
+                        <PlateLoadTest gml:id="dm-PLT-203-proc">
+                            <referenceSystem codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestReferenceSystem.xml#independent_reference_beam">independent_reference_beam</referenceSystem>
+                            <maxTestStress uom="kPa">225</maxTestStress>
+                            <plateDiameter uom="mm">620</plateDiameter>
+                            <beddingMaterial>sand bed, 25 mm maximum thickness (method statement FMSA-EN24313-MS-CMC s.10.1)</beddingMaterial>
+                        </PlateLoadTest>
+                    </plannedProcedure>
+                </DesignMeasurement>
+            </design>
+            <design>
+                <DesignMeasurement gml:id="dm-PLT-204">
+                    <gml:name>PLT-204 plate load test design - remaining outdoor foundations</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Contractor response (Rev.02) to National Grid SA comment 8 on submittal DTS-091 (FMSA24047-FTR-CMC-00 PDF p.27): one plate load test for the main building raft foundation, one for the power transformer foundations, one for the shunt reactor foundations and one for the remaining outdoor foundations, exact locations as per the SEC site consultant; drawing FMSA24047-DWG-ABD-9001 legend (PDF p.18): PLATE LOAD TEST - 4 NOS. This design is the remaining outdoor foundations (realized on CMC-666, zone-ra) test. Planned maximum stress 225 kPa: method statement FMSA-EN24313-MS-CMC s.10.1 item 8 loads to a maximum of one and a half times the design bearing pressure, and FTR s.6.1 gives that pressure as 150 kN/m2. 150 kPa is the platform design pressure (DesignRITreatedArea risd-01); the test applies it to a column head. Read as conservative for the column, which carries only part of the platform load (Dan, 2026-10-04). The platform settlement limits (LTPS-RAFT, LTPS-FOOTING) are not a limit on this test and no performance criterion is stated for it. The plate diameter is the method statement's (s.10, 620 mm); the certificates of the realized tests state other diameters. The method statement places the plate on the exposed column head on a sand bed (s.10.1 items 2-3), where the Rev.02 response says the test is on top of the load transfer layer; the realized tests follow the method statement. samplingFeatureDesignRef cites the design of the column the test was made on, as assigned by the location table on the drawing; the plan itself fixes only the group.</content>
+                        </Remark>
+                    </remark>
+                    <programSpecificationRef xlink:href="#MS-PLT"/>
+                    <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test">plate_load_test</measurementKind>
+                    <samplingFeatureDesignRef xlink:href="#DRC-G1"/>
+                    <measurementMethod xlink:href="#spec-ms-cmc"/>
+                    <plannedProcedure>
+                        <PlateLoadTest gml:id="dm-PLT-204-proc">
+                            <referenceSystem codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/loadTestReferenceSystem.xml#independent_reference_beam">independent_reference_beam</referenceSystem>
+                            <maxTestStress uom="kPa">225</maxTestStress>
+                            <plateDiameter uom="mm">620</plateDiameter>
+                            <beddingMaterial>sand bed, 25 mm maximum thickness (method statement FMSA-EN24313-MS-CMC s.10.1)</beddingMaterial>
+                        </PlateLoadTest>
+                    </plannedProcedure>
+                </DesignMeasurement>
+            </design>
+            <design>
+                <DesignMeasurement gml:id="dm-ZLT-201">
+                    <gml:name>ZLT-201 zone load test design - building raft platform</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Owner comment 8 on submittal DTS-091 (FMSA24047-FTR-CMC-00 PDF pp.27-28) asked for a zone load test for the main building raft foundation, with acceptance criteria; none was stated. The only statement of the test's intent is the test report (CMC-Final-Report-Extracted.xlsx sheet 5, Gulf Consult GC/10373JO/17823/24): design bearing pressure 150 kN/m2, maximum test pressure 225 kN/m2 (150 percent of design). No zone load test method statement is in hand. The platform design pressure is risd-01's designLoad (150 kPa); here the tested element is the platform, so testLoadPercentDesignLoad applies as stated. The platform design cited is riltpd-brt; the report does not say which building zone the test lies in, and its four columns (CMC-155, 156, 172, 173) all lie in zone-brt. Plate size is not planned: the report states 2.0 m x 2.0 m, which belongs to the realized test.</content>
+                        </Remark>
+                    </remark>
+                    <programSpecificationRef xlink:href="#MS-ZLT"/>
+                    <measurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#zone_load_test">zone_load_test</measurementKind>
+                    <samplingFeatureDesignRef xlink:href="#riltpd-brt"/>
+                    <plannedProcedure>
+                        <ZoneLoadTest gml:id="dm-ZLT-201-proc">
+                            <maxTestStress uom="kPa">225</maxTestStress>
+                        </ZoneLoadTest>
+                    </plannedProcedure>
+                    <testLoadPercentDesignLoad uom="%">150</testLoadPercentDesignLoad>
+                </DesignMeasurement>
+            </design>
             <specification>
                 <GroutSpecification gml:id="GS-MIX-A">
                     <gml:name>MIX-A — concrete acceptance specification</gml:name>
@@ -3185,6 +3292,73 @@
                     <criterionRef xlink:href="#crit-col-depth-or-refusal"/>
                     <partOfSpecificationRef xlink:href="#RICS-GEN"/>
                 </CompositeAcceptanceCriterion>
+            </specification>
+            <specification>
+                <MeasurementSpecification gml:id="MS-PLT">
+                    <gml:name>Plate load test specification - rigid inclusion column heads</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Requirements on how the column-head plate load tests are carried out, from the Freyssinet Menard work method statement FMSA-EN24313-MS-CMC Rev 00 (05/09/2024) s.10, reproduced in FMSA24047-FTR-CMC-00 Appendix 2 (PDF pp.44-47). The method statement itself is cited through measurementMethod (spec-ms-cmc). The requirement the schema can check on the realized test is carried by the criterion that cites this specification through partOfSpecificationRef (crit-plt-max-stress). The method statement also states the plate, the bed, the dial gauges and the load increments and holds; those are planned values on the planned procedures of dm-PLT-201 to 204 or are not yet criteria. No criterion on the settlement the test produces exists in any source: FTR s.6.2 lists the measured settlements under a heading of allowable settlements and states no limit, and method statement s.10.2 asks only that the allowable bearing pressure and settlement be evaluated. The platform settlement limits (LTPS-RAFT, LTPS-FOOTING) apply to the platform, not to a column.</content>
+                        </Remark>
+                    </remark>
+                    <appliesToFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#ri_column">ri_column</appliesToFeatureType>
+                    <appliesToMeasurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#plate_load_test">plate_load_test</appliesToMeasurementKind>
+                    <measurementMethod xlink:href="#spec-ms-cmc"/>
+                    <recordingParameter codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#applied_stress">applied_stress</recordingParameter>
+                    <recordingParameter codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#settlement">settlement</recordingParameter>
+                </MeasurementSpecification>
+            </specification>
+            <specification>
+                <MeasurementSpecification gml:id="MS-ZLT">
+                    <gml:name>Zone load test specification - load transfer platform</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Requirements on how the zone load test on the load transfer platform is carried out. No zone load test method statement is in hand; the test report (CMC-Final-Report-Extracted.xlsx sheet 5) cites BS 1377 Part 9 s.4.1 and states the loading it applied. The requirement the schema can check on the realized test is carried by crit-zlt-max-stress. The settlement the test must not exceed is the platform settlement limit of crit-ltp-settlement-raft (LTPS-RAFT); this specification states no limit of its own.</content>
+                        </Remark>
+                    </remark>
+                    <appliesToFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#load_transfer_platform">load_transfer_platform</appliesToFeatureType>
+                    <appliesToMeasurementKind codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/measurementKind.xml#zone_load_test">zone_load_test</appliesToMeasurementKind>
+                    <recordingParameter codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#applied_stress">applied_stress</recordingParameter>
+                    <recordingParameter codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#settlement">settlement</recordingParameter>
+                </MeasurementSpecification>
+            </specification>
+            <specification>
+                <DesignConformanceCriterion gml:id="crit-plt-max-stress">
+                    <remark>
+                        <Remark>
+                            <content>Method statement FMSA-EN24313-MS-CMC s.10.1 item 8 (FTR PDF p.46): load "to a maximum of one and a half times design bearing pressure"; design bearing pressure 150 kN/m2 (FTR s.6.1), so 225 kPa. Read as a minimum the test must reach: a test taken above it still conforms (PLT-204 went to about 294 kPa and is flagged on its record). Compared with the maxTestStress of each plate load test's procedure, converted to kPa. The two certificates that state their loading in kgf/cm2 (PLT-201, 2.25 kgf/cm2 = 220.6 kPa; PLT-204, 3.00 kgf/cm2 = 294.2 kPa) are compared after conversion, so PLT-201's recorded 2.25 kgf/cm2 falls 4.4 kPa short of 225 kPa. Not evaluated.</content>
+                        </Remark>
+                    </remark>
+                    <operator>ge</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#maximum_test_stress">maximum_test_stress</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>225</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#MS-PLT"/>
+                </DesignConformanceCriterion>
+            </specification>
+            <specification>
+                <DesignConformanceCriterion gml:id="crit-zlt-max-stress">
+                    <remark>
+                        <Remark>
+                            <content>The zone load test is taken to at least 150 percent of the design bearing pressure: 225 kPa, from the test report's stated maximum test pressure of 225 kN/m2 = 150 percent of the 150 kN/m2 design bearing pressure (CMC-Final-Report-Extracted.xlsx sheet 5; Dan, 2026-10-04: the report's 150 percent is accepted as the source, no zone load test method statement being in hand). Compared with the maxTestStress of the zone load test's procedure. Not evaluated: the realized zone load test is not yet recorded.</content>
+                        </Remark>
+                    </remark>
+                    <operator>ge</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#maximum_test_stress">maximum_test_stress</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>225</parameterValue>
+                            <parameterUnits>kPa</parameterUnits>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#MS-ZLT"/>
+                </DesignConformanceCriterion>
             </specification>
             <basis>
                 <RIProgramBasis gml:id="ripb-01">
@@ -94226,6 +94400,8 @@
             </remark>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <programRef xlink:href="#rip-01"/>
+            <programDesignRef xlink:href="#dm-PLT-201"/>
+            <programSpecificationRef xlink:href="#MS-PLT"/>
             <samplingFeatureRef xlink:href="#CMC-942"/>
             <samplingTime>
                 <TimeInterval gml:id="ti-PLT-201">
@@ -94547,6 +94723,8 @@
             </remark>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <programRef xlink:href="#rip-01"/>
+            <programDesignRef xlink:href="#dm-PLT-202"/>
+            <programSpecificationRef xlink:href="#MS-PLT"/>
             <samplingFeatureRef xlink:href="#CMC-80"/>
             <samplingTime>
                 <TimeInterval gml:id="ti-PLT-202">
@@ -94870,6 +95048,8 @@
             </remark>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <programRef xlink:href="#rip-01"/>
+            <programDesignRef xlink:href="#dm-PLT-203"/>
+            <programSpecificationRef xlink:href="#MS-PLT"/>
             <samplingFeatureRef xlink:href="#CMC-1043"/>
             <samplingTime>
                 <TimeInterval gml:id="ti-PLT-203">
@@ -95171,6 +95351,8 @@
             </remark>
             <projectRef xlink:href="#GBL-GT-24136"/>
             <programRef xlink:href="#rip-01"/>
+            <programDesignRef xlink:href="#dm-PLT-204"/>
+            <programSpecificationRef xlink:href="#MS-PLT"/>
             <samplingFeatureRef xlink:href="#CMC-666"/>
             <samplingTime>
                 <TimeInterval gml:id="ti-PLT-204">
