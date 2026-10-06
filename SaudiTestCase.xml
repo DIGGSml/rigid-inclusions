@@ -3683,7 +3683,7 @@
                     <gml:name>Pile integrity: toe depth within tolerance AND no defect indicated</gml:name>
                     <remark>
                         <Remark>
-                            <content>The two limits on what a record shows that indicate a column to be reviewed or replaced: the toe depth agrees with the as-built length, and no reflection above the toe reaches the defect limit. crit-pit-flaw is not a member: a flaw calls for review of the record, not for a failed acceptance. The conditions of the test (count, location, impacts, age or strength) are separate design-conformance criteria: a record made before the concrete had matured is inconclusive, not a sign of a defect. A check of this composite is satisfied where both members are satisfied, not satisfied where either is not satisfied, and inconclusive otherwise.</content>
+                            <content>The two limits on what a record shows that indicate a column to be reviewed or replaced: the toe depth agrees with the as-built length, and no reflection above the toe reaches the defect limit. crit-pit-flaw is not a member: a flaw calls for review of the record, not for a failed acceptance. The conditions of the test (count, location, impacts, age or strength) are separate design-conformance criteria: a record made before the concrete had matured is inconclusive, not a sign of a defect. A check of this composite is satisfied where both members are satisfied, not satisfied where either is not satisfied, waived where a member is waived (accepted as is) and none is not satisfied, and inconclusive otherwise.</content>
                         </Remark>
                     </remark>
                     <appliesToFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#ri_column">ri_column</appliesToFeatureType>
@@ -180031,7 +180031,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
             </remark>
             <remark>
                 <Remark>
-                    <content>Position: 39 tests are at their planned node; the 11 tests at nodes of planned columns that were replaced and the 5 tests at locations not in the plan are waived and each has a NonConformance, disposition accept as is, with the reason from the plan (Dan, 2026-10-05). Age: CMC-295 was tested at 5 days with no strength result of its batch; its age and strength checks are not satisfied, the composite is waived with a NonConformance. Toe depth: compared with the length the tester entered, taken as the as-built length (Dan, 2026-10-06); where no clear toe is stated the check is inconclusive. Flaw and defect: the relative height of a reflection above the toe is read as a reflection coefficient only on a balanced record, one whose toe reflection is 0.5 to 2 times the impact peak (the evidenceCondition of the two criteria, an assumption); on any other record the check is inconclusive, and each such check states the reflection that exceeds the limit and why it is not counted as a flaw or a defect. Outcomes: toe depth 3 inconclusive, 6 not satisfied, 46 satisfied; flaw 46 inconclusive, 4 not satisfied, 5 satisfied; defect 46 inconclusive, 1 not satisfied, 8 satisfied; acceptance 42 inconclusive, 7 not satisfied, 6 satisfied. The composite crit-pit-acceptance is not satisfied if either member is not satisfied, satisfied if both are satisfied, otherwise inconclusive.</content>
+                    <content>Position: 39 tests are at their planned node; the 11 tests at nodes of planned columns that were replaced and the 5 tests at locations not in the plan are waived and each has a NonConformance, disposition accept as is, with the reason from the plan (Dan, 2026-10-05). Age: CMC-295 was tested at 5 days with no strength result of its batch; its age and strength checks are not satisfied, the composite is waived with a NonConformance. Toe depth: compared with the length the tester entered, taken as the as-built length (Dan, 2026-10-06); the 6 tests beyond the limit are waived and accepted as is, each with a NonConformance; where no clear toe is stated the check is inconclusive. Flaw and defect: the relative height of a reflection above the toe is read as a reflection coefficient only on a balanced record, one whose toe reflection is 0.5 to 2 times the impact peak (the evidenceCondition of the two criteria, an assumption); on any other record the check is inconclusive, and each such check states the reflection that exceeds the limit and why it is not counted as a flaw or a defect. The one defect on a balanced record (CMC-295) is waived and accepted as is with a NonConformance; the flaws (4) are causes for review and carry no disposition. Outcomes: toe depth 3 inconclusive, 46 satisfied, 6 waived; flaw 46 inconclusive, 4 not satisfied, 5 satisfied; defect 46 inconclusive, 8 satisfied, 1 waived; acceptance 42 inconclusive, 6 satisfied, 7 waived. The composite crit-pit-acceptance is not satisfied if a member is not satisfied, waived if a member is waived, satisfied if both are satisfied, otherwise inconclusive.</content>
                 </Remark>
             </remark>
             <projectRef xlink:href="#GBL-GT-24136"/>
@@ -180163,13 +180163,13 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                 <AcceptanceCheck gml:id="ac-pit-819-toe">
                     <remark>
                         <Remark>
-                            <content>Toe at 11.47 m against the length the tester entered, 10.0 m (14.7 percent). For reference, the design depth of the column is 10.0 m. No disposition is recorded: the difference calls for review of the record and of the column length.</content>
+                            <content>Toe at 11.47 m against the length the tester entered, 10.0 m (14.7 percent), beyond the 10 percent limit. For reference, the design depth of the column is 10.0 m. Accepted as is (Dan, 2026-10-06).</content>
                         </Remark>
                     </remark>
                     <criterionRef xlink:href="#crit-pit-toe-depth"/>
                     <measurementRef xlink:href="#pit-CMC-819"/>
                     <determination>derived</determination>
-                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#waived">Waived</outcome>
                     <observedValue>
                         <Parameter>
                             <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#toe_depth_deviation">toe_depth_deviation</parameterName>
@@ -180221,10 +180221,15 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
             </acceptanceCheck>
             <acceptanceCheck>
                 <AcceptanceCheck gml:id="ac-pit-819-acceptance">
+                    <remark>
+                        <Remark>
+                            <content>Not met through the toe depth check, accepted as is with it.</content>
+                        </Remark>
+                    </remark>
                     <criterionRef xlink:href="#crit-pit-acceptance"/>
                     <measurementRef xlink:href="#pit-CMC-819"/>
                     <determination>derived</determination>
-                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#waived">Waived</outcome>
                 </AcceptanceCheck>
             </acceptanceCheck>
             <acceptanceCheck>
@@ -180414,7 +180419,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                 <AcceptanceCheck gml:id="ac-pit-691-flaw">
                     <remark>
                         <Remark>
-                            <content>Balanced record (toe reflection 0.57 times the impact peak). A reflection of 0.203 of the impact peak at 3.97 m, above the toe, exceeds the 0.11 limit.</content>
+                            <content>Balanced record (toe reflection 0.57 times the impact peak). A reflection of 0.203 of the impact peak at 3.97 m, above the toe, exceeds the 0.11 limit. No disposition is recorded: a flaw is a cause for review.</content>
                         </Remark>
                     </remark>
                     <criterionRef xlink:href="#crit-pit-flaw"/>
@@ -180630,13 +180635,13 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                 <AcceptanceCheck gml:id="ac-pit-399-toe">
                     <remark>
                         <Remark>
-                            <content>Toe at 11.46 m against the length the tester entered, 10.0 m (14.6 percent). For reference, the design depth of the column is 15.0 m. No disposition is recorded: the difference calls for review of the record and of the column length.</content>
+                            <content>Toe at 11.46 m against the length the tester entered, 10.0 m (14.6 percent), beyond the 10 percent limit. For reference, the design depth of the column is 15.0 m. Accepted as is (Dan, 2026-10-06).</content>
                         </Remark>
                     </remark>
                     <criterionRef xlink:href="#crit-pit-toe-depth"/>
                     <measurementRef xlink:href="#pit-CMC-399"/>
                     <determination>derived</determination>
-                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#waived">Waived</outcome>
                     <observedValue>
                         <Parameter>
                             <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#toe_depth_deviation">toe_depth_deviation</parameterName>
@@ -180688,10 +180693,15 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
             </acceptanceCheck>
             <acceptanceCheck>
                 <AcceptanceCheck gml:id="ac-pit-399-acceptance">
+                    <remark>
+                        <Remark>
+                            <content>Not met through the toe depth check, accepted as is with it.</content>
+                        </Remark>
+                    </remark>
                     <criterionRef xlink:href="#crit-pit-acceptance"/>
                     <measurementRef xlink:href="#pit-CMC-399"/>
                     <determination>derived</determination>
-                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#waived">Waived</outcome>
                 </AcceptanceCheck>
             </acceptanceCheck>
             <acceptanceCheck>
@@ -181009,7 +181019,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                 <AcceptanceCheck gml:id="ac-pit-295-flaw">
                     <remark>
                         <Remark>
-                            <content>Balanced record (toe reflection 1.21 times the impact peak). A reflection of 0.473 of the impact peak at 5.48 m, above the toe, exceeds the 0.11 limit.</content>
+                            <content>Balanced record (toe reflection 1.21 times the impact peak). A reflection of 0.473 of the impact peak at 5.48 m, above the toe, exceeds the 0.11 limit. No disposition is recorded: a flaw is a cause for review.</content>
                         </Remark>
                     </remark>
                     <criterionRef xlink:href="#crit-pit-flaw"/>
@@ -181029,13 +181039,13 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                 <AcceptanceCheck gml:id="ac-pit-295-defect">
                     <remark>
                         <Remark>
-                            <content>Balanced record (toe reflection 1.21 times the impact peak). A reflection of 0.473 of the impact peak at 5.48 m, above the toe, exceeds the 0.25 limit.</content>
+                            <content>Balanced record (toe reflection 1.21 times the impact peak). A reflection of 0.473 of the impact peak at 5.48 m, above the toe, exceeds the 0.25 defect limit. Accepted as is (Dan, 2026-10-06).</content>
                         </Remark>
                     </remark>
                     <criterionRef xlink:href="#crit-pit-defect"/>
                     <measurementRef xlink:href="#pit-CMC-295"/>
                     <determination>measured</determination>
-                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#waived">Waived</outcome>
                     <observedValue>
                         <Parameter>
                             <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#relative_reflection_amplitude">relative_reflection_amplitude</parameterName>
@@ -181047,10 +181057,15 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
             </acceptanceCheck>
             <acceptanceCheck>
                 <AcceptanceCheck gml:id="ac-pit-295-acceptance">
+                    <remark>
+                        <Remark>
+                            <content>Not met through the defect check, accepted as is with it.</content>
+                        </Remark>
+                    </remark>
                     <criterionRef xlink:href="#crit-pit-acceptance"/>
                     <measurementRef xlink:href="#pit-CMC-295"/>
                     <determination>derived</determination>
-                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#waived">Waived</outcome>
                 </AcceptanceCheck>
             </acceptanceCheck>
             <acceptanceCheck>
@@ -183397,13 +183412,13 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                 <AcceptanceCheck gml:id="ac-pit-1043-toe">
                     <remark>
                         <Remark>
-                            <content>Toe at 21.02 m against the length the tester entered, 18.1 m (16.1 percent). For reference, the design depth of the column is 18.5 m. No disposition is recorded: the difference calls for review of the record and of the column length.</content>
+                            <content>Toe at 21.02 m against the length the tester entered, 18.1 m (16.1 percent), beyond the 10 percent limit. For reference, the design depth of the column is 18.5 m. Accepted as is (Dan, 2026-10-06).</content>
                         </Remark>
                     </remark>
                     <criterionRef xlink:href="#crit-pit-toe-depth"/>
                     <measurementRef xlink:href="#pit-CMC-1043"/>
                     <determination>derived</determination>
-                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#waived">Waived</outcome>
                     <observedValue>
                         <Parameter>
                             <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#toe_depth_deviation">toe_depth_deviation</parameterName>
@@ -183417,7 +183432,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                 <AcceptanceCheck gml:id="ac-pit-1043-flaw">
                     <remark>
                         <Remark>
-                            <content>Balanced record (toe reflection 1.86 times the impact peak). A reflection of 0.216 of the impact peak at 5.75 m, above the toe, exceeds the 0.11 limit.</content>
+                            <content>Balanced record (toe reflection 1.86 times the impact peak). A reflection of 0.216 of the impact peak at 5.75 m, above the toe, exceeds the 0.11 limit. No disposition is recorded: a flaw is a cause for review.</content>
                         </Remark>
                     </remark>
                     <criterionRef xlink:href="#crit-pit-flaw"/>
@@ -183455,10 +183470,15 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
             </acceptanceCheck>
             <acceptanceCheck>
                 <AcceptanceCheck gml:id="ac-pit-1043-acceptance">
+                    <remark>
+                        <Remark>
+                            <content>Not met through the toe depth check, accepted as is with it.</content>
+                        </Remark>
+                    </remark>
                     <criterionRef xlink:href="#crit-pit-acceptance"/>
                     <measurementRef xlink:href="#pit-CMC-1043"/>
                     <determination>derived</determination>
-                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#waived">Waived</outcome>
                 </AcceptanceCheck>
             </acceptanceCheck>
             <acceptanceCheck>
@@ -185060,13 +185080,13 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                 <AcceptanceCheck gml:id="ac-pit-391-toe">
                     <remark>
                         <Remark>
-                            <content>Toe at 11.04 m against the length the tester entered, 10.0 m (10.4 percent). For reference, the design depth of the column is 15.0 m. No disposition is recorded: the difference calls for review of the record and of the column length.</content>
+                            <content>Toe at 11.04 m against the length the tester entered, 10.0 m (10.4 percent), beyond the 10 percent limit. For reference, the design depth of the column is 15.0 m. Accepted as is (Dan, 2026-10-06).</content>
                         </Remark>
                     </remark>
                     <criterionRef xlink:href="#crit-pit-toe-depth"/>
                     <measurementRef xlink:href="#pit-CMC-391"/>
                     <determination>derived</determination>
-                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#waived">Waived</outcome>
                     <observedValue>
                         <Parameter>
                             <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#toe_depth_deviation">toe_depth_deviation</parameterName>
@@ -185104,10 +185124,15 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
             </acceptanceCheck>
             <acceptanceCheck>
                 <AcceptanceCheck gml:id="ac-pit-391-acceptance">
+                    <remark>
+                        <Remark>
+                            <content>Not met through the toe depth check, accepted as is with it.</content>
+                        </Remark>
+                    </remark>
                     <criterionRef xlink:href="#crit-pit-acceptance"/>
                     <measurementRef xlink:href="#pit-CMC-391"/>
                     <determination>derived</determination>
-                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#waived">Waived</outcome>
                 </AcceptanceCheck>
             </acceptanceCheck>
             <acceptanceCheck>
@@ -185611,13 +185636,13 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                 <AcceptanceCheck gml:id="ac-pit-402-toe">
                     <remark>
                         <Remark>
-                            <content>Toe at 11.32 m against the length the tester entered, 10.0 m (13.2 percent). For reference, the design depth of the column is 15.0 m. No disposition is recorded: the difference calls for review of the record and of the column length.</content>
+                            <content>Toe at 11.32 m against the length the tester entered, 10.0 m (13.2 percent), beyond the 10 percent limit. For reference, the design depth of the column is 15.0 m. Accepted as is (Dan, 2026-10-06).</content>
                         </Remark>
                     </remark>
                     <criterionRef xlink:href="#crit-pit-toe-depth"/>
                     <measurementRef xlink:href="#pit-CMC-402"/>
                     <determination>derived</determination>
-                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#waived">Waived</outcome>
                     <observedValue>
                         <Parameter>
                             <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#toe_depth_deviation">toe_depth_deviation</parameterName>
@@ -185655,10 +185680,15 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
             </acceptanceCheck>
             <acceptanceCheck>
                 <AcceptanceCheck gml:id="ac-pit-402-acceptance">
+                    <remark>
+                        <Remark>
+                            <content>Not met through the toe depth check, accepted as is with it.</content>
+                        </Remark>
+                    </remark>
                     <criterionRef xlink:href="#crit-pit-acceptance"/>
                     <measurementRef xlink:href="#pit-CMC-402"/>
                     <determination>derived</determination>
-                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#waived">Waived</outcome>
                 </AcceptanceCheck>
             </acceptanceCheck>
             <acceptanceCheck>
@@ -185717,13 +185747,13 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                 <AcceptanceCheck gml:id="ac-pit-406-toe">
                     <remark>
                         <Remark>
-                            <content>Toe at 11.64 m against the length the tester entered, 10.0 m (16.4 percent). For reference, the design depth of the column is 15.0 m. No disposition is recorded: the difference calls for review of the record and of the column length.</content>
+                            <content>Toe at 11.64 m against the length the tester entered, 10.0 m (16.4 percent), beyond the 10 percent limit. For reference, the design depth of the column is 15.0 m. Accepted as is (Dan, 2026-10-06).</content>
                         </Remark>
                     </remark>
                     <criterionRef xlink:href="#crit-pit-toe-depth"/>
                     <measurementRef xlink:href="#pit-CMC-406"/>
                     <determination>derived</determination>
-                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#waived">Waived</outcome>
                     <observedValue>
                         <Parameter>
                             <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/properties.xml#toe_depth_deviation">toe_depth_deviation</parameterName>
@@ -185737,7 +185767,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                 <AcceptanceCheck gml:id="ac-pit-406-flaw">
                     <remark>
                         <Remark>
-                            <content>Balanced record (toe reflection 1.86 times the impact peak). A reflection of 0.216 of the impact peak at 2.59 m, above the toe, exceeds the 0.11 limit.</content>
+                            <content>Balanced record (toe reflection 1.86 times the impact peak). A reflection of 0.216 of the impact peak at 2.59 m, above the toe, exceeds the 0.11 limit. No disposition is recorded: a flaw is a cause for review.</content>
                         </Remark>
                     </remark>
                     <criterionRef xlink:href="#crit-pit-flaw"/>
@@ -185775,10 +185805,15 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
             </acceptanceCheck>
             <acceptanceCheck>
                 <AcceptanceCheck gml:id="ac-pit-406-acceptance">
+                    <remark>
+                        <Remark>
+                            <content>Not met through the toe depth check, accepted as is with it.</content>
+                        </Remark>
+                    </remark>
                     <criterionRef xlink:href="#crit-pit-acceptance"/>
                     <measurementRef xlink:href="#pit-CMC-406"/>
                     <determination>derived</determination>
-                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#not_satisfied">Not satisfied</outcome>
+                    <outcome codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/verificationOutcome.xml#waived">Waived</outcome>
                 </AcceptanceCheck>
             </acceptanceCheck>
             <acceptanceCheck>
@@ -186365,6 +186400,24 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-819-position"/>
+
+                </NonConformance>
+            </nonConformance>
+            <nonConformance>
+                <NonConformance gml:id="nc-pit-819-toe">
+                    <gml:name>PIT CMC-819 - toe depth beyond the limit</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Toe at 11.47 m against the length the tester entered, 10.0 m (14.7 percent), beyond the 10 percent limit; accepted as is (Dan, 2026-10-06). No remedial action is recorded.</content>
+                        </Remark>
+                    </remark>
+                    <measurementRef xlink:href="#pit-CMC-819"/>
+                    <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
+                    <breachedSpecificationRef xlink:href="#crit-pit-toe-depth"/>
+                    <breachedSpecificationRef xlink:href="#crit-pit-acceptance"/>
+                    <detectedByRef xlink:href="#ac-pit-819-toe"/>
+                    <detectedByRef xlink:href="#ac-pit-819-acceptance"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186379,6 +186432,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-815-position"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186393,6 +186447,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-691-position"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186407,6 +186462,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-680-position"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186421,6 +186477,24 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-399-position"/>
+
+                </NonConformance>
+            </nonConformance>
+            <nonConformance>
+                <NonConformance gml:id="nc-pit-399-toe">
+                    <gml:name>PIT CMC-399 - toe depth beyond the limit</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Toe at 11.46 m against the length the tester entered, 10.0 m (14.6 percent), beyond the 10 percent limit; accepted as is (Dan, 2026-10-06). No remedial action is recorded.</content>
+                        </Remark>
+                    </remark>
+                    <measurementRef xlink:href="#pit-CMC-399"/>
+                    <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
+                    <breachedSpecificationRef xlink:href="#crit-pit-toe-depth"/>
+                    <breachedSpecificationRef xlink:href="#crit-pit-acceptance"/>
+                    <detectedByRef xlink:href="#ac-pit-399-toe"/>
+                    <detectedByRef xlink:href="#ac-pit-399-acceptance"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186435,6 +186509,24 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-age-or-strength"/>
                     <detectedByRef xlink:href="#ac-pit-295-agestrength"/>
+
+                </NonConformance>
+            </nonConformance>
+            <nonConformance>
+                <NonConformance gml:id="nc-pit-295-defect">
+                    <gml:name>PIT CMC-295 - reflection above the defect limit</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Balanced record (toe reflection 1.21 times the impact peak). A reflection of 0.473 of the impact peak at 5.48 m, above the toe, exceeds the 0.25 defect limit; accepted as is (Dan, 2026-10-06). The record was also made before the 7th day (see nc-pit-295-age).</content>
+                        </Remark>
+                    </remark>
+                    <measurementRef xlink:href="#pit-CMC-295"/>
+                    <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
+                    <breachedSpecificationRef xlink:href="#crit-pit-defect"/>
+                    <breachedSpecificationRef xlink:href="#crit-pit-acceptance"/>
+                    <detectedByRef xlink:href="#ac-pit-295-defect"/>
+                    <detectedByRef xlink:href="#ac-pit-295-acceptance"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186449,6 +186541,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-551-position"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186463,6 +186556,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-596-position"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186477,6 +186571,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-542-position"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186491,6 +186586,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-866-position"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186505,6 +186601,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-319-position"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186519,6 +186616,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-317-position"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186533,6 +186631,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-265-position"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186547,6 +186646,24 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-1027-position"/>
+
+                </NonConformance>
+            </nonConformance>
+            <nonConformance>
+                <NonConformance gml:id="nc-pit-1043-toe">
+                    <gml:name>PIT CMC-1043 - toe depth beyond the limit</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Toe at 21.02 m against the length the tester entered, 18.1 m (16.1 percent), beyond the 10 percent limit; accepted as is (Dan, 2026-10-06). No remedial action is recorded.</content>
+                        </Remark>
+                    </remark>
+                    <measurementRef xlink:href="#pit-CMC-1043"/>
+                    <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
+                    <breachedSpecificationRef xlink:href="#crit-pit-toe-depth"/>
+                    <breachedSpecificationRef xlink:href="#crit-pit-acceptance"/>
+                    <detectedByRef xlink:href="#ac-pit-1043-toe"/>
+                    <detectedByRef xlink:href="#ac-pit-1043-acceptance"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186561,6 +186678,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-87-position"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186575,6 +186693,58 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-320-position"/>
+
+                </NonConformance>
+            </nonConformance>
+            <nonConformance>
+                <NonConformance gml:id="nc-pit-391-toe">
+                    <gml:name>PIT CMC-391 - toe depth beyond the limit</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Toe at 11.04 m against the length the tester entered, 10.0 m (10.4 percent), beyond the 10 percent limit; accepted as is (Dan, 2026-10-06). No remedial action is recorded.</content>
+                        </Remark>
+                    </remark>
+                    <measurementRef xlink:href="#pit-CMC-391"/>
+                    <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
+                    <breachedSpecificationRef xlink:href="#crit-pit-toe-depth"/>
+                    <breachedSpecificationRef xlink:href="#crit-pit-acceptance"/>
+                    <detectedByRef xlink:href="#ac-pit-391-toe"/>
+                    <detectedByRef xlink:href="#ac-pit-391-acceptance"/>
+
+                </NonConformance>
+            </nonConformance>
+            <nonConformance>
+                <NonConformance gml:id="nc-pit-402-toe">
+                    <gml:name>PIT CMC-402 - toe depth beyond the limit</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Toe at 11.32 m against the length the tester entered, 10.0 m (13.2 percent), beyond the 10 percent limit; accepted as is (Dan, 2026-10-06). No remedial action is recorded.</content>
+                        </Remark>
+                    </remark>
+                    <measurementRef xlink:href="#pit-CMC-402"/>
+                    <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
+                    <breachedSpecificationRef xlink:href="#crit-pit-toe-depth"/>
+                    <breachedSpecificationRef xlink:href="#crit-pit-acceptance"/>
+                    <detectedByRef xlink:href="#ac-pit-402-toe"/>
+                    <detectedByRef xlink:href="#ac-pit-402-acceptance"/>
+
+                </NonConformance>
+            </nonConformance>
+            <nonConformance>
+                <NonConformance gml:id="nc-pit-406-toe">
+                    <gml:name>PIT CMC-406 - toe depth beyond the limit</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>Toe at 11.64 m against the length the tester entered, 10.0 m (16.4 percent), beyond the 10 percent limit; accepted as is (Dan, 2026-10-06). No remedial action is recorded.</content>
+                        </Remark>
+                    </remark>
+                    <measurementRef xlink:href="#pit-CMC-406"/>
+                    <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
+                    <breachedSpecificationRef xlink:href="#crit-pit-toe-depth"/>
+                    <breachedSpecificationRef xlink:href="#crit-pit-acceptance"/>
+                    <detectedByRef xlink:href="#ac-pit-406-toe"/>
+                    <detectedByRef xlink:href="#ac-pit-406-acceptance"/>
+
                 </NonConformance>
             </nonConformance>
             <nonConformance>
@@ -186589,6 +186759,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                     <disposition codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/disposition.xml#accept_as_is">Accept as is</disposition>
                     <breachedSpecificationRef xlink:href="#crit-pit-location"/>
                     <detectedByRef xlink:href="#ac-pit-471-position"/>
+
                 </NonConformance>
             </nonConformance>
         </AcceptanceEvaluation>
