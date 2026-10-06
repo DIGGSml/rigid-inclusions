@@ -2799,6 +2799,7 @@
                             <testMethod>pulse_echo</testMethod>
                             <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                             <averagedImpactCount>3</averagedImpactCount>
+                            <sensorMounting>wax</sensorMounting>
                         </LowStrainIntegrityTest>
                     </plannedProcedure>
                 </DesignMeasurement>
