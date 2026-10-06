@@ -2796,8 +2796,8 @@
                     </measurementLocation>
                     <plannedProcedure>
                         <LowStrainIntegrityTest gml:id="dm-PIT-proc">
-                            <testMethod codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/lowStrainTestMethod.xml#pulse_echo">pulse_echo</testMethod>
-                            <assumedWaveSpeed uom="m/s">4000</assumedWaveSpeed>
+                            <testMethod>pulse_echo</testMethod>
+                            <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                             <averagedImpactCount>3</averagedImpactCount>
                         </LowStrainIntegrityTest>
                     </plannedProcedure>
@@ -3485,7 +3485,7 @@
                     <gml:name>Pile integrity test specification - rigid inclusion columns</gml:name>
                     <remark>
                         <Remark>
-                            <content>Requirements on the low-strain integrity tests of the CMC columns. The project record states no acceptance criterion for them: owner comment 8 on submittal DTS-091 asked for acceptance criteria (FTR PDF pp.27-28) and the report states only that a deviation of the plot from the straight line of a sound pile indicates a change in cross-section or cracks (FTR PDF p.119). The criteria that cite this specification through partOfSpecificationRef are therefore of two kinds: requirements on how the test is carried out, taken from the plan and the report (crit-pit-count, crit-pit-location, crit-pit-impacts-min), and limits on what the records show, inferred (crit-pit-toe-depth, crit-pit-flaw, crit-pit-defect, and the composite crit-pit-acceptance). A low-strain test locates major defects and gives no information on load capacity, and its classification is not by itself grounds to accept or reject a column.</content>
+                            <content>Requirements on the low-strain integrity tests of the CMC columns. The project record states no acceptance criterion for them: owner comment 8 on submittal DTS-091 asked for acceptance criteria (FTR PDF pp.27-28) and the report states only that a deviation of the plot from the straight line of a sound pile indicates a change in cross-section or cracks (FTR PDF p.119). The criteria that cite this specification through partOfSpecificationRef are therefore of two kinds: requirements on how the test is carried out, taken from the plan and the report (crit-pit-count, crit-pit-location, crit-pit-impacts-min, and crit-pit-age-or-strength with its members crit-pit-age-min and crit-pit-strength-at-test), and limits on what the records show, inferred (crit-pit-toe-depth, crit-pit-flaw, crit-pit-defect, and the composite crit-pit-acceptance). A low-strain test locates major defects and gives no information on load capacity, and its classification is not by itself grounds to accept or reject a column.</content>
                         </Remark>
                     </remark>
                     <appliesToFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#ri_column">ri_column</appliesToFeatureType>
@@ -3535,7 +3535,7 @@
                 <DesignConformanceCriterion gml:id="crit-pit-impacts-min">
                     <remark>
                         <Remark>
-                            <content>Report s.3.0 (FTR PDF p.119): three hammer blows are made at each test location and the average recorded. Three is also the smallest number of similar impacts the Piletest PET User Manual allows for an easily tested pile. Compared with the averagedImpactCount of each test's procedure; the 'Avg' of each reflectogram header states it (15 to 19).</content>
+                            <content>ASTM D5882-07 s.6.1: the average of the records of at least three impacts, and s.6.4: the number of impacts of an averaged record is recorded. Report s.3.0 (FTR PDF p.119): three hammer blows are made at each test location and the average recorded. Three is also the smallest number of similar impacts the Piletest PET User Manual allows for an easily tested pile. Compared with the averagedImpactCount of each test's procedure; the 'Avg' of each reflectogram header states it (15 to 19).</content>
                         </Remark>
                     </remark>
                     <operator>ge</operator>
@@ -3548,6 +3548,59 @@
                     </limit>
                     <partOfSpecificationRef xlink:href="#MS-PIT"/>
                 </DesignConformanceCriterion>
+            </specification>
+            <specification>
+                <DesignConformanceCriterion gml:id="crit-pit-age-min">
+                    <remark>
+                        <Remark>
+                            <content>ASTM D5882-07 s.6.2: for cast-in-place concrete piles the test is made no sooner than 7 days after casting or after the concrete reaches at least 75 percent of its design strength, whichever occurs earlier; the Hong Kong Code of Practice for Foundations 2017 s.8.7 and the PDI sample specification also give 7 days. Age is taken from the end of the column's whenConstructed interval to the date tested. CMC-295 was cast on 2024-12-16 and tested on 2024-12-21, at 5 days; CMC-584 and CMC-551 at 7 days. The tester skipped CMC-576 (cast 2024-12-14, 7 days old on 21 December) as not having reached its 7th day (FTR PDF p.121). A member of crit-pit-age-or-strength.</content>
+                        </Remark>
+                    </remark>
+                    <operator>ge</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#age_at_test">age_at_test</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>7</parameterValue>
+                            <parameterUnits>d</parameterUnits>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#MS-PIT"/>
+                </DesignConformanceCriterion>
+            </specification>
+            <specification>
+                <DesignConformanceCriterion gml:id="crit-pit-strength-at-test">
+                    <remark>
+                        <Remark>
+                            <content>ASTM D5882-07 s.6.2: 75 percent of design strength. Design strength is 38 MPa, the strengthDesign of DGM-MIX-A (Dan, 2026-10-05): the strength the mix was specified to reach, set by durability in the corrosive conditions, taken in place of the 25 MPa structural value; 75 percent is 28.5 MPa. Compared with the compressive strength of the cylinders of the column's batch (groutRef) tested no later than the date the column was tested. The batches' cylinders were tested at 7 and 28 days, so a column tested before its batch's 7-day cylinders has no strength result at its test age; the strength at test is then not known and the criterion is not shown to be met. For CMC-295 (batch 41, 7-day cylinders tested 2024-12-23, 33.7 MPa) the strength at the test is not known; a strength-gain curve through the 7- and 28-day results puts it near 28 MPa, about 113 percent of 25 MPa, which is context only. A member of crit-pit-age-or-strength.</content>
+                        </Remark>
+                    </remark>
+                    <operator>ge</operator>
+                    <limit>
+                        <AuthorizedParameter>
+                            <parameterName codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/designProperty.xml#strength_at_test">strength_at_test</parameterName>
+                            <typeData>double</typeData>
+                            <parameterValue>75</parameterValue>
+                            <parameterUnits>%</parameterUnits>
+                        </AuthorizedParameter>
+                    </limit>
+                    <partOfSpecificationRef xlink:href="#MS-PIT"/>
+                </DesignConformanceCriterion>
+            </specification>
+            <specification>
+                <CompositeAcceptanceCriterion gml:id="crit-pit-age-or-strength">
+                    <gml:name>Test made on mature concrete: at least 7 days old OR at least 75 percent of design strength</gml:name>
+                    <remark>
+                        <Remark>
+                            <content>The condition on when a low strain integrity test may be made (ASTM D5882-07 s.6.2): the age or the strength is enough, whichever is reached first. A column younger than 7 days whose strength at the test is not known does not satisfy it. That is a non-conformance of the test conditions, not evidence of a defect in the column, and is accepted as is where the record is otherwise good.</content>
+                        </Remark>
+                    </remark>
+                    <appliesToFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#ri_column">ri_column</appliesToFeatureType>
+                    <logicalOperator>or</logicalOperator>
+                    <criterionRef xlink:href="#crit-pit-age-min"/>
+                    <criterionRef xlink:href="#crit-pit-strength-at-test"/>
+                    <partOfSpecificationRef xlink:href="#MS-PIT"/>
+                </CompositeAcceptanceCriterion>
             </specification>
             <specification>
                 <PerformanceCriterion gml:id="crit-pit-toe-depth">
@@ -3611,7 +3664,7 @@
                     <gml:name>Pile integrity: toe depth within tolerance AND no defect indicated</gml:name>
                     <remark>
                         <Remark>
-                            <content>The two limits on what a record shows that indicate a column to be reviewed or replaced: the toe depth agrees with the as-built length, and no reflection above the toe reaches the defect limit. crit-pit-flaw is not a member: a flaw calls for review of the record, not for a failed acceptance.</content>
+                            <content>The two limits on what a record shows that indicate a column to be reviewed or replaced: the toe depth agrees with the as-built length, and no reflection above the toe reaches the defect limit. crit-pit-flaw is not a member: a flaw calls for review of the record, not for a failed acceptance. The conditions of the test (count, location, impacts, age or strength) are separate design-conformance criteria: a record made before the concrete had matured is inconclusive, not a sign of a defect.</content>
                         </Remark>
                     </remark>
                     <appliesToFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#ri_column">ri_column</appliesToFeatureType>
