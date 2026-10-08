@@ -257,7 +257,7 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FSTSA31047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FSTSA31047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the site model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g2-buildings"/>
@@ -277,7 +277,7 @@
                     <gml:name>LTP design — Building Isolated Footing</gml:name>
                     <remark>
                         <Remark>
-                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FSTSA31047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FSTSA31047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the site model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g2-buildings"/>
@@ -302,7 +302,7 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1). No Bottom of Foundation value is stated for the septic tank in FSTSA31047-FTR-CMC-00; this zone's elevationTopLTP is set equal to the remaining area's (6.55 m RL). youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1). No Bottom of Foundation value is stated for the septic tank in FSTSA31047-FTR-CMC-00; this zone's elevationTopLTP is set equal to the remaining area's (6.55 m RL). youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the site model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g3-defaultsite"/>
@@ -327,7 +327,7 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FSTSA31047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FSTSA31047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the site model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g1-transformers"/>
@@ -352,7 +352,7 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness. This zone's own elevationTopLTP is not independently sourced - it is the "background" elevation of Group 3's stepped soil-model composite (docs/build/GUS1/NOTES.md), shared with zone-bw because neither is singled out for its own elevated structure, not a value stated anywhere specifically for "Remaining Area." youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them. A platform can have a stated thickness and material without a single named supported structure, which is exactly this zone's case.</content>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness. This zone's own elevationTopLTP is not independently sourced - it is the "background" elevation of Group 3's stepped site-model composite (docs/build/GUS1/NOTES.md), shared with zone-bw because neither is singled out for its own elevated structure, not a value stated anywhere specifically for "Remaining Area." youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the site model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them. A platform can have a stated thickness and material without a single named supported structure, which is exactly this zone's case.</content>
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g3-defaultsite"/>
@@ -376,7 +376,7 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FSTSA31047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FSTSA31047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the site model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g3-defaultsite"/>
@@ -401,7 +401,7 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FSTSA31047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FSTSA31047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the site model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g3-defaultsite"/>
@@ -426,7 +426,7 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FSTSA31047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FSTSA31047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the site model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g3-defaultsite"/>
@@ -451,7 +451,7 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FSTSA31047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1) - both ultimately read off the same Bottom of Foundation and CMC Cut-off Level values in FSTSA31047-FTR-CMC-00's own project levels. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the site model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g3-defaultsite"/>
@@ -3366,12 +3366,12 @@
                 <DesignConformanceCriterion gml:id="crit-col-embedment">
                     <remark>
                         <Remark>
-                            <content>ASEC review of submittal DTS-114 R03, ref. 40611302/46438-J/24, 13/11/2024 (FSTSA31047-FTR-CMC-00 PDF pp.21-28), comment 6: the minimum depth of the columns "shall be sufficient enough to cross the Sabkha layers and any lose clayey layers"; the contractor replied that all columns are "fully embedded into the bearing layer, well clear of the sabkha zones". ASSUMPTION (Dan, 2026-10-03): the bearing layer is the shallowest layer of the soil model with a Young's modulus of at least 20000 kPa and no softer layer below it. That is the Silty sand layer (guo-g1-siltysand, top -3.23 m RL) in the Transformers model, the Silty sand to sandy silt layer (guo-g2-siltysandtosandysilt, top -7.86 m RL) in the Buildings model, and the Clean sand to silty sand layer (guo-g3-cleansand, top +2.34 m RL) in the Default Site model. Embedment is the elevation of the layer top minus the column toe elevation; the limit 0 m means the toe is at or below the top of the layer.</content>
+                            <content>ASEC review of submittal DTS-114 R03, ref. 40611302/46438-J/24, 13/11/2024 (FSTSA31047-FTR-CMC-00 PDF pp.21-28), comment 6: the minimum depth of the columns "shall be sufficient enough to cross the Sabkha layers and any lose clayey layers"; the contractor replied that all columns are "fully embedded into the bearing layer, well clear of the sabkha zones". ASSUMPTION (Dan, 2026-10-03): the bearing layer is the shallowest layer of the site model with a Young's modulus of at least 20000 kPa and no softer layer below it. That is the Silty sand layer (guo-g1-siltysand, top -3.23 m RL) in the Transformers model, the Silty sand to sandy silt layer (guo-g2-siltysandtosandysilt, top -7.86 m RL) in the Buildings model, and the Clean sand to silty sand layer (guo-g3-cleansand, top +2.34 m RL) in the Default Site model. Embedment is the elevation of the layer top minus the column toe elevation; the limit 0 m means the toe is at or below the top of the layer.</content>
                         </Remark>
                     </remark>
                     <remark>
                         <Remark>
-                            <content>Each check cites the bearing layer as its evidenceObservationRef. A column is assigned to a soil model by its plan position against the model footprints (Transformers first, then Buildings, otherwise Default Site), which agrees with its load transfer platform zone for all 1099 columns. The "loose clayey layers" of the comment are not separately modelled.</content>
+                            <content>Each check cites the bearing layer as its evidenceObservationRef. A column is assigned to a site model by its plan position against the model footprints (Transformers first, then Buildings, otherwise Default Site), which agrees with its load transfer platform zone for all 1099 columns. The "loose clayey layers" of the comment are not separately modelled.</content>
                         </Remark>
                     </remark>
                     <operator>ge</operator>
@@ -4042,7 +4042,7 @@
             </basis>
             <basis>
                 <RIProgramBasis gml:id="ripb-g1-transformers">
-                    <gml:name>Soil model basis - Transformers group</gml:name>
+                    <gml:name>Site model basis - Transformers group</gml:name>
                     <remark>
                         <Remark>
                             <content>This basis exists because the ground model is the one premise on this program that is NOT site-wide. FSTSA31047-FTR-CMC-00 derives three soil profiles (Table 1 here), each from a different set of pre-treatment CPTs (CPT-09, CPT-10 and CPT-11), each governing a different set of LTP zones. Everything else the design rests on - the governing standards, the analysis approach, the safety format, the adopted coefficients, the exposure classification and the seismic hazard - is common to the whole program and is stated once on the master basis this one specialises through basedOnRef. Resolution is per property, most specific first, so a design citing this basis inherits all of that and adds only the ground model that applies to it.</content>
@@ -4059,7 +4059,7 @@
             </basis>
             <basis>
                 <RIProgramBasis gml:id="ripb-g2-buildings">
-                    <gml:name>Soil model basis - Buildings group</gml:name>
+                    <gml:name>Site model basis - Buildings group</gml:name>
                     <remark>
                         <Remark>
                             <content>This basis exists because the ground model is the one premise on this program that is NOT site-wide. FSTSA31047-FTR-CMC-00 derives three soil profiles (Table 2 here), each from a different set of pre-treatment CPTs (CPT-03, CPT-04, CPT-06 and CPT-07), each governing a different set of LTP zones. Everything else the design rests on - the governing standards, the analysis approach, the safety format, the adopted coefficients, the exposure classification and the seismic hazard - is common to the whole program and is stated once on the master basis this one specialises through basedOnRef. Resolution is per property, most specific first, so a design citing this basis inherits all of that and adds only the ground model that applies to it.</content>
@@ -4076,7 +4076,7 @@
             </basis>
             <basis>
                 <RIProgramBasis gml:id="ripb-g3-defaultsite">
-                    <gml:name>Soil model basis - Default Site group</gml:name>
+                    <gml:name>Site model basis - Default Site group</gml:name>
                     <remark>
                         <Remark>
                             <content>This basis exists because the ground model is the one premise on this program that is NOT site-wide. FSTSA31047-FTR-CMC-00 derives three soil profiles (Table 3 here), each from a different set of pre-treatment CPTs (CPT-01, CPT-02, CPT-05, CPT-08 and CPT-12), each governing a different set of LTP zones. Everything else the design rests on - the governing standards, the analysis approach, the safety format, the adopted coefficients, the exposure classification and the seismic hazard - is common to the whole program and is stated once on the master basis this one specialises through basedOnRef. Resolution is per property, most specific first, so a design citing this basis inherits all of that and adds only the ground model that applies to it.</content>
@@ -5361,13 +5361,12 @@
         </RITreatedArea>
     </samplingFeature>
     <samplingFeature>
-        <VolumetricSamplingFeature gml:id="SM-SUB-001">
-            <gml:name>Soil Model</gml:name>
+        <VolumetricSamplingFeature gml:id="SITE-SUB-001">
+            <gml:name>Site Model</gml:name>
             <projectRef xlink:href="#GSL-GT-31136"/>
-            <samplingFeatureGroupRef xlink:href="#RIFS-SUB-001"/>
             <programRef xlink:href="#rip-01"/>
             <referencePoint>
-                <PointLocation gml:id="pl-SM-SUB-001"
+                <PointLocation gml:id="pl-SITE-SUB-001"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
                     srsDimension="3">
                     <gml:pos>502979.208 2443929.843 6.25</gml:pos>
@@ -5385,12 +5384,12 @@
                  bottom reverses it (P1-P4-P3-P2) since its outward normal points down; each wall
                  for edge A->B is ordered A_bottom, B_bottom, B_top, A_top. -->
             <featureExtent>
-                <Solid gml:id="solid-SM-SUB-001">
+                <Solid gml:id="solid-SITE-SUB-001">
                     <exterior>
-                        <Shell gml:id="shell-SM-SUB-001" aggregationType="set">
+                        <Shell gml:id="shell-SITE-SUB-001" aggregationType="set">
                             <surfaceMembers>
                                 <!-- top: P1,P2,P3,P4 at z=8 -->
-                                <PlanarSurface gml:id="face-top-SM-SUB-001" srsDimension="3"
+                                <PlanarSurface gml:id="face-top-SITE-SUB-001" srsDimension="3"
                                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
                                     <gml:exterior>
                                         <gml:LinearRing>
@@ -5401,7 +5400,7 @@
                                     </gml:exterior>
                                 </PlanarSurface>
                                 <!-- bottom: P1,P4,P3,P2 (reversed) at z=-20.7 -->
-                                <PlanarSurface gml:id="face-bot-SM-SUB-001" srsDimension="3"
+                                <PlanarSurface gml:id="face-bot-SITE-SUB-001" srsDimension="3"
                                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
                                     <gml:exterior>
                                         <gml:LinearRing>
@@ -5413,7 +5412,7 @@
                                     </gml:exterior>
                                 </PlanarSurface>
                                 <!-- wall, edge P1->P2 -->
-                                <PlanarSurface gml:id="face-w1-SM-SUB-001" srsDimension="3"
+                                <PlanarSurface gml:id="face-w1-SITE-SUB-001" srsDimension="3"
                                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
                                     <gml:exterior>
                                         <gml:LinearRing>
@@ -5425,7 +5424,7 @@
                                     </gml:exterior>
                                 </PlanarSurface>
                                 <!-- wall, edge P2->P3 -->
-                                <PlanarSurface gml:id="face-w2-SM-SUB-001" srsDimension="3"
+                                <PlanarSurface gml:id="face-w2-SITE-SUB-001" srsDimension="3"
                                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
                                     <gml:exterior>
                                         <gml:LinearRing>
@@ -5437,7 +5436,7 @@
                                     </gml:exterior>
                                 </PlanarSurface>
                                 <!-- wall, edge P3->P4 -->
-                                <PlanarSurface gml:id="face-w3-SM-SUB-001" srsDimension="3"
+                                <PlanarSurface gml:id="face-w3-SITE-SUB-001" srsDimension="3"
                                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
                                     <gml:exterior>
                                         <gml:LinearRing>
@@ -5449,7 +5448,7 @@
                                     </gml:exterior>
                                 </PlanarSurface>
                                 <!-- wall, edge P4->P1 -->
-                                <PlanarSurface gml:id="face-w4-SM-SUB-001" srsDimension="3"
+                                <PlanarSurface gml:id="face-w4-SITE-SUB-001" srsDimension="3"
                                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
                                     <gml:exterior>
                                         <gml:LinearRing>
@@ -73983,11 +73982,11 @@
     <observation>
         <GeoUnitSystem gml:id="gus-g1-transformers">
             <gml:description>Layering and properties of soils beneath the power transformers.</gml:description>
-            <gml:name>Soil Model - Transformers</gml:name>
+            <gml:name>Site Model - Transformers</gml:name>
             <projectRef xlink:href="#GSL-GT-31136"/>
             <programRef xlink:href="#rip-01"/>
-            <samplingFeatureRef xlink:href="#SM-SUB-001"/>
-            <geoUnitType>soil model</geoUnitType>
+            <samplingFeatureRef xlink:href="#SITE-SUB-001"/>
+            <geoUnitType>site model</geoUnitType>
             <geoUnitObservation>
                 <GeoUnitObservation gml:id="guo-g1-ltp">
                     <location>
@@ -74833,11 +74832,11 @@
     </observation>
     <observation>
         <GeoUnitSystem gml:id="gus-g2-buildings">
-            <gml:name>Soil Model - Buildings</gml:name>
+            <gml:name>Site Model - Buildings</gml:name>
             <projectRef xlink:href="#GSL-GT-31136"/>
             <programRef xlink:href="#rip-01"/>
-            <samplingFeatureRef xlink:href="#SM-SUB-001"/>
-            <geoUnitType>soil model</geoUnitType>
+            <samplingFeatureRef xlink:href="#SITE-SUB-001"/>
+            <geoUnitType>site model</geoUnitType>
             <geoUnitObservation>
                 <GeoUnitObservation gml:id="guo-g2-ltp">
                     <location>
@@ -75650,11 +75649,11 @@
     </observation>
     <observation>
         <GeoUnitSystem gml:id="gus-g3-defaultsite">
-            <gml:name>Soil Model - Default Site</gml:name>
+            <gml:name>Site Model - Default Site</gml:name>
             <projectRef xlink:href="#GSL-GT-31136"/>
             <programRef xlink:href="#rip-01"/>
-            <samplingFeatureRef xlink:href="#SM-SUB-001"/>
-            <geoUnitType>soil model</geoUnitType>
+            <samplingFeatureRef xlink:href="#SITE-SUB-001"/>
+            <geoUnitType>site model</geoUnitType>
             <geoUnitObservation>
                 <GeoUnitObservation gml:id="guo-g3-ltp">
                     <location>
@@ -76541,8 +76540,8 @@
     </observation>
     <observation>
         <GeoUnitSystem gml:id="gus-bh-1">
-            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D soil model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
-            <gml:name>Soil Model Log - BH-1</gml:name>
+            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
+            <gml:name>Site Model Log - BH-1</gml:name>
             <projectRef xlink:href="#GSL-GT-31136"/>
             <programRef xlink:href="#rip-01"/>
             <samplingFeatureRef xlink:href="#GSL-GT-31136_BH-1"/>
@@ -76805,8 +76804,8 @@
     </observation>
     <observation>
         <GeoUnitSystem gml:id="gus-bh-2">
-            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D soil model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
-            <gml:name>Soil Model Log - BH-2</gml:name>
+            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
+            <gml:name>Site Model Log - BH-2</gml:name>
             <projectRef xlink:href="#GSL-GT-31136"/>
             <programRef xlink:href="#rip-01"/>
             <samplingFeatureRef xlink:href="#GSL-GT-31136_BH-2"/>
@@ -77069,8 +77068,8 @@
     </observation>
     <observation>
         <GeoUnitSystem gml:id="gus-bh-3">
-            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D soil model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
-            <gml:name>Soil Model Log - BH-3</gml:name>
+            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
+            <gml:name>Site Model Log - BH-3</gml:name>
             <projectRef xlink:href="#GSL-GT-31136"/>
             <programRef xlink:href="#rip-01"/>
             <samplingFeatureRef xlink:href="#GSL-GT-31136_BH-3"/>
@@ -77230,8 +77229,8 @@
     </observation>
     <observation>
         <GeoUnitSystem gml:id="gus-bh-4">
-            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D soil model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
-            <gml:name>Soil Model Log - BH-4</gml:name>
+            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
+            <gml:name>Site Model Log - BH-4</gml:name>
             <projectRef xlink:href="#GSL-GT-31136"/>
             <programRef xlink:href="#rip-01"/>
             <samplingFeatureRef xlink:href="#GSL-GT-31136_BH-4"/>
@@ -77391,8 +77390,8 @@
     </observation>
     <observation>
         <GeoUnitSystem gml:id="gus-bh-5">
-            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D soil model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
-            <gml:name>Soil Model Log - BH-5</gml:name>
+            <gml:description>Geotechnical unit depth locations and the properties assigned to them derive from the site-wide 3D model as it occurs at this borehole's location. The GeoUnitSystem for this borehole was not independently derived at the site of this borehole.</gml:description>
+            <gml:name>Site Model Log - BH-5</gml:name>
             <projectRef xlink:href="#GSL-GT-31136"/>
             <programRef xlink:href="#rip-01"/>
             <samplingFeatureRef xlink:href="#GSL-GT-31136_BH-5"/>
@@ -104012,7 +104011,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
             </role>
             <remark>
                 <Remark>
-                    <content>SYNTHETIC installation record. No Jazeera drilling record exists. The record is shaped on the four BAUER OmniBox logs from the FSTSA 25053 Jubail job (depth against time, torque pressure, up and down speed) and extended with the full property suite a rig logs; values are generated from the project soil model (Default, g3) Young's modulus and unit weight, with random variation, at 1 s intervals, and are not measured data. Boundary wall column driven 1 m short of its 16 m design length and stopped at refusal: the last two minutes of push gain 0.030 m (under the 0.05 m limit).</content>
+                    <content>SYNTHETIC installation record. No Jazeera drilling record exists. The record is shaped on the four BAUER OmniBox logs from the FSTSA 25053 Jubail job (depth against time, torque pressure, up and down speed) and extended with the full property suite a rig logs; values are generated from the project site model (Default, g3) Young's modulus and unit weight, with random variation, at 1 s intervals, and are not measured data. Boundary wall column driven 1 m short of its 16 m design length and stopped at refusal: the last two minutes of push gain 0.030 m (under the 0.05 m limit).</content>
                 </Remark>
             </remark>
             <remark>
@@ -104349,7 +104348,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
             </role>
             <remark>
                 <Remark>
-                    <content>SYNTHETIC installation record. No Jazeera drilling record exists. The record is shaped on the four BAUER OmniBox logs from the FSTSA 25053 Jubail job (depth against time, torque pressure, up and down speed) and extended with the full property suite a rig logs; values are generated from the project soil model (Default, g3) Young's modulus and unit weight, with random variation, at 1 s intervals, and are not measured data. Outdoor equipment column stopped 2 m short of its 12 m design length while still advancing: the last two minutes of push gain 0.800 m, so refusal is not shown. Its termination outcome is stopped_short: neither design depth was reached nor refusal met, and the reason it stopped is not recorded.</content>
+                    <content>SYNTHETIC installation record. No Jazeera drilling record exists. The record is shaped on the four BAUER OmniBox logs from the FSTSA 25053 Jubail job (depth against time, torque pressure, up and down speed) and extended with the full property suite a rig logs; values are generated from the project site model (Default, g3) Young's modulus and unit weight, with random variation, at 1 s intervals, and are not measured data. Outdoor equipment column stopped 2 m short of its 12 m design length while still advancing: the last two minutes of push gain 0.800 m, so refusal is not shown. Its termination outcome is stopped_short: neither design depth was reached nor refusal met, and the reason it stopped is not recorded.</content>
                 </Remark>
             </remark>
             <remark>
@@ -104609,7 +104608,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
             </role>
             <remark>
                 <Remark>
-                    <content>SYNTHETIC installation record. No Jazeera drilling record exists. The record is shaped on the four BAUER OmniBox logs from the FSTSA 25053 Jubail job (depth against time, torque pressure, up and down speed) and extended with the full property suite a rig logs; values are generated from the project soil model (Default, g3) Young's modulus and unit weight, with random variation, at 1 s intervals, and are not measured data. Column driven to its design length; the last two minutes of push gain 0.550 m (not refusal) before the tool stopped at design depth. PLT-tested column (location matched from the FTR testing layout drawing, PDF p.18).</content>
+                    <content>SYNTHETIC installation record. No Jazeera drilling record exists. The record is shaped on the four BAUER OmniBox logs from the FSTSA 25053 Jubail job (depth against time, torque pressure, up and down speed) and extended with the full property suite a rig logs; values are generated from the project site model (Default, g3) Young's modulus and unit weight, with random variation, at 1 s intervals, and are not measured data. Column driven to its design length; the last two minutes of push gain 0.550 m (not refusal) before the tool stopped at design depth. PLT-tested column (location matched from the FTR testing layout drawing, PDF p.18).</content>
                 </Remark>
             </remark>
             <remark>
@@ -104907,7 +104906,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
             </role>
             <remark>
                 <Remark>
-                    <content>SYNTHETIC installation record. No Jazeera drilling record exists. The record is shaped on the four BAUER OmniBox logs from the FSTSA 25053 Jubail job (depth against time, torque pressure, up and down speed) and extended with the full property suite a rig logs; values are generated from the project soil model (Default, g3) Young's modulus and unit weight, with random variation, at 1 s intervals, and are not measured data. Column driven to its design length; the last two minutes of push gain 0.900 m (not refusal) before the tool stopped at design depth. PLT-tested column (the report table s.6.2 names CMC-666; the drawing point for PLT-204 lies 1.7 m away).</content>
+                    <content>SYNTHETIC installation record. No Jazeera drilling record exists. The record is shaped on the four BAUER OmniBox logs from the FSTSA 25053 Jubail job (depth against time, torque pressure, up and down speed) and extended with the full property suite a rig logs; values are generated from the project site model (Default, g3) Young's modulus and unit weight, with random variation, at 1 s intervals, and are not measured data. Column driven to its design length; the last two minutes of push gain 0.900 m (not refusal) before the tool stopped at design depth. PLT-tested column (the report table s.6.2 names CMC-666; the drawing point for PLT-204 lies 1.7 m away).</content>
                 </Remark>
             </remark>
             <remark>
@@ -105162,7 +105161,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
             </role>
             <remark>
                 <Remark>
-                    <content>SYNTHETIC installation record. No Jazeera drilling record exists. The record is shaped on the four BAUER OmniBox logs from the FSTSA 25053 Jubail job (depth against time, torque pressure, up and down speed) and extended with the full property suite a rig logs; values are generated from the project soil model (Buildings, g2) Young's modulus and unit weight, with random variation, at 1 s intervals, and are not measured data. Column driven to its design length; the last two minutes of push gain 0.350 m (not refusal) before the tool stopped at design depth. PLT-tested column (location matched from the FTR testing layout drawing, PDF p.18).</content>
+                    <content>SYNTHETIC installation record. No Jazeera drilling record exists. The record is shaped on the four BAUER OmniBox logs from the FSTSA 25053 Jubail job (depth against time, torque pressure, up and down speed) and extended with the full property suite a rig logs; values are generated from the project site model (Buildings, g2) Young's modulus and unit weight, with random variation, at 1 s intervals, and are not measured data. Column driven to its design length; the last two minutes of push gain 0.350 m (not refusal) before the tool stopped at design depth. PLT-tested column (location matched from the FTR testing layout drawing, PDF p.18).</content>
                 </Remark>
             </remark>
             <remark>
@@ -105492,7 +105491,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
             </role>
             <remark>
                 <Remark>
-                    <content>SYNTHETIC installation record. No Jazeera drilling record exists. The record is shaped on the four BAUER OmniBox logs from the FSTSA 25053 Jubail job (depth against time, torque pressure, up and down speed) and extended with the full property suite a rig logs; values are generated from the project soil model (Transformers, g1) Young's modulus and unit weight, with random variation, at 1 s intervals, and are not measured data. Column driven to its design length; the last two minutes of push gain 0.450 m (not refusal) before the tool stopped at design depth. PLT-tested column (location matched from the FTR testing layout drawing, PDF p.18).</content>
+                    <content>SYNTHETIC installation record. No Jazeera drilling record exists. The record is shaped on the four BAUER OmniBox logs from the FSTSA 25053 Jubail job (depth against time, torque pressure, up and down speed) and extended with the full property suite a rig logs; values are generated from the project site model (Transformers, g1) Young's modulus and unit weight, with random variation, at 1 s intervals, and are not measured data. Column driven to its design length; the last two minutes of push gain 0.450 m (not refusal) before the tool stopped at design depth. PLT-tested column (location matched from the FTR testing layout drawing, PDF p.18).</content>
                 </Remark>
             </remark>
             <remark>
@@ -108534,7 +108533,7 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
         <gml:name>RIColumnSpecification RICS-GEN acceptance - 1099 production columns</gml:name>
         <remark>
             <Remark>
-                <content>Evaluation of the criteria attached to RICS-GEN against the 1099 realized RIColumn objects. EVALUATED: crit-col-length-min, crit-col-length-deviation and crit-col-embedment from recorded and modelled values (columnLength, the design length of the cited design, the column centerline and the bearing layer of its soil model), crit-col-verticality by declaration, and the composites crit-col-depth-or-refusal and crit-col-acceptance where they can be determined. crit-col-refusal (subject: the column's construction activity) is evaluated for the six columns that have a synthetic installation record (CMC-430, 1097, 942, 666, 80, 1043). NOT EVALUATED: crit-col-position (no designed setting-out coordinates) and crit-col-refusal for every other column (no drilling records); crit-grout-discharge-time on GS-MIX-A is not evaluated either (no batching or placement times).</content>
+                <content>Evaluation of the criteria attached to RICS-GEN against the 1099 realized RIColumn objects. EVALUATED: crit-col-length-min, crit-col-length-deviation and crit-col-embedment from recorded and modelled values (columnLength, the design length of the cited design, the column centerline and the bearing layer of its site model), crit-col-verticality by declaration, and the composites crit-col-depth-or-refusal and crit-col-acceptance where they can be determined. crit-col-refusal (subject: the column's construction activity) is evaluated for the six columns that have a synthetic installation record (CMC-430, 1097, 942, 666, 80, 1043). NOT EVALUATED: crit-col-position (no designed setting-out coordinates) and crit-col-refusal for every other column (no drilling records); crit-grout-discharge-time on GS-MIX-A is not evaluated either (no batching or placement times).</content>
             </Remark>
         </remark>
         <remark>
