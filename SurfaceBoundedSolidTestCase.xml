@@ -2,17 +2,16 @@
 <!--
   SurfaceBoundedSolidTestCase.xml
 
-  Eight VolumetricSamplingFeatures whose featureExtent is a diggs:SurfaceBoundedSolid,
+  Twenty-five VolumetricSamplingFeatures whose featureExtent is a diggs:SurfaceBoundedSolid,
   graded in complexity, for exercising SurfaceBoundedSolid rendering in
-  diggs_file_inspector. Generated, not hand-authored — see the generator noted in
-  rigid-inclusions docs/build/S32i/NOTES.md.
+  diggs_file_inspector. Generated, not hand-authored. To be released with v 3.1.0
 
   CRS throughout: compound EPSG:32615 (UTM zone 15N, metres) + EPSG:5703 (NAVD88,
   metres). Coordinate order is easting northing elevation, srsDimension="3", so all
   three axes are already metres and no unit conversion is needed to render.
 
   Each solid in SBS-1..11 obeys SurfaceBoundedSolid's coverage requirement: its topSurface and
-  bottomSurface both extend BEYOND the footprint on every side, so the footprint is
+  bottomSurface both extend TO or BEYOND the footprint on every side, so the footprint is
   what clips them. Features are spaced 300 m apart in easting.
 
   SBS-1  flat PlanarSurface top and bottom, plain rectangular footprint
@@ -27,10 +26,6 @@
          irregular 12-vertex footprint with a hole: THE tier-2 vs tier-3 case
   SBS-8  CompositeSurface top (two flat members joined by a vertical riser),
          annular footprint
-
-  Added 2026-09-18, alongside diggs:MultiSolid/diggs:CompositeSolid and the footprint
-  relaxation to PlanarSurface|MultiSurface (docs/build/S32j/NOTES.md):
-
   SBS-9   featureExtent is a diggs:CompositeSolid (not a bare SurfaceBoundedSolid) of
           two adjacent SurfaceBoundedSolid cells sharing a wall — one connected body
   SBS-10  footprint is a diggs:MultiSurface of two disjoint PlanarSurface parts
@@ -38,13 +33,16 @@
           TIN top
 
   DEGENERATE CASES — schema-VALID, built to observe actual inspector behaviour before
-  deciding how to handle them (Dan, 2026-09-18; see STATUS at the end of this comment):
+  deciding how to handle them:
 
   SBS-12  topSurface covers only half the footprint (bottomSurface fully covers)
+          Do not adjust rendering in this case - require complete surface coverage of footprint.
   SBS-13  BOTH bounding surfaces under-cover the footprint, non-congruently
+          Do not adjust rendering in this case - require complete surface coverage of footprint.
   SBS-14  top and bottom surfaces CROSS ONCE within the footprint (bottom rises above
-          top on one side)
-  SBS-15  bottom surface crosses top MULTIPLE times (3x) across an elongated footprint
+          top on one side). Resolution - remove volume whenever bottom surface is above top.
+  SBS-15  bottom surface crosses top MULTIPLE times (3x) across an elongated footprint.
+          Resolution - remove volume whenever bottom surface is above top.
 
   More DEGENERATE CASES, added 2026-09-19 (Dan) — every bounding surface is TILTED and
   UNDER-COVERS the footprint (top covers only the west 62.5 %, bottom only the east
@@ -60,8 +58,10 @@
           changes at every seam, surface continuous)
   SBS-19  as SBS-17 but CompositeSurface top and bottom (6 PlanarSurface members each,
           slope changes at every seam, boundaries coincide in 3D)
-
-  CROSSING VARIANTS of SBS-16..19, added 2026-09-19 (Dan): identical slopes, coverage and
+          Resolution for all 4 variants - cannot render correctly - require full surface coverage
+          of footprint.
+          
+  CROSSING VARIANTS of SBS-16..19, added 2026-09-19: identical slopes, coverage and
   construction, but the bottom is raised so the two surfaces CROSS along the line x = cx,
   inside the region both surfaces cover — west of it top is above bottom, east of it the
   bottom is above the top (inverted). Placed at grid slots 20-23.
@@ -70,10 +70,11 @@
   SBS-21  crossing variant of SBS-17 (PlanarSurface, toward each other)
   SBS-22  crossing variant of SBS-18 (MultiPlanarSurface, same direction)
   SBS-23  crossing variant of SBS-19 (CompositeSurface, toward each other)
+          Resolution for all 4 variants - cannot render correctly - require full surface coverage
+          of footprint.
 
-  VALID crossing cases with multi-patch surfaces, added 2026-09-19 (Dan) — both surfaces
+  VALID crossing cases with multi-patch surfaces, added 2026-09-19 — both surfaces
   cover the footprint completely, so unlike SBS-16..23 these are legal pinch-out fixtures.
-  Placed at grid slots 26 and 27 (24 and 25 are the MultiSolid examples below):
 
   SBS-24  MultiPlanarSurface top and bottom, on DIFFERENT (misaligned) lattices, crossing
           along an oblique line; continuous, no vertical members
@@ -86,14 +87,7 @@
   MultiSolid cannot appear in featureExtent (verified rejected), so it is demonstrated
   via location instead, the reachable path per AbstractObservationType.
 
-  Two more MultiSolid examples, added 2026-09-19 (Dan), same mechanism (GeoUnitObservation/
-  location, each in its own GeoUnitSystem, anchored to SBS-1), at grid slots 24 and 25:
-
-  ms-disjoint  THREE mutually unconnected SurfaceBoundedSolids of different shapes
-  ms-overlap   TWO SurfaceBoundedSolids whose volumes intersect (6,000 m3) — legal for a
-               MultiSolid, not for a CompositeSolid
-
-  STATUS OF THE DEGENERATE CASES, 2026-09-19 (Dan, after seeing them in the viewer):
+  STATUS OF THE DEGENERATE CASES, 2026-09-19 (after seeing them in the viewer):
   - COVERAGE is a firm requirement: topSurface and bottomSurface shall extend to or beyond the
     footprint everywhere. SBS-12, SBS-13 and SBS-16..23 VIOLATE it. They are INVALID, kept as
     negative fixtures: a geometry validator must flag them, and how a viewer renders them is
@@ -102,7 +96,7 @@
     and that part of the footprint is empty. SBS-14 and SBS-15 (full coverage, crossing) are the
     valid pinch-out fixtures with planar / TIN surfaces; SBS-24 and SBS-25 are the valid ones
     with multi-patch surfaces. SBS-20..23 also cross but are invalid on coverage as well.
-  - topSurface/bottomSurface can no longer be a diggs:MultiSurface (diggs:BoundingSurface-
+  - topSurface/bottomSurface cannot be a diggs:MultiSurface (diggs:BoundingSurface-
     PropertyType). SBS-8 was one and is now a CompositeSurface with a vertical riser. A
     disjoint body is expressed with a MultiSurface FOOTPRINT (SBS-10, SBS-11) instead.
   - The members of a CompositeSurface and the patches of a MultiPlanarSurface shall share
@@ -113,7 +107,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:gml="http://www.opengis.net/gml/3.2"
-  xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.0.0/Diggs.xsd"
+  xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schemas/3.1.0/Diggs.xsd"
   gml:id="SurfaceBoundedSolidTestCase">
   <documentInformation>
     <DocumentInformation gml:id="di-1">
@@ -17854,303 +17848,4 @@
       </featureExtent>
     </VolumetricSamplingFeature>
   </samplingFeature>
-
-  <!-- ═══ GUO-MultiSolid — MultiSolid demonstrated via GeoUnitObservation/location ═══
-       MultiSolid cannot appear in featureExtent (rejected — S32j-neg-03); this is NOT
-       a VolumetricSamplingFeature. diggs:location (inherited from AbstractObservationType)
-       admits any diggs:AbstractGeometry, including diggs:MultiSolid, which is how a
-       disjoint geologic unit body is meant to be expressed (S32i/S32j design discussion).
-       samplingFeatureRef points at SBS-1, an arbitrary existing sampling feature — this
-       GeoUnitSystem is a synthetic anchor for the demonstration, not a real subject.
-  
-       Two solidMembers, each an inline SurfaceBoundedSolid, clearly disjoint (60 m apart,
-       different elevations) — the "two unconnected patches of one unit" case.
-  -->
-  <observation>
-    <GeoUnitSystem gml:id="gus-multisolid-demo">
-      <projectRef xlink:href="#proj-sbs"/>
-      <samplingFeatureRef xlink:href="#SBS-1"/>
-      <geoUnitObservation>
-        <GeoUnitObservation gml:id="guo-multisolid-demo">
-          <location>
-            <MultiSolid gml:id="ms-demo">
-              <solidMember>
-                <SurfaceBoundedSolid gml:id="ms-demo-a">
-                  <footprint>
-                    <PlanarSurface gml:id="fp-ms-demo-a" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>504445 3299982 0 504475 3299982 0 504475 3300018 0 504445 3300018 0 504445 3299982 0</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </footprint>
-                  <topSurface>
-                    <PlanarSurface gml:id="ms-demo-a-top" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>504440 3299977 16 504480 3299977 16 504480 3300023 16 504440 3300023 16 504440 3299977 16</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </topSurface>
-                  <bottomSurface>
-                    <PlanarSurface gml:id="ms-demo-a-bot" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>504440 3299977 6 504480 3299977 6 504480 3300023 6 504440 3300023 6 504440 3299977 6</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </bottomSurface>
-                </SurfaceBoundedSolid>
-              </solidMember>
-              <solidMember>
-                <SurfaceBoundedSolid gml:id="ms-demo-b">
-                  <footprint>
-                    <PlanarSurface gml:id="fp-ms-demo-b" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>504525 3299982 0 504555 3299982 0 504555 3300018 0 504525 3300018 0 504525 3299982 0</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </footprint>
-                  <topSurface>
-                    <PlanarSurface gml:id="ms-demo-b-top" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>504520 3299977 24 504560 3299977 24 504560 3300023 24 504520 3300023 24 504520 3299977 24</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </topSurface>
-                  <bottomSurface>
-                    <PlanarSurface gml:id="ms-demo-b-bot" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>504520 3299977 14 504560 3299977 14 504560 3300023 14 504520 3300023 14 504520 3299977 14</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </bottomSurface>
-                </SurfaceBoundedSolid>
-              </solidMember>
-            </MultiSolid>
-          </location>
-          <unitName>Disjoint Demo Unit</unitName>
-        </GeoUnitObservation>
-      </geoUnitObservation>
-    </GeoUnitSystem>
-  </observation>
-
-  <!-- ═══ GUO-ms-disjoint — MultiSolid - three disjoint solids ═══
-       A diggs:MultiSolid of THREE unconnected SurfaceBoundedSolid members, each a different
-       shape, no two touching or overlapping (plan-view gaps of 30 m and 27 m):
-         a  rectangle 30 x 36 m centred msx-70, flat top 16 m, flat bottom 6 m
-         b  concave L-shape (6 vertices) centred msx, top dipping 22 m at msx (0.05 down +x),
-            flat bottom 10 m
-         c  regular hexagon, 18 m circumradius, centred msx+70, flat top 26 m, flat bottom 14 m
-       The "several unconnected bodies of one unit" case. Compare gus-multisolid-demo above
-       (two rectangles); this one varies footprint shape, top surface and elevation.
-       Carried by GeoUnitObservation/location — MultiSolid is not legal in featureExtent.
-  -->
-  <observation>
-    <GeoUnitSystem gml:id="gus-ms-disjoint">
-      <projectRef xlink:href="#proj-sbs"/>
-      <samplingFeatureRef xlink:href="#SBS-1"/>
-      <geoUnitObservation>
-        <GeoUnitObservation gml:id="guo-ms-disjoint">
-          <location>
-            <MultiSolid gml:id="ms-ms-disjoint">
-              <solidMember>
-                <SurfaceBoundedSolid gml:id="ms-disjoint-a">
-                  <footprint>
-                    <PlanarSurface gml:id="fp-ms-disjoint-a" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507115 3299982 0 507145 3299982 0 507145 3300018 0 507115 3300018 0 507115 3299982 0</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </footprint>
-                  <topSurface>
-                    <PlanarSurface gml:id="ms-disjoint-a-top" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507110 3299977 16 507150 3299977 16 507150 3300023 16 507110 3300023 16 507110 3299977 16</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </topSurface>
-                  <bottomSurface>
-                    <PlanarSurface gml:id="ms-disjoint-a-bot" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507110 3299977 6 507150 3299977 6 507150 3300023 6 507110 3300023 6 507110 3299977 6</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </bottomSurface>
-                </SurfaceBoundedSolid>
-              </solidMember>
-              <solidMember>
-                <SurfaceBoundedSolid gml:id="ms-disjoint-b">
-                  <footprint>
-                    <PlanarSurface gml:id="fp-ms-disjoint-b" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507175 3299980 0 507205 3299980 0 507205 3300000 0 507225 3300000 0 507225 3300020 0 507175 3300020 0 507175 3299980 0</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </footprint>
-                  <topSurface>
-                    <PlanarSurface gml:id="ms-disjoint-b-top" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507170 3299975 23.5 507230 3299975 20.5 507230 3300025 20.5 507170 3300025 23.5 507170 3299975 23.5</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </topSurface>
-                  <bottomSurface>
-                    <PlanarSurface gml:id="ms-disjoint-b-bot" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507170 3299975 10 507230 3299975 10 507230 3300025 10 507170 3300025 10 507170 3299975 10</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </bottomSurface>
-                </SurfaceBoundedSolid>
-              </solidMember>
-              <solidMember>
-                <SurfaceBoundedSolid gml:id="ms-disjoint-c">
-                  <footprint>
-                    <PlanarSurface gml:id="fp-ms-disjoint-c" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507288 3300000 0 507279 3300015.588 0 507261 3300015.588 0 507252 3300000 0 507261 3299984.412 0 507279 3299984.412 0 507288 3300000 0</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </footprint>
-                  <topSurface>
-                    <PlanarSurface gml:id="ms-disjoint-c-top" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507247 3299977 26 507293 3299977 26 507293 3300023 26 507247 3300023 26 507247 3299977 26</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </topSurface>
-                  <bottomSurface>
-                    <PlanarSurface gml:id="ms-disjoint-c-bot" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507247 3299977 14 507293 3299977 14 507293 3300023 14 507247 3300023 14 507247 3299977 14</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </bottomSurface>
-                </SurfaceBoundedSolid>
-              </solidMember>
-            </MultiSolid>
-          </location>
-          <unitName>MultiSolid - three disjoint solids</unitName>
-        </GeoUnitObservation>
-      </geoUnitObservation>
-    </GeoUnitSystem>
-  </observation>
-
-  <!-- ═══ GUO-ms-overlap — MultiSolid - two overlapping solids ═══
-       A diggs:MultiSolid of TWO SurfaceBoundedSolid members whose VOLUMES INTERSECT — legal for
-       a MultiSolid (ISO 19107 places no non-overlap constraint on it), illegal for a
-       CompositeSolid.
-         a  footprint x in [msx-50,msx+10], y in [msy-25,msy+25]; flat top 16 m, flat bottom 6 m
-         b  footprint x in [msx-10,msx+50], y in [msy-25,msy+25]; flat top 24 m, flat bottom 10 m
-       Overlap: x in [msx-10,msx+10] (20 m), y in [msy-25,msy+25] (50 m), z in [10,16] (6 m)
-       = 6,000 m3 shared by both members. Outside the overlap each member also has volume of
-       its own, and the two are offset in elevation, so the overlap is a genuine 3D
-       intersection and not a shared face.
-       Carried by GeoUnitObservation/location — MultiSolid is not legal in featureExtent.
-  -->
-  <observation>
-    <GeoUnitSystem gml:id="gus-ms-overlap">
-      <projectRef xlink:href="#proj-sbs"/>
-      <samplingFeatureRef xlink:href="#SBS-1"/>
-      <geoUnitObservation>
-        <GeoUnitObservation gml:id="guo-ms-overlap">
-          <location>
-            <MultiSolid gml:id="ms-ms-overlap">
-              <solidMember>
-                <SurfaceBoundedSolid gml:id="ms-overlap-a">
-                  <footprint>
-                    <PlanarSurface gml:id="fp-ms-overlap-a" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507450 3299975 0 507510 3299975 0 507510 3300025 0 507450 3300025 0 507450 3299975 0</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </footprint>
-                  <topSurface>
-                    <PlanarSurface gml:id="ms-overlap-a-top" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507445 3299970 16 507515 3299970 16 507515 3300030 16 507445 3300030 16 507445 3299970 16</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </topSurface>
-                  <bottomSurface>
-                    <PlanarSurface gml:id="ms-overlap-a-bot" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507445 3299970 6 507515 3299970 6 507515 3300030 6 507445 3300030 6 507445 3299970 6</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </bottomSurface>
-                </SurfaceBoundedSolid>
-              </solidMember>
-              <solidMember>
-                <SurfaceBoundedSolid gml:id="ms-overlap-b">
-                  <footprint>
-                    <PlanarSurface gml:id="fp-ms-overlap-b" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507490 3299975 0 507550 3299975 0 507550 3300025 0 507490 3300025 0 507490 3299975 0</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </footprint>
-                  <topSurface>
-                    <PlanarSurface gml:id="ms-overlap-b-top" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507485 3299970 24 507555 3299970 24 507555 3300030 24 507485 3300030 24 507485 3299970 24</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </topSurface>
-                  <bottomSurface>
-                    <PlanarSurface gml:id="ms-overlap-b-bot" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/32615%262=http://www.opengis.net/def/crs/EPSG/0/5703" srsDimension="3">
-                      <gml:exterior>
-                        <gml:LinearRing>
-                          <gml:posList>507485 3299970 10 507555 3299970 10 507555 3300030 10 507485 3300030 10 507485 3299970 10</gml:posList>
-                        </gml:LinearRing>
-                      </gml:exterior>
-                    </PlanarSurface>
-                  </bottomSurface>
-                </SurfaceBoundedSolid>
-              </solidMember>
-            </MultiSolid>
-          </location>
-          <unitName>MultiSolid - two overlapping solids</unitName>
-        </GeoUnitObservation>
-      </geoUnitObservation>
-    </GeoUnitSystem>
-  </observation>
 </Diggs>
