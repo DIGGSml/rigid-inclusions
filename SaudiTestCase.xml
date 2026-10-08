@@ -2,7 +2,7 @@
 <Diggs xmlns="http://diggsml.org/schemas/3" xmlns:glr="http://www.opengis.net/gml/3.3/lr"
     xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://diggsml.org/schemas/3 https://raw.githubusercontent.com/DIGGSml/schema-dev/refs/heads/3.1-dev/Diggs.xsd"
+    xsi:schemaLocation="http://diggsml.org/schemas/3 https://diggsml.org/schema-dev/Diggs.xsd"
     gml:id="NTM1YTEwMzUtYmRmZS00NTIxLTk1OWItZjk4NGEwOWRjZDcx">
     <documentInformation>
         <DocumentInformation gml:id="DGS765F-DA6-2E5C-4987-1FA95">
@@ -105870,21 +105870,19 @@ The report conclusion (Table 3): settlement 3.36 mm at 150 kPa, 6.29 mm at 225 k
                 </Role>
             </role>
             <projectRef xlink:href="#GSL-GT-31136"/>
-            <!-- The group's extent is the bounding box of EVERY sampling feature it contains,
-                 not the treated footprint. It is deliberately larger than RITreatedArea's
-                 featureExtent because the seven exploratory boreholes drilled to characterize
-                 the site lie partly outside the ground-improvement area: BH minimums are
-                 502872.000 / 2443860.000 against the treated area's 502933.918 / 2443886.410.
-                 2D, per AbstractSamplingFeatureGroupType/extent - elevation is not meaningful
-                 for a group extent. -->
+            <!-- The group's extent is the treated footprint (RITreatedArea's featureExtent). The
+                 exploratory boreholes, CPTs, stations and trial pits belong to the program,
+                 not to this system, so they do not enlarge it. 2D, per
+                 AbstractSamplingFeatureGroupType/extent - elevation is not meaningful for a
+                 group extent. -->
             <extent>
                 <PlanarSurface gml:id="ps-RIFS-SUB-001" srsDimension="2"
                     srsName="http://www.opengis.net/def/crs/EPSG/0/9357">
                     <gml:exterior>
                         <gml:LinearRing>
-                            <gml:posList>502872.000 2443860.000 503024.497 2443860.000 503024.497
-                                2443973.277 502872.000 2443973.277 502872.000
-                                2443860.000</gml:posList>
+                            <gml:posList>502994.658 2443973.277 502933.918 2443938.469 502963.757
+                                2443886.41 503024.497 2443921.218 502994.658
+                                2443973.277</gml:posList>
                         </gml:LinearRing>
                     </gml:exterior>
                 </PlanarSurface>
