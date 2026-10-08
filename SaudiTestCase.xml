@@ -302,14 +302,14 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1). This zone's own elevationTopLTP was not read from a Bottom of Foundation value in FSTSA31047-FTR-CMC-00 (none is stated for the septic tank) - it came from Dan's own elevation-picks image, supplied during the GUS1 soil-model build (see docs/build/GUS1/NOTES.md), not from the report text directly. youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
+                            <content>ltpThickness matches this zone's own LoadTransferPlatform/impliedLTPThickness (elevationTopLTP minus the working platform elevation, built at GUS1). No Bottom of Foundation value is stated for the septic tank in FSTSA31047-FTR-CMC-00; this zone's elevationTopLTP is set equal to the remaining area's (6.55 m RL). youngsModulus, unitWeight, cohesion, frictionAngle and poissonsRatio are the LTP fill design parameters FSTSA31047-FTR-CMC-00 states identically in Tables 1, 2 and 3 - one shared platform-material specification, not zone-varying - duplicating what the same five values are cited as on the soil model's own GeoUnitObservation[unitName="LTP"] per group (GUS1); stated explicitly here too since a design object should not depend on a ground model existing to carry them.</content>
                         </Remark>
                     </remark>
                     <basisRef xlink:href="#ripb-g3-defaultsite"/>
                     <programSpecificationRef xlink:href="#LTPS-GEN"/>
                     <samplingFeatureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/samplingFeatureTypes.xml#load_transfer_platform">load_transfer_platform</samplingFeatureType>
                     <supportedStructureType codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/supportedStructureType.xml#tank">tank</supportedStructureType>
-                    <ltpThickness uom="m">1.50</ltpThickness>
+                    <ltpThickness uom="m">0.30</ltpThickness>
                     <youngsModulus uom="kPa">60000</youngsModulus>
                     <unitWeight uom="kN/m3">16</unitWeight>
                     <cohesion uom="kPa">0</cohesion>
@@ -6332,7 +6332,7 @@
             <referencePoint>
                 <PointLocation gml:id="rp-zone-st" srsDimension="3"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                    <gml:pos>502971.74 2443904.358 7.75</gml:pos>
+                    <gml:pos>502971.74 2443904.358 6.55</gml:pos>
                 </PointLocation>
             </referencePoint>
             <featureExtent>
@@ -6340,18 +6340,18 @@
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
                     <gml:exterior>
                         <gml:LinearRing>
-                            <gml:posList>502972.717 2443904.358 7.75 502972.684 2443904.611 7.75
-                                502972.586 2443904.847 7.75 502972.431 2443905.049 7.75 502972.229
-                                2443905.204 7.75 502971.993 2443905.302 7.75 502971.74 2443905.335
-                                7.75 502971.487 2443905.302 7.75 502971.251 2443905.204 7.75
-                                502971.049 2443905.049 7.75 502970.894 2443904.847 7.75 502970.796
-                                2443904.611 7.75 502970.763 2443904.358 7.75 502970.796 2443904.105
-                                7.75 502970.894 2443903.869 7.75 502971.049 2443903.667 7.75
-                                502971.251 2443903.512 7.75 502971.487 2443903.414 7.75 502971.74
-                                2443903.381 7.75 502971.993 2443903.414 7.75 502972.229 2443903.512
-                                7.75 502972.431 2443903.667 7.75 502972.586 2443903.869 7.75
-                                502972.684 2443904.105 7.75 502972.717 2443904.358
-                                7.75</gml:posList>
+                            <gml:posList>502972.717 2443904.358 6.55 502972.684 2443904.611 6.55
+                                502972.586 2443904.847 6.55 502972.431 2443905.049 6.55 502972.229
+                                2443905.204 6.55 502971.993 2443905.302 6.55 502971.74 2443905.335
+                                6.55 502971.487 2443905.302 6.55 502971.251 2443905.204 6.55
+                                502971.049 2443905.049 6.55 502970.894 2443904.847 6.55 502970.796
+                                2443904.611 6.55 502970.763 2443904.358 6.55 502970.796 2443904.105
+                                6.55 502970.894 2443903.869 6.55 502971.049 2443903.667 6.55
+                                502971.251 2443903.512 6.55 502971.487 2443903.414 6.55 502971.74
+                                2443903.381 6.55 502971.993 2443903.414 6.55 502972.229 2443903.512
+                                6.55 502972.431 2443903.667 6.55 502972.586 2443903.869 6.55
+                                502972.684 2443904.105 6.55 502972.717 2443904.358
+                                6.55</gml:posList>
                         </gml:LinearRing>
                     </gml:exterior>
                 </PlanarSurface>
@@ -6362,10 +6362,10 @@
                 <PointLocation gml:id="pl-etl-zone-st"
                     srsName="http://www.opengis.net/def/crs/EPSG/0/5773" srsDimension="1"
                     axisLabels="height" uomLabels="m">
-                    <gml:pos>7.75</gml:pos>
+                    <gml:pos>6.55</gml:pos>
                 </PointLocation>
             </elevationTopLTP>
-            <impliedLTPThickness uom="m">1.5</impliedLTPThickness>
+            <impliedLTPThickness uom="m">0.3</impliedLTPThickness>
             <lifts>
                 <LTPLift gml:id="ltplift-zone-st">
                     <materialType>
@@ -6373,8 +6373,8 @@
                             <lithDescription>Well-compacted granular fill (good quality)</lithDescription>
                         </Lithology>
                     </materialType>
-                    <heightAboveWorkingPlatform uom="m">1.5</heightAboveWorkingPlatform>
-                    <liftThickness uom="m">1.5</liftThickness>
+                    <heightAboveWorkingPlatform uom="m">0.3</heightAboveWorkingPlatform>
+                    <liftThickness uom="m">0.3</liftThickness>
                 </LTPLift>
             </lifts>
             <geosynthetics>
@@ -75790,28 +75790,6 @@
                                                 </gml:LinearRing>
                                             </gml:exterior>
                                         </PlanarSurface>
-                                        <PlanarSurface gml:id="isl-g3-st" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502972.68 2443904.11 7.75 502972.72
-                                                  2443904.36 7.75 502972.68 2443904.61 7.75
-                                                  502972.59 2443904.85 7.75 502972.43 2443905.05
-                                                  7.75 502972.23 2443905.2 7.75 502971.99 2443905.3
-                                                  7.75 502971.74 2443905.34 7.75 502971.49 2443905.3
-                                                  7.75 502971.25 2443905.2 7.75 502971.05 2443905.05
-                                                  7.75 502970.89 2443904.85 7.75 502970.8 2443904.61
-                                                  7.75 502970.76 2443904.36 7.75 502970.8 2443904.11
-                                                  7.75 502970.89 2443903.87 7.75 502971.05
-                                                  2443903.67 7.75 502971.25 2443903.51 7.75
-                                                  502971.49 2443903.41 7.75 502971.74 2443903.38
-                                                  7.75 502971.99 2443903.41 7.75 502972.23
-                                                  2443903.51 7.75 502972.43 2443903.67 7.75
-                                                  502972.59 2443903.87 7.75 502972.68 2443904.11
-                                                  7.75</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
                                         <PlanarSurface gml:id="isl-g3-oe0" srsDimension="3"
                                             srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
                                             <gml:exterior>
@@ -75939,270 +75917,6 @@
                                                   <gml:posList>502988 2443968.53 6.55 502978.39
                                                   2443963.03 6.55 502978.39 2443963.03 8 502988
                                                   2443968.53 8 502988 2443968.53 6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-0" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502972.68 2443904.11 6.55 502972.72
-                                                  2443904.36 6.55 502972.72 2443904.36 7.75
-                                                  502972.68 2443904.11 7.75 502972.68 2443904.11
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-1" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502972.72 2443904.36 6.55 502972.68
-                                                  2443904.61 6.55 502972.68 2443904.61 7.75
-                                                  502972.72 2443904.36 7.75 502972.72 2443904.36
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-2" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502972.68 2443904.61 6.55 502972.59
-                                                  2443904.85 6.55 502972.59 2443904.85 7.75
-                                                  502972.68 2443904.61 7.75 502972.68 2443904.61
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-3" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502972.59 2443904.85 6.55 502972.43
-                                                  2443905.05 6.55 502972.43 2443905.05 7.75
-                                                  502972.59 2443904.85 7.75 502972.59 2443904.85
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-4" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502972.43 2443905.05 6.55 502972.23
-                                                  2443905.2 6.55 502972.23 2443905.2 7.75 502972.43
-                                                  2443905.05 7.75 502972.43 2443905.05
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-5" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502972.23 2443905.2 6.55 502971.99
-                                                  2443905.3 6.55 502971.99 2443905.3 7.75 502972.23
-                                                  2443905.2 7.75 502972.23 2443905.2
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-6" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502971.99 2443905.3 6.55 502971.74
-                                                  2443905.34 6.55 502971.74 2443905.34 7.75
-                                                  502971.99 2443905.3 7.75 502971.99 2443905.3
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-7" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502971.74 2443905.34 6.55 502971.49
-                                                  2443905.3 6.55 502971.49 2443905.3 7.75 502971.74
-                                                  2443905.34 7.75 502971.74 2443905.34
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-8" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502971.49 2443905.3 6.55 502971.25
-                                                  2443905.2 6.55 502971.25 2443905.2 7.75 502971.49
-                                                  2443905.3 7.75 502971.49 2443905.3
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-9" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502971.25 2443905.2 6.55 502971.05
-                                                  2443905.05 6.55 502971.05 2443905.05 7.75
-                                                  502971.25 2443905.2 7.75 502971.25 2443905.2
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-10" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502971.05 2443905.05 6.55 502970.89
-                                                  2443904.85 6.55 502970.89 2443904.85 7.75
-                                                  502971.05 2443905.05 7.75 502971.05 2443905.05
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-11" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502970.89 2443904.85 6.55 502970.8
-                                                  2443904.61 6.55 502970.8 2443904.61 7.75 502970.89
-                                                  2443904.85 7.75 502970.89 2443904.85
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-12" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502970.8 2443904.61 6.55 502970.76
-                                                  2443904.36 6.55 502970.76 2443904.36 7.75 502970.8
-                                                  2443904.61 7.75 502970.8 2443904.61
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-13" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502970.76 2443904.36 6.55 502970.8
-                                                  2443904.11 6.55 502970.8 2443904.11 7.75 502970.76
-                                                  2443904.36 7.75 502970.76 2443904.36
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-14" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502970.8 2443904.11 6.55 502970.89
-                                                  2443903.87 6.55 502970.89 2443903.87 7.75 502970.8
-                                                  2443904.11 7.75 502970.8 2443904.11
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-15" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502970.89 2443903.87 6.55 502971.05
-                                                  2443903.67 6.55 502971.05 2443903.67 7.75
-                                                  502970.89 2443903.87 7.75 502970.89 2443903.87
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-16" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502971.05 2443903.67 6.55 502971.25
-                                                  2443903.51 6.55 502971.25 2443903.51 7.75
-                                                  502971.05 2443903.67 7.75 502971.05 2443903.67
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-17" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502971.25 2443903.51 6.55 502971.49
-                                                  2443903.41 6.55 502971.49 2443903.41 7.75
-                                                  502971.25 2443903.51 7.75 502971.25 2443903.51
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-18" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502971.49 2443903.41 6.55 502971.74
-                                                  2443903.38 6.55 502971.74 2443903.38 7.75
-                                                  502971.49 2443903.41 7.75 502971.49 2443903.41
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-19" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502971.74 2443903.38 6.55 502971.99
-                                                  2443903.41 6.55 502971.99 2443903.41 7.75
-                                                  502971.74 2443903.38 7.75 502971.74 2443903.38
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-20" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502971.99 2443903.41 6.55 502972.23
-                                                  2443903.51 6.55 502972.23 2443903.51 7.75
-                                                  502971.99 2443903.41 7.75 502971.99 2443903.41
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-21" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502972.23 2443903.51 6.55 502972.43
-                                                  2443903.67 6.55 502972.43 2443903.67 7.75
-                                                  502972.23 2443903.51 7.75 502972.23 2443903.51
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-22" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502972.43 2443903.67 6.55 502972.59
-                                                  2443903.87 6.55 502972.59 2443903.87 7.75
-                                                  502972.43 2443903.67 7.75 502972.43 2443903.67
-                                                  6.55</gml:posList>
-                                                </gml:LinearRing>
-                                            </gml:exterior>
-                                        </PlanarSurface>
-                                        <PlanarSurface gml:id="wall-g3-st-23" srsDimension="3"
-                                            srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773">
-                                            <gml:exterior>
-                                                <gml:LinearRing>
-                                                  <gml:posList>502972.59 2443903.87 6.55 502972.68
-                                                  2443904.11 6.55 502972.68 2443904.11 7.75
-                                                  502972.59 2443903.87 7.75 502972.59 2443903.87
-                                                  6.55</gml:posList>
                                                 </gml:LinearRing>
                                             </gml:exterior>
                                         </PlanarSurface>
