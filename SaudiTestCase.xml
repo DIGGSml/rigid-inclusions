@@ -437,13 +437,13 @@
                         <SFDesignScope>
                             <plannedPositions>
                                 <PlannedPositions>
-                            <RectifiedGrid gml:id="grid-DRC-G1" dimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/9357">
+                            <grid><RectifiedGrid gml:id="grid-DRC-G1" dimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/9357">
                                 <limits><gml:GridEnvelope><gml:low>0 0</gml:low><gml:high>34 29</gml:high></gml:GridEnvelope></limits>
                                 <axisLabels>x y</axisLabels>
                                 <origin><PointLocation gml:id="grid-DRC-G1-origin" srsName="http://www.opengis.net/def/crs/EPSG/0/9357" srsDimension="2"><gml:pos>502964.477 2443887.840</gml:pos></PointLocation></origin>
                                 <offsetVector>1.7352777502 0.9943898279</offsetVector>
                                 <offsetVector>-0.9943898279 1.7352777502</offsetVector>
-                            </RectifiedGrid>
+                            </RectifiedGrid></grid>
                                 </PlannedPositions>
                             </plannedPositions>
                             <zone>
@@ -473,13 +473,13 @@
                         <SFDesignScope>
                             <plannedPositions>
                                 <PlannedPositions>
-                            <RectifiedGrid gml:id="grid-DRC-G2" dimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/9357">
+                            <grid><RectifiedGrid gml:id="grid-DRC-G2" dimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/9357">
                                 <limits><gml:GridEnvelope><gml:low>0 0</gml:low><gml:high>22 4</gml:high></gml:GridEnvelope></limits>
                                 <axisLabels>x y</axisLabels>
                                 <origin><PointLocation gml:id="grid-DRC-G2-origin" srsName="http://www.opengis.net/def/crs/EPSG/0/9357" srsDimension="2"><gml:pos>502979.534 2443903.330</gml:pos></PointLocation></origin>
                                 <offsetVector>1.5617499751 0.8949508451</offsetVector>
                                 <offsetVector>-0.8949508451 1.5617499751</offsetVector>
-                            </RectifiedGrid>
+                            </RectifiedGrid></grid>
                                 </PlannedPositions>
                             </plannedPositions>
                             <zone xlink:href="#ms-zone-pt"/>
