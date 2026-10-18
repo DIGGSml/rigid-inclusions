@@ -192,37 +192,41 @@
                     <programSpecificationRef xlink:href="#GS-MIX-A"/>
                     <activityType>test</activityType>
                     <placementDescription>CMC rigid inclusion columns across the treated area; the Load Transfer Platform is a separate compacted granular fill (DesignRILTP) and does not use this concrete mix. Very Severe exposure per 70-TMSS-03 Table 8B, Mg&lt;1000 ppm row: Type I cement, Silica Fume admixture.</placementDescription>
-                    <binder>
-                        <Binder gml:id="binder-01">
-                            <gml:name>Silica Fume</gml:name>
-                            <specificGravity>2.2</specificGravity>
-                            <type>Silica Fume</type>
-                            <volume uom="m3">0.01418</volume>
-                            <weight uom="kN">0.306</weight>
-                        </Binder>
-                    </binder>
-                    <cement>
-                        <Cement gml:id="risss">
-                            <gml:name>Type I (C3A 8-14%)</gml:name>
-                            <specificGravity>3.15</specificGravity>
-                            <type>Type I (C3A 8-14%)</type>
-                            <volume uom="m3">0.11390</volume>
-                            <weight uom="kN">3.520</weight>
-                        </Cement>
-                    </cement>
-                    <filler>
-                        <Filler gml:id="filler-01">
-                            <gml:name>Fine Aggregate (Sand)</gml:name>
-                            <specificGravity>2.65</specificGravity>
-                            <type>Fine Aggregate</type>
-                            <volume uom="m3">0.69591</volume>
-                            <weight uom="kN">18.091</weight>
-                        </Filler>
-                    </filler>
-                    <theoreticalYield uom="m3">1.000</theoreticalYield>
-                    <typeMix>cement</typeMix>
-                    <volumeWater uom="m3">0.1560</volumeWater>
-                    <waterCementRatio>0.4348</waterCementRatio>
+                    <formulation>
+                        <GroutBatchFormulation>
+                            <binder>
+                                <Binder gml:id="binder-01">
+                                    <gml:name>Silica Fume</gml:name>
+                                    <specificGravity>2.2</specificGravity>
+                                    <type>Silica Fume</type>
+                                    <volume uom="m3">0.01418</volume>
+                                    <weight uom="kN">0.306</weight>
+                                </Binder>
+                            </binder>
+                            <cement>
+                                <Cement gml:id="risss">
+                                    <gml:name>Type I (C3A 8-14%)</gml:name>
+                                    <specificGravity>3.15</specificGravity>
+                                    <type>Type I (C3A 8-14%)</type>
+                                    <volume uom="m3">0.11390</volume>
+                                    <weight uom="kN">3.520</weight>
+                                </Cement>
+                            </cement>
+                            <filler>
+                                <Filler gml:id="filler-01">
+                                    <gml:name>Fine Aggregate (Sand)</gml:name>
+                                    <specificGravity>2.65</specificGravity>
+                                    <type>Fine Aggregate</type>
+                                    <volume uom="m3">0.69591</volume>
+                                    <weight uom="kN">18.091</weight>
+                                </Filler>
+                            </filler>
+                            <theoreticalYield uom="m3">1.000</theoreticalYield>
+                            <typeMix>cement</typeMix>
+                            <volumeWater uom="m3">0.1560</volumeWater>
+                            <waterCementRatio>0.4348</waterCementRatio>
+                        </GroutBatchFormulation>
+                    </formulation>
                     <bleedDesign uom="m3/m3">0.01</bleedDesign>
                     <modulusDesign uom="kPa">10818866</modulusDesign>
                     <mudBalanceDensityDesign uom="kg/m3">2390.2</mudBalanceDensityDesign>
@@ -69825,40 +69829,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-1"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-1">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">0.6361</volume>
-                    <weight uom="kN">13.727</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-1">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">4.3843</volume>
-                    <weight uom="kN">135.483</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-1">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">27.6936</volume>
-                    <weight uom="kN">719.936</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-1">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">0.6361</volume>
+                            <weight uom="kN">13.727</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-1">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">4.3843</volume>
+                            <weight uom="kN">135.483</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-1">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">27.6936</volume>
+                            <weight uom="kN">719.936</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">5.5060</volumeWater>
+                    <waterCementRatio>0.3987</waterCementRatio>
+                    <waterCementRatioOfMix>0.3620</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4129</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">39.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">5.5060</volumeWater>
-            <waterCementRatio>0.3987</waterCementRatio>
-            <waterCementRatioOfMix>0.3620</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -69885,40 +69893,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-2"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-2">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.1703</volume>
-                    <weight uom="kN">25.257</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-2">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">9.2731</volume>
-                    <weight uom="kN">286.554</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-2">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">57.4436</volume>
-                    <weight uom="kN">1493.334</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-2">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.1703</volume>
+                            <weight uom="kN">25.257</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-2">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">9.2731</volume>
+                            <weight uom="kN">286.554</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-2">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">57.4436</volume>
+                            <weight uom="kN">1493.334</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">11.9829</volumeWater>
+                    <waterCementRatio>0.4102</waterCementRatio>
+                    <waterCementRatioOfMix>0.3770</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4048</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">81.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">11.9829</volumeWater>
-            <waterCementRatio>0.4102</waterCementRatio>
-            <waterCementRatioOfMix>0.3770</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -69945,40 +69957,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-3"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-3">
-                    <gml:name>Fly Ash</gml:name>
-                    <specificGravity>2.3</specificGravity>
-                    <type>Fly Ash</type>
-                    <volume uom="m3">0.0475</volume>
-                    <weight uom="kN">1.071</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-3">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">0.3987</volume>
-                    <weight uom="kN">12.319</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-3">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">2.3287</volume>
-                    <weight uom="kN">60.537</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-3">
+                            <gml:name>Fly Ash</gml:name>
+                            <specificGravity>2.3</specificGravity>
+                            <type>Fly Ash</type>
+                            <volume uom="m3">0.0475</volume>
+                            <weight uom="kN">1.071</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-3">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">0.3987</volume>
+                            <weight uom="kN">12.319</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-3">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">2.3287</volume>
+                            <weight uom="kN">60.537</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">0.6552</volumeWater>
+                    <waterCementRatio>0.5217</waterCementRatio>
+                    <waterCementRatioOfMix>0.4800</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.3403</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">3.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">0.6552</volumeWater>
-            <waterCementRatio>0.5217</waterCementRatio>
-            <waterCementRatioOfMix>0.4800</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70005,40 +70021,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-4"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-4">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.8905</volume>
-                    <weight uom="kN">40.801</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-4">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">15.8273</volume>
-                    <weight uom="kN">489.086</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-4">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">96.4602</volume>
-                    <weight uom="kN">2507.629</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-4">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.8905</volume>
+                            <weight uom="kN">40.801</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-4">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">15.8273</volume>
+                            <weight uom="kN">489.086</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-4">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">96.4602</volume>
+                            <weight uom="kN">2507.629</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">21.5520</volumeWater>
+                    <waterCementRatio>0.4323</waterCementRatio>
+                    <waterCementRatioOfMix>0.3990</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.3912</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">138.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">21.5520</volumeWater>
-            <waterCementRatio>0.4323</waterCementRatio>
-            <waterCementRatioOfMix>0.3990</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70065,40 +70085,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-5"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-5">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">0.6862</volume>
-                    <weight uom="kN">14.810</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-5">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">5.5874</volume>
-                    <weight uom="kN">172.659</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-5">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">34.1788</volume>
-                    <weight uom="kN">888.530</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-5">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">0.6862</volume>
+                            <weight uom="kN">14.810</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-5">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">5.5874</volume>
+                            <weight uom="kN">172.659</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-5">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">34.1788</volume>
+                            <weight uom="kN">888.530</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">7.5676</volumeWater>
+                    <waterCementRatio>0.4300</waterCementRatio>
+                    <waterCementRatioOfMix>0.3960</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.3929</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">49.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">7.5676</volumeWater>
-            <waterCementRatio>0.4300</waterCementRatio>
-            <waterCementRatioOfMix>0.3960</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70125,40 +70149,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-6"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-6">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.5807</volume>
-                    <weight uom="kN">34.116</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-6">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">13.8150</volume>
-                    <weight uom="kN">426.905</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-6">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">85.3531</volume>
-                    <weight uom="kN">2218.881</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-6">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.5807</volume>
+                            <weight uom="kN">34.116</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-6">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">13.8150</volume>
+                            <weight uom="kN">426.905</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-6">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">85.3531</volume>
+                            <weight uom="kN">2218.881</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">17.3412</volumeWater>
+                    <waterCementRatio>0.3985</waterCementRatio>
+                    <waterCementRatioOfMix>0.3690</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4110</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">120.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">17.3412</volumeWater>
-            <waterCementRatio>0.3985</waterCementRatio>
-            <waterCementRatioOfMix>0.3690</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70185,40 +70213,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-7"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-7">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.3581</volume>
-                    <weight uom="kN">29.310</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-7">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">9.1420</volume>
-                    <weight uom="kN">282.501</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-7">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">56.9102</volume>
-                    <weight uom="kN">1479.467</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-7">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.3581</volume>
+                            <weight uom="kN">29.310</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-7">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">9.1420</volume>
+                            <weight uom="kN">282.501</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-7">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">56.9102</volume>
+                            <weight uom="kN">1479.467</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">12.4597</volumeWater>
+                    <waterCementRatio>0.4327</waterCementRatio>
+                    <waterCementRatioOfMix>0.3920</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.3933</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">81.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">12.4597</volumeWater>
-            <waterCementRatio>0.4327</waterCementRatio>
-            <waterCementRatioOfMix>0.3920</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70245,40 +70277,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-8"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-8">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.0985</volume>
-                    <weight uom="kN">23.707</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-8">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">8.7042</volume>
-                    <weight uom="kN">268.974</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-8">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">53.2930</volume>
-                    <weight uom="kN">1385.430</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-8">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.0985</volume>
+                            <weight uom="kN">23.707</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-8">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">8.7042</volume>
+                            <weight uom="kN">268.974</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-8">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">53.2930</volume>
+                            <weight uom="kN">1385.430</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">11.8743</volumeWater>
+                    <waterCementRatio>0.4331</waterCementRatio>
+                    <waterCementRatioOfMix>0.3980</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.3913</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">76.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">11.8743</volumeWater>
-            <waterCementRatio>0.4331</waterCementRatio>
-            <waterCementRatioOfMix>0.3980</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70310,40 +70346,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-9"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-9">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">2.0073</volume>
-                    <weight uom="kN">43.321</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-9">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">19.5219</volume>
-                    <weight uom="kN">603.256</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-9">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">119.1109</volume>
-                    <weight uom="kN">3096.467</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-9">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">2.0073</volume>
+                            <weight uom="kN">43.321</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-9">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">19.5219</volume>
+                            <weight uom="kN">603.256</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-9">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">119.1109</volume>
+                            <weight uom="kN">3096.467</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">24.9799</volumeWater>
+                    <waterCementRatio>0.4062</waterCementRatio>
+                    <waterCementRatioOfMix>0.3790</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4055</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">169.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">24.9799</volumeWater>
-            <waterCementRatio>0.4062</waterCementRatio>
-            <waterCementRatioOfMix>0.3790</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70370,40 +70410,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-10"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-10">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">0.5784</volume>
-                    <weight uom="kN">12.482</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-10">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">4.2389</volume>
-                    <weight uom="kN">130.989</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-10">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">26.1705</volume>
-                    <weight uom="kN">680.341</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-10">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">0.5784</volume>
+                            <weight uom="kN">12.482</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-10">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">4.2389</volume>
+                            <weight uom="kN">130.989</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-10">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">26.1705</volume>
+                            <weight uom="kN">680.341</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">5.7622</volumeWater>
+                    <waterCementRatio>0.4315</waterCementRatio>
+                    <waterCementRatioOfMix>0.3940</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.3930</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">37.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">5.7622</volumeWater>
-            <waterCementRatio>0.4315</waterCementRatio>
-            <waterCementRatioOfMix>0.3940</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70430,40 +70474,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-11"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-11">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.4559</volume>
-                    <weight uom="kN">31.420</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-11">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">12.5404</volume>
-                    <weight uom="kN">387.516</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-11">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">77.8973</volume>
-                    <weight uom="kN">2025.057</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-11">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.4559</volume>
+                            <weight uom="kN">31.420</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-11">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">12.5404</volume>
+                            <weight uom="kN">387.516</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-11">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">77.8973</volume>
+                            <weight uom="kN">2025.057</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">15.4165</volumeWater>
+                    <waterCementRatio>0.3903</waterCementRatio>
+                    <waterCementRatioOfMix>0.3610</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4160</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">109.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">15.4165</volumeWater>
-            <waterCementRatio>0.3903</waterCementRatio>
-            <waterCementRatioOfMix>0.3610</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70490,40 +70538,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-12"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-12">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">0.4526</volume>
-                    <weight uom="kN">9.768</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-12">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">3.9553</volume>
-                    <weight uom="kN">122.226</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-12">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">24.4775</volume>
-                    <weight uom="kN">636.331</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-12">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">0.4526</volume>
+                            <weight uom="kN">9.768</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-12">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">3.9553</volume>
+                            <weight uom="kN">122.226</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-12">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">24.4775</volume>
+                            <weight uom="kN">636.331</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">4.9245</volumeWater>
+                    <waterCementRatio>0.3952</waterCementRatio>
+                    <waterCementRatioOfMix>0.3660</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4129</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">34.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">4.9245</volumeWater>
-            <waterCementRatio>0.3952</waterCementRatio>
-            <waterCementRatioOfMix>0.3660</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70550,40 +70602,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-13"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-13">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.3274</volume>
-                    <weight uom="kN">28.648</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-13">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">8.7301</volume>
-                    <weight uom="kN">269.772</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-13">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">54.4883</volume>
-                    <weight uom="kN">1416.505</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-13">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.3274</volume>
+                            <weight uom="kN">28.648</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-13">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">8.7301</volume>
+                            <weight uom="kN">269.772</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-13">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">54.4883</volume>
+                            <weight uom="kN">1416.505</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">11.8942</volumeWater>
+                    <waterCementRatio>0.4325</waterCementRatio>
+                    <waterCementRatioOfMix>0.3910</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.3937</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">78.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">11.8942</volumeWater>
-            <waterCementRatio>0.4325</waterCementRatio>
-            <waterCementRatioOfMix>0.3910</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70610,40 +70666,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-14"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-14">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">2.1969</volume>
-                    <weight uom="kN">47.414</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-14">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">17.4085</volume>
-                    <weight uom="kN">537.948</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-14">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">108.2567</volume>
-                    <weight uom="kN">2814.295</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-14">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">2.1969</volume>
+                            <weight uom="kN">47.414</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-14">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">17.4085</volume>
+                            <weight uom="kN">537.948</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-14">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">108.2567</volume>
+                            <weight uom="kN">2814.295</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">22.0779</volumeWater>
+                    <waterCementRatio>0.4026</waterCementRatio>
+                    <waterCementRatioOfMix>0.3700</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4093</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">153.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">22.0779</volumeWater>
-            <waterCementRatio>0.4026</waterCementRatio>
-            <waterCementRatioOfMix>0.3700</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70670,40 +70730,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-15"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-15">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.7302</volume>
-                    <weight uom="kN">37.341</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-15">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">17.6726</volume>
-                    <weight uom="kN">546.109</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-15">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">107.9225</volume>
-                    <weight uom="kN">2805.608</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-15">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.7302</volume>
+                            <weight uom="kN">37.341</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-15">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">17.6726</volume>
+                            <weight uom="kN">546.109</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-15">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">107.9225</volume>
+                            <weight uom="kN">2805.608</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">22.1247</volumeWater>
+                    <waterCementRatio>0.3974</waterCementRatio>
+                    <waterCementRatioOfMix>0.3720</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4105</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">152.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">22.1247</volumeWater>
-            <waterCementRatio>0.3974</waterCementRatio>
-            <waterCementRatioOfMix>0.3720</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70735,40 +70799,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-16"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-16">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">2.2203</volume>
-                    <weight uom="kN">47.919</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-16">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">19.1255</volume>
-                    <weight uom="kN">591.006</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-16">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">117.8253</volume>
-                    <weight uom="kN">3063.045</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-16">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">2.2203</volume>
+                            <weight uom="kN">47.919</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-16">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">19.1255</volume>
+                            <weight uom="kN">591.006</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-16">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">117.8253</volume>
+                            <weight uom="kN">3063.045</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">24.4889</volumeWater>
+                    <waterCementRatio>0.4065</waterCementRatio>
+                    <waterCementRatioOfMix>0.3760</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4063</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">167.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">24.4889</volumeWater>
-            <waterCementRatio>0.4065</waterCementRatio>
-            <waterCementRatioOfMix>0.3760</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70795,40 +70863,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-17"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-17">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">2.8289</volume>
-                    <weight uom="kN">61.054</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-17">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">23.0338</volume>
-                    <weight uom="kN">711.778</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-17">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">141.7670</volume>
-                    <weight uom="kN">3685.446</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-17">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">2.8289</volume>
+                            <weight uom="kN">61.054</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-17">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">23.0338</volume>
+                            <weight uom="kN">711.778</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-17">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">141.7670</volume>
+                            <weight uom="kN">3685.446</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">30.3303</volumeWater>
+                    <waterCementRatio>0.4180</waterCementRatio>
+                    <waterCementRatioOfMix>0.3850</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4000</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">202.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">30.3303</volumeWater>
-            <waterCementRatio>0.4180</waterCementRatio>
-            <waterCementRatioOfMix>0.3850</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70855,40 +70927,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-18"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-18">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">2.5531</volume>
-                    <weight uom="kN">55.101</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-18">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">21.6788</volume>
-                    <weight uom="kN">669.907</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-18">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">132.5813</volume>
-                    <weight uom="kN">3446.649</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-18">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">2.5531</volume>
+                            <weight uom="kN">55.101</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-18">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">21.6788</volume>
+                            <weight uom="kN">669.907</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-18">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">132.5813</volume>
+                            <weight uom="kN">3446.649</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">28.8969</volumeWater>
+                    <waterCementRatio>0.4232</waterCementRatio>
+                    <waterCementRatioOfMix>0.3910</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.3965</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">189.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">28.8969</volumeWater>
-            <waterCementRatio>0.4232</waterCementRatio>
-            <waterCementRatioOfMix>0.3910</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70915,40 +70991,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-19"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-19">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.2382</volume>
-                    <weight uom="kN">26.722</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-19">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">13.3114</volume>
-                    <weight uom="kN">411.344</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-19">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">81.1827</volume>
-                    <weight uom="kN">2110.466</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-19">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.2382</volume>
+                            <weight uom="kN">26.722</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-19">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">13.3114</volume>
+                            <weight uom="kN">411.344</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-19">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">81.1827</volume>
+                            <weight uom="kN">2110.466</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">16.4777</volumeWater>
+                    <waterCementRatio>0.3930</waterCementRatio>
+                    <waterCementRatioOfMix>0.3690</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4128</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">114.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">16.4777</volumeWater>
-            <waterCementRatio>0.3930</waterCementRatio>
-            <waterCementRatioOfMix>0.3690</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -70975,40 +71055,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-20"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-20">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.9243</volume>
-                    <weight uom="kN">41.530</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-20">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">19.3322</volume>
-                    <weight uom="kN">597.395</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-20">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">117.7843</volume>
-                    <weight uom="kN">3061.980</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-20">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.9243</volume>
+                            <weight uom="kN">41.530</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-20">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">19.3322</volume>
+                            <weight uom="kN">597.395</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-20">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">117.7843</volume>
+                            <weight uom="kN">3061.980</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">24.6191</volumeWater>
+                    <waterCementRatio>0.4043</waterCementRatio>
+                    <waterCementRatioOfMix>0.3780</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4065</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">167.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">24.6191</volumeWater>
-            <waterCementRatio>0.4043</waterCementRatio>
-            <waterCementRatioOfMix>0.3780</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71035,40 +71119,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-21"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-21">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.3498</volume>
-                    <weight uom="kN">29.130</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-21">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">10.6954</volume>
-                    <weight uom="kN">330.504</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-21">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">66.6206</volume>
-                    <weight uom="kN">1731.903</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-21">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.3498</volume>
+                            <weight uom="kN">29.130</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-21">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">10.6954</volume>
+                            <weight uom="kN">330.504</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-21">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">66.6206</volume>
+                            <weight uom="kN">1731.903</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">13.4542</volumeWater>
+                    <waterCementRatio>0.3993</waterCementRatio>
+                    <waterCementRatioOfMix>0.3670</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4113</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">94.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">13.4542</volumeWater>
-            <waterCementRatio>0.3993</waterCementRatio>
-            <waterCementRatioOfMix>0.3670</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71095,40 +71183,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-22"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-22">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.1407</volume>
-                    <weight uom="kN">24.620</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-22">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">11.4604</volume>
-                    <weight uom="kN">354.144</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-22">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">69.0907</volume>
-                    <weight uom="kN">1796.115</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-22">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.1407</volume>
+                            <weight uom="kN">24.620</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-22">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">11.4604</volume>
+                            <weight uom="kN">354.144</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-22">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">69.0907</volume>
+                            <weight uom="kN">1796.115</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">15.3282</volumeWater>
+                    <waterCementRatio>0.4246</waterCementRatio>
+                    <waterCementRatioOfMix>0.3970</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.3942</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">99.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">15.3282</volumeWater>
-            <waterCementRatio>0.4246</waterCementRatio>
-            <waterCementRatioOfMix>0.3970</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71155,40 +71247,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-23"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-23">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.9642</volume>
-                    <weight uom="kN">42.391</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-23">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">15.7758</volume>
-                    <weight uom="kN">487.496</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-23">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">97.5723</volume>
-                    <weight uom="kN">2536.539</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-23">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.9642</volume>
+                            <weight uom="kN">42.391</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-23">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">15.7758</volume>
+                            <weight uom="kN">487.496</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-23">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">97.5723</volume>
+                            <weight uom="kN">2536.539</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">20.4177</volumeWater>
+                    <waterCementRatio>0.4109</waterCementRatio>
+                    <waterCementRatioOfMix>0.3780</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4043</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">138.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">20.4177</volumeWater>
-            <waterCementRatio>0.4109</waterCementRatio>
-            <waterCementRatioOfMix>0.3780</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71215,40 +71311,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-24"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-24">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">2.2588</volume>
-                    <weight uom="kN">48.750</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-24">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">15.5700</volume>
-                    <weight uom="kN">481.138</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-24">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">97.4295</volume>
-                    <weight uom="kN">2532.825</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-24">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">2.2588</volume>
+                            <weight uom="kN">48.750</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-24">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">15.5700</volume>
+                            <weight uom="kN">481.138</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-24">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">97.4295</volume>
+                            <weight uom="kN">2532.825</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">20.4717</volumeWater>
+                    <waterCementRatio>0.4174</waterCementRatio>
+                    <waterCementRatioOfMix>0.3790</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4020</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">138.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">20.4717</volumeWater>
-            <waterCementRatio>0.4174</waterCementRatio>
-            <waterCementRatioOfMix>0.3790</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71275,40 +71375,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-25"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-25">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.9468</volume>
-                    <weight uom="kN">42.016</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-25">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">18.6356</volume>
-                    <weight uom="kN">575.867</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-25">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">114.8871</volume>
-                    <weight uom="kN">2986.661</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-25">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.9468</volume>
+                            <weight uom="kN">42.016</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-25">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">18.6356</volume>
+                            <weight uom="kN">575.867</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-25">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">114.8871</volume>
+                            <weight uom="kN">2986.661</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">22.8006</volumeWater>
+                    <waterCementRatio>0.3884</waterCementRatio>
+                    <waterCementRatioOfMix>0.3620</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4163</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">161.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">22.8006</volumeWater>
-            <waterCementRatio>0.3884</waterCementRatio>
-            <waterCementRatioOfMix>0.3620</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71335,40 +71439,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-26"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-26">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.5463</volume>
-                    <weight uom="kN">33.373</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-26">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">16.6248</volume>
-                    <weight uom="kN">513.730</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-26">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">100.8320</volume>
-                    <weight uom="kN">2621.280</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-26">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.5463</volume>
+                            <weight uom="kN">33.373</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-26">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">16.6248</volume>
+                            <weight uom="kN">513.730</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-26">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">100.8320</volume>
+                            <weight uom="kN">2621.280</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">21.1368</volumeWater>
+                    <waterCementRatio>0.4036</waterCementRatio>
+                    <waterCementRatioOfMix>0.3790</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4064</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">143.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">21.1368</volumeWater>
-            <waterCementRatio>0.4036</waterCementRatio>
-            <waterCementRatioOfMix>0.3790</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71395,40 +71503,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-27"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-27">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">2.6818</volume>
-                    <weight uom="kN">57.878</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-27">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">28.8318</volume>
-                    <weight uom="kN">890.945</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-27">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">173.2253</volume>
-                    <weight uom="kN">4503.252</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-27">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">2.6818</volume>
+                            <weight uom="kN">57.878</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-27">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">28.8318</volume>
+                            <weight uom="kN">890.945</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-27">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">173.2253</volume>
+                            <weight uom="kN">4503.252</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">38.3011</volumeWater>
+                    <waterCementRatio>0.4217</waterCementRatio>
+                    <waterCementRatioOfMix>0.3960</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.3954</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">248.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">38.3011</volumeWater>
-            <waterCementRatio>0.4217</waterCementRatio>
-            <waterCementRatioOfMix>0.3960</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71455,40 +71567,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-28"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-28">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">2.5698</volume>
-                    <weight uom="kN">55.462</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-28">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">20.9242</volume>
-                    <weight uom="kN">646.590</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-28">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">129.4275</volume>
-                    <weight uom="kN">3364.662</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-28">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">2.5698</volume>
+                            <weight uom="kN">55.462</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-28">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">20.9242</volume>
+                            <weight uom="kN">646.590</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-28">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">129.4275</volume>
+                            <weight uom="kN">3364.662</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">26.9084</volumeWater>
+                    <waterCementRatio>0.4083</waterCementRatio>
+                    <waterCementRatioOfMix>0.3760</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4058</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">183.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">26.9084</volumeWater>
-            <waterCementRatio>0.4083</waterCementRatio>
-            <waterCementRatioOfMix>0.3760</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71515,40 +71631,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-29"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-29">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">2.5985</volume>
-                    <weight uom="kN">56.080</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-29">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">19.7900</volume>
-                    <weight uom="kN">611.540</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-29">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">122.2162</volume>
-                    <weight uom="kN">3177.194</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-29">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">2.5985</volume>
+                            <weight uom="kN">56.080</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-29">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">19.7900</volume>
+                            <weight uom="kN">611.540</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-29">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">122.2162</volume>
+                            <weight uom="kN">3177.194</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">26.4053</volumeWater>
+                    <waterCementRatio>0.4236</waterCementRatio>
+                    <waterCementRatioOfMix>0.3880</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.3973</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">174.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">26.4053</volumeWater>
-            <waterCementRatio>0.4236</waterCementRatio>
-            <waterCementRatioOfMix>0.3880</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71575,40 +71695,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-30"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-30">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.6938</volume>
-                    <weight uom="kN">36.556</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-30">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">10.8884</volume>
-                    <weight uom="kN">336.469</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-30">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">68.6323</volume>
-                    <weight uom="kN">1784.200</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-30">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.6938</volume>
+                            <weight uom="kN">36.556</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-30">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">10.8884</volume>
+                            <weight uom="kN">336.469</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-30">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">68.6323</volume>
+                            <weight uom="kN">1784.200</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">14.3354</volumeWater>
+                    <waterCementRatio>0.4180</waterCementRatio>
+                    <waterCementRatioOfMix>0.3770</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4024</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">97.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">14.3354</volumeWater>
-            <waterCementRatio>0.4180</waterCementRatio>
-            <waterCementRatioOfMix>0.3770</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71635,40 +71759,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-31"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-31">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.6146</volume>
-                    <weight uom="kN">34.846</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-31">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">11.6866</volume>
-                    <weight uom="kN">361.134</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-31">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">72.7093</volume>
-                    <weight uom="kN">1890.188</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-31">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.6146</volume>
+                            <weight uom="kN">34.846</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-31">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">11.6866</volume>
+                            <weight uom="kN">361.134</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-31">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">72.7093</volume>
+                            <weight uom="kN">1890.188</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">15.4194</volumeWater>
+                    <waterCementRatio>0.4189</waterCementRatio>
+                    <waterCementRatioOfMix>0.3820</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4006</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">103.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">15.4194</volumeWater>
-            <waterCementRatio>0.4189</waterCementRatio>
-            <waterCementRatioOfMix>0.3820</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71695,40 +71823,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-32"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-32">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.8148</volume>
-                    <weight uom="kN">39.168</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-32">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">15.6325</volume>
-                    <weight uom="kN">483.068</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-32">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">95.9869</volume>
-                    <weight uom="kN">2495.323</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-32">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.8148</volume>
+                            <weight uom="kN">39.168</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-32">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">15.6325</volume>
+                            <weight uom="kN">483.068</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-32">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">95.9869</volume>
+                            <weight uom="kN">2495.323</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">20.3358</volumeWater>
+                    <waterCementRatio>0.4130</waterCementRatio>
+                    <waterCementRatioOfMix>0.3820</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4025</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">136.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">20.3358</volumeWater>
-            <waterCementRatio>0.4130</waterCementRatio>
-            <waterCementRatioOfMix>0.3820</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71755,40 +71887,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-33"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-33">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">2.3714</volume>
-                    <weight uom="kN">51.179</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-33">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">15.2438</volume>
-                    <weight uom="kN">471.056</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-33">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">96.5643</volume>
-                    <weight uom="kN">2510.335</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-33">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">2.3714</volume>
+                            <weight uom="kN">51.179</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-33">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">15.2438</volume>
+                            <weight uom="kN">471.056</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-33">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">96.5643</volume>
+                            <weight uom="kN">2510.335</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">19.5905</volumeWater>
+                    <waterCementRatio>0.4080</waterCementRatio>
+                    <waterCementRatioOfMix>0.3680</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4082</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">136.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">19.5905</volumeWater>
-            <waterCementRatio>0.4080</waterCementRatio>
-            <waterCementRatioOfMix>0.3680</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71815,40 +71951,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-34"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-34">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">2.0773</volume>
-                    <weight uom="kN">44.832</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-34">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">14.1492</volume>
-                    <weight uom="kN">437.232</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-34">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">88.3346</volume>
-                    <weight uom="kN">2296.391</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-34">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">2.0773</volume>
+                            <weight uom="kN">44.832</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-34">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">14.1492</volume>
+                            <weight uom="kN">437.232</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-34">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">88.3346</volume>
+                            <weight uom="kN">2296.391</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">18.9189</volumeWater>
+                    <waterCementRatio>0.4245</waterCementRatio>
+                    <waterCementRatioOfMix>0.3850</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.3980</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">126.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">18.9189</volumeWater>
-            <waterCementRatio>0.4245</waterCementRatio>
-            <waterCementRatioOfMix>0.3850</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71875,40 +72015,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-35"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-35">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">2.2097</volume>
-                    <weight uom="kN">47.690</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-35">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">15.6043</volume>
-                    <weight uom="kN">482.197</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-35">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">96.5260</volume>
-                    <weight uom="kN">2509.339</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-35">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">2.2097</volume>
+                            <weight uom="kN">47.690</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-35">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">15.6043</volume>
+                            <weight uom="kN">482.197</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-35">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">96.5260</volume>
+                            <weight uom="kN">2509.339</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">21.3899</volumeWater>
+                    <waterCementRatio>0.4352</waterCementRatio>
+                    <waterCementRatioOfMix>0.3960</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.3913</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">138.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">21.3899</volumeWater>
-            <waterCementRatio>0.4352</waterCementRatio>
-            <waterCementRatioOfMix>0.3960</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71935,40 +72079,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-36"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-36">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">2.1294</volume>
-                    <weight uom="kN">45.957</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-36">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">17.8271</volume>
-                    <weight uom="kN">550.884</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-36">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">109.2568</volume>
-                    <weight uom="kN">2840.293</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-36">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">2.1294</volume>
+                            <weight uom="kN">45.957</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-36">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">17.8271</volume>
+                            <weight uom="kN">550.884</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-36">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">109.2568</volume>
+                            <weight uom="kN">2840.293</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">23.6668</volumeWater>
+                    <waterCementRatio>0.4215</waterCementRatio>
+                    <waterCementRatioOfMix>0.3890</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.3977</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">156.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">23.6668</volumeWater>
-            <waterCementRatio>0.4215</waterCementRatio>
-            <waterCementRatioOfMix>0.3890</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -71995,40 +72143,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-37"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-37">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">0.9325</volume>
-                    <weight uom="kN">20.126</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-37">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">9.6868</volume>
-                    <weight uom="kN">299.337</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-37">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">58.6080</volume>
-                    <weight uom="kN">1523.603</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-37">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">0.9325</volume>
+                            <weight uom="kN">20.126</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-37">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">9.6868</volume>
+                            <weight uom="kN">299.337</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-37">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">58.6080</volume>
+                            <weight uom="kN">1523.603</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">12.6027</volumeWater>
+                    <waterCementRatio>0.4130</waterCementRatio>
+                    <waterCementRatioOfMix>0.3870</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4009</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">83.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">12.6027</volumeWater>
-            <waterCementRatio>0.4130</waterCementRatio>
-            <waterCementRatioOfMix>0.3870</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -72055,40 +72207,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-38"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-38">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.6996</volume>
-                    <weight uom="kN">36.681</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-38">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">17.0749</volume>
-                    <weight uom="kN">527.639</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-38">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">104.4913</volume>
-                    <weight uom="kN">2716.407</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-38">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.6996</volume>
+                            <weight uom="kN">36.681</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-38">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">17.0749</volume>
+                            <weight uom="kN">527.639</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-38">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">104.4913</volume>
+                            <weight uom="kN">2716.407</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">21.2843</volumeWater>
+                    <waterCementRatio>0.3957</waterCementRatio>
+                    <waterCementRatioOfMix>0.3700</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4116</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">147.5</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">21.2843</volumeWater>
-            <waterCementRatio>0.3957</waterCementRatio>
-            <waterCementRatioOfMix>0.3700</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -72115,40 +72271,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-39"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-39">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.7890</volume>
-                    <weight uom="kN">38.611</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-39">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">13.1124</volume>
-                    <weight uom="kN">405.193</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-39">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">82.1755</volume>
-                    <weight uom="kN">2136.274</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-39">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.7890</volume>
+                            <weight uom="kN">38.611</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-39">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">13.1124</volume>
+                            <weight uom="kN">405.193</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-39">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">82.1755</volume>
+                            <weight uom="kN">2136.274</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">16.6031</volumeWater>
+                    <waterCementRatio>0.4020</waterCementRatio>
+                    <waterCementRatioOfMix>0.3670</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4104</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">116.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">16.6031</volumeWater>
-            <waterCementRatio>0.4020</waterCementRatio>
-            <waterCementRatioOfMix>0.3670</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -72175,40 +72335,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-40"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-40">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">1.3657</volume>
-                    <weight uom="kN">29.475</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-40">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">12.2938</volume>
-                    <weight uom="kN">379.897</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-40">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">75.2179</volume>
-                    <weight uom="kN">1955.402</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-40">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">1.3657</volume>
+                            <weight uom="kN">29.475</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-40">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">12.2938</volume>
+                            <weight uom="kN">379.897</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-40">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">75.2179</volume>
+                            <weight uom="kN">1955.402</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">15.9826</volumeWater>
+                    <waterCementRatio>0.4127</waterCementRatio>
+                    <waterCementRatioOfMix>0.3830</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4022</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">107.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">15.9826</volumeWater>
-            <waterCementRatio>0.4127</waterCementRatio>
-            <waterCementRatioOfMix>0.3830</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
@@ -72235,40 +72399,44 @@
             <samplingActivityRef xlink:href="#sa-gb-1"/>
             <programRef xlink:href="#rip-01"/>
             <sampleProducedRef xlink:href="#sp-gb-41"/>
-            <binder>
-                <Binder gml:id="binder-s-gb-41">
-                    <gml:name>Silica Fume</gml:name>
-                    <specificGravity>2.2</specificGravity>
-                    <type>Silica Fume</type>
-                    <volume uom="m3">0.9817</volume>
-                    <weight uom="kN">21.188</weight>
-                </Binder>
-            </binder>
-            <cement>
-                <Cement gml:id="cement-s-gb-41">
-                    <gml:name>Type I (C3A 8-14%)</gml:name>
-                    <specificGravity>3.15</specificGravity>
-                    <type>Type I (C3A 8-14%)</type>
-                    <volume uom="m3">8.1048</volume>
-                    <weight uom="kN">250.451</weight>
-                </Cement>
-            </cement>
-            <filler>
-                <Filler gml:id="filler-s-gb-41">
-                    <gml:name>Fine Aggregate (Sand)</gml:name>
-                    <specificGravity>2.65</specificGravity>
-                    <type>Fine Aggregate</type>
-                    <volume uom="m3">50.0266</volume>
-                    <weight uom="kN">1300.517</weight>
-                </Filler>
-            </filler>
+            <formulation>
+                <GroutBatchFormulation>
+                    <binder>
+                        <Binder gml:id="binder-s-gb-41">
+                            <gml:name>Silica Fume</gml:name>
+                            <specificGravity>2.2</specificGravity>
+                            <type>Silica Fume</type>
+                            <volume uom="m3">0.9817</volume>
+                            <weight uom="kN">21.188</weight>
+                        </Binder>
+                    </binder>
+                    <cement>
+                        <Cement gml:id="cement-s-gb-41">
+                            <gml:name>Type I (C3A 8-14%)</gml:name>
+                            <specificGravity>3.15</specificGravity>
+                            <type>Type I (C3A 8-14%)</type>
+                            <volume uom="m3">8.1048</volume>
+                            <weight uom="kN">250.451</weight>
+                        </Cement>
+                    </cement>
+                    <filler>
+                        <Filler gml:id="filler-s-gb-41">
+                            <gml:name>Fine Aggregate (Sand)</gml:name>
+                            <specificGravity>2.65</specificGravity>
+                            <type>Fine Aggregate</type>
+                            <volume uom="m3">50.0266</volume>
+                            <weight uom="kN">1300.517</weight>
+                        </Filler>
+                    </filler>
+                    <specificGravityWater>1.0</specificGravityWater>
+                    <typeMix>cement</typeMix>
+                    <volumeWater uom="m3">10.4668</volumeWater>
+                    <waterCementRatio>0.4100</waterCementRatio>
+                    <waterCementRatioOfMix>0.3780</waterCementRatioOfMix>
+                </GroutBatchFormulation>
+            </formulation>
             <specificGravityMix>2.4046</specificGravityMix>
-            <specificGravityWater>1.0</specificGravityWater>
             <totalBatchVolume uom="m3">71.0</totalBatchVolume>
-            <typeMix>cement</typeMix>
-            <volumeWater uom="m3">10.4668</volumeWater>
-            <waterCementRatio>0.4100</waterCementRatio>
-            <waterCementRatioOfMix>0.3780</waterCementRatioOfMix>
             <bindingMaterialContent uom="kg/m3">390.0</bindingMaterialContent>
         </GroutBatch>
     </sample>
