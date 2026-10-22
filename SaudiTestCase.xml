@@ -2829,7 +2829,7 @@
                         <LowStrainIntegrityTest gml:id="dm-PIT-proc">
                             <testMethod>pulse_echo</testMethod>
                             <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
-                            <headPreparation>cut_and_ground</headPreparation>
+                            <headPreparation>cut and ground</headPreparation>
                             <sensorMounting>wax</sensorMounting>
                         </LowStrainIntegrityTest>
                     </plannedProcedure>
