@@ -2827,7 +2827,7 @@
                     </measurementLocation>
                     <plannedProcedure>
                         <LowStrainIntegrityTest gml:id="dm-PIT-proc">
-                            <testMethod>pulse_echo</testMethod>
+                            <testMethod>pulse echo</testMethod>
                             <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                             <headPreparation>cut and ground</headPreparation>
                             <sensorMounting>wax</sensorMounting>
@@ -98609,10 +98609,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-819">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -98714,10 +98714,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-815">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>16</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -98819,10 +98819,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-691">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -98924,10 +98924,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-680">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -99029,10 +99029,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-399">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>25.0</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -99135,10 +99135,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-584">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">15.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>25.0</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -99233,10 +99233,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-520">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">15.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>25.0</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -99339,10 +99339,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-295">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">17.3</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -99437,10 +99437,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-579">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>25.0</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -99543,10 +99543,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-551">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">15.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>25.0</lengthToDiameterRatio>
                     <averagedImpactCount>19</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -99649,10 +99649,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-596">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -99747,10 +99747,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-572">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>25.0</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -99845,10 +99845,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-569">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>25.0</lengthToDiameterRatio>
                     <averagedImpactCount>16</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -99951,10 +99951,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-542">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">15.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>25.0</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -100057,10 +100057,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-866">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -100155,10 +100155,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-328">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">17.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>28.333</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -100261,10 +100261,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-319">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">17.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>28.333</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -100367,10 +100367,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-590">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">14.5</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>23.333</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -100465,10 +100465,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-317">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">17.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>28.333</lengthToDiameterRatio>
                     <averagedImpactCount>16</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -100563,10 +100563,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-891">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -100669,10 +100669,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-280">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.5</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -100775,10 +100775,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-232">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">16.5</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -100881,10 +100881,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-265">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.2</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -100979,10 +100979,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-263">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.2</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -101077,10 +101077,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-248">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -101183,10 +101183,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-996">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.2</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -101281,10 +101281,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-1026">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.3</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -101363,10 +101363,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-1027">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -101469,10 +101469,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-1043">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.1</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -101567,10 +101567,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-1071">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.4</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>16</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -101649,10 +101649,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-1088">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -101755,10 +101755,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-87">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -101853,10 +101853,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-41">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.5</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -101951,10 +101951,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-44">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">15.5</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -102057,10 +102057,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-48">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -102155,10 +102155,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-969">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">14.5</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>25.0</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -102261,10 +102261,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-116">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">17.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>17</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -102359,10 +102359,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-112">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.5</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -102457,10 +102457,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-160">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.3</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -102555,10 +102555,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-196">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -102661,10 +102661,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-320">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">17.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>28.333</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -102759,10 +102759,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-313">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">16.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>28.333</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -102857,10 +102857,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-930">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">14.5</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>24.167</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -102955,10 +102955,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-391">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>25.0</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -103037,10 +103037,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-652">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -103143,10 +103143,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-669">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -103249,10 +103249,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-779">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>17</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -103347,10 +103347,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-1098">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -103445,10 +103445,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-402">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>25.0</lengthToDiameterRatio>
                     <averagedImpactCount>16</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -103551,10 +103551,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-406">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>25.0</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -103649,10 +103649,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-757">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -103755,10 +103755,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-471">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">15.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>25.0</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -103861,10 +103861,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-67">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">18.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>30.833</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -103959,10 +103959,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-1013">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>16.667</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
@@ -104065,10 +104065,10 @@ The conclusion: settlement 3.36 mm at 150 kPa, 6.29 mm at 225 kPa, residual 4.51
                 <LowStrainIntegrityTest gml:id="proc-pit-396">
                     <testProcedureEquipment xlink:href="#eq-PIT-hammer"/>
                     <testProcedureEquipment xlink:href="#eq-PIT-accelerometer"/>
-                    <testMethod>pulse_echo</testMethod>
+                    <testMethod>pulse echo</testMethod>
                     <waveSpeed howDetermined="assigned" uom="m/s">4000</waveSpeed>
                     <referenceLength uom="m">10.0</referenceLength>
-                    <referenceLengthBasis>as_cast</referenceLengthBasis>
+                    <referenceLengthBasis>as cast</referenceLengthBasis>
                     <lengthToDiameterRatio>25.0</lengthToDiameterRatio>
                     <averagedImpactCount>15</averagedImpactCount>
                     <amplificationFunction>exponential</amplificationFunction>
