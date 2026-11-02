@@ -191,7 +191,7 @@
                     </remark>
                     <programSpecificationRef xlink:href="#GS-MIX-A"/>
                     <activityType>test</activityType>
-                    <placementDescription>CMC rigid inclusion columns across the treated area; the Load Transfer Platform is a separate compacted granular fill (DesignRILTP) and does not use this concrete mix. Very Severe exposure per 70-TMSS-03 Table 8B, Mg&lt;1000 ppm row: Type I cement, Silica Fume admixture.</placementDescription>
+                    <placementDescription>CMC rigid inclusion columns across the treated area; the Load Transfer Platform is a separate compacted granular fill (DesignRILTP) and does not use this concrete mix. Very Severe exposure per Table 8B of the owner's material specification, Mg&lt;1000 ppm row: Type I cement, Silica Fume admixture.</placementDescription>
                     <formulation>
                         <GroutBatchFormulation>
                             <binder>
@@ -4011,8 +4011,17 @@
                         xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#nf_p94_262"/>
                     <governingStandard
                         xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#sbc_301_cr_18"/>
-                    <governingStandard
-                        xlink:href="https://diggsml.org/def/registry/DIGGS/0/specifications.xml#sec_70_tmss_03"/>
+                    <governingStandard>
+                        <Specification gml:id="spec-oms">
+                            <gml:description>The owner's material specification: the owner's technical material standard for normal-weight ready-mixed Portland cement concrete, covering mix design, constituent materials, quality control, delivery and testing, with strength and durability requirements keyed to exposure condition. It is an owner document that is not published, so it is held in this instance rather than cited from the specification registry; other objects can cite it by its gml:id. The document number is omitted.</gml:description>
+                            <gml:name>Owner's material specification</gml:name>
+                            <accreditingBody>AL SAHRA ELECTRICITY COMPANY (ASEC), RIYADH - KSA</accreditingBody>
+                            <shortMethodName>OMS</shortMethodName>
+                            <!-- standardReferenceNumber (the document number) omitted -->
+                            <standardTitle>Technical Material Standard Specification - Normal weight ready-mixed Portland cement concrete</standardTitle>
+                            <standardVersion>Rev. 02</standardVersion>
+                        </Specification>
+                    </governingStandard>
                     <analysisApproach>analytical method</analysisApproach>
                     <safetyFormat codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/safetyFormat.xml#ec7_da2">ec7_da2</safetyFormat>
                     <exposureClassification codeSpace="https://diggsml.org/def/codes/DIGGS/0.1/exposureClassification.xml#sec_tmss_very_severe">sec_tmss_very_severe</exposureClassification>
