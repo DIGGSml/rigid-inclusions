@@ -444,7 +444,7 @@
                             <grid><RectifiedGrid gml:id="grid-DRC-G1" dimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/9357">
                                 <limits><gml:GridEnvelope><gml:low>0 0</gml:low><gml:high>34 29</gml:high></gml:GridEnvelope></limits>
                                 <axisLabels>x y</axisLabels>
-                                <origin><PointLocation gml:id="grid-DRC-G1-origin" srsName="http://www.opengis.net/def/crs/EPSG/0/9357" srsDimension="2"><gml:pos>502964.477 2443887.840</gml:pos></PointLocation></origin>
+                                <origin><PointLocation gml:id="grid-DRC-G1-origin" srsName="http://www.opengis.net/def/crs/EPSG/0/9357" srsDimension="2"><gml:pos>502964.817 2443887.980</gml:pos></PointLocation></origin>
                                 <offsetVector>1.7352777502 0.9943898279</offsetVector>
                                 <offsetVector>-0.9943898279 1.7352777502</offsetVector>
                             </RectifiedGrid></grid>
@@ -1548,6 +1548,46 @@
                 </DesignRIColumn>
             </design>
             <design>
+                <DesignRIColumn gml:id="DRC-NG-338">
+                    <gml:name>CMC design - single position, CMC-338</gml:name>
+                    <basedOnRef xlink:href="#DRC-G1"/>
+                    <programSpecificationRef xlink:href="#RICS-GEN"/>
+                    <scope>
+                        <SFDesignScope>
+                            <targetPosition>
+                                <TargetPosition gml:id="tp-DRC-NG-338">
+                                    <targetLocation>
+                                        <PointLocation gml:id="pl-tp-DRC-NG-338" srsName="http://www.opengis.net/def/crs/EPSG/0/9357" srsDimension="2">
+                                            <gml:pos>502986.777 2443952.336</gml:pos>
+                                        </PointLocation>
+                                    </targetLocation>
+                                </TargetPosition>
+                            </targetPosition>
+                        </SFDesignScope>
+                    </scope>
+                </DesignRIColumn>
+            </design>
+            <design>
+                <DesignRIColumn gml:id="DRC-NG-970">
+                    <gml:name>CMC design - single position, CMC-970</gml:name>
+                    <basedOnRef xlink:href="#DRC-G1-sr"/>
+                    <programSpecificationRef xlink:href="#RICS-GEN"/>
+                    <scope>
+                        <SFDesignScope>
+                            <targetPosition>
+                                <TargetPosition gml:id="tp-DRC-NG-970">
+                                    <targetLocation>
+                                        <PointLocation gml:id="pl-tp-DRC-NG-970" srsName="http://www.opengis.net/def/crs/EPSG/0/9357" srsDimension="2">
+                                            <gml:pos>502955.954 2443946.257</gml:pos>
+                                        </PointLocation>
+                                    </targetLocation>
+                                </TargetPosition>
+                            </targetPosition>
+                        </SFDesignScope>
+                    </scope>
+                </DesignRIColumn>
+            </design>
+            <design>
                 <DesignRIColumn gml:id="DRC-NG-1054">
                     <gml:name>CMC design - single position, CMC-1054</gml:name>
                     <basedOnRef xlink:href="#DRC-G1"/>
@@ -1570,7 +1610,7 @@
             <design>
                 <DesignProductionSequence gml:id="DPS-01">
                     <gml:name>CMC production sequence</gml:name>
-                    <remark><Remark><content>The program-wide order in which the 1099 CMCs are produced, as one series 1 to 1099 across Grid 1, Grid 2 and the 49 off-grid columns. A grid column is placed by its node of DRC-G1 or DRC-G2; an off-grid column by the target position of its single-position design. The 9 unfulfilled Grid 1 nodes are not sequenced.</content></Remark></remark>
+                    <remark><Remark><content>The program-wide order in which the 1099 CMCs are produced, as one series 1 to 1099 across Grid 1, Grid 2 and the 51 off-grid columns. A grid column is placed by its node of DRC-G1 or DRC-G2; an off-grid column by the target position of its single-position design. The 14 unfulfilled Grid 1 nodes are not sequenced.</content></Remark></remark>
                     <step xlink:href="#DRC-G1" sequenceNumber="1">1 27</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="2">1 28</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="3">2 28</step>
@@ -1943,7 +1983,7 @@
                     <step xlink:href="#tp-DRC-NG-934" sequenceNumber="370"/>
                     <step xlink:href="#DRC-G1" sequenceNumber="371">20 27</step>
                     <step xlink:href="#tp-DRC-NG-958" sequenceNumber="372"/>
-                    <step xlink:href="#DRC-G1" sequenceNumber="373">11 26</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="373">11 27</step>
                     <step xlink:href="#DRC-G2" sequenceNumber="374">4 0</step>
                     <step xlink:href="#DRC-G2" sequenceNumber="375">3 0</step>
                     <step xlink:href="#DRC-G2" sequenceNumber="376">3 1</step>
@@ -2031,10 +2071,10 @@
                     <step xlink:href="#DRC-G1" sequenceNumber="458">13 26</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="459">12 27</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="460">12 26</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="461">11 25</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="462">14 25</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="463">13 25</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="464">12 25</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="461">11 26</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="462">13 25</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="463">12 25</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="464">11 25</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="465">15 16</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="466">15 18</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="467">15 20</step>
@@ -2056,10 +2096,10 @@
                     <step xlink:href="#DRC-G1" sequenceNumber="483">18 26</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="484">17 26</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="485">16 26</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="486">19 25</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="487">18 25</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="488">17 25</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="489">16 25</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="486">18 25</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="487">17 25</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="488">16 25</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="489">15 25</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="490">15 15</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="491">15 17</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="492">16 14</step>
@@ -2112,7 +2152,7 @@
                     <step xlink:href="#DRC-G1" sequenceNumber="539">12 28</step>
                     <step xlink:href="#tp-DRC-NG-966" sequenceNumber="540"/>
                     <step xlink:href="#DRC-G1" sequenceNumber="541">11 28</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="542">11 27</step>
+                    <step xlink:href="#tp-DRC-NG-970" sequenceNumber="542"/>
                     <step xlink:href="#DRC-G1" sequenceNumber="543">11 12</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="544">17 21</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="545">17 23</step>
@@ -2134,8 +2174,8 @@
                     <step xlink:href="#DRC-G1" sequenceNumber="561">21 26</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="562">20 26</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="563">19 26</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="564">20 25</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="565">21 25</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="564">19 25</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="565">20 25</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="566">9 10</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="567">9 12</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="568">9 14</step>
@@ -2158,7 +2198,7 @@
                     <step xlink:href="#tp-DRC-NG-954" sequenceNumber="585"/>
                     <step xlink:href="#DRC-G1" sequenceNumber="586">15 27</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="587">15 26</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="588">15 25</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="588">14 25</step>
                     <step xlink:href="#DRC-G2" sequenceNumber="589">2 2</step>
                     <step xlink:href="#DRC-G2" sequenceNumber="590">1 3</step>
                     <step xlink:href="#DRC-G2" sequenceNumber="591">0 3</step>
@@ -2410,11 +2450,11 @@
                     <step xlink:href="#tp-DRC-NG-316" sequenceNumber="837"/>
                     <step xlink:href="#DRC-G1" sequenceNumber="838">25 22</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="839">27 22</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="840">28 21</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="841">28 23</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="840">28 22</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="841">27 23</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="842">26 22</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="843">26 24</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="844">27 23</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="844">26 23</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="845">26 19</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="846">28 19</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="847">25 10</step>
@@ -2571,8 +2611,8 @@
                     <step xlink:href="#DRC-G1" sequenceNumber="998">28 20</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="999">25 24</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="1000">27 24</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="1001">28 22</step>
-                    <step xlink:href="#DRC-G1" sequenceNumber="1002">26 23</step>
+                    <step xlink:href="#DRC-G1" sequenceNumber="1001">28 23</step>
+                    <step xlink:href="#tp-DRC-NG-338" sequenceNumber="1002"/>
                     <step xlink:href="#tp-DRC-NG-339" sequenceNumber="1003"/>
                     <step xlink:href="#DRC-G1" sequenceNumber="1004">25 23</step>
                     <step xlink:href="#DRC-G1" sequenceNumber="1005">26 21</step>
@@ -3220,7 +3260,7 @@
                     </remark>
                     <remark>
                         <Remark>
-                            <content>Not evaluated: the deviation needs the designed setting-out coordinates, which are not available. The as-built coordinates alone cannot give a deviation; the offsets of the as-built columns from the idealized layout grids are an artefact of how those grids were fitted (median 0.37 m), not setting-out error.</content>
+                            <content>Not evaluated: the deviation needs the designed setting-out coordinates, which are not available. The as-built coordinates alone cannot give a deviation; the offsets of the as-built columns from the idealized layout grids are an artefact of how those grids were fitted (median 0.19 m), not setting-out error.</content>
                         </Remark>
                     </remark>
                     <operator>le</operator>
@@ -22347,7 +22387,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>28 23</realizesGridIndex>
+            <realizesGridIndex>27 23</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-331"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -22512,7 +22552,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>28 22</realizesGridIndex>
+            <realizesGridIndex>28 23</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-334"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -22728,11 +22768,10 @@
             <programRef xlink:href="#rip-01"/>
             <currentDesign>
                 <ProgramDesignReference>
-                    <programDesignRef xlink:href="#DRC-G1"/>
+                    <programDesignRef xlink:href="#DRC-NG-338"/>
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>26 23</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-338"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -22896,7 +22935,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>27 23</realizesGridIndex>
+            <realizesGridIndex>26 23</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-341"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -42833,7 +42872,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>11 26</realizesGridIndex>
+            <realizesGridIndex>11 27</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-971"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -42888,7 +42927,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>11 25</realizesGridIndex>
+            <realizesGridIndex>11 26</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-972"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -42943,7 +42982,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>20 25</realizesGridIndex>
+            <realizesGridIndex>19 25</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-973"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -42998,7 +43037,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>19 25</realizesGridIndex>
+            <realizesGridIndex>18 25</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-974"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -43053,7 +43092,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>18 25</realizesGridIndex>
+            <realizesGridIndex>17 25</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-975"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -43108,7 +43147,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>17 25</realizesGridIndex>
+            <realizesGridIndex>16 25</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-976"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -43163,7 +43202,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>16 25</realizesGridIndex>
+            <realizesGridIndex>15 25</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-977"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -43218,7 +43257,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>15 25</realizesGridIndex>
+            <realizesGridIndex>14 25</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-978"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -43273,7 +43312,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>14 25</realizesGridIndex>
+            <realizesGridIndex>13 25</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-979"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -43328,7 +43367,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>13 25</realizesGridIndex>
+            <realizesGridIndex>12 25</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-980"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -43383,7 +43422,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>12 25</realizesGridIndex>
+            <realizesGridIndex>11 25</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-981"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -44973,7 +45012,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>21 25</realizesGridIndex>
+            <realizesGridIndex>20 25</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-1095"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -59708,7 +59747,7 @@
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>28 21</realizesGridIndex>
+            <realizesGridIndex>28 22</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-325"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
@@ -65469,11 +65508,10 @@
             <programRef xlink:href="#rip-01"/>
             <currentDesign>
                 <ProgramDesignReference>
-                    <programDesignRef xlink:href="#DRC-G1-sr"/>
+                    <programDesignRef xlink:href="#DRC-NG-970"/>
                 </ProgramDesignReference>
             </currentDesign>
             <programSpecificationRef xlink:href="#RICS-GEN"/>
-            <realizesGridIndex>11 27</realizesGridIndex>
             <referencePoint>
                 <PointLocation gml:id="pl-RI-970"
                     srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773"
