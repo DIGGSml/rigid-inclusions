@@ -68725,11 +68725,7 @@
             <gml:description>Grout mixing/batching activity for MIX-A. One activity per design mixed - a batching operation mixing to a different design would be a separate SamplingActivity instance (DS2, 2026-09-28).</gml:description>
             <projectRef xlink:href="#GSL-GT-31136"/>
             <programRef xlink:href="#rip-01"/>
-            <currentDesign>
-                <ProgramDesignReference>
-                    <programDesignRef xlink:href="#DGM-MIX-A"/>
-                </ProgramDesignReference>
-            </currentDesign>
+            <programDesignRef xlink:href="#DGM-MIX-A"/>
             <activityType>test</activityType>
             <sampleProduced>
                 <SampleProduced gml:id="sp-gb-1"/>
