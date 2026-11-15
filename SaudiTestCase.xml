@@ -2729,7 +2729,7 @@
                             <referenceSystem>independent reference beam</referenceSystem>
                             <maxTestStress uom="kPa">225</maxTestStress>
                             <plateDiameter uom="mm">620</plateDiameter>
-                            <beddingMaterial>sand bed, 25 mm maximum thickness (method statement FSTSA-EN31313-MS-CMC s.10.1)</beddingMaterial>
+                            <beddingMaterial>sand bed, 25 mm maximum thickness</beddingMaterial>
                         </PlateLoadTest>
                     </plannedProcedure>
                 </DesignMeasurement>
@@ -2751,7 +2751,7 @@
                             <referenceSystem>independent reference beam</referenceSystem>
                             <maxTestStress uom="kPa">225</maxTestStress>
                             <plateDiameter uom="mm">620</plateDiameter>
-                            <beddingMaterial>sand bed, 25 mm maximum thickness (method statement FSTSA-EN31313-MS-CMC s.10.1)</beddingMaterial>
+                            <beddingMaterial>sand bed, 25 mm maximum thickness</beddingMaterial>
                         </PlateLoadTest>
                     </plannedProcedure>
                 </DesignMeasurement>
@@ -2773,7 +2773,7 @@
                             <referenceSystem>independent reference beam</referenceSystem>
                             <maxTestStress uom="kPa">225</maxTestStress>
                             <plateDiameter uom="mm">620</plateDiameter>
-                            <beddingMaterial>sand bed, 25 mm maximum thickness (method statement FSTSA-EN31313-MS-CMC s.10.1)</beddingMaterial>
+                            <beddingMaterial>sand bed, 25 mm maximum thickness</beddingMaterial>
                         </PlateLoadTest>
                     </plannedProcedure>
                 </DesignMeasurement>
@@ -2795,7 +2795,7 @@
                             <referenceSystem>independent reference beam</referenceSystem>
                             <maxTestStress uom="kPa">225</maxTestStress>
                             <plateDiameter uom="mm">620</plateDiameter>
-                            <beddingMaterial>sand bed, 25 mm maximum thickness (method statement FSTSA-EN31313-MS-CMC s.10.1)</beddingMaterial>
+                            <beddingMaterial>sand bed, 25 mm maximum thickness</beddingMaterial>
                         </PlateLoadTest>
                     </plannedProcedure>
                 </DesignMeasurement>
@@ -96351,7 +96351,7 @@
                     <maxTestStress uom="kgf/cm2">2.25</maxTestStress>
                     <plateDiameter uom="cm">60.00</plateDiameter>
                     <loadingProcedure>nonrepetitive</loadingProcedure>
-                    <beddingMaterial>sand, 25 mm maximum thickness (method statement FSTSA-EN31313-MS-CMC s.10.1)</beddingMaterial>
+                    <beddingMaterial>sand, 25 mm maximum thickness</beddingMaterial>
                 </PlateLoadTest>
             </procedure>
         </Monitor>
@@ -96704,7 +96704,7 @@
                     <deadLoad uom="kgf">61.68</deadLoad>
                     <plateDiameter uom="cm">45.72</plateDiameter>
                     <loadingProcedure>nonrepetitive</loadingProcedure>
-                    <beddingMaterial>sand, 25 mm maximum thickness (method statement FSTSA-EN31313-MS-CMC s.10.1)</beddingMaterial>
+                    <beddingMaterial>sand, 25 mm maximum thickness</beddingMaterial>
                 </PlateLoadTest>
             </procedure>
         </Monitor>
@@ -97031,7 +97031,7 @@
                     <deadLoad uom="kgf">61.68</deadLoad>
                     <plateDiameter uom="cm">45.72</plateDiameter>
                     <loadingProcedure>nonrepetitive</loadingProcedure>
-                    <beddingMaterial>sand, 25 mm maximum thickness (method statement FSTSA-EN31313-MS-CMC s.10.1)</beddingMaterial>
+                    <beddingMaterial>sand, 25 mm maximum thickness</beddingMaterial>
                 </PlateLoadTest>
             </procedure>
         </Monitor>
@@ -97234,7 +97234,7 @@
                     <maxTestStress uom="kgf/cm2">3.00</maxTestStress>
                     <plateDiameter uom="cm">60.00</plateDiameter>
                     <loadingProcedure>nonrepetitive</loadingProcedure>
-                    <beddingMaterial>sand, 25 mm maximum thickness (method statement FSTSA-EN31313-MS-CMC s.10.1)</beddingMaterial>
+                    <beddingMaterial>sand, 25 mm maximum thickness</beddingMaterial>
                 </PlateLoadTest>
             </procedure>
         </Monitor>
