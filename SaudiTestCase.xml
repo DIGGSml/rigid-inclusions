@@ -441,7 +441,7 @@
                         <SFDesignScope>
                             <plannedPositions>
                                 <PlannedPositions>
-                            <grid><RectifiedGrid gml:id="grid-DRC-G1" dimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/9357">
+                            <grid><RectifiedGrid gml:id="grid-DRC-G1" dimension="2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/9357">
                                 <limits><gml:GridEnvelope><gml:low>0 0</gml:low><gml:high>34 29</gml:high></gml:GridEnvelope></limits>
                                 <axisLabels>x y</axisLabels>
                                 <origin><PointLocation gml:id="grid-DRC-G1-origin" srsName="http://www.opengis.net/def/crs/EPSG/0/9357" srsDimension="2"><gml:pos>502964.817 2443887.980</gml:pos></PointLocation></origin>
@@ -477,7 +477,7 @@
                         <SFDesignScope>
                             <plannedPositions>
                                 <PlannedPositions>
-                            <grid><RectifiedGrid gml:id="grid-DRC-G2" dimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/9357">
+                            <grid><RectifiedGrid gml:id="grid-DRC-G2" dimension="2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/9357">
                                 <limits><gml:GridEnvelope><gml:low>0 0</gml:low><gml:high>22 4</gml:high></gml:GridEnvelope></limits>
                                 <axisLabels>x y</axisLabels>
                                 <origin><PointLocation gml:id="grid-DRC-G2-origin" srsName="http://www.opengis.net/def/crs/EPSG/0/9357" srsDimension="2"><gml:pos>502979.534 2443903.330</gml:pos></PointLocation></origin>
@@ -5372,7 +5372,7 @@
                  bottom reverses it (P1-P4-P3-P2) since its outward normal points down; each wall
                  for edge A->B is ordered A_bottom, B_bottom, B_top, A_top. -->
             <featureExtent>
-                <Solid gml:id="solid-SITE-SUB-001">
+                <Solid gml:id="solid-SITE-SUB-001" srsName="https://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/9357%262=http://www.opengis.net/def/crs/EPSG/0/5773" srsDimension="3">
                     <exterior>
                         <Shell gml:id="shell-SITE-SUB-001" aggregationType="set">
                             <surfaceMembers>
